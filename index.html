@@ -112,6 +112,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 .sec-link:hover{color:var(--t1)}
 .sec-link[aria-pressed="true"]{color:var(--brand-1)}
 .sec-link i{font-style:normal;font-size:12px;color:var(--t3);font-variant-numeric:tabular-nums}
+.sec-link.all{padding-bottom:8px;margin-bottom:4px;border-bottom:1px solid var(--divider)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;padding-top:6px}
 .chip{border:1px solid var(--divider);background:var(--bg-elv);color:var(--t2);border-radius:999px;padding:3px 11px;font-size:12px;font-weight:500;line-height:18px;transition:all .2s}
 .chip:hover{border-color:var(--brand-3);color:var(--t1)}
@@ -302,7 +303,7 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
     <button class="reset" id="reset">清空筛选</button>
   </div>
   <div class="hint">
-    <p>同一组多选是「或」，不同组之间是「且」。</p>
+    <p>章节一次只看一个，成本和等级可多选。同一组多选是「或」，不同组之间是「且」。</p>
     <p>每节内按性价比从高到低排，检索不改变顺序。</p>
     <p>正文与标签来自仓库里的 <a href="README.md">README.md</a>，改正文即改这里。</p>
   </div>
@@ -461,6 +462,10 @@ function esc(s){ return s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':
 function build(sections){
   const list = document.getElementById('list');
   const fsec = document.getElementById('f-sec');
+  const allBtn = document.createElement('button');
+  allBtn.className = 'sec-link all'; allBtn.dataset.v = ''; allBtn.setAttribute('aria-pressed','true');
+  allBtn.innerHTML = `<span>全部章节</span><i>${sections.reduce((n,s)=>n+s.entries.length,0)}</i>`;
+  fsec.appendChild(allBtn);
   for (const s of sections){
     const b = document.createElement('button'); b.className='sec-link'; b.dataset.v = s.n; b.setAttribute('aria-pressed','false');
     b.innerHTML = `<span>${s.n}. ${esc(s.title)}</span><i>${s.entries.length}</i>`; fsec.appendChild(b);
@@ -521,6 +526,8 @@ function writeUrl(){
 function syncControls(){
   document.getElementById('q').value = state.q;
   document.querySelectorAll('[data-dim] [data-v]').forEach(b => b.setAttribute('aria-pressed', String(state[b.parentElement.dataset.dim].has(b.dataset.v))));
+  const allBtn = document.querySelector('#f-sec .all');
+  if (allBtn) allBtn.setAttribute('aria-pressed', String(state.sec.size === 0));
   document.getElementById('f-dispute').checked = state.dispute;
   document.getElementById('f-todo').checked = state.todo;
 }
@@ -557,14 +564,23 @@ function apply(){
 
 /* ---------- 事件 ---------- */
 function wire(){
+  const sb = document.getElementById('sidebar'), bd = document.getElementById('backdrop'), mb = document.getElementById('menu');
+  const setMenu = (on) => { sb.classList.toggle('open', on); bd.classList.toggle('on', on); mb.setAttribute('aria-expanded', String(on)); };
+  const toTop = () => { setMenu(false); scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); };
   document.querySelectorAll('[data-dim]').forEach(g => g.addEventListener('click', ev => {
     const b = ev.target.closest('[data-v]'); if (!b) return;
-    const set = state[g.dataset.dim]; set.has(b.dataset.v) ? set.delete(b.dataset.v) : set.add(b.dataset.v); apply();
+    const dim = g.dataset.dim, v = b.dataset.v, set = state[dim];
+    if (dim === 'sec'){
+      if (v === '' || set.has(v)) set.clear(); else { set.clear(); set.add(v); }
+    } else {
+      set.has(v) ? set.delete(v) : set.add(v);
+    }
+    apply(); toTop();
   }));
-  document.getElementById('f-dispute').addEventListener('change', e => { state.dispute = e.target.checked; apply(); });
-  document.getElementById('f-todo').addEventListener('change', e => { state.todo = e.target.checked; apply(); });
+  document.getElementById('f-dispute').addEventListener('change', e => { state.dispute = e.target.checked; apply(); toTop(); });
+  document.getElementById('f-todo').addEventListener('change', e => { state.todo = e.target.checked; apply(); toTop(); });
   let tm; document.getElementById('q').addEventListener('input', e => { clearTimeout(tm); tm = setTimeout(() => { state.q = e.target.value.trim(); apply(); }, 120); });
-  const reset = () => { state.q=''; for (const d of DIMS) state[d].clear(); state.dispute=false; state.todo=false; apply(); };
+  const reset = () => { state.q=''; for (const d of DIMS) state[d].clear(); state.dispute=false; state.todo=false; apply(); toTop(); };
   document.getElementById('reset').addEventListener('click', reset);
   document.getElementById('reset2').addEventListener('click', reset);
   document.addEventListener('keydown', e => {
@@ -581,8 +597,6 @@ function wire(){
   document.addEventListener('keydown', e => { if (e.key === 'Enter' && document.activeElement.matches?.('abbr.term')) showTerm(document.activeElement); });
   addEventListener('scroll', () => { pop.hidden = true; }, {passive:true});
   // 侧栏（移动端抽屉）
-  const sb = document.getElementById('sidebar'), bd = document.getElementById('backdrop'), mb = document.getElementById('menu');
-  const setMenu = (on) => { sb.classList.toggle('open', on); bd.classList.toggle('on', on); mb.setAttribute('aria-expanded', String(on)); };
   mb.addEventListener('click', () => setMenu(!sb.classList.contains('open')));
   bd.addEventListener('click', () => setMenu(false));
   // 深色模式
