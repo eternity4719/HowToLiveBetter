@@ -360,7 +360,7 @@ function showTerm(ab){
 }
 
 /* ---------- 文本渲染：链接 + 高亮 ---------- */
-const URL_RE = /https?:\/\/[^\s；;]+/g;
+const URL_RE = /<?(https?:\/\/[A-Za-z0-9\-._~:\/?#\[\]@!$&'()*+,=%]+)>?/g;
 function trimUrl(u){
   let t = '';
   for (;;){
@@ -377,7 +377,7 @@ function renderText(el, text, terms){
   const pushText = (s) => { if (s) highlightInto(el, s, terms); };
   while ((m = URL_RE.exec(text))){
     pushText(text.slice(last, m.index));
-    const [u, tail] = trimUrl(m[0]);
+    const [u, tail] = trimUrl(m[1]);
     const a = document.createElement('a'); a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.textContent = u;
     el.appendChild(a); pushText(tail);
     last = m.index + m[0].length;
