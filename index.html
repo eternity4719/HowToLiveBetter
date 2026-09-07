@@ -139,6 +139,20 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 .src[open] summary::before{transform:rotate(45deg)}
 .src .body{padding-top:8px;font-size:13px;line-height:1.75;color:var(--t2);overflow-wrap:anywhere}
 
+abbr.term{text-decoration:none;border-bottom:1px dotted var(--t3);cursor:help}
+abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
+.pop{position:absolute;z-index:40;background:var(--bg-elv);border:1px solid var(--divider);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:10px 12px;font-size:13px;line-height:1.6;color:var(--t2)}
+.pop b{display:block;color:var(--t1);font-weight:600;margin-bottom:2px}
+.gloss{margin-top:16px;border:1px solid var(--divider);border-radius:8px;padding:0 16px;font-size:13px;color:var(--t2)}
+.gloss summary{cursor:pointer;padding:10px 0;font-weight:500;color:var(--t2);list-style:none;display:flex;align-items:center;gap:6px}
+.gloss summary::-webkit-details-marker{display:none}
+.gloss summary::before{content:"";width:6px;height:6px;border-right:1.5px solid var(--t3);border-bottom:1.5px solid var(--t3);transform:rotate(-45deg);transition:transform .2s;margin-right:2px}
+.gloss[open] summary::before{transform:rotate(45deg)}
+.gloss p{margin:0 0 8px}
+.gloss dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 14px}
+.gloss dt{font-weight:600;color:var(--t1);white-space:nowrap}
+.gloss dd{margin:0}
+@media (max-width:960px){.gloss dl{grid-template-columns:1fr;gap:2px} .gloss dd{margin-bottom:8px}}
 .empty{border:1px dashed var(--divider);border-radius:12px;padding:40px 24px;text-align:center;color:var(--t2);margin-top:24px}
 .empty button{margin-top:12px;padding:7px 16px;border:1px solid var(--divider);border-radius:20px;font-weight:500;background:var(--bg-elv)}
 .empty button:hover{border-color:var(--brand-1);color:var(--brand-1)}
@@ -188,6 +202,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 </header>
 
 <div class="backdrop" id="backdrop"></div>
+<div class="pop" id="pop" role="tooltip" hidden><b></b><span></span></div>
 <aside class="sidebar" id="sidebar">
   <div class="group">
     <div class="gt">章节</div>
@@ -243,6 +258,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
       <h1>高性价比生存指南</h1>
       <p>每一条都回答两个问题：花掉什么，换回什么。</p>
       <div class="stat" aria-live="polite">当前显示 <b id="cnt">–</b> 条，共 <span id="tot">–</span> 条</div>
+      <details class="gloss" id="gloss"><summary>看不懂的缩写和名词</summary><p>正文里带虚线的词，点一下或把鼠标放上去就有解释。全表如下。</p><dl></dl></details>
     </div>
     <div id="list">
       <div class="status" id="status">正在读取 README.md …</div>
@@ -251,7 +267,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
         <div><button id="reset2">清空筛选</button></div>
       </div>
     </div>
-    <div class="foot">数字口径以条目内标注为准：第 1、2 节是 ACM 或特定死因，第 3、4 节是精力/时间，第 5 节是金钱，第 7 节是金钱与保障，互不换算。来源核实过程见 docs/核实记录。Unlicense，公有领域。</div>
+    <div class="foot">数字口径以条目内标注为准：第 1、2 节是 ACM 或特定死因，第 3、4 节是精力/时间，第 5 节是金钱，第 7 节是金钱与保障，第 8、9 节是金钱与人身自由，互不换算。来源核实过程见 docs/核实记录。Unlicense，公有领域。</div>
   </div>
 </main>
 
@@ -265,7 +281,7 @@ function parseReadme(md){
   for (const raw of lines){
     const line = raw.trimEnd();
     let m;
-    if ((m = /^## (\d)\. (.+)$/.exec(line))) { flush(); sec = {n:m[1], title:m[2].trim(), intro:'', entries:[]}; sections.push(sec); continue; }
+    if ((m = /^## (\d+)\. (.+)$/.exec(line))) { flush(); sec = {n:m[1], title:m[2].trim(), intro:'', entries:[]}; sections.push(sec); continue; }
     if (/^## /.test(line)) { flush(); sec = null; continue; }
     if (!sec) continue;
     if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:''}; continue; }
@@ -292,6 +308,57 @@ function parseReadme(md){
   return sections;
 }
 
+/* ---------- 术语表 ---------- */
+let GLOSS = [];   // [{term, meaning, re}]
+function parseGlossary(md){
+  const m = /^## 读懂数字[^\n]*\n([\s\S]*?)(?=^## )/m.exec(md);
+  if (!m) return [];
+  const rows = [];
+  for (const line of m[1].split(/\r?\n/)){
+    const c = /^\|\s*(.+?)\s*\|\s*(.+?)\s*\|$/.exec(line);
+    if (!c || c[1] === '术语' || /^-+$/.test(c[1])) continue;
+    for (const t of c[1].split('、')){
+      const term = t.trim(); if (!term) continue;
+      const latin = /^[A-Za-z0-9%. ]+$/.test(term);
+      const src = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      rows.push({term, meaning: c[2], re: new RegExp(latin ? `(?<![A-Za-z0-9])${src}(?![A-Za-z0-9])` : src, 'g')});
+    }
+  }
+  rows.sort((a,b) => b.term.length - a.term.length);
+  return rows;
+}
+function termify(root){
+  if (!GLOSS.length) return;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = []; let n; while ((n = walker.nextNode())) if (!n.parentElement.closest('a,abbr')) nodes.push(n);
+  for (const node of nodes){
+    const s = node.nodeValue; const hits = [];
+    for (const g of GLOSS){ g.re.lastIndex = 0; let m; while ((m = g.re.exec(s))) hits.push([m.index, m.index + m[0].length, g]); }
+    if (!hits.length) continue;
+    hits.sort((a,b) => a[0]-b[0] || (b[1]-b[0]) - (a[1]-a[0]));
+    const frag = document.createDocumentFragment(); let pos = 0;
+    for (const [a,b,g] of hits){
+      if (a < pos) continue;
+      if (a > pos) frag.appendChild(document.createTextNode(s.slice(pos, a)));
+      const ab = document.createElement('abbr'); ab.className = 'term'; ab.textContent = s.slice(a,b); ab.title = g.meaning; ab.tabIndex = 0; ab.dataset.term = g.term;
+      frag.appendChild(ab); pos = b;
+    }
+    if (pos < s.length) frag.appendChild(document.createTextNode(s.slice(pos)));
+    node.parentNode.replaceChild(frag, node);
+  }
+}
+function showTerm(ab){
+  const pop = document.getElementById('pop');
+  pop.querySelector('b').textContent = ab.dataset.term;
+  pop.querySelector('span').textContent = ab.title;
+  pop.hidden = false;
+  const r = ab.getBoundingClientRect(); const w = Math.min(360, innerWidth - 24);
+  let x = r.left + r.width/2 - w/2; x = Math.max(12, Math.min(x, innerWidth - w - 12));
+  pop.style.width = w + 'px'; pop.style.left = x + 'px';
+  const below = r.bottom + 8 + pop.offsetHeight < innerHeight;
+  pop.style.top = (below ? r.bottom + 8 : r.top - 8 - pop.offsetHeight) + scrollY + 'px';
+}
+
 /* ---------- 文本渲染：链接 + 高亮 ---------- */
 const URL_RE = /https?:\/\/[^\s；;]+/g;
 function trimUrl(u){
@@ -316,6 +383,7 @@ function renderText(el, text, terms){
     last = m.index + m[0].length;
   }
   pushText(text.slice(last));
+  termify(el);
 }
 function highlightInto(el, s, terms){
   if (!terms.length){ el.appendChild(document.createTextNode(s)); return; }
@@ -367,6 +435,15 @@ function build(sections){
     list.appendChild(block);
   }
   document.getElementById('tot').textContent = CARDS.length;
+}
+function buildGlossary(){
+  const box = document.getElementById('gloss'); if (!GLOSS.length) { box.hidden = true; return; }
+  const dl = box.querySelector('dl');
+  for (const g of [...GLOSS].sort((a,b) => a.term.localeCompare(b.term, 'zh'))){
+    const dt = document.createElement('dt'); dt.textContent = g.term;
+    const dd = document.createElement('dd'); dd.textContent = g.meaning;
+    dl.appendChild(dt); dl.appendChild(dd);
+  }
 }
 
 /* ---------- 筛选状态 ---------- */
@@ -438,6 +515,15 @@ function wire(){
     if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); document.getElementById('q').focus(); }
     if (e.key === 'Escape') { if (document.activeElement.id === 'q') document.activeElement.blur(); setMenu(false); }
   });
+  // 术语弹层
+  const pop = document.getElementById('pop');
+  document.addEventListener('click', e => {
+    const ab = e.target.closest('abbr.term');
+    if (ab) { e.preventDefault(); showTerm(ab); return; }
+    if (!e.target.closest('#pop')) pop.hidden = true;
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Enter' && document.activeElement.matches?.('abbr.term')) showTerm(document.activeElement); });
+  addEventListener('scroll', () => { pop.hidden = true; }, {passive:true});
   // 侧栏（移动端抽屉）
   const sb = document.getElementById('sidebar'), bd = document.getElementById('backdrop'), mb = document.getElementById('menu');
   const setMenu = (on) => { sb.classList.toggle('open', on); bd.classList.toggle('on', on); mb.setAttribute('aria-expanded', String(on)); };
@@ -458,9 +544,11 @@ function wire(){
     if (location.protocol === 'file:') throw new Error('file');
     const r = await fetch('README.md', {cache:'no-cache'});
     if (!r.ok) throw new Error('http '+r.status);
-    const sections = parseReadme(await r.text());
+    const md = await r.text();
+    const sections = parseReadme(md);
     if (!sections.length) throw new Error('empty');
-    status.remove(); build(sections); readUrl(); wire(); apply();
+    GLOSS = parseGlossary(md);
+    status.remove(); build(sections); buildGlossary(); readUrl(); wire(); apply();
     if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
   } catch (err) {
     status.innerHTML = err.message === 'file'
