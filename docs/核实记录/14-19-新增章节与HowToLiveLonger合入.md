@@ -79,3 +79,25 @@
   Islami 2009 原始研究，2A 类的表述来自前者。
 - 密码复用、SIM 卡 PIN、手机丢失处置、老人账户与话术、养孩子的时间账与钱账：没有可引的原始文献，
   按本项目的分级规则标为 C 级（作者经验），并在「来源」栏写明「无直接文献」。
+
+## 五、第 20 节「刚出生的孩子怎么带」的核实（2026-09-07）
+
+| 主题 | 来源 | 核对结果 |
+| --- | --- | --- |
+| 安全睡眠 | Moon RY, et al. Pediatrics 2022;150(1):e2022057990, PMID 35726558 | 摘要逐字：美国每年约 3500 例睡眠相关婴儿死亡；「supine positioning; use of a firm, noninclined sleep surface; room sharing without bed sharing; and avoidance of soft bedding and overheating」一致 |
+| 乙肝首针 | WHO Hepatitis B fact sheet | 「All babies should receive the hepatitis B vaccine as soon as possible after birth (within 24 hours).」与「Infection in infancy and early childhood leads to chronic hepatitis in about 95% of cases.」一致 |
+| 母乳与辅食 | WHO Breastfeeding 专题页；国卫办妇幼函〔2024〕452 号 婴幼儿营养喂养评估服务指南（试行） | 一小时内开奶、6 个月纯母乳（含不喂水）、6 个月起加辅食并继续母乳至 2 岁一致；国内指南的 6-8 月龄 1-2 次、9-12 月龄 2-3 次、含铁动物性食物、七类中至少四类一致 |
+| 冲奶水温 | Beary MA, et al. J Food Prot 2025;88(9):100571, PMID 40582619；Sima WG, et al. BMC Microbiol 2025;26:307, PMID 41469539；WHO/FAO (2007) 粉状婴儿配方食品安全配制指南 | 「at least 70 °C (158 °F)」与「>5 log CFU/mL C. sakazakii reduction」逐字一致；新生儿病死率「40–80%」逐字一致。WHO/FAO 指南只核对到题录与出版信息，未取得正文，故 70 ℃ 的表述以 Beary 文中的转述为准 |
+| 蜂蜜 | US CDC Preventing Botulism | 「Do not feed honey to a child who is younger than 1 year old.」与「Honey can contain the bacteria that cause botulism.」一致 |
+| 维生素 K | Fiesack S, et al. Nutrients 2021;13(11):4109, PMID 34836364；Tursunov D, et al. Nagoya J Med Sci 2018;80(1):11, PMID 29581610 | 「1 or 2 mg IM vitamin K once at birth」一致；塔什干 42225 名新生儿中发生率 478/10 万、预防可降低「higher than 78.5%」一致。因证据来自单一地区且为估算，定为 B 级 |
+| 发热就医红线 | Pantell RH, et al. Pediatrics 2021;148(2):e2021052228, PMID 34281996 | 「well-appearing, term infants, 8 to 60 days of age, with fever ≥38.0°C」与三个月龄分档一致；指南不覆盖 8 日龄以下亦属实 |
+| 不摇晃婴儿 | 无 | 本轮未取得可直接引用的原始文献，按规则定为 C 级，来源栏写明「作者经验与普遍共识」 |
+| 尿布 | 中国政府网 2026-06-22《市场监管总局牵头成立联合调查组核查「婴幼儿纸尿裤甲酰胺问题」》 | 该页静态 HTML 与浏览器渲染后均只有标题、日期与责任编辑，正文为空。因此条目只引用「成立联合调查组核查」这一事实，不引用任何结论，并标 TODO |
+
+未采用：任何尿布、奶粉、婴儿用品的品牌推荐。理由是没有任何官方机构发布过品牌排名，
+本项目的引用规则不允许用电商榜单、测评号或母婴社区内容作为来源。条目改为给可核查的判断依据
+（合身、勤换、查国家抽检通报），并把「查抽检通报」的方法指回第 5 节。
+
+未取得：国家免疫规划疫苗儿童免疫程序的完整表（多次检索中国政府网政策库未定位到 2021 年版原文，
+只取到 2024 年百白破程序调整为 2、4、6、18 月龄和 6 周岁的通知），故第 20 节只写了乙肝首针一条，
+其余疫苗按接种证时间执行，未在书中逐一列出。
