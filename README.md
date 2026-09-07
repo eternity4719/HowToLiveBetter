@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="og.png" alt="高性价比生存指南 —— 用最少的钱、时间和精力，换回最多的寿命" width="820">
+<img src="og.png" alt="高性价比人生指南 —— 用最少的钱、时间和精力，换回最多的寿命" width="820">
 
-# 高性价比生存指南
+# 高性价比人生指南
 
-覆盖长寿与防病、意外与急救、省钱与理财、防骗与法律红线、失业兜底与创业风险。<br>
+覆盖长寿与防病、意外与急救、省钱与理财、防骗与法律红线、失业兜底、创业风险与育儿。<br>
 274 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件。
 
 [![在线检索](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://eternity4719.github.io/HowToLiveBetter/)
