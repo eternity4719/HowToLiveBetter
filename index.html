@@ -155,6 +155,9 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 .badge.danger{background:var(--red-soft);color:var(--red-1)}
 .badge.warn{background:var(--yellow-soft);color:var(--yellow-1)}
 .badge.plain{background:var(--gray-soft);color:var(--t2);font-weight:500}
+.badge.r3{background:var(--brand-soft);color:var(--brand-1)}
+.badge.r2{background:var(--green-soft);color:var(--green-1)}
+.badge.r1{background:var(--gray-soft);color:var(--gray-1)}
 .rows{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px;line-height:1.75}
 .rows .k{color:var(--t3);font-weight:500;font-size:13px;line-height:1.75;padding-top:1px}
 .rows .v{color:var(--t1);min-width:0;overflow-wrap:anywhere}
@@ -269,6 +272,23 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
     <div class="sec-links" id="f-sec" data-dim="sec"></div>
   </div>
   <div class="group">
+    <div class="gt">性价比 <small>作者判断，同口径内可比</small></div>
+    <div class="chips" data-dim="ratio">
+      <button class="chip" data-v="极高" aria-pressed="false">极高</button>
+      <button class="chip" data-v="高" aria-pressed="false">高</button>
+      <button class="chip" data-v="一般" aria-pressed="false">一般</button>
+    </div>
+  </div>
+  <div class="group">
+    <div class="gt">换回什么 <small>口径，不跨口径比较</small></div>
+    <div class="chips" data-dim="lens">
+      <button class="chip" data-v="死亡率" aria-pressed="false">寿命</button>
+      <button class="chip" data-v="金钱" aria-pressed="false">钱</button>
+      <button class="chip" data-v="时间" aria-pressed="false">时间精力</button>
+      <button class="chip" data-v="自由" aria-pressed="false">人身自由</button>
+    </div>
+  </div>
+  <div class="group">
     <div class="gt">证据等级 <small>荟萃/RCT · 有研究 · 共识</small></div>
     <div class="chips" data-dim="grade">
       <button class="chip" data-v="A" aria-pressed="false">A 级</button>
@@ -344,9 +364,9 @@ function parseReadme(md){
     if ((m = /^## (\d+)\. (.+)$/.exec(line))) { flush(); sec = {n:m[1], title:m[2].trim(), intro:'', entries:[]}; sections.push(sec); continue; }
     if (/^## /.test(line)) { flush(); sec = null; continue; }
     if (!sec) continue;
-    if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:''}; continue; }
+    if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:'', level:'', lens:''}; continue; }
     if ((m = /^<!--\s*成本标签:\s*(.*?)\s*-->/.exec(line)) && entry){
-      for (const kv of m[1].split(/\s+/)){ const [k,v] = kv.split('='); if(k==='钱') entry.money=v; if(k==='时间') entry.time=v; if(k==='毅力') entry.will=v; }
+      for (const kv of m[1].split(/\s+/)){ const [k,v] = kv.split('='); if(k==='钱') entry.money=v; if(k==='时间') entry.time=v; if(k==='毅力') entry.will=v; if(k==='收益') entry.level=v; if(k==='口径') entry.lens=v; }
       continue;
     }
     if (entry){
@@ -363,6 +383,9 @@ function parseReadme(md){
   for (const s of sections) for (const e of s.entries){
     e.dispute = /^争议/.test(e.note);
     e.todo = /待核实|TODO/.test(e.src + e.gain + e.note + e.cost);
+    e.cs = (COST_W.money[e.money] ?? 0) + (COST_W.time[e.time] ?? 0) + (COST_W.will[e.will] ?? 0);
+    e.ratio = e.level === '大' ? (e.cs === 0 ? '极高' : (e.cs <= 2 ? '高' : '一般'))
+            : e.level === '中' ? (e.cs === 0 ? '高' : '一般') : '一般';
     e.hay = [e.title, e.cost, e.gain, e.note, e.src, e.grade].join('\n').toLowerCase();
   }
   return sections;
@@ -458,6 +481,8 @@ function highlightInto(el, s, terms){
   }
 }
 
+const COST_W = { money:{'0':0,'少':1,'多':2}, time:{'少':0,'中':1,'多':2}, will:{'否':0,'些':1,'是':2} };
+const LENS_LABEL = {'死亡率':'换寿命','金钱':'换钱','时间':'换时间精力','自由':'换人身自由'};
 /* ---------- 构建 DOM ---------- */
 const LABEL = { money:{'0':'不花钱','少':'花少量钱','多':'花不少钱'}, time:{'少':'顺手','中':'花几小时','多':'每天占时间'}, will:{'否':'不用毅力','些':'要一点毅力','是':'要很多毅力'} };
 let CARDS = [];
@@ -489,7 +514,12 @@ function build(sections){
         <details class="src"><summary>来源</summary><div class="body"></div></details>`;
       const badges = c.querySelector('.badges');
       const add = (cls, text) => { const t=document.createElement('span'); t.className='badge '+cls; t.textContent=text; badges.appendChild(t); };
+      if (e.ratio) { const t = document.createElement('span'); t.className = 'badge r' + ({'极高':'3','高':'2','一般':'1'}[e.ratio]);
+        t.textContent = '性价比 ' + e.ratio;
+        t.title = '作者判断：由收益量级（' + e.level + '）和三项成本合成，只在同一口径（' + LENS_LABEL[e.lens] + '）内可比，与证据等级无关';
+        badges.appendChild(t); }
       add(e.grade, `证据 ${e.grade} 级`);
+      if (e.lens) add('plain', LENS_LABEL[e.lens] || e.lens);
       for (const d of ['money','time','will']) if (e[d]) add('plain', LABEL[d][e[d]] || e[d]);
       if (e.dispute) add('danger', '争议');
       if (e.todo) add('warn', '含待核实');
@@ -511,8 +541,8 @@ function buildGlossary(){
 }
 
 /* ---------- 筛选状态 ---------- */
-const DIMS = ['sec','grade','money','time','will'];
-const state = { q:'', sec:new Set(), grade:new Set(), money:new Set(), time:new Set(), will:new Set(), dispute:false, todo:false };
+const DIMS = ['sec','ratio','lens','grade','money','time','will'];
+const state = { q:'', sec:new Set(), ratio:new Set(), lens:new Set(), grade:new Set(), money:new Set(), time:new Set(), will:new Set(), dispute:false, todo:false };
 function readUrl(){
   const p = new URLSearchParams(location.search);
   state.q = p.get('q') || '';
@@ -540,6 +570,8 @@ function apply(){
   for (const {e, el} of CARDS){
     let ok = true;
     if (state.sec.size && !state.sec.has(e.sec)) ok = false;
+    if (ok && state.ratio.size && !state.ratio.has(e.ratio)) ok = false;
+    if (ok && state.lens.size && !state.lens.has(e.lens)) ok = false;
     if (ok && state.grade.size && !state.grade.has(e.grade)) ok = false;
     if (ok && state.money.size && !state.money.has(e.money)) ok = false;
     if (ok && state.time.size && !state.time.has(e.time)) ok = false;
