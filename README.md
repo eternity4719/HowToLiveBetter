@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="og.png" alt="高性价比人生指南 —— 用最少的钱、时间和精力，换回最多的寿命" width="820">
+<img src="og.png" alt="高性价比人生指南 —— 用最少的钱、时间和精力，换回最多的寿命、金钱和人身自由" width="820">
 
 # 高性价比人生指南
 
 覆盖长寿与防病、意外与急救、省钱与理财、防骗与法律红线、失业兜底、创业风险、恋爱婚育、出国与技能。<br>
-309 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件。
+318 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件。
 
 [![在线检索](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://eternity4719.github.io/HowToLiveBetter/)
-[![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-309%20%E6%9D%A1-18794e?style=flat-square)](#目录)
-[![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20181%20%C2%B7%20B%2083%20%C2%B7%20C%2046-915930?style=flat-square)](#证据分级)
-[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-592%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
+[![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-318%20%E6%9D%A1-18794e?style=flat-square)](#目录)
+[![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20182%20%C2%B7%20B%2089%20%C2%B7%20C%2047-915930?style=flat-square)](#证据分级)
+[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-604%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-Unlicense-565a5f?style=flat-square)](LICENSE)
 
 **[打开在线检索页](https://eternity4719.github.io/HowToLiveBetter/)** · [目录](#目录) · [术语表](#读懂数字术语表) · [核实记录](docs/核实记录/) · [结婚划不划算（长文）](docs/结婚划不划算.md)
@@ -51,8 +51,8 @@
 
 - **想按条件筛**：打开[在线检索页](https://eternity4719.github.io/HowToLiveBetter/)，可以按关键词、章节、证据等级，以及「花不花钱、花多少时间、要不要毅力」三个成本维度组合筛选。数据直接读本文件，改正文即改检索页。
 - **想按顺序读**：每节内的条目按性价比从高到低排列，从每节前几条开始看就行。
-- **只想看结论最硬的**：在检索页里勾选证据等级 A，只留下有具体数字、来自荟萃分析或大型试验的 181 条。
-- **只想看最值得做的**：勾选性价比「极高」，得到 59 条既不花钱、不花时间、不需要毅力，收益又落在最大一档的条目。再叠加一个「换回什么」，就是该口径下的优先清单。
+- **只想看结论最硬的**：在检索页里勾选证据等级 A，只留下有具体数字、来自荟萃分析或大型试验的 182 条。
+- **只想看最值得做的**：勾选性价比「极高」，得到 63 条既不花钱、不花时间、不需要毅力，收益又落在最大一档的条目。再叠加一个「换回什么」，就是该口径下的优先清单。
 
 每条建议长这样：
 
@@ -65,17 +65,18 @@
 - 备注：争议。肾功能不全、正在吃保钾利尿剂的人不要用。另有一项覆盖 181 个国家的生态学研究发现钠摄入越高的国家预期寿命反而越长、总死亡率反而越低（β=−131 例/克每日钠摄入，R²=0.60，P<0.001），作者据此反对把钠当作缩短寿命的元凶；但生态学研究比的是国家而不是人，富国吃盐多也活得久，无法排除经济水平这个混杂，证据等级低于上面那项随机对照试验。来源：Messerli FH, Hofstetter L, Syrogiannouli L, et al. (2021). Sodium intake, life expectancy, and all-cause mortality. European Heart Journal, 42(21), 2103-2112. <https://doi.org/10.1093/eurheartj/ehaa947>
 ```
 
-## 三种资源
+## 四种资源
 
-本指南优化的不只是寿命，而是三种资源：
+本指南优化的不只是寿命，而是四种资源：
 
-- **寿命（时间）**：活得更久，以及活着的时间不被无收益的事占用
-- **精力**：每天可用的注意力和体力，少被无谓消耗
+- **寿命**：活得更久，少死于本来可以避免的事
+- **时间与精力**：活着的时间不被无收益的事占用，每天的注意力和体力少被无谓消耗
 - **金钱**：少花冤枉钱，把钱花在收益确定的地方
+- **人身自由**：不因为不知道一条红线，把自己送进拘留所或者看守所
 
-每一条建议都回答两个问题：花掉什么（钱/时间/精力/毅力），换回什么（总死亡率变化 / 特定死因下降 / 精力节省 / 金钱节省）。条目按性价比排序，不按类别排序：成本接近零、收益大的放最前面。
+每一条建议都回答两个问题：花掉什么（钱/时间/精力/毅力），换回什么（总死亡率变化 / 特定死因下降 / 时间与精力节省 / 金钱节省 / 保障与人身自由）。条目按性价比排序，不按类别排序：成本接近零、收益大的放最前面。
 
-死亡率类数字与精力/时间类数字分开口径，不做跨口径换算。
+死亡率类数字、时间/精力类数字、金钱类数字和法律后果分开口径，不做跨口径换算。这四种资源对应检索页上的四个「换回什么」，互相之间不做比较。
 
 ## 证据分级
 
@@ -87,7 +88,7 @@
 | B | 有研究支撑但难以量化，或证据来自小样本/单一研究 |
 | C | 作者经验或普遍共识，没有直接文献 |
 
-全书 309 条中 A 级 181 条、B 级 83 条、C 级 46 条，另有 42 条标注了争议、23 处标注了 TODO 待核实。有争议的 A/B 级条目会标注「争议」并列出反方证据。所有来源只引原始文献（期刊论文附 DOI 或 PubMed 链接，或 WHO/CDC/国家统计局等官方机构报告），不引二手转述。不确定的数字标「待核实」。
+全书 318 条中 A 级 182 条、B 级 89 条、C 级 47 条，另有 44 条标注了争议、26 处标注了 TODO 待核实。有争议的 A/B 级条目会标注「争议」并列出反方证据。所有来源只引原始文献（期刊论文附 DOI 或 PubMed 链接，或 WHO/CDC/国家统计局等官方机构报告），不引二手转述。不确定的数字标「待核实」。
 
 ## 性价比档
 
@@ -99,7 +100,7 @@
 | 收益量级 | 大 / 中 / 小 | 尽量按阈值从条目自己的「收益」栏里机械套：换寿命看相对降幅（≥20% 为大，10–20% 为中，<10% 或只有替代终点为小）；换钱看金额（万元级为大，数百到数千为中，几十元为小）；换人身自由看后果（避免刑事责任为大，避免拘留或行政处罚为中，避免民事纠纷为小）；换时间精力看节省量（每天小时级为大，每周小时级为中，一次性为小） |
 | 性价比 | 极高 / 高 / 一般 | 收益大且三项成本全为零 = 极高；收益大且成本较低，或收益中且成本为零 = 高；其余 = 一般 |
 
-全书 309 条中性价比极高 59 条（19%）、高 152 条（49%）、一般 98 条（32%）。中间一档偏厚是有意的：底层的收益量级只有三级判断，再往下切就是假装精度。
+全书 318 条中性价比极高 63 条（20%）、高 156 条（49%）、一般 99 条（31%）。中间一档偏厚是有意的：底层的收益量级只有三级判断，再往下切就是假装精度。
 
 **这一档是作者判断，不是证据**，本质上是 C 级，和证据等级正交。可以是 A 级但性价比一般（带状疱疹疫苗有 97.2% 效力的三期 RCT，但两针三四千元、带状疱疹很少致命），也可以是 C 级但性价比极高（出境前把行程发给家人）。「一般」不等于不该做——全书的条目都是建议做的，只是这一档要你自己权衡那笔花销。
 
@@ -167,7 +168,7 @@
 10. [恋爱和结婚划不划算](#10-恋爱和结婚划不划算)：择偶策略、纠缠的红线、兴趣信号、关系质量、异地恋、登记流程、婚检、健康账、时间账、钱账、退出成本。长文见 [docs/结婚划不划算.md](docs/结婚划不划算.md)。
 11. [程序员和技术人容易踩的红线](#11-程序员和技术人容易踩的红线)：外挂、爬虫、抢票脚本、删库、带走源码、接单开发、竞业、开源许可、备案。口径：人身自由/金钱。
 12. [创业与做生意：别把家底赔进去](#12-创业与做生意别把家底赔进去)：本钱、担保、主体选择、加盟、许可证、发票、合同、用人、量产、退场。口径：金钱/法律责任。
-13. [紧急情况：先做什么](#13-紧急情况先做什么)：心脏骤停、大出血、咬伤、骗局、隐私威胁、中暑、火灾、溺水、迷路、失温、蛇咬、地震、野兽。口径：存活率与金钱。
+13. [紧急情况：先做什么](#13-紧急情况先做什么)：心脏骤停、大出血、咬伤、烧烫伤、过敏性休克、癫痫、低血糖、触电、一氧化碳、骗局、隐私威胁、中暑、火灾、溺水、迷路、失温、蛇咬、地震、野兽、雷击、高原病、蜱虫、野外饮水。口径：存活率与金钱。
 14. [账号与信息安全](#14-账号与信息安全)：二次验证、密码、SIM 卡、手机丢失、登录设备。口径：金钱/个人信息。
 15. [租房与买房](#15-租房与买房)：押金、暴力腾退、中介代收、资金监管、买卖不破租赁、产权核对。口径：金钱。
 16. [得了慢性病之后怎么活](#16-得了慢性病之后怎么活)：服药依从、门诊慢特病跨省结算、复查记录、别停药试偏方。口径：总死亡率/金钱。
@@ -901,7 +902,7 @@
 
 ### 4. 不买彩票
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
-- 成本：零
+- 成本：0 元
 - 收益：按财政部规定，乐透型/数字型彩票奖金比例下限为销售额的 50%，即开型 65%，竞猜型 73%；双色球按销售额的 51% 计提奖金，每投入 1 元长期期望仅返还 0.51 元，期望亏损 49%。2024 年全国彩票销售 6234.86 亿元，其中 1610.31 亿元进入公益金，未回到购彩者手中（中国，2024 年）
 - 证据等级：A
 - 来源：财政部 (2015). 关于规范和加强彩票资金构成比例管理的通知（财综〔2015〕94 号）. <http://m.mof.gov.cn/czxw/201511/t20151113_1560814.htm>；财政部 (2025). 财政部公告 2025 年第 8 号（2024 年彩票公益金筹集分配情况）. <http://zhs.mof.gov.cn/zhengcefabu/202508/t20250828_3970977.htm>；中国福利彩票双色球游戏规则（第十四条）. <https://mzj.nc.gov.cn/ncsmzj/flcp/202111/5dccc1a5da89434e94a62f8ea0e5887e.shtml>
@@ -2067,7 +2068,47 @@
 - 来源：Griffin BR, Frear CC, Babl F, Oakley E, Kimble RM (2020). Cool Running Water First Aid Decreases Skin Grafting Requirements in Pediatric Burns: A Cohort Study of Two Thousand Four Hundred Ninety-five Children. Annals of Emergency Medicine, 75(1), 75-85. <https://doi.org/10.1016/j.annemergmed.2019.06.028>；Griffin B, Cabilan CJ, Ayoub B, et al. (2022). The effect of 20 minutes of cool running water first aid within three hours of thermal burn injury on patient outcomes: A systematic review and meta-analysis. Australasian Emergency Care, 25(4), 367-376. <https://doi.org/10.1016/j.auec.2022.05.004>
 - 备注：是凉水不是冰水，冰敷会加重损伤。衣服粘在伤口上就别硬撕，冲完用干净布盖住去医院。牙膏、酱油、香油、面粉都不要抹，会影响判断深度还容易感染。三小时内补冲仍然有用
 
-### 7. 记住七种最常见的网络骗局，凡是让你先转钱、先交费、共享屏幕的直接挂
+### 7. 突然全身起疹、喘不上气或者发晕，按过敏性休克处理，立刻叫 120 并说清楚
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：0 元；已知严重过敏的人自备肾上腺素笔要花钱，且是处方药
+- 收益：肾上腺素是二级及以上过敏性休克的一线药，指南列为强推荐；抗过敏药和激素起效慢，替代不了它
+- 证据等级：B（指南强推荐，但底层证据等级低）
+- 来源：中国医药教育协会等 (2022). 过敏性休克急救临床实践指南（2020）. Frontiers in Pharmacology：「Epinephrine is the first-line medicine in GRADE II to IV anaphylaxis」「Intramuscular epinephrine should be injected in the mid-anterolateral thigh」，成人肌注上限 0.5 mg、14 岁以下 0.3 mg，无反应可每 5–15 分钟重复一次. <https://doi.org/10.3389/fphar.2022.845689>；Muraro A, et al. (2022). EAACI guidelines: Anaphylaxis (2021 update). Allergy. <https://doi.org/10.1111/all.15032>
+- 备注：EAACI 自己写明这个领域「证据大多停留在很低的等级」，强推荐来自获益远大于风险，不是来自大型试验。肾上腺素在国内是处方药，普通人手上通常没有，能做的是立刻叫 120 并说「怀疑过敏性休克」，让急救带着药来。有过一次严重过敏的人，找医生开自动注射笔，学会打在大腿中外侧，隔着裤子也能打。
+
+### 8. 有人抽搐倒地，清开周围、让他侧躺、看表计时，什么都别往嘴里塞
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=死亡率 -->
+- 成本：0 元
+- 收益：避免掰嘴、塞硬物造成的牙齿和下颌损伤，避免强行按住造成的骨折；超过 5 分钟不停是必须叫救护车的红线
+- 证据等级：B
+- 来源：美国疾病控制与预防中心. 癫痫发作急救：「Don't hold the person down or stop their movements」「Don't put anything in their mouth. This can hurt their teeth or jaw」「Don't offer water or food until they are fully alert」「Time the seizure to track if it lasts more than 5 minutes. If it does, seek immediate medical attention or call 911」. <https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html>
+- 备注：同一页还列了另外几种要立刻叫救护车的情况：一次结束后很快又发作、发作后叫不醒或呼吸困难、发作中受了伤、在水里发作、这是第一次发作。发作停了让他侧躺、嘴朝下，等人完全清醒再给水。
+
+### 9. 糖尿病人突然发抖、出冷汗、说话不清，先给 15 克糖，15 分钟后复测
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：0 元；随身带几块方糖或一小盒果汁
+- 收益：血糖低于 3.0 mmol/L 属于临床上有意义的低血糖；出现意识或行动改变、需要别人帮忙处理的是重度低血糖，可以致命
+- 证据等级：A
+- 来源：美国糖尿病学会 (2025). 糖尿病诊疗标准 2025·第 6 章 血糖目标与低血糖. Diabetes Care：分级「Level 1: Glucose <70 mg/dL (<3.9 mmol/L) and ≥54 mg/dL (≥3.0 mmol/L)」「Level 2: Glucose <54 mg/dL (<3.0 mmol/L)」「Level 3: A severe event characterized by altered mental and/or physical status requiring assistance for treatment of hypoglycemia, irrespective of glucose level」；处理「For most individuals, 15 g carbohydrates should be ingested」「Fifteen minutes after initial treatment, repeat the treatment if hypoglycemia persists」. <https://doi.org/10.2337/dc25-S006>
+- 备注：意识不清的人不要喂东西，会呛进气管，直接叫 120。同一份标准还建议，用胰岛素或低血糖高风险的人都应该配一份胰高血糖素（「All individuals treated with insulin or who are at high risk of hypoglycemia...should be prescribed glucagon」），鼻喷和预填充针剂比需要现配的剂型好用。
+
+### 10. 有人触电，先断电，再用干燥的木棍之类挑开电源，不要直接上手拉
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：0 元
+- 收益：避免施救的人一起被电住，把一个伤者变成两个；脱离电源后没有呼吸的，按本节第 1 条做心肺复苏
+- 证据等级：C
+- 来源：TODO（待核实：本条是急救培训的普遍共识，本次未找到可逐字核对的权威原文。欧洲复苏委员会《2021 特殊情况下的心脏骤停》含触电章节，但全文付费、本机读不了 PDF：<https://doi.org/10.1016/j.resuscitation.2021.02.011>）
+- 备注：高压线落地、变电设备附近不要自己处置，退远等电力部门断电。触电引起的心脏骤停按标准流程按压和除颤，别因为是「电伤」就不敢碰。
+
+### 11. 一氧化碳报警器响了，或者一屋子人同时头痛恶心，先出门再打电话
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：0 元
+- 收益：美国每年 400 多人死于与火灾无关的意外一氧化碳中毒，10 万人以上进急诊、1.4 万人以上住院
+- 证据等级：B
+- 来源：美国疾病控制与预防中心. 一氧化碳中毒：「More than 400 Americans die from unintentional CO poisoning not linked to fires」「More than 100,000 visit an emergency department」「More than 14,000 are hospitalized」，常见症状「headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion」. <https://www.cdc.gov/carbon-monoxide/about/index.html>；美国消费品安全委员会. 一氧化碳信息中心：「If you suspect CO poisoning, get outside to fresh air immediately, and then call 911」. <https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center>
+- 备注：症状像感冒又像喝多了，一屋子人一起难受、出门就好转是最强的提示。别留在屋里找原因、别回去关阀门，人先出来再打电话。报警器怎么装见第 1 节第 3 条。TODO（待核实：中国全国层面的一氧化碳中毒死亡人数，本次未取得官方统计）。
+
+### 12. 记住七种最常见的网络骗局，凡是让你先转钱、先交费、共享屏幕的直接挂
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：0 元；读一遍下面七行，装「国家反诈中心」App，96110 来电必接
 - 收益：反电信网络诈骗法第八条要求政府「普及相关法律和知识，提高公众对各类电信网络诈骗方式的防骗意识和识骗能力」，福建省公安厅逐类拆解的识别特征：刷单返利 = 「喊你一起赚钱的大概率是想赚你的钱」，任务单做不完就不退本金；虚假投资理财 = 群里「水军」晒收益、先给小额返利再让你加大投入，提现要「缴税」；网络贷款 = 「贷款并不需要交保证金、做银行流水账，一旦遇上了，一定是假的」；冒充客服 = 说你开了会员要自动扣费、影响征信，逼你转账取消；冒充公检法 = 「公检法机关不存在所谓的『安全账户』，凡是通过电话、QQ、微信、网络等办案、做笔录的『公检法机关』，都是诈骗」；杀猪盘 = 「对于从未见过面，只见到照片或者视频的『恋人』，不可轻信」，永远不视频不见面却常有急事要钱；色诱刷单 = 约见面先「做任务」，钱越交越多
@@ -2075,7 +2116,7 @@
 - 来源：全国人大常委会 (2022). 反电信网络诈骗法（第八条）. <https://www.spp.gov.cn/spp/fl/202209/t20220902_575631.shtml> ; 福建省公安厅 (2023 到 2024). 识骗技巧专栏：刷单 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202307/t20230703_6196881.htm> ；投资理财 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202312/t20231220_6362145.htm> ；贷款 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202312/t20231207_6326741.htm> ；冒充客服 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202310/t20231020_6279505.htm> ；冒充公检法 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202309/t20230913_6255863.htm> ；杀猪盘 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202308/t20230818_6232030.htm> ；色诱刷单 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202403/t20240307_6410612.htm> ；96110 <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202303/t20230306_6126156.htm>
 - 备注：B 级原因是公安部关于各类诈骗发案占比的官方通报页（mps.gov.cn）本次全程 521 打不开，TODO（待核实：公安部或国家反诈中心公布的高发类型及占比）。已经转了钱就立刻打 110 申请止付（见第 8 节第 2 条）。
 
-### 8. 被人用隐私照片、视频威胁，一分钱不给、一条记录不删，立刻报警
+### 13. 被人用隐私照片、视频威胁，一分钱不给、一条记录不删，立刻报警
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=自由 -->
 - 成本：0 元；截图对方账号、聊天、收款码，带手机去派出所
 - 收益：给钱不会结束，只会被认定为「肯给」；刑法第二百七十四条：敲诈勒索公私财物数额较大或者多次敲诈勒索的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金，数额巨大的三到十年；民法典第一千零三十二条：任何组织或者个人不得以刺探、侵扰、泄露、公开等方式侵害他人的隐私权，第一千零三十三条禁止以电话、短信、即时通讯工具等方式侵扰私人生活安宁；对方真发了照片，是对方多一条罪，不是你的错；福建省公安厅同类案件提示原文：「一定要保存好证据，及时拨打 110，切勿继续转账」
@@ -2083,7 +2124,7 @@
 - 来源：全国人大 (2020 年修正). 刑法（第二百七十四条）. <https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/11033925/index.html>（北京市公安交管局转载整合文本）；全国人大 (2020). 民法典（第一千零三十二、一千零三十三条）. <https://www.spp.gov.cn/spp/fl/202006/t20200602_463888.shtml> ；福建省公安厅 (2024). 因为一条「约炮」信息，我背上 23 万的债务. <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202403/t20240307_6410612.htm>
 - 备注：不要自己删照片、注销账号、拉黑了事，证据没了案就难立；不要试图「谈判分期」。裸聊敲诈多是境外团伙用录屏加木马读通讯录，「群发给家人」是话术，报警后照样能立案。平台通知删除条款（民法典第一千一百九十五条）本次几个官方全文页都截断在该条之前，TODO（待核实：第一千一百九十五条原文）。
 
-### 9. 高温下头晕、恶心、不出汗或意识不清，立刻挪到阴凉处脱衣泼水降温，意识不清的不喂水、打 120
+### 14. 高温下头晕、恶心、不出汗或意识不清，立刻挪到阴凉处脱衣泼水降温，意识不清的不喂水、打 120
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：0 元
 - 收益：美国国家气象局：热射病是「严重的医疗急症」，体温高于 103°F（39.4°C）、意识混乱、说话含糊、皮肤发烫发红，处理是立刻叫急救、移到凉处、用凉水和湿布降温、「不要给液体」；热衰竭（大汗、乏力、皮肤湿冷、脉快而弱）移到凉处、松开衣服、小口喝水，呕吐、恶化或超过 1 小时不缓解就就医；云南省疾控局提示：立即转移到阴凉通风处，冷湿毛巾降温，意识清醒者补含盐饮料，症状严重立即拨打急救电话，重症热射病「病死率极高」；荒野医学会 2019 年热病指南是该领域的执业指南
@@ -2091,7 +2132,7 @@
 - 来源：US National Weather Service. Heat Related Illnesses. <https://www.weather.gov/safety/heat-illness> ; 云南省疾控局 (2026). 出现这些症状，你可能是中暑了. <https://ynsjkj.yn.gov.cn/html/2026/jikongkepu_0719/2606.html> ; Lipman GS 等 (2019). Wilderness Medical Society Clinical Practice Guidelines for the Prevention and Treatment of Heat Illness: 2019 Update. Wilderness & Environmental Medicine. <https://doi.org/10.1016/j.wem.2018.10.004>
 - 备注：不要等「缓一缓」，热射病从头晕到昏迷可以只有几十分钟；不要给意识不清的人灌水，会呛。荒野医学会指南全文需订阅，本次只核实了摘要，冷水浸泡等具体推荐写「待核实」；国家卫健委「高温中暑预防知识要点」页面返回 412 未能打开。
 
-### 10. 火灾时贴地爬、摸门再开门、门烫就别开，走楼梯不坐电梯，出去了别回头
+### 15. 火灾时贴地爬、摸门再开门、门烫就别开，走楼梯不坐电梯，出去了别回头
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：家里装 1 到 2 个独立烟感几十元；提前看一眼楼道的两条出口
 - 收益：美国 FEMA 逃生原文：「趴到地上，从烟下面爬向出口」；开门前先摸门把和门板，「如果是热的，或者门缝有烟，别开这扇门，用第二条路」；开门要慢，一有浓烟立刻关上；衣服着火「停下、倒地、打滚」，用手护脸；出不去就关门、用布或胶带堵门缝和通风口，打电话报位置
@@ -2099,7 +2140,7 @@
 - 来源：US FEMA Ready.gov. Home Fires. <https://www.ready.gov/home-fires>
 - 备注：不要坐电梯（断电即困）、不要为拿财物回头、不要往上跑除非确认楼顶门开着、不要跳楼。国家消防救援局（119.gov.cn）页面本次返回 405/412 未能打开，TODO（待核实：国家消防救援局逃生提示原文，含湿毛巾捂口鼻的说法）。
 
-### 11. 看到有人溺水，先叫人和打 110/120，伸竿、抛漂浮物，自己不下水
+### 16. 看到有人溺水，先叫人和打 110/120，伸竿、抛漂浮物，自己不下水
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：0 元；忍住往下跳的冲动
 - 收益：WHO：全球每年约 30 万人溺亡，92% 在中低收入国家，溺水是 1 到 4 岁儿童第四位、5 到 14 岁第三位死因；WHO 推荐的干预是「安全救援和复苏培训」，即先学会不下水的救法。顺序：大喊叫人 → 打电话 → 递长杆、绳子，抛救生圈、空桶、矿泉水瓶 → 人上岸后无呼吸立刻按压
@@ -2107,7 +2148,7 @@
 - 来源：WHO. 溺水 实况报道. <https://www.who.int/zh/news-room/fact-sheets/detail/drowning>
 - 备注：C 级原因是「不下水」这条规则没有找到官方原文，只有 WHO 的死亡数字和「安全救援」的方向。不要手拉手结链下水，不要没受过训练就去拖人，溺水者会把施救者往下按。
 
-### 12. 有人噎住说不出话，站到背后做 5 次拍背加 5 次腹部冲击，倒下就做心肺复苏
+### 17. 有人噎住说不出话，站到背后做 5 次拍背加 5 次腹部冲击，倒下就做心肺复苏
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：0 元；看一遍动作：一手握拳顶在肚脐上方，另一手包住，向内向上快速冲击
 - 收益：美国国立医学图书馆原文：先问「你噎住了吗，能说话吗」，「能用力咳嗽、能说话的不要动手」，咳嗽本身多能把异物咳出；说不出话就「反复做 5 次拍背接 5 次腹部冲击，直到异物出来或人失去意识」；「失去意识就开始心肺复苏」，叫人打急救电话；孕妇、肥胖者改做胸部冲击
@@ -2115,7 +2156,7 @@
 - 来源：US National Library of Medicine, MedlinePlus. Choking – adult or child over 1 year. <https://medlineplus.gov/ency/article/000047.htm>
 - 备注：不要往嘴里伸手掏看不见的东西，会推得更深；不要拍还能咳嗽的人。国家卫健委、中国红十字会关于海姆立克法的官方页面本次未找到，TODO（待核实：中国官方原文）。
 
-### 13. 在戈壁、沙漠、无人区迷路或车坏了，留在原地或车旁，先报位置，再遮阳保温，省水，不乱走
+### 18. 在戈壁、沙漠、无人区迷路或车坏了，留在原地或车旁，先报位置，再遮阳保温，省水，不乱走
 <!-- 成本标签: 钱=多 时间=少 毅力=是 收益=大 口径=死亡率 -->
 - 成本：进无人区前告诉别人路线、目的地、返回日期、车型车牌；每人每天 4 升水起；卫星通讯器或北斗短报文设备上千元，租一次几百元
 - 收益：美国国家公园管理局莫哈韦沙漠原文：「每人每天至少 1 加仑（约 3.8 升）水，徒步和骑行者每人每天 2 加仑」，「告诉别人你的路线、目的地、返回日期、车型和车牌」，「手机信号时有时无」；死亡谷原文：「热的时候不要在谷底和低海拔徒步」，荒野区域「几乎没有手机信号」，推荐卫星电话。优先级：报平安和坐标（有信号时先发位置再打电话）→ 遮阳保暖（车是最大的遮蔽物）→ 水（白天不动、夜里凉了再动）→ 不乱走 → 信号（反光镜、烟、三声一组）
@@ -2123,7 +2164,7 @@
 - 来源：US National Park Service. Mojave National Preserve Safety. <https://www.nps.gov/moja/planyourvisit/safety.htm> ; US National Park Service. Death Valley Safety. <https://www.nps.gov/deva/planyourvisit/safety.htm>
 - 备注：C 级原因是「留在原地」「三声一组」这些没有找到官方原文，只有饮水量、报备、信号覆盖三点是官方原话。不要在正午徒步找路，不要喝尿，不要为了省水而不喝。应急管理部、国家林草局关于无人区的提示页本次未找到，北斗官网短报文页面「Socket is closed」未能打开，TODO（待核实）。
 
-### 14. 发抖、说话含糊、走路打晃是失温，换掉湿衣、包起来，先暖躯干，喝热甜饮不喝酒
+### 19. 发抖、说话含糊、走路打晃是失温，换掉湿衣、包起来，先暖躯干，喝热甜饮不喝酒
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：一张铝箔保温毯几元，一件备用干衣；学会看信号 0 元
 - 收益：美国国家气象局原文：体温 95°F（35°C）以下即失温，「觉得冷、迟钝、想不清楚，立刻看医生」；处理是「立即就医，把人移到有暖气的室内，先从身体中心开始复温」，给热饮，「酒精会减少寒战」所以不喝，「失去意识做心肺复苏」；冻伤用温水或体温回暖，「不要用热水或壁炉一类辐射热」；荒野医学会 2019 年失温指南是该领域的执业指南
@@ -2131,7 +2172,7 @@
 - 来源：US National Weather Service. During Extreme Cold. <https://www.weather.gov/safety/cold-during> ; Dow J 等 (2019). Wilderness Medical Society Clinical Practice Guidelines for the Out-of-Hospital Evaluation and Treatment of Accidental Hypothermia: 2019 Update. Wilderness & Environmental Medicine. <https://doi.org/10.1016/j.wem.2019.10.002>
 - 备注：不要搓四肢、不要泡热水澡、不要粗暴搬动（严重失温者心脏易骤停），不要因为「不抖了」以为好转，停止寒战是加重。荒野医学会指南全文需订阅，本次只核实了摘要。
 
-### 15. 被蛇咬，坐下别动、摘掉戒指手表、尽快送医院打抗蛇毒血清，不切、不吸、不绑死
+### 20. 被蛇咬，坐下别动、摘掉戒指手表、尽快送医院打抗蛇毒血清，不切、不吸、不绑死
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：0 元；提前知道附近哪家医院有抗蛇毒血清
 - 收益：WHO 原文：「立即完全固定被咬的身体部位，并迅速送到最近的医疗机构就医」，「避免使用止血带，并避免切割伤口」，「用针对当地蛇种的适当抗蛇毒血清进行治疗」；「高质量抗蛇毒血清是防止或逆转蛇咬伤的大部分毒性作用的最有效治疗方法」；全球每年约 8.1 万到 13.8 万人死于蛇咬伤，截肢和永久残疾约为死亡数的 3 倍
@@ -2139,7 +2180,7 @@
 - 来源：WHO. 动物咬伤 实况报道. <https://www.who.int/zh/news-room/fact-sheets/detail/animal-bites> ; WHO (2023). 蛇咬伤中毒 实况报道. <https://www.who.int/zh/news-room/fact-sheets/detail/snakebite-envenoming>
 - 备注：能拍到蛇的照片就拍，别去抓；不要喝酒、不要跑动、不要用嘴吸、不要冰敷、不要用绳子勒到发紫。中国卫健委或疾控的蛇咬伤诊疗共识原文本次未找到，中国年死亡数写「待核实」。
 
-### 16. 地震时先看自己在什么房子里：符合抗震设防的楼里就地躲，会垮的老房子门在几步外就出去
+### 21. 地震时先看自己在什么房子里：符合抗震设防的楼里就地躲，会垮的老房子门在几步外就出去
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：0 元；提前看一眼自己家出门要几步、走哪条路、哪张桌子结实
 - 收益：中国地震局科普片《地震来了，是躲还是跑？》口诀是「震时就近躲避，震后迅速撤离」，并明确限定「这里指的是在符合抗震设防要求的建筑内」，理由是这类建筑「整体垮塌的可能性较小」「坠落的建筑构件及装饰物品」「才是对生命安全最大的威胁」，而「震时无保护措施的盲目乱跑」「反而容易被坠落的天花板、吊灯（扇）等物品砸伤」；躲的做法是「用手或者其他软物保护好头颈部」「并牢牢地抓住桌腿」，没有桌子就「迅速贴紧承重墙蹲伏」「避开外墙、窗户、阳台」；「如果在户外」则「应该第一时间疏散到空旷的地方避震」。反过来，1988 年亚美尼亚地震（苏联式预制板楼成片垮塌）的病例对照研究里，「第一下震动之后离开建筑是保护性行为」，待在室内相对跑出去的受伤比值比 4.40（95% CI 2.24–8.71），在建筑内相对在室外 12.20（3.62–63.79），在 5 层以上建筑内相对更矮建筑 3.65（2.12–6.33）
@@ -2147,7 +2188,7 @@
 - 来源：中国地震局（安徽省地震局制作）. 地震来了，是躲还是跑？（科普视频，字幕转录）. <https://www.cea.gov.cn/cea/dzpd/dzcs/5537260/index.html>；Armenian HK, Noji EK, Oganesian AP (1992). A case-control study of injuries arising from the earthquake in Armenia, 1988. Bulletin of the World Health Organization, 70(2), 251-257. <https://europepmc.org/article/MED/1600585>；US FEMA Ready.gov. Earthquakes. <https://www.ready.gov/earthquakes>；Mahue-Giangreco M, Mack W, Seligson H, Bourque LB (2001). Risk factors associated with moderate and serious injuries attributable to the 1994 Northridge Earthquake. Annals of Epidemiology, 11(5), 347-357. <https://doi.org/10.1016/s1047-2797(01)00220-4>
 - 备注：争议，两种结论针对的是两种房子，中国地震局自己也把「躲」的前提写成了「符合抗震设防要求的建筑内」，并要求「因地制宜」「因人而异」，综合考虑建筑抗震能力、所处位置和体能。亚美尼亚那批楼整栋垮塌，躲无处可躲，出去才占优；美国 FEMA 对本国住宅给的是「就地趴下、护住头颈、抓牢，不要往外跑」，那里的伤主要来自坠物和摇晃中移动摔倒，Northridge 的研究还提示伸手去接东西、扶住「看起来稳」的东西会加重受伤。所以判断的不是「跑不跑」，是「这栋楼会不会垮、你几秒内能不能到空地」：2001 年以后按规范建的楼房、需要下楼梯或穿门厅的，就地躲；平房、老旧砖房、无抗震设防的自建房，门就在几步外，出去。亚美尼亚这项研究只比了幸存者中受伤与未受伤的，没纳入遇难者，也没说明是否校正楼层，能跑出去的人本身可能就在低层，数字要打折看。任何情况下都不跳楼、不坐电梯、不在摇晃中下楼梯，到室外要远离高大建筑、高架桥、电线杆、玻璃幕墙和广告牌。
 
-### 17. 遇到熊、野猪、成群野狗，别跑、别尖叫、别对视，侧身慢慢退开
+### 22. 遇到熊、野猪、成群野狗，别跑、别尖叫、别对视，侧身慢慢退开
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=死亡率 -->
 - 成本：0 元；进山带根登山杖，结伴走、出声走，让动物先知道你来了
 - 收益：美国国家公园管理局关于熊的原文：「不要跑，熊上下坡都能跑得像赛马一样快」，「保持冷静，大多数熊不想攻击你，只想被放着不管」，「用低沉的声音持续跟熊说话」，「熊不动时，侧着身慢慢退开，这样既能盯着熊又不会绊倒」，「让自己显得尽量大」，「不要爬树，灰熊和黑熊都会爬树」；被棕熊攻击「装死，趴着双手扣在颈后、双腿分开」，被黑熊攻击「不要装死，逃向车或房子，逃不了就用手边任何东西反击」；被狗咬伤按第 3 条处理
@@ -2155,7 +2196,39 @@
 - 来源：US National Park Service. Staying Safe Around Bears. <https://www.nps.gov/subjects/bears/safety.htm> ；国家疾控局综合司、国家卫生健康委办公厅 (2023). 狂犬病暴露预防处置工作规范（2023 年版）. <https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1706569159854649344.html>
 - 备注：B 级只对应熊；野猪和野狗的「不跑、慢退、找高处或障碍物挡」是经验（C），国家林草局、地方林草官方提示本次未找到。不要拿食物引、不要凑近拍照、不要带狗进有野猪的山。中国的熊多是黑熊和棕熊，装死与否按上面区分。
 
-### 18. 荒郊野外被陌生人索财，钱给他，不动手，记特征，脱身后报警
+### 23. 野外遇上雷雨，钻进有硬顶的车或建筑，避开山脊、孤树、水面和金属
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
+- 成本：0 元，代价是行程被打断半小时以上
+- 收益：雷暴范围内的户外没有安全的地方；最后一声雷响过 30 分钟才算安全
+- 证据等级：B
+- 来源：美国国家气象局. 户外雷电安全：「There is no safe place outside when thunderstorms are in the area」「Avoid open fields, the top of a hill or a ridge top. Stay away from tall, isolated trees or other tall objects」「Stay away from water, wet items, such as ropes, and metal objects, such as fences and poles」；实在走不了时「If you are in a group, spread out to avoid the current traveling between group members」；恢复活动「Wait 30 minutes until after the last rumble of thunder」. <https://www.weather.gov/safety/lightning-outdoors>
+- 备注：帐篷、凉亭、树下、岩石突出部都不算掩体。硬顶汽车算，敞篷车和摩托不算。听见雷就开始撤，别等雨下下来。
+
+### 24. 上高原按睡眠海拔慢慢升，症状加重就下撤，不要硬扛
+<!-- 成本标签: 钱=0 时间=中 毅力=些 收益=大 口径=死亡率 -->
+- 成本：多花一到两天做适应；预防药是处方药，要出发前问医生
+- 收益：睡在 2450 米以上就有高原病风险；高原脑水肿和肺水肿不及时下撤会死
+- 证据等级：A
+- 来源：美国疾病控制与预防中心. 黄皮书·高海拔旅行与高原病：「Any unacclimatized traveler proceeding to a sleeping altitude of ≥2,450 m (≥8,000 ft)—and sometimes lower—is at risk for altitude illness」；上升速度「500 m (1,650 ft) per night in sleeping altitude once above 3,000 m (9,800 ft)」，每上升 1000 米加一天适应日；乙酰唑胺预防「125 mg twice a day; 250 mg twice a day if >100 kg body weight」；「If symptoms become worse despite rest or treatment at the same elevation」必须下撤. <https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html>；荒野医学会 (2024). 急性高原病预防、诊断与治疗临床实践指南（2024 更新）. Wilderness & Environmental Medicine. <https://doi.org/10.1016/j.wem.2023.05.013>
+- 备注：算的是「睡在多高」，不是白天到过多高。头痛加恶心、走路打晃、意识变化，或者静息状态下喘不上气，都是往下走的信号。下撤优先于吸氧和吃药，吸着氧继续往上是错的。
+
+### 25. 被蜱虫叮住，用尖头镊子贴着皮肤稳稳拉出来，别涂油别用火烧
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
+- 成本：一把尖头镊子
+- 收益：涂油、烧、扭拽会刺激蜱虫把带病原体的体液挤进皮肤，也容易把口器留在肉里
+- 证据等级：B
+- 来源：美国疾病控制与预防中心. 被蜱叮咬之后：「Grasp the tick as close to the skin's surface as possible using clean fine-tipped tweezers」「Pull tick away from the skin with steady, even pressure」「Do not use petroleum jelly, heat, nail polish, or other substances to try and make the tick detach from the skin. This may agitate the tick and force infected fluid from the tick into the skin」. <https://www.cdc.gov/ticks/after-a-tick-bite/index.html>
+- 备注：拔完把日期记下来。之后几周里发烧、起皮疹、乏力，看病时主动说被蜱咬过——医生不问、你不说，很容易被按感冒处理。TODO（待核实：中国发热伴血小板减少综合征的年发病数与病死率，本次未取得官方数字）。
+
+### 26. 野外的水一律烧开再喝，滚开一分钟就够，不用因为海拔高多煮
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=死亡率 -->
+- 成本：一套炉具和燃料的重量
+- 收益：所有经饮水致病的微生物在沸点温度下几秒内被灭活；「高海拔水烧不到位」是常见误解
+- 证据等级：B
+- 来源：美国疾病控制与预防中心. 黄皮书·旅行者的水消毒：「All organisms that may cause illness from drinking water are killed within seconds at boiling temperature」「CDC recommends that travelers boil water for a full minute to account for user variability in identifying boiling points and to add a margin of safety」「Although the boiling point for water decreases with increasing elevation, at common travel elevations the temperature needed to achieve boiling is still well above the temperature required to inactivate enteric pathogens」. <https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/water-disinfection-for-travelers.html>
+- 备注：同一页也写了不必真的烧开：60 ℃ 保持 30 分钟同样有效，烧开只是不用温度计就能看见的终点。烧不了就用过滤器或化学消毒片，两者各有覆盖不到的病原体，能烧就烧。看起来清澈的溪水、雪水一样可能有寄生虫，别凭外观判断。
+
+### 27. 荒郊野外被陌生人索财，钱给他，不动手，记特征，脱身后报警
 <!-- 成本标签: 钱=少 时间=少 毅力=是 收益=大 口径=死亡率 -->
 - 成本：身上的现金；压住火气
 - 收益：命比钱贵，对方为几百元冒的是重罪：刑法第二百六十三条，以暴力、胁迫或者其他方法抢劫公私财物的，处三年以上十年以下有期徒刑并处罚金，持枪、入户、致人重伤死亡等情形十年以上直至死刑；刑法第二十条正当防卫只保护「制止正在进行的不法侵害」，对方拿了钱转身走，你追上去打就不再是防卫。脱身后立刻记下体貌、口音、车牌、方向，打 110
