@@ -5,12 +5,12 @@
 # 高性价比人生指南
 
 覆盖长寿与防病、意外与急救、省钱与理财、防骗与法律红线、失业兜底、创业风险、恋爱婚育、出国与技能。<br>
-322 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件。
+327 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件。
 
 [![在线检索](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://eternity4719.github.io/HowToLiveBetter/)
-[![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-322%20%E6%9D%A1-18794e?style=flat-square)](#目录)
-[![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20186%20%C2%B7%20B%2089%20%C2%B7%20C%2047-915930?style=flat-square)](#证据分级)
-[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-608%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
+[![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-327%20%E6%9D%A1-18794e?style=flat-square)](#目录)
+[![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20189%20%C2%B7%20B%2091%20%C2%B7%20C%2047-915930?style=flat-square)](#证据分级)
+[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-616%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-Unlicense-565a5f?style=flat-square)](LICENSE)
 
 **[打开在线检索页](https://eternity4719.github.io/HowToLiveBetter/)** · [目录](#目录) · [术语表](#读懂数字术语表) · [核实记录](docs/核实记录/) · [结婚划不划算（长文）](docs/结婚划不划算.md)
@@ -51,8 +51,8 @@
 
 - **想按条件筛**：打开[在线检索页](https://eternity4719.github.io/HowToLiveBetter/)，可以按关键词、章节、证据等级，以及「花不花钱、花多少时间、要不要毅力」三个成本维度组合筛选。数据直接读本文件，改正文即改检索页。
 - **想按顺序读**：每节内的条目按性价比从高到低排列，从每节前几条开始看就行。
-- **只想看结论最硬的**：在检索页里勾选证据等级 A，只留下有具体数字、来自荟萃分析或大型试验的 186 条。
-- **只想看最值得做的**：勾选性价比「极高」，得到 63 条既不花钱、不花时间、不需要毅力，收益又落在最大一档的条目。再叠加一个「换回什么」，就是该口径下的优先清单。
+- **只想看结论最硬的**：在检索页里勾选证据等级 A，只留下有具体数字、来自荟萃分析或大型试验的 189 条。
+- **只想看最值得做的**：勾选性价比「极高」，得到 64 条既不花钱、不花时间、不需要毅力，收益又落在最大一档的条目。再叠加一个「换回什么」，就是该口径下的优先清单。
 
 每条建议长这样：
 
@@ -88,7 +88,7 @@
 | B | 有研究支撑但难以量化，或证据来自小样本/单一研究 |
 | C | 作者经验或普遍共识，没有直接文献 |
 
-全书 322 条中 A 级 186 条、B 级 89 条、C 级 47 条，另有 44 条标注了争议、27 处标注了 TODO 待核实。有争议的 A/B 级条目会标注「争议」并列出反方证据。所有来源只引原始文献（期刊论文附 DOI 或 PubMed 链接，或 WHO/CDC/国家统计局等官方机构报告），不引二手转述。不确定的数字标「待核实」。
+全书 327 条中 A 级 189 条、B 级 91 条、C 级 47 条，另有 44 条标注了争议、28 处标注了 TODO 待核实。有争议的 A/B 级条目会标注「争议」并列出反方证据。所有来源只引原始文献（期刊论文附 DOI 或 PubMed 链接，或 WHO/CDC/国家统计局等官方机构报告），不引二手转述。不确定的数字标「待核实」。
 
 ## 性价比档
 
@@ -100,7 +100,7 @@
 | 收益量级 | 大 / 中 / 小 | 尽量按阈值从条目自己的「收益」栏里机械套：换寿命看相对降幅（≥20% 为大，10–20% 为中，<10% 或只有替代终点为小）；换钱看金额（万元级为大，数百到数千为中，几十元为小）；换人身自由看后果（避免刑事责任为大，避免拘留或行政处罚为中，避免民事纠纷为小）；换时间精力看节省量（每天小时级为大，每周小时级为中，一次性为小） |
 | 性价比 | 极高 / 高 / 一般 | 收益大且三项成本全为零 = 极高；收益大且成本较低，或收益中且成本为零 = 高；其余 = 一般 |
 
-全书 322 条中性价比极高 63 条（20%）、高 160 条（50%）、一般 99 条（31%）。中间一档偏厚是有意的：底层的收益量级只有三级判断，再往下切就是假装精度。
+全书 327 条中性价比极高 64 条（20%）、高 164 条（50%）、一般 99 条（30%）。中间一档偏厚是有意的：底层的收益量级只有三级判断，再往下切就是假装精度。
 
 **这一档是作者判断，不是证据**，本质上是 C 级，和证据等级正交。可以是 A 级但性价比一般（带状疱疹疫苗有 97.2% 效力的三期 RCT，但两针三四千元、带状疱疹很少致命），也可以是 C 级但性价比极高（出境前把行程发给家人）。「一般」不等于不该做——全书的条目都是建议做的，只是这一档要你自己权衡那笔花销。
 
@@ -252,7 +252,15 @@
 - 来源：NHTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573> ; WHO (2025). Road traffic injuries fact sheet. <https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries>
 - 备注：数字是美国官方基于事故数据的估计。安全座椅装错等于没装，按说明书固定，1 岁以下反向安装。
 
-### 9. 儿童近水不离视线，划船、野泳穿救生衣
+### 9. 家里有小孩就给窗户和阳台装限位器，纱窗不算防护
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：一副窗户限位器或儿童安全锁几十元，装十分钟
+- 收益：纽约市 1972 年起的「孩子不会飞」项目在高风险区免费发放窗户护栏并入户宣教，布朗克斯区报告的坠落数 1973 到 1975 年下降 50%；此后纽约市修改卫生法典，强制房东为住有 10 岁及以下儿童的公寓安装窗户护栏
+- 证据等级：B
+- 来源：Spiegel CN, Lindaman FC (1977). Children can't fly: a program to prevent childhood morbidity and mortality from window falls. American Journal of Public Health：「Significant reduction in falls resulted, particularly in the Bronx, where reported falls declined 50 percent from 1973 to 1975」，1976 年纽约市卫生法典修订「to require that landlords provide window guards in apartments where children ten years old and younger reside」. <https://doi.org/10.2105/AJPH.67.12.1143>；(2021). Unintentional Window Falls in Children and Adolescents. Academic Pediatrics：2007 年 1 月至 2017 年 8 月全国电子伤害监测系统 38,840 例急诊就诊，「The majority of falls occurred in children under the age of 6 and were related to falls from a second story or below」. <https://doi.org/10.1016/j.acap.2020.07.008>
+- 备注：不是只有高层才要装：美国那份数据里多数坠落发生在二层或更低。纱窗只挡蚊子，一推就掉，别把它当护栏。窗边和阳台边不要放床、沙发、箱子这类小孩能爬的东西。
+
+### 10. 儿童近水不离视线，划船、野泳穿救生衣
 <!-- 成本标签: 钱=少 时间=中 毅力=否 收益=大 口径=死亡率 -->
 - 成本：救生衣 50 到 200 元；看护孩子的注意力
 - 收益：美国海岸警卫队数据配对队列：休闲船只落水者穿救生衣溺亡风险调整 RR 0.51（95% CI 0.35 到 0.74）。中国 20 岁以下溺水死亡率从 2013 年 6.60/10 万降到 2021 年 3.28/10 万，农村约为城市 2 倍，溺水仍是 1 到 14 岁儿童首位死因；2021 年 0 到 19 岁伤害死亡中溺水占 31.1%、道路交通占 27.9%
@@ -260,7 +268,7 @@
 - 来源：Cummings P 等 (2011). Association between wearing a personal floatation device and death by drowning among recreational boaters. Injury Prevention. <https://doi.org/10.1136/ip.2010.028688> ; Li Z 等 (2023). Unintentional Drowning Mortality Among Individuals Under Age 20 — China, 2013–2021. China CDC Weekly. <https://doi.org/10.46234/ccdcw2023.198> ; Zhou J 等 (2024). Injury Mortality of Children and Adolescents Aged 0–19 Years — China, 2010–2021. China CDC Weekly. <https://doi.org/10.46234/ccdcw2024.057>
 - 备注：A 级只对应救生衣；「不离视线」是共识（C），没有随机试验也不会有。中国溺水死亡集中在农村、夏季、15 到 19 岁男性。
 
-### 10. 60 岁以上练平衡和腿部力量，改造家里的浴室和楼梯
+### 11. 60 岁以上练平衡和腿部力量，改造家里的浴室和楼梯
 <!-- 成本标签: 钱=少 时间=多 毅力=是 收益=大 口径=死亡率 -->
 - 成本：每周 2 到 3 次各 30 分钟的太极或平衡训练；浴室防滑垫、扶手、夜灯几十到几百元
 - 收益：Cochrane 荟萃分析（108 项试验，23,407 人）：运动使老年人跌倒率下降 23%（RaR 0.77，95% CI 0.71 到 0.83），跌倒人数下降 15%（RR 0.85）；居家安全评估与改造使跌倒率下降（RR 0.81，95% CI 0.68 到 0.97）；太极使跌倒风险 RR 0.71。中国跌倒是 65 岁以上伤害死亡首位原因，2018 年监测的老年人跌倒 55.97% 发生在家中
@@ -268,7 +276,7 @@
 - 来源：Sherrington C 等 (2019). Exercise for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <https://doi.org/10.1002/14651858.CD012424.pub2> ; Gillespie LD 等 (2012). Interventions for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <https://doi.org/10.1002/14651858.CD007146.pub3> ; Lu Z 等 (2021). Characteristics of Falls Among Older People — China, 2018. China CDC Weekly. <https://doi.org/10.46234/ccdcw2021.013>
 - 备注：结局是跌倒次数，不是死亡；跌倒到髋部骨折再到死亡的链条在老年人里很短。适用人群为社区居住的 60 岁以上老人。
 
-### 11. 查乙肝两对半，没有抗体就打疫苗
+### 12. 查乙肝两对半，没有抗体就打疫苗
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：检查几十元；成人乙肝疫苗 3 针共约 100 到 300 元，半年打完
 - 收益：启东整群随机试验 30 年随访：新生儿接种乙肝疫苗使原发性肝癌下降 84%（95% CI 23% 到 97%），HBsAg 阳性率下降 72%（95% CI 68% 到 75%）。中国全人群 HBsAg 流行率 1992 到 2014 年下降 52%，5 岁以下下降 97%
@@ -276,7 +284,15 @@
 - 来源：Qu C 等 (2014). Efficacy of neonatal HBV vaccination on liver cancer and other liver diseases over 30-year follow-up of the Qidong hepatitis B intervention study. PLoS Medicine. <https://doi.org/10.1371/journal.pmed.1001774> ; Cui F 等 (2017). Prevention of Chronic Hepatitis B after 3 Decades of Escalating Vaccination Policy, China. Emerging Infectious Diseases. <https://doi.org/10.3201/eid2305.161477>
 - 备注：适用人群是 1992 年前出生、没接种过或抗体已消失的成人。肝癌下降的数字来自新生儿接种，同一试验里青少年补种对 HBsAg 的效力只有 21%，成人接种的收益主要是不再感染，不能直接套用 84%。已感染者（HBsAg 阳性）打疫苗无用，要去看肝病科随访。
 
-### 12. 女性接种 HPV 疫苗，越早越好
+### 13. 被铁钉、木刺扎到或者伤口沾了泥土，当天去处理，顺便问破伤风要不要打
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：挂号加处置几十元；需要打的话，疫苗或免疫球蛋白几十到几百元
+- 收益：美国的破伤风病例里约每 10 例死 1 例；深的、被泥土污染的伤口风险更高
+- 证据等级：B
+- 来源：美国疾病控制与预防中心. 破伤风：「Tetanus bacteria can get into someone's body through broken skin, usually through injuries.」「Tetanus can lead to death (1 in 10 cases in the United States are fatal).」「People who didn't complete the primary series or who aren't up to date with their 10-year tetanus booster shots are also at increased risk.」「Vaccination also helps prevent tetanus in people with wounds, depending on their tetanus vaccination history.」<https://www.cdc.gov/tetanus/about/index.html>；国家卫生健康委办公厅 (2024). 关于印发非新生儿破伤风诊疗规范（2024 年版）的通知（国卫办医急函〔2024〕381 号）. <https://www.gov.cn/zhengce/zhengceku/202410/content_6982262.htm>
+- 备注：不是所有伤口都要打，医生按伤口性质加上一次接种时间决定，所以别自己判断也别拒绝问。「小时候打过就一辈子有效」是错的，加强针按 10 年算。TODO（待核实：中国《非新生儿破伤风诊疗规范（2024 年版）》正文的伤口分级与免疫程序表，附件是 PDF，本机读不了）。
+
+### 14. 女性接种 HPV 疫苗，越早越好
 <!-- 成本标签: 钱=多 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：国产二价约 300 多元一针，进口九价约 1300 元一针，2 到 3 针；打针半天
 - 收益：瑞典 167 万女性队列：接种者浸润性宫颈癌发病率比未接种者低，17 岁前接种 IRR 0.12（95% CI 0.00 到 0.34），17 到 30 岁接种 IRR 0.47（95% CI 0.27 到 0.75）
@@ -284,7 +300,7 @@
 - 来源：Lei J 等 (2020). HPV Vaccination and the Risk of Invasive Cervical Cancer. New England Journal of Medicine. <https://doi.org/10.1056/NEJMoa1917338>
 - 备注：9 到 14 岁收益最大，17 到 30 岁仍有一半以上的下降，30 岁后收益递减。接种后仍要做筛查（见下一条）。
 
-### 13. 女性 40 岁起做乳腺癌筛查，每两年一次钼靶
+### 15. 女性 40 岁起做乳腺癌筛查，每两年一次钼靶
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：钼靶每次两三百元，很多地区有免费筛查项目；每两年花半天
 - 收益：美国预防服务工作组现行建议：「建议 40 至 74 岁女性每两年做一次筛查性乳腺 X 线摄影」，推荐等级 B；对 75 岁及以上女性和致密型乳腺的补充超声、磁共振，均判定为「现有证据不足」
@@ -292,7 +308,7 @@
 - 来源：US Preventive Services Task Force (2024). Breast Cancer: Screening. <https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening>
 - 备注：起始年龄各国不同，中国部分指南和地方项目从 45 岁起。有一级亲属乳腺癌史、携带 BRCA 突变的属于高危，要单独找医生定方案，不适用本条
 
-### 14. 30 岁以上女性做宫颈癌筛查，优先 HPV 检测
+### 16. 30 岁以上女性做宫颈癌筛查，优先 HPV 检测
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：HPV 检测 100 到 300 元一次，阴性可 5 年一次；取样几分钟
 - 收益：印度农村整群随机试验（30 到 59 岁女性）：单次 HPV 检测筛查使宫颈癌死亡 HR 0.52（95% CI 0.33 到 0.83），晚期宫颈癌 HR 0.47（95% CI 0.32 到 0.69）
@@ -300,7 +316,7 @@
 - 来源：Sankaranarayanan R 等 (2009). HPV screening for cervical cancer in rural India. New England Journal of Medicine. <https://doi.org/10.1056/NEJMoa0808516>
 - 备注：这是少数用死亡作为结局的筛查随机试验，且只筛了一轮。打过 HPV 疫苗也要筛，疫苗不覆盖全部型别。
 
-### 15. 45 到 50 岁起做结直肠癌筛查，粪便免疫化学检测或肠镜
+### 17. 45 到 50 岁起做结直肠癌筛查，粪便免疫化学检测或肠镜
 <!-- 成本标签: 钱=少 时间=中 毅力=否 收益=中 口径=死亡率 -->
 - 成本：粪便检测几十元，每 1 到 2 年一次；肠镜几百到一千多元，阴性可 10 年一次，需要一天肠道准备
 - 收益：Cochrane 荟萃分析：粪便隐血筛查使结直肠癌死亡 RR 0.84（95% CI 0.78 到 0.90），参加至少一轮者 RR 0.75。NordICC 随机试验：邀请做肠镜使 10 年结直肠癌发病从 1.20% 降到 0.98%（RR 0.82，95% CI 0.70 到 0.93）
@@ -308,7 +324,7 @@
 - 来源：Hewitson P 等 (2007). Screening for colorectal cancer using the faecal occult blood test, Hemoccult. Cochrane Database of Systematic Reviews. <https://doi.org/10.1002/14651858.CD001216.pub2> ; Bretthauer M 等 (2022). Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death. New England Journal of Medicine. <https://doi.org/10.1056/NEJMoa2208375>
 - 备注：争议。NordICC 意向筛查分析中结直肠癌死亡 0.28% 对 0.31%（RR 0.90，95% CI 0.64 到 1.16），没有统计学意义，肠镜对死亡率的好处被高估过；粪便检测的死亡率证据反而更硬。起始年龄各国指南在 45 到 50 岁之间，有家族史的更早。
 
-### 16. 有心血管病的人和老年人每年打流感疫苗
+### 18. 有心血管病的人和老年人每年打流感疫苗
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：50 到 150 元一针，每年秋天一次
 - 收益：心肌梗死后随机双盲试验（2571 人）：接种流感疫苗 12 个月 总死亡率 2.9% 对安慰剂 4.9%（HR 0.59，95% CI 0.39 到 0.89），心血管死亡 HR 0.59。荟萃分析：流感疫苗使主要心血管事件 3.6% 对 5.4%（RR 0.66，95% CI 0.53 到 0.83），心血管死亡 RR 0.74（95% CI 0.42 到 1.30，无统计学意义）
@@ -316,7 +332,7 @@
 - 来源：Fröbert O 等 (2021). Influenza Vaccination After Myocardial Infarction: A Randomized, Double-Blind, Placebo-Controlled, Multicenter Trial. Circulation. <https://doi.org/10.1161/CIRCULATIONAHA.121.057042> ; Behrouzi B 等 (2022). Association of Influenza Vaccination With Cardiovascular Risk: A Meta-analysis. JAMA Network Open. <https://doi.org/10.1001/jamanetworkopen.2022.8873>
 - 备注：争议。A 级只对应有心血管病的人。对健康老年人，Cochrane 综述（Demicheli V 等 2018，Vaccines for preventing influenza in the elderly，<https://doi.org/10.1002/14651858.CD004876.pub4>）只能给出一季流感发病从 6% 降到 2.4% 的低确定性证据，对死亡率的证据是极低确定性。
 
-### 17. 50 岁以后打带状疱疹疫苗
+### 19. 50 岁以后打带状疱疹疫苗
 <!-- 成本标签: 钱=多 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：重组带状疱疹疫苗两针合计约 3000 到 4000 元，自费
 - 收益：18 国 1.54 万人的三期随机对照试验，平均随访 3.2 年：疫苗组 6 例、安慰剂组 210 例发生带状疱疹（每千人年 0.3 对 9.1），「疫苗对带状疱疹的总体效力为 97.2%（95% CI 93.7–99.0，P<0.001）」，各年龄组效力在 96.6% 到 97.9% 之间
@@ -324,7 +340,7 @@
 - 来源：Lal H, Cunningham AL, Godeaux O, et al. (2015). Efficacy of an adjuvanted herpes zoster subunit vaccine in older adults. New England Journal of Medicine, 372(22), 2087-2096. <https://doi.org/10.1056/NEJMoa1501184>
 - 备注：本条按性价比排在后面是因为贵。带状疱疹本身很少致命，真正麻烦的是带状疱疹后神经痛，可能疼上几个月到几年。疫苗接种后局部疼痛、发热的比例不低（三级症状 17.0% 对 3.2%）
 
-### 18. 65 岁以上打肺炎球菌疫苗
+### 20. 65 岁以上打肺炎球菌疫苗
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：几百元，部分地区对老年人免费
 - 收益：荷兰 8.45 万名 65 岁以上老人的随机对照试验：13 价肺炎球菌结合疫苗对疫苗覆盖型肺炎的效力 45.6%（95.2% CI 21.8–62.5），对侵袭性肺炎球菌病 75.0%（95% CI 41.4–90.8）；对全部原因的肺炎无效
@@ -332,7 +348,7 @@
 - 来源：Bonten MJ, Huijts SM, Bolkenbaas M, et al. (2015). Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults. New England Journal of Medicine, 372(12), 1114-1125. <https://doi.org/10.1056/NEJMoa1408544>
 - 备注：只防疫苗覆盖的那些型别，不是打了就不得肺炎。中国老年人常用的是 23 价多糖疫苗，与本试验用的 13 价结合疫苗不是同一种，效力数据不能直接套用
 
-### 19. 查幽门螺杆菌，阳性就根除
+### 21. 查幽门螺杆菌，阳性就根除
 <!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：碳 13/14 呼气试验 100 到 200 元；四联根除 2 周药费 200 到 500 元
 - 收益：山东临朐随机干预试验 22 年随访：幽门螺杆菌根除治疗使胃癌发病 OR 0.48（95% CI 0.32 到 0.71），胃癌死亡 HR 0.62（95% CI 0.39 到 0.99）
@@ -340,7 +356,7 @@
 - 来源：Li WQ 等 (2019). Effects of Helicobacter pylori treatment and vitamin and garlic supplementation on gastric cancer incidence and mortality: follow-up of a randomized intervention trial. BMJ. <https://doi.org/10.1136/bmj.l5016>
 - 备注：试验人群是胃癌高发区居民，低发区绝对收益会小得多。根除后可能再感染，家人同查同治。
 
-### 20. 重度吸烟者每年做一次低剂量胸部 CT
+### 22. 重度吸烟者每年做一次低剂量胸部 CT
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：200 到 400 元一次，10 分钟；假阳性后的复查和焦虑
 - 收益：美国 NLST 随机试验（53,454 人，55 到 74 岁、吸烟史 30 包年以上、戒烟不超过 15 年）：低剂量 CT 比胸片使肺癌死亡相对下降 20.0%（95% CI 6.8 到 26.7），总死亡率 相对下降 6.7%（95% CI 1.2 到 13.6）
@@ -348,7 +364,7 @@
 - 来源：National Lung Screening Trial Research Team (2011). Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening. New England Journal of Medicine. <https://doi.org/10.1056/NEJMoa1102873>
 - 备注：只适用于高危吸烟者。同一试验中低剂量 CT 组 24.2% 的筛查为阳性，其中 96.4% 是假阳性，不吸烟的人做这项检查是花钱买焦虑。
 
-### 21. 抑郁或有自杀念头时打 12356，家里不囤安眠药和农药
+### 23. 抑郁或有自杀念头时打 12356，家里不囤安眠药和农药
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：0 元；一个电话，或者把药锁起来、农药不放家里
 - 收益：10 年系统综述：限制致死手段的证据持续增强，镇痛药管控相关自杀下降 43%，跳楼热点加防护后下降 86%（79% 到 91%）；校园认知项目使自杀未遂 OR 0.45（95% CI 0.24 到 0.85）；抑郁的药物和心理治疗是预防的重要环节。中国 2025 年 5 月 1 日起全国拨 12356 接通心理援助热线，每日不少于 18 小时
@@ -368,7 +384,15 @@
 - 来源：Jha P 等 (2013). 21st-century hazards of smoking and benefits of cessation in the United States. NEJM. <https://doi.org/10.1056/NEJMsa1211128>；Chen Z 等 (2015). Contrasting male and female trends in tobacco-attributed mortality in China: evidence from successive nationwide prospective cohort studies. Lancet. <https://doi.org/10.1016/S0140-6736(15)00340-2>
 - 备注：二手烟同样致死：2004 年全球约 60.3 万人死于二手烟暴露，占当年总死亡约 1%（Oberg M 等 (2011). Worldwide burden of disease from exposure to second-hand smoke: a retrospective analysis of data from 192 countries. Lancet. <https://doi.org/10.1016/S0140-6736(10)61388-8>）。自己不吸也要避开别人的烟，尤其别让孩子吸。
 
-### 2. 不喝含糖饮料
+### 2. 别在家里和车里抽烟，也别让客人在家里抽
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
+- 成本：0 元，难的是跟家人和客人开口
+- 收益：2004 年全球有 603,000 人死于二手烟，约占全球死亡的 1.0%，其中 28% 是儿童；57 项研究的荟萃分析里，二手烟暴露者高血压比值比 1.28、心脏病 1.39、心肌梗死 1.50、卒中 1.36，且家庭内暴露的风险高于家庭外
+- 证据等级：A
+- 来源：Öberg M, Jaakkola MS, Woodward A, Peruga A, Prüss-Ustün A (2011). Worldwide burden of disease from exposure to second-hand smoke: a retrospective analysis of data from 192 countries. Lancet：「603,000 deaths were attributable to second-hand smoke in 2004, which was about 1·0% of worldwide mortality. 47% of deaths from second-hand smoke occurred in women, 28% in children, and 26% in men」，「61% of DALYs were in children」. <https://doi.org/10.1016/S0140-6736(10)61388-8>；(2026). The Associations Between Secondhand Smoke Exposure and Various Cardiovascular Diseases: A Meta-Analysis. Nicotine & Tobacco Research：57 项研究，「hypertension (OR: 1.28, 95% CI: 1.15 to 1.40), heart disease (OR: 1.39, 95% CI: 1.28 to 1.50), myocardial infarction (OR: 1.50, 95% CI: 1.17 to 1.84), stroke (OR: 1.36, 95% CI: 1.18 to 1.54)」「Home exposure has a higher risk of CVD than non-home exposure」. <https://doi.org/10.1093/ntr/ntaf111>
+- 备注：家里是最该管的地方，不只因为待得久，也因为荟萃分析里家庭内暴露的效应比家庭外更大。儿童承担了二手烟伤残调整生命年损失的 61%。自己戒烟见本节第 1 条。
+
+### 3. 不喝含糖饮料
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：零；换成白水或无糖茶还省钱。
 - 收益：美国两大队列（观察性，约 11.8 万人、3.6 万例死亡）：每天 ≥2 份 vs 每月 <1 份，总死亡率 HR 1.21；每天 1–2 份 HR 1.14。欧洲 EPIC 队列（观察性，45 万人）：每天 ≥2 杯 vs 每月 <1 杯，含糖软饮 HR 1.08，所有软饮合计 HR 1.17。
@@ -376,7 +400,7 @@
 - 来源：Malik VS 等 (2019). Long-Term Consumption of Sugar-Sweetened and Artificially Sweetened Beverages and Risk of Mortality in US Adults. Circulation. <https://doi.org/10.1161/CIRCULATIONAHA.118.037401>；Mullee A 等 (2019). Association Between Soft Drink Consumption and Mortality in 10 European Countries. JAMA Internal Medicine. <https://doi.org/10.1001/jamainternmed.2019.2478>
 - 备注：观察性，重度饮用者整体生活方式更差，效应可能被高估。EPIC 里代糖饮料每天 ≥2 杯 HR 1.26 反而高于含糖饮料，可能是反向因果（已有代谢病的人改喝代糖），别把代糖饮料当成安全替代品大量喝，替代品首选水。
 
-### 3. 不嚼槟榔
+### 4. 不嚼槟榔
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：0 元，还省下买槟榔的钱
 - 收益：17 项亚洲研究、38.8 万人的荟萃分析：嚼槟榔者相对不嚼者总死亡率的相对风险 1.21（P=0.02，17.96 万人），糖尿病 1.47，代谢综合征 1.51；槟榔本身是口腔癌和食管癌的已知危险因素
@@ -384,7 +408,7 @@
 - 来源：Yamada T, Hara K, Kadowaki T (2013). Chewing betel quid and the risk of metabolic disease, cardiovascular disease, and all-cause mortality: a meta-analysis. PLoS One, 8(8), e70679. <https://doi.org/10.1371/journal.pone.0070679>
 - 备注：口腔癌风险与嚼的年数和每天的量成正比，戒了以后风险随时间下降。含烟草的槟榔更危险
 
-### 4. 把家里的食盐换成低钠盐（钾盐）
+### 5. 把家里的食盐换成低钠盐（钾盐）
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：每袋比普通盐贵几元；口味几乎不变，不需要毅力。
 - 收益：随机试验（中国农村，20995 名有卒中史或 ≥60 岁高血压者，随访 4.74 年）：低钠盐组 vs 普通盐组，全因死亡 RR 0.88，卒中 RR 0.86，主要心血管事件 RR 0.87；高钾血症事件两组无显著差异。
@@ -392,7 +416,7 @@
 - 来源：Neal B 等 (2021). Effect of Salt Substitution on Cardiovascular Events and Death. NEJM. <https://doi.org/10.1056/NEJMoa2105675>
 - 备注：争议：PURE 队列（观察性，O'Donnell M 等 (2014). Urinary sodium and potassium excretion, mortality, and cardiovascular events. NEJM. <https://doi.org/10.1056/NEJMoa1311889>）报告估算钠排泄 <3 g/天者死亡+心血管事件复合 OR 1.27，≥7 g/天 OR 1.15，提示钠摄入呈 J 型。但 SSaSS 是随机试验，低钠盐只是部分替换，不会把钠压到那么低。试验人群是高危老人，健康年轻人的绝对获益更小；肾功能不全或在吃保钾类药物的人换盐前先问医生。
 
-### 5. 认真刷牙，每天清一次牙缝，缺牙及时补
+### 6. 认真刷牙，每天清一次牙缝，缺牙及时补
 <!-- 成本标签: 钱=少 时间=少 毅力=些 收益=中 口径=死亡率 -->
 - 成本：牙线或牙缝刷每年几十元，每天多花两三分钟；洗牙每次一两百元
 - 收益：日本 9676 人 6 年队列：使用牙缝清洁工具者总死亡率风险比 0.89，使用舌苔清洁工具者 0.77；社区老人荟萃分析：全口无牙的死亡比值比 1.87（95% CI 1.35–2.59），牙齿少于 20 颗的 2.04（1.67–2.49）
@@ -400,7 +424,7 @@
 - 来源：Wang K, Matsuyama Y, Kiuchi S, et al. (2026). Routine oral health practices and all-cause mortality. Journal of Dentistry. <https://doi.org/10.1016/j.jdent.2026.106789>；Ko MJ, Seo S, So JS, et al. (2026). Deteriorated oral health and function as risk factors for physical disability and mortality in community-dwelling older adults: a systematic review and meta-analysis. European Geriatric Medicine. <https://doi.org/10.1007/s41999-025-01319-4>
 - 备注：争议。观察性数据，牙不好的人往往整体健康和经济状况也差，因果方向不确定。但成本极低，牙周炎和缺牙本身就影响进食
 
-### 6. 每天走到 7000–8000 步
+### 7. 每天走到 7000–8000 步
 <!-- 成本标签: 钱=0 时间=多 毅力=些 收益=大 口径=死亡率 -->
 - 成本：约 60–90 分钟步行，可以拆进通勤和买菜里；不花钱。
 - 收益：15 个队列的荟萃分析（观察性，47471 人、3013 例死亡）：按步数四分位，中位 5801、7842、10901 步/天 vs 3553 步/天，总死亡率 HR 分别 0.60、0.55、0.47；≥60 岁者获益在 6000–8000 步后趋平，<60 岁者在 8000–10000 步后趋平。另一荟萃分析：从约 3867 步/天起开始有效，每多 1000 步/天 总死亡率 降约 15%。
@@ -408,7 +432,7 @@
 - 来源：Paluch AE 等 (2022). Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health. <https://doi.org/10.1016/S2468-2667(21)00302-9>；Banach M 等 (2023). The association between daily step count and all-cause and cardiovascular mortality: a meta-analysis. European Journal of Preventive Cardiology. <https://doi.org/10.1093/eurjpc/zwad229>
 - 备注：观察性，走得最少的人里混有已经病弱者（反向因果），HR 偏大是常态；但剂量反应清楚，从 4000 步走到 7000 步的边际收益最大，不必执着一万步。和第 7 条是同一件事的两种计量方式，达标一个即可。
 
-### 7. 有高血压、高血脂就按医嘱规律吃药，别自行停
+### 8. 有高血压、高血脂就按医嘱规律吃药，别自行停
 <!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：集采降压药、他汀每月几元到几十元；每天一次的习惯。
 - 收益：随机试验荟萃分析：收缩压每降 10 mmHg，总死亡率 RR 0.87，主要心血管事件 RR 0.80，卒中 RR 0.73，心衰 RR 0.72；他汀使 LDL 每降 1.0 mmol/L，总死亡率 RR 0.90，主要血管事件 RR 0.78。依从性荟萃分析（观察性）：他汀、降压药依从 ≥80% 者 vs 依从差者，总死亡率 RR 分别 0.55、0.71。
@@ -416,7 +440,7 @@
 - 来源：Ettehad D 等 (2016). Blood pressure lowering for prevention of cardiovascular disease and death: a systematic review and meta-analysis. Lancet. <https://doi.org/10.1016/S0140-6736(15)01225-8>；Cholesterol Treatment Trialists' (CTT) Collaboration (2010). Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from 170 000 participants in 26 randomised trials. Lancet. <https://doi.org/10.1016/S0140-6736(10)61350-5>；Chowdhury R 等 (2013). Adherence to cardiovascular therapy: a meta-analysis of prevalence and clinical consequences. European Heart Journal. <https://doi.org/10.1093/eurheartj/eht295>
 - 备注：只对有用药指征的人成立，健康人不需要吃。依从性那组数字是观察性的，「能坚持吃药的人本身更自律」会夸大效应，前两组随机试验数字更可靠。本节不单列血糖控制：强化降糖对 总死亡率 的证据不如血压、血脂一致。
 
-### 8. 每晚睡 7 小时左右，作息固定
+### 9. 每晚睡 7 小时左右，作息固定
 <!-- 成本标签: 钱=0 时间=多 毅力=些 收益=中 口径=死亡率 -->
 - 成本：时间（多数人是把刷手机的时间换成睡觉）；固定作息需要一点自律。
 - 收益：荟萃分析（观察性，16 项研究、138 万人、11.3 万例死亡）：睡得短者 总死亡率 RR 1.12，睡得长者 RR 1.30。剂量反应荟萃分析：以 7 小时为最低点，少于 7 小时每少 1 小时 RR 1.06，多于 7 小时每多 1 小时 RR 1.13。UK Biobank 约 6.1 万人腕表数据（观察性）：睡眠最规律的四个五分位 vs 最不规律的五分位，总死亡率 低 20%–48%，规律性比时长更能预测死亡。
@@ -424,7 +448,7 @@
 - 来源：Cappuccio FP 等 (2010). Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies. Sleep. <https://doi.org/10.1093/sleep/33.5.585>；Yin J 等 (2017). Relationship of Sleep Duration With All-Cause Mortality and Cardiovascular Events: A Systematic Review and Dose-Response Meta-Analysis of Prospective Cohort Studies. JAHA. <https://doi.org/10.1161/JAHA.117.005947>；Windred DP 等 (2024). Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study. Sleep. <https://doi.org/10.1093/sleep/zsad253>
 - 备注：长睡的高风险多半是反向因果（抑郁、慢性病、睡眠呼吸暂停让人睡得多），不必刻意压缩睡眠；短睡和不规律更值得改。规律性证据目前来自单一队列，单独看属 B 级。
 
-### 9. 每周累计 150–300 分钟中等强度运动，快走即可
+### 10. 每周累计 150–300 分钟中等强度运动，快走即可
 <!-- 成本标签: 钱=0 时间=多 毅力=些 收益=大 口径=死亡率 -->
 - 成本：每天 20–45 分钟；不花钱。
 - 收益：多队列汇总分析（观察性）：达到指南下限 1–2 倍（7.5–15 MET·h/周，约合快走 150–300 分钟/周）者 vs 不运动者 总死亡率 HR 0.69；不足下限也有 HR 0.80；3–5 倍时 HR 0.61 到顶，再多不再降但也无害（≥10 倍 HR 0.69）。加速度计测量的荟萃分析：中高强度活动最高四分位 vs 最低 HR 0.52。
@@ -432,7 +456,7 @@
 - 来源：Arem H 等 (2015). Leisure time physical activity and mortality: a detailed pooled analysis of the dose-response relationship. JAMA Internal Medicine. <https://doi.org/10.1001/jamainternmed.2015.0533>；Ekelund U 等 (2019). Dose-response associations between accelerometry measured physical activity and sedentary time and all cause mortality: systematic review and harmonised meta-analysis. BMJ. <https://doi.org/10.1136/bmj.l4570>
 - 备注：观察性；加速度计研究随访短、样本偏老，HR 里含反向因果成分，真实效应应小于 0.52 这种量级。和第 4 条二选一即可。
 
-### 10. 每周打三次球拍类运动，每次 45 分钟
+### 11. 每周打三次球拍类运动，每次 45 分钟
 <!-- 成本标签: 钱=少 时间=中 毅力=些 收益=大 口径=死亡率 -->
 - 成本：场地费每次几十元；每周约 2 小时
 - 收益：英国 8.03 万人队列：相对不做该项目，球拍类运动（网球、羽毛球、乒乓球）的总死亡率风险比 0.53（95% CI 0.40–0.69），心血管死亡 0.44（0.24–0.83）；游泳 0.72 和 0.59；有氧操 0.73 和 0.64；骑车 0.85；跑步和足球未见显著关联
@@ -440,7 +464,7 @@
 - 来源：Oja P, Kelly P, Pedisic Z, et al. (2017). Associations of specific types of sports and exercise with all-cause and cardiovascular-disease mortality: a cohort study of 80 306 British adults. British Journal of Sports Medicine, 51(10), 812-817. <https://doi.org/10.1136/bjsports-2016-096822>
 - 备注：争议。观察性研究，打球的人本身更健康、社交更多；跑步组无显著关联也提示存在选择效应。别据此认为跑步没用，本节另有运动总量的条目
 
-### 11. 把爬楼梯、快走赶路这类零碎的用力活动攒到每天四五分钟
+### 12. 把爬楼梯、快走赶路这类零碎的用力活动攒到每天四五分钟
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：0 元；不用额外挤出锻炼时间
 - 收益：英国生物银行 2.52 万名不专门锻炼者、平均随访 6.9 年、852 例死亡：每天 3 次、每次 1–2 分钟的零碎剧烈活动，相对完全没有的人，总死亡率和癌症死亡率降低 38%–40%，心血管死亡率降低 48%–49%；每天累计 4.4 分钟对应总死亡率和癌症死亡率降低 26%–30%，心血管死亡率降低 32%–34%
@@ -448,7 +472,7 @@
 - 来源：Stamatakis E, Ahmadi MN, Gill JMR, et al. (2022). Association of wearable device-measured vigorous intermittent lifestyle physical activity with mortality. Nature Medicine, 28, 2521-2529. <https://doi.org/10.1038/s41591-022-02100-x>
 - 备注：争议。用可穿戴设备实测，比问卷可靠，但仍是观察性研究，随访只有 6.9 年。研究对象是完全不锻炼的人，对已经规律运动的人不适用
 
-### 12. 每周做 30–60 分钟力量训练
+### 13. 每周做 30–60 分钟力量训练
 <!-- 成本标签: 钱=0 时间=中 毅力=些 收益=中 口径=死亡率 -->
 - 成本：每周 1–2 次、每次 20–30 分钟；徒手深蹲、俯卧撑不花钱。
 - 收益：队列荟萃分析（观察性）：做力量训练者 vs 不做者 总死亡率 低 10%–17%；剂量反应呈 J 型，约 30–60 分钟/周时降幅最大（约 10%–20%），更多不再增益；力量+有氧都做 vs 都不做，总死亡率 更低。
@@ -456,7 +480,7 @@
 - 来源：Momma H 等 (2022). Muscle-strengthening activities are associated with lower risk and mortality in major non-communicable diseases: a systematic review and meta-analysis of cohort studies. British Journal of Sports Medicine. <https://doi.org/10.1136/bjsports-2021-105061>
 - 备注：观察性，自报运动量。J 型曲线右侧上升段的证据薄，不必因此限制训练量；对老年人另有防跌倒、保肌肉的收益，那是第 1 节的事。
 
-### 13. 别连着坐太久，隔一阵起身动一动
+### 14. 别连着坐太久，隔一阵起身动一动
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：零；设个提醒。
 - 收益：美国队列（观察性，加速度计）：久坐总时长最高四分位 vs 最低 总死亡率 HR 2.63；连续不起身的久坐时段最长四分位 vs 最短 HR 1.96，总量和连续时长各自独立相关。百万人汇总分析（观察性）：每天坐 >8 小时且几乎不运动者 vs 坐 <4 小时且最活跃者 HR 1.59；每天约 60–75 分钟中等强度活动可抵消久坐的超额风险（最活跃组坐 >8 小时 HR 1.04，不显著）。
@@ -464,7 +488,7 @@
 - 来源：Diaz KM 等 (2017). Patterns of Sedentary Behavior and Mortality in U.S. Middle-Aged and Older Adults: A National Cohort Study. Annals of Internal Medicine. <https://doi.org/10.7326/M17-0212>；Ekelund U 等 (2016). Does physical activity attenuate, or even eliminate, the detrimental association of sitting time with mortality? A harmonised meta-analysis of data from more than 1 million men and women. Lancet. <https://doi.org/10.1016/S0140-6736(16)30370-1>
 - 备注：观察性，坐得最多的人里含大量病弱者，HR 2.63 这种量级明显含反向因果。可靠的结论是：坐多久不如动多少重要，运动量够时久坐风险基本消失；看电视 ≥3 小时/天的风险各活动水平都在，最活跃组也只是把阈值推到 ≥5 小时（HR 1.16）。
 
-### 14. 少吃加工肉（火腿、培根、香肠、午餐肉）
+### 15. 少吃加工肉（火腿、培根、香肠、午餐肉）
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：零，甚至省钱；口味上的一点牺牲。
 - 收益：荟萃分析（观察性）：加工肉最高 vs 最低摄入组 总死亡率 RR 1.23，总红肉 RR 1.29，未加工红肉 RR 1.10（不显著）；另一荟萃分析按剂量：加工肉每多 1 份/天 RR 1.23，红肉每多 1 份/天 RR 1.10。
@@ -472,7 +496,7 @@
 - 来源：Larsson SC, Orsini N (2014). Red meat and processed meat consumption and all-cause mortality: a meta-analysis. American Journal of Epidemiology. <https://doi.org/10.1093/aje/kwt261>；Schwingshackl L 等 (2017). Food groups and risk of all-cause mortality: a systematic review and meta-analysis of prospective studies. American Journal of Clinical Nutrition. <https://doi.org/10.3945/ajcn.117.153148>
 - 备注：争议：NutriRECS 指南（Johnston BC 等 (2019). Unprocessed Red Meat and Processed Meat Consumption: Dietary Guideline Recommendations From the NutriRECS Consortium. Annals of Internal Medicine. <https://doi.org/10.7326/M19-1621>）用 GRADE 把证据评为低确定性，给出「维持现有摄入」的弱推荐。争的是证据质量而不是方向，没有研究说加工肉有益。未加工红肉效应小且不显著，重点是加工肉。
 
-### 15. 少喝或不喝酒
+### 16. 少喝或不喝酒
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：社交场合的一点尴尬；省钱。
 - 收益：83 项前瞻研究 60 万现饮者汇总（观察性）：总死亡率 最低点在每周 ≤100 g 纯酒精（约合 5% 啤酒 2.5 L 或 40° 白酒 300 mL）；40 岁时每周 100–200 g 者预期寿命少约 6 个月，200–350 g 少 1–2 年，>350 g 少 4–5 年（原文以寿命年报告）。GBD 2016：把各类健康损失合计，风险最低的饮酒量是 0 杯/周。校正研究设计偏倚的荟萃分析：少量饮酒（1.3–24 g/天）vs 终身不饮 RR 0.93（不显著），45–64 g/天 RR 1.19，≥65 g/天 RR 1.35。
@@ -480,7 +504,7 @@
 - 来源：Wood AM 等 (2018). Risk thresholds for alcohol consumption: combined analysis of individual-participant data for 599 912 current drinkers in 83 prospective studies. Lancet. <https://doi.org/10.1016/S0140-6736(18)30134-X>；GBD 2016 Alcohol Collaborators (2018). Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016. Lancet. <https://doi.org/10.1016/S0140-6736(18)31310-2>；Zhao J 等 (2023). Association Between Daily Alcohol Intake and Risk of All-Cause Mortality: A Systematic Review and Meta-analyses. JAMA Network Open. <https://doi.org/10.1001/jamanetworkopen.2023.6185>
 - 备注：争议。J 型曲线一方：34 项前瞻研究荟萃（Di Castelnuovo A 等 (2006). Alcohol dosing and total mortality in men and women: an updated meta-analysis of 34 prospective studies. Archives of Internal Medicine. <https://doi.org/10.1001/archinte.166.22.2437>）报告少量饮酒 总死亡率 最多低 17%–18%，男性 ≤4 杯/天、女性 ≤2 杯/天仍呈负相关。反方认为「不饮者」里混入了因病戒酒者和整体健康更差的人，Zhao 2023 校正这些偏倚后保护作用消失，GBD 2018 也给 0 最安全。稳妥读法：少喝不会明显伤寿命，多喝一定伤，「为了健康开始喝」没有依据。
 
-### 16. 每天吃一小把坚果
+### 17. 每天吃一小把坚果
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：每天 28 克，一年约两三百元
 - 收益：两个美国队列 11.9 万人、300 多万人年：相对不吃坚果，每周吃不到 1 次的总死亡率风险比 0.93（95% CI 0.90–0.96），每周 1 次 0.89（0.86–0.93），每周 2–4 次 0.87（0.83–0.90），每周 5–6 次 0.85（0.79–0.91），每周 7 次以上 0.80（0.73–0.86）
@@ -488,7 +512,7 @@
 - 来源：Bao Y, Han J, Hu FB, et al. (2013). Association of nut consumption with total and cause-specific mortality. New England Journal of Medicine, 369(21), 2001-2011. <https://doi.org/10.1056/NEJMoa1307352>
 - 备注：观察性队列，吃坚果的人整体生活方式更好，数字要打折。选原味不加盐的；热量不低，别当零食无限吃
 
-### 17. 把一部分红肉换成鱼和禽肉
+### 18. 把一部分红肉换成鱼和禽肉
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=小 口径=死亡率 -->
 - 成本：0 元，是替换不是增加
 - 收益：美国 6 个队列近 3 万人的合并分析：每周多吃两份加工肉，总死亡率风险比 1.03（95% CI 1.02–1.05）；每周多吃两份未加工红肉 1.03（1.01–1.05）；同样吃法的禽肉 0.99（0.97–1.02）、鱼 0.99（0.97–1.01），均无统计学意义
@@ -496,7 +520,7 @@
 - 来源：Zhong VW, Van Horn L, Greenland P, et al. (2020). Associations of Processed Meat, Unprocessed Red Meat, Poultry, or Fish Intake With Incident Cardiovascular Disease and All-Cause Mortality. JAMA Internal Medicine, 180(4), 503-512. <https://doi.org/10.1001/jamainternmed.2019.6969>
 - 备注：每周两份的效应量很小，别指望靠换肉延寿；这条的价值在于同样花钱吃肉时选哪一种
 
-### 18. 把一部分精米白面换成全谷物
+### 19. 把一部分精米白面换成全谷物
 <!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：糙米、燕麦、全麦面价格略高，口感需要适应。
 - 收益：荟萃分析（观察性）：全谷物每多 90 g/天（约 3 份）总死亡率 RR 0.83，收益持续到 210–225 g/天；另一荟萃分析每多 1 份/天 RR 0.92。
@@ -504,7 +528,7 @@
 - 来源：Aune D 等 (2016). Whole grain consumption and risk of cardiovascular disease, cancer, and all cause and cause specific mortality: systematic review and dose-response meta-analysis of prospective studies. BMJ. <https://doi.org/10.1136/bmj.i2716>；Schwingshackl L 等 (2017). Food groups and risk of all-cause mortality: a systematic review and meta-analysis of prospective studies. American Journal of Clinical Nutrition. <https://doi.org/10.3945/ajcn.117.153148>
 - 备注：观察性，吃全谷物的人整体更健康，效应偏大；研究间异质性高（I² 83%）。不必全换，换一半就已在剂量反应曲线的陡段。
 
-### 19. 每周喝三次以上茶
+### 20. 每周喝三次以上茶
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：每年几十到几百元
 - 收益：中国 10.09 万人、中位随访 7.3 年的队列（China-PAR）：习惯饮茶者总死亡率风险比 0.85（95% CI 0.79–0.90）；以 50 岁为起点，习惯饮茶者无动脉粥样硬化性心血管病的年数多 1.41 年，预期寿命多 1.26 年
@@ -512,7 +536,7 @@
 - 来源：Wang X, Liu F, Li J, et al. (2020). Tea consumption and the risk of atherosclerotic cardiovascular disease and all-cause mortality: The China-PAR project. European Journal of Preventive Cardiology, 27(18), 1956-1963. <https://doi.org/10.1177/2047487319894685>
 - 备注：争议。观察性研究，中国男性饮茶者中吸烟饮酒比例高，作者已校正但残余混杂难免。别喝滚烫的，见本节关于热饮温度的一条
 
-### 20. 每天喝三到四杯咖啡，不加糖不加奶盖
+### 21. 每天喝三到四杯咖啡，不加糖不加奶盖
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：自己冲每天一两元
 - 收益：涵盖 201 项观察性研究荟萃分析的伞形综述：每天 3–4 杯相对不喝，总死亡率相对风险 0.83（95% CI 0.79–0.88），即低 17%
@@ -520,7 +544,7 @@
 - 来源：Poole R, Kennedy OJ, Roderick P, et al. (2017). Coffee consumption and health: umbrella review of meta-analyses of multiple health outcomes. BMJ, 359, j5024. <https://doi.org/10.1136/bmj.j5024>
 - 备注：争议。原作者写明证据几乎全是观察性的，「需要可靠的随机对照试验才能判断是否为因果」。孕妇和有心律失常、焦虑、失眠问题的人另说；加糖加奶盖会把好处抵消
 
-### 21. 每天吃够 5 份（约 400 g）水果蔬菜
+### 22. 每天吃够 5 份（约 400 g）水果蔬菜
 <!-- 成本标签: 钱=少 时间=中 毅力=些 收益=中 口径=死亡率 -->
 - 成本：每天几元到十几元；洗切的时间。
 - 收益：荟萃分析（观察性）：每多 200 g/天 总死亡率 RR 0.90，收益持续到 800 g/天；美国两大队列加 26 项队列荟萃：每天 5 份 vs 2 份 总死亡率 HR 0.87，2 份水果+3 份蔬菜最优，再多不再降。
@@ -528,7 +552,7 @@
 - 来源：Aune D 等 (2017). Fruit and vegetable intake and the risk of cardiovascular disease, total cancer and all-cause mortality: a systematic review and dose-response meta-analysis of prospective studies. International Journal of Epidemiology. <https://doi.org/10.1093/ije/dyw319>；Wang DD 等 (2021). Fruit and Vegetable Intake and Mortality: Results From 2 Prospective Cohort Studies of US Men and Women and a Meta-Analysis of 26 Cohort Studies. Circulation. <https://doi.org/10.1161/CIRCULATIONAHA.120.048996>
 - 备注：观察性，混杂明显（吃菜多的人收入、教育、运动都不同），RR 0.90 是上限量级。两项研究对「够不够」的答案一致：5 份到位，10 份不必。
 
-### 22. 少吃超加工食品（薯片、方便面、糕点、速食）
+### 23. 少吃超加工食品（薯片、方便面、糕点、速食）
 <!-- 成本标签: 钱=0 时间=多 毅力=是 收益=大 口径=死亡率 -->
 - 成本：要自己做饭或挑原材料食物，时间和毅力成本中等。
 - 收益：伞状综述（汇总观察性荟萃分析）：超加工食品摄入高 vs 低，总死亡率 RR 1.21，心血管病死亡 RR 1.50；两者证据分级分别为「高度提示」和「令人信服」，但 GRADE 确定性为低/极低。
@@ -536,7 +560,7 @@
 - 来源：Lane MM 等 (2024). Ultra-processed food exposure and adverse health outcomes: umbrella review of epidemiological meta-analyses. BMJ. <https://doi.org/10.1136/bmj-2023-077310>
 - 备注：争议：分类标准（NOVA）把营养差异很大的食物归为一类，且与含糖饮料、加工肉（第 2、10 条）高度重叠，独立效应难以分离，GRADE 评级低。做到第 2、10 条之后，这一条的边际收益不确定；反方证据是同一篇综述里的低确定性评级本身，目前没有反向结论的原始研究。
 
-### 23. 不喝甜味饮料，无糖的也算
+### 24. 不喝甜味饮料，无糖的也算
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=死亡率 -->
 - 成本：0 元，还省钱
 - 收益：欧洲 10 国 45 万人队列：每天喝两杯以上软饮料相对每月不到一杯，总死亡率风险比 1.17（95% CI 1.11–1.22）；其中含糖饮料 1.08（1.01–1.16），人工甜味剂饮料 1.26（1.16–1.35）
@@ -544,7 +568,7 @@
 - 来源：Mullee A, Romaguera D, Pearson-Stuttard J, et al. (2019). Association Between Soft Drink Consumption and Mortality in 10 European Countries. JAMA Internal Medicine, 179(11), 1479-1490. <https://doi.org/10.1001/jamainternmed.2019.2478>
 - 备注：争议。人工甜味剂饮料的关联更强，很可能是反向因果：已经超重或得了糖尿病的人才改喝无糖版。但至少说明「换成无糖就没事」没有证据支持
 
-### 24. 做饭、取暖不烧煤和柴，换成电或燃气
+### 25. 做饭、取暖不烧煤和柴，换成电或燃气
 <!-- 成本标签: 钱=多 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：农村家庭换灶具加燃料费，每年几百到上千元；城市居民基本已达成。
 - 收益：中国慢性病前瞻队列（观察性，27.1 万无心血管病成人）：做饭用固体燃料 vs 清洁燃料 总死亡率 HR 1.11，取暖用固体燃料 HR 1.14；已从固体燃料换成清洁燃料者 vs 继续用固体燃料者，做饭 HR 0.87、取暖 HR 0.67。室外 PM2.5：104 项队列荟萃，长期暴露每高 10 µg/m³，自然原因死亡 RR 1.08。
@@ -552,7 +576,7 @@
 - 来源：Yu K 等 (2018). Association of Solid Fuel Use With Risk of Cardiovascular and All-Cause Mortality in Rural China. JAMA. <https://doi.org/10.1001/jama.2018.2151>；Chen J, Hoek G (2020). Long-term exposure to PM and all-cause and cause-specific mortality: A systematic review and meta-analysis. Environment International. <https://doi.org/10.1016/j.envint.2020.105974>
 - 备注：观察性；换燃料的家庭往往也更富裕，HR 0.67 含混杂。室外 PM2.5 个人能做的有限（搬家、口罩、净化器），空气净化器没有以死亡率为终点的研究，本节不给数字。
 
-### 25. 热的东西放一放再喝，不喝滚烫的茶、汤和咖啡
+### 26. 热的东西放一放再喝，不喝滚烫的茶、汤和咖啡
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 - 成本：0 元；多等两三分钟
 - 收益：伊朗北部食管癌高发区 300 例病例、571 名对照：相对喝温的茶，喝「热」的茶患食管鳞癌的比值比 2.07（95% CI 1.28–3.35），喝「很热」的 8.16（3.93–16.9）；倒出后不到 2 分钟就喝相对等 4 分钟以上的 5.41（2.63–11.1）
@@ -560,7 +584,7 @@
 - 来源：Islami F, Pourshams A, Nasrollahzadeh D, et al. (2009). Tea drinking habits and oesophageal cancer in a high risk area in northern Iran: population based case-control study. BMJ, 338, b929. <https://doi.org/10.1136/bmj.b929>；Loomis D, Guyton KZ, Grosse Y, et al. (2016). Carcinogenicity of drinking coffee, mate, and very hot beverages. Lancet Oncology, 17(7), 877-878. <https://doi.org/10.1016/S1470-2045(16)30239-X>
 - 备注：国际癌症研究机构把 65 ℃ 以上的热饮列为 2A 类（很可能致癌），同时认定咖啡本身不致癌。中国潮汕、太行山一带食管癌高发，与趁烫喝的习惯有关
 
-### 26. 白天出门晒晒太阳，别整天不见光
+### 27. 白天出门晒晒太阳，别整天不见光
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=死亡率 -->
 - 成本：0 元；每天十几分钟，通勤和午休就够
 - 收益：瑞典 2.95 万名女性、20 年随访：相对晒太阳最多的一组，回避晒太阳者的预期寿命少 0.6 到 2.1 年；作者写道「不吸烟但回避晒太阳的人，预期寿命与晒太阳最多组里的吸烟者相当」
@@ -568,14 +592,14 @@
 - 来源：Lindqvist PG, Epstein E, Nielsen K, et al. (2016). Avoidance of sun exposure as a risk factor for major causes of death: a competing risk analysis of the Melanoma in Southern Sweden cohort. Journal of Internal Medicine, 280(4), 375-387. <https://doi.org/10.1111/joim.12496>
 - 备注：争议。瑞典纬度高、日照少，结论不能直接搬到中国；回避晒太阳的人可能本来就体弱、不出门。晒太阳增加皮肤癌风险，别晒到晒伤，正午强光下仍要遮挡
 
-### 27. 把 BMI 控制在 20–25，超重就减
+### 28. 把 BMI 控制在 20–25，超重就减
 <!-- 成本标签: 钱=0 时间=多 毅力=是 收益=大 口径=死亡率 -->
 - 成本：毅力最大的一条：饮食加运动长期坚持，减下来之后维持更难。
 - 收益：239 项前瞻研究个体数据荟萃（观察性，限定从不吸烟、基线无慢性病、存活满 5 年者）：总死亡率 在 BMI 20–25 最低，25–27.5 HR 1.07，27.5–30 HR 1.20，30–35 HR 1.45，35–40 HR 1.94，40–60 HR 2.76；BMI 25 以上每高 5 kg/m²，东亚人群 HR 1.39。
 - 证据等级：A
 - 来源：Global BMI Mortality Collaboration (2016). Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents. Lancet. <https://doi.org/10.1016/S0140-6736(16)30175-1>
 - 备注：争议：「肥胖悖论」一方（Flegal KM 等 (2013). Association of all-cause mortality with overweight and obesity using standard body mass index categories: a systematic review and meta-analysis. JAMA. <https://doi.org/10.1001/jama.2012.113905>）汇总得超重 HR 0.94、1 级肥胖 HR 0.95，即轻度超重反而略低。分歧主要来自是否剔除吸烟者、已患病者和早期随访（病重的人先瘦下来），Global BMI 剔除后超重的风险重新出现。另外没有随机试验证明减重本身降低 总死亡率，收益是从横断比较推出来的，不能直接当成「减掉就能拿到」的折扣。
-### 28. 每周吃四次以上辣椒
+### 29. 每周吃四次以上辣椒
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：0 元
 - 收益：意大利 2.28 万人、中位随访 8.2 年、1236 例死亡：每周吃辣椒 4 次以上相对很少吃，总死亡率风险比 0.77（95% CI 0.66–0.90），心血管死亡 0.66（0.50–0.86）
@@ -583,7 +607,7 @@
 - 来源：Bonaccio M, Di Castelnuovo A, Costanzo S, et al. (2019). Chili Pepper Consumption and Mortality in Italian Adults. Journal of the American College of Cardiology, 74(25), 3139-3149. <https://doi.org/10.1016/j.jacc.2019.09.068>
 - 备注：争议。地中海饮食背景下的观察性研究，吃辣的人可能整体饮食更接近传统模式。有胃食管反流、痔疮、肠易激的人吃辣会加重症状，不必勉强
 
-### 29. 每天喝一两份奶或酸奶
+### 30. 每天喝一两份奶或酸奶
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 - 成本：每天几元
 - 收益：21 国 13.6 万人、平均随访 9.1 年、6796 例死亡的 PURE 队列：每天两份以上奶制品相对不吃，总死亡率风险比 0.83（95% CI 0.72–0.96，趋势 P=0.0052）
@@ -591,7 +615,7 @@
 - 来源：Dehghan M, Mente A, Rangarajan S, et al. (2018). Association of dairy intake with cardiovascular disease and mortality in 21 countries from five continents (PURE): a prospective cohort study. Lancet, 392(10161), 2288-2297. <https://doi.org/10.1016/S0140-6736(18)31812-9>
 - 备注：争议。PURE 纳入大量中低收入国家，那里能天天喝奶本身就是经济条件的标志，混杂很难排干净。乳糖不耐受的人换酸奶或低乳糖奶，不必硬喝
 
-### 30. 鸡蛋不用戒，但别每天三四个
+### 31. 鸡蛋不用戒，但别每天三四个
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=小 口径=死亡率 -->
 - 成本：0 元
 - 收益：美国 52.1 万人队列、12.9 万例死亡：每天多吃半个全蛋，总死亡率风险比 1.07（95% CI 1.06–1.08）；把半个全蛋换成等量蛋清、禽肉、鱼、奶制品或坚果豆类，总死亡率、心血管、癌症和呼吸系统死亡率都更低
@@ -599,7 +623,7 @@
 - 来源：Zhuang P, Wu F, Mao L, et al. (2021). Egg and cholesterol consumption and mortality from cardiovascular and different causes in the United States: A population-based cohort study. PLoS Medicine, 18(2), e1003508. <https://doi.org/10.1371/journal.pmed.1003508>
 - 备注：争议大。也有大型队列和荟萃分析没发现鸡蛋与死亡率相关，美国膳食指南已取消胆固醇的每日上限。本条只反对每天三四个，一天一个不必焦虑
 
-### 31. 有条件就泡澡，别只冲淋浴
+### 32. 有条件就泡澡，别只冲淋浴
 <!-- 成本标签: 钱=少 时间=中 毅力=否 收益=大 口径=死亡率 -->
 - 成本：水费电费；每次半小时
 - 收益：日本 3.0 万人、19 年随访、2097 例心血管事件：几乎每天泡澡相对每周不超过两次，心血管事件风险比 0.72（95% CI 0.62–0.84），冠心病 0.65（0.45–0.94），脑卒中 0.74（0.62–0.87），脑出血 0.54（0.40–0.73）
@@ -892,7 +916,15 @@
 - 来源：国家税务总局 (2025). 个人所得税综合所得汇算清缴管理办法（第六条）及其解读. <https://www.gov.cn/zhengce/202502/content_7006465.htm>；财政部、税务总局 (2023). 关于延续实施个人所得税综合所得汇算清缴有关政策的公告. <https://www.gov.cn/zhengce/zhengceku/202308/content_6900594.htm>
 - 备注：该补税的也要办，不办属于违法。专项附加扣除包括子女教育、继续教育、大病医疗、住房贷款利息、住房租金、赡养老人、3 岁以下婴幼儿照护，房贷和房租只能二选一
 
-### 3. 每年重算一次手机和宽带套餐，用不上的降档，运营商不给转就投诉
+### 3. 公积金不只用来买房：租房、装修、物业费都能提，2026 年 9 月 20 日起按新条例办
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
+- 成本：办一次提取手续
+- 收益：修改后的条例把可提取情形列到九项，包括支付房租、装修自住住房、支付自住住房物业费；管理中心应当自受理申请之日起 3 日内作出准予或者不准提取的决定
+- 证据等级：A
+- 来源：国务院 (2026). 国务院关于修改《住房公积金管理条例》的决定（国务院令第 844 号，2026 年 7 月 31 日国务院第 93 次常务会议通过，「自2026年9月20日起施行」）：修改后第二十四条「职工有下列情形之一的，可以提取职工住房公积金账户内的存储余额：（一）支付房租的；（二）购买、建造、翻建、大修自住住房的；（三）偿还购房贷款本息的；（四）装修自住住房的；（五）支付自住住房物业费的；（六）离休、退休的；（七）完全丧失劳动能力，并与单位终止劳动关系的；（八）出境定居的；（九）国务院批准的其他住房消费情形。」；第二十五条「住房公积金管理中心应当自受理申请之日起3日内作出准予提取或者不准提取的决定」；第十八条缴存比例「均不得低于职工上一年度月平均工资的5％」. <https://www.gov.cn/gongbao/2026/issue_12946/202608/content_7079363.html>
+- 备注：账户里的钱是你的工资加单位配的那部分，放着只按很低的利率结息。条例还写明：职工死亡或者被宣告死亡的，继承人、受遗赠人可以提取余额。各地的办理材料和细则由当地管理中心定，先查本地中心的办事指南再跑。
+
+### 4. 每年重算一次手机和宽带套餐，用不上的降档，运营商不给转就投诉
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：0 元；查一次账单十几分钟
 - 收益：工信部规章明确运营商不得「无正当理由拒绝、阻止、拖延向用户提供携号转网服务」，不得「采取拦截、限制等技术手段影响携号转网用户的通信服务质量」，也不得「为携号转网用户设置专项资费方案和营销方案」。老套餐往往比在售套餐贵几十元，长期不动就是每年白扔几百元
@@ -900,7 +932,7 @@
 - 来源：工业和信息化部 (2019). 携号转网服务管理规定（工信部信管〔2019〕242 号）. <http://www.gov.cn/zhengce/zhengceku/2019-11/13/content_5451483.htm>
 - 备注：先在营业厅 App 查近半年实际用量，再按用量选套餐。客服说「降档要到营业厅」「合约期内不能改」时，要求给出书面依据，不行就打 12300 投诉
 
-### 4. 不买彩票
+### 5. 不买彩票
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
 - 成本：0 元
 - 收益：按财政部规定，乐透型/数字型彩票奖金比例下限为销售额的 50%，即开型 65%，竞猜型 73%；双色球按销售额的 51% 计提奖金，每投入 1 元长期期望仅返还 0.51 元，期望亏损 49%。2024 年全国彩票销售 6234.86 亿元，其中 1610.31 亿元进入公益金，未回到购彩者手中（中国，2024 年）
@@ -908,7 +940,7 @@
 - 来源：财政部 (2015). 关于规范和加强彩票资金构成比例管理的通知（财综〔2015〕94 号）. <http://m.mof.gov.cn/czxw/201511/t20151113_1560814.htm>；财政部 (2025). 财政部公告 2025 年第 8 号（2024 年彩票公益金筹集分配情况）. <http://zhs.mof.gov.cn/zhengcefabu/202508/t20250828_3970977.htm>；中国福利彩票双色球游戏规则（第十四条）. <https://mzj.nc.gov.cn/ncsmzj/flcp/202111/5dccc1a5da89434e94a62f8ea0e5887e.shtml>
 - 备注：期望值为负是彩票制度设计的结果，不是运气问题；把它当作 2 元一次的娱乐消费、而非理财，是唯一合理的定位。
 
-### 5. 看到「高收益」「保本」「稳赚」直接走开
+### 6. 看到「高收益」「保本」「稳赚」直接走开
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=金钱 -->
 - 成本：零；只需要在听到这几个词时停下来
 - 收益：原银保监会主席在 2018 年陆家嘴论坛上的原话：「收益率超过 6% 的就要打问号，超过 8% 的就很危险，10% 以上就要准备损失全部本金」；资管新规要求金融机构「不得承诺保本保收益」、「出现兑付困难时，金融机构不得以任何形式垫资兑付」，也就是正规理财已经没有保本一说；参与非法集资的损失「由集资参与人自行承担」，出事后没有人替你兜底（中国，2018、2021 年）
@@ -916,7 +948,7 @@
 - 来源：郭树清在第十届陆家嘴论坛的讲话（2018 年 6 月），天津市地方金融管理局转载. <https://jrgz.tj.gov.cn/ztlm/ztzl/jrjfwphjr/202006/t20200625_2744709.html>；中国人民银行等 (2018). 关于规范金融机构资产管理业务的指导意见（银发〔2018〕106 号，第二条、第六条）. <https://www.gov.cn/gongbao/content/2018/content_5323101.htm>；国务院 (2021). 防范和处置非法集资条例（国务院令第 737 号，第二十五条）. <https://www.gov.cn/gongbao/content/2021/content_5588815.htm>
 - 备注：6%/8%/10% 是监管者给出的经验阈值，不是法律条文；TODO（待核实：原银保监会官网的讲话原文页为动态加载未能抓取，引句以天津市地方金融管理局转载为准）。不构成投资建议。
 
-### 6. 不用信用卡最低还款，不为消费开分期或消费贷
+### 7. 不用信用卡最低还款，不为消费开分期或消费贷
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：零；需要在账单日前留足全额还款的现金
 - 收益：信用卡透支利率 2020 年前以「日利率万分之五」为上限、其 0.7 倍为下限，折合单利年化 18.25%（2021 年起改为发卡机构与持卡人协商定价）；最低还款后剩余本金按日全额计息，免息期同时失效。央行已要求发卡机构必须以明显方式展示年化利率，「不得仅展示日利率、日还款额」，看年化数字再决定（中国，2020 年通知）
@@ -924,7 +956,7 @@
 - 来源：中国人民银行 (2020). 关于推进信用卡透支利率市场化改革的通知（银发〔2020〕327 号）. <https://xining.pbc.gov.cn/zhengwugongkai/4081330/4406346/4693549/4159909/index.html>
 - 备注：18.25% 由「万分之五 × 365」算得，为单利口径，按月计复利会更高；个别银行有折扣，以自己账单上公示的年化利率为准。真周转不开时，优先找利率更低的正规渠道，不要拖着最低还款滚利息。
 
-### 7. 不给主播打赏、不给游戏充值、不冲动下单
+### 8. 不给主播打赏、不给游戏充值、不冲动下单
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：零；一次花几分钟关掉免密支付、设单笔和每日限额、删掉平台里绑定的支付方式
 - 收益：这是一笔很大的支出：2024 年国内游戏市场实际销售收入 3257.83 亿元，用户 6.74 亿人，人均约 480 元（由前两数相除算得）。花出去的钱基本追不回：只有限制民事行为能力人（未成年人）未经监护人同意的打赏和充值，监护人请求返还时「人民法院应予支持」；成年人的打赏和充值没有这样的规定。未成年人玩网络游戏本来就只有周五、周六、周日和法定节假日 20 时至 21 时各 1 小时（中国，2020、2021 年）
@@ -932,7 +964,7 @@
 - 来源：国家新闻出版署 (2024). 今年中国游戏市场收入超 3257 亿元创新高（中国音数协游戏工委《2024 年中国游戏产业报告》）. <https://www.nppa.gov.cn/xxfb/ywdt/202412/t20241216_877445.html>；最高人民法院 (2020). 关于依法妥善审理涉新冠肺炎疫情民事案件若干问题的指导意见（二）（法发〔2020〕17 号，第 9 条）. <https://www.court.gov.cn/zixun/xiangqing/230181.html>；国家新闻出版署 (2021). 关于进一步严格管理 切实防止未成年人沉迷网络游戏的通知（国新出发〔2021〕14 号）. <https://www.nppa.gov.cn/xxfb/tzgs/202108/t20210830_666285.html>
 - 备注：B 级是因为没有「不打赏能省多少」的直接测量，只有总量数字；关免密、设限额是经验做法（C）。TODO（待核实：民法典第十九条、第一百四十五条原文，npc.gov.cn 与 gov.cn 页面均无法打开）。不构成投资建议。
 
-### 8. 拒绝电子产品的延长保修（延保）
+### 9. 拒绝电子产品的延长保修（延保）
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
 - 成本：零；承担保修期外自费维修的小概率支出
 - 收益：延保定价通常为商品原价的 10% 到 50%；研究引用的行业估计称延保平均毛利率 50% 到 60%，约为普通商品毛利率的 18 倍，2003 年延保只占百思买营收的 3% 到 4% 却贡献了超过 50% 的利润（美国，2000 年代零售数据）
@@ -940,7 +972,7 @@
 - 来源：Chen T, Kalra A, Sun B (2009). Why Do Consumers Buy Extended Service Contracts? Journal of Consumer Research 36(4):611-623. <https://doi.org/10.1086/605298>
 - 备注：毛利率数字是论文转引的行业估计（Business Week 2004），非论文自己的测算；适用于自己能承担一次维修费的普通人，靠一台设备吃饭且无备机的人另算。手机碎屏险类产品要单独按自己的摔机频率算期望值。
 
-### 9. 优先选通过一致性评价的仿制药和集采中选药
+### 10. 优先选通过一致性评价的仿制药和集采中选药
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=金钱 -->
 - 成本：零；处方或购药时多问一句「有没有集采/通用名药」
 - 收益：国家组织药品集采第二批平均降价 53%、最高 93%；截至 2026 年 4 月已开展 11 批、覆盖 490 种药品，通过或视同通过一致性评价的药品达 1695 个，约占临床常用化学药的 2/3（中国，2020 到 2026 年官方数据）
@@ -948,7 +980,7 @@
 - 来源：国家医疗保障局 (2020). 第二批国家组织药品集中采购和使用工作答记者问. <https://www.nhsa.gov.cn/art/2020/1/17/art_38_2264.html>；国家医疗保障局 (2026). 国务院政策例行吹风会：健全全周期全渠道药品价格形成机制. <http://www.nhsa.gov.cn/art/2026/4/15/art_14_20221.html>
 - 备注：争议：集采入围以一致性评价为质量门槛，官方立场是疗效等同；部分临床医生对个别品种的实际疗效差异有质疑，但缺少可引用的系统性证据。换药前问医生，慢病长期用药尤其如此。
 
-### 10. 喝烧开的自来水，不常年买瓶装水
+### 11. 喝烧开的自来水，不常年买瓶装水
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
 - 成本：烧水的时间和少量燃气/电费；一个水壶
 - 收益：北京居民第一阶梯水价 5 元/立方米，即 0.005 元/升；若瓶装水按 1 元/500 毫升计，每升 2 元，是自来水的 400 倍。生活饮用水执行强制性国家标准 GB 5749-2022（2022 年 3 月 15 日发布，2023 年 4 月 1 日起施行，主管部门为国家疾控局）（中国，2015 年水价与 2022 年标准）
@@ -956,7 +988,7 @@
 - 来源：北京市发展和改革委员会. 居民用水价格表. <https://fgw.beijing.gov.cn/bmcx/djcx/jzldj/202003/t20200331_1752796.htm>；国家市场监督管理总局 国家标准全文公开系统. GB 5749-2022 生活饮用水卫生标准. <https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=99E9C17E3547A3C0CE2FD1FFD9F2F7BE>
 - 备注：瓶装水 1 元/500 毫升是为算式设的假设价，按自己所在城市的实价重算；老旧小区二次供水设施不达标的，可以加装过滤或只在此场景买水。各地水价不同，北京数字仅作量级参考。
 
-### 11. 不频繁交易股票
+### 12. 不频繁交易股票
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：零；需要克制「看到消息就想动」的冲动
 - 收益：对 66,465 个美国折扣券商家庭账户（1991 到 1996 年）的研究：交易最频繁的一组年化收益 11.4%，同期市场 17.9%，平均家庭 16.4%；平均家庭年换手率 75%。频繁交易组与不频繁组的毛收益差别很小，差距主要来自交易成本（美国，1991 到 1996 年）
@@ -964,7 +996,7 @@
 - 来源：Barber BM, Odean T (2000). Trading Is Hazardous to Your Wealth: The Common Stock Investment Performance of Individual Investors. The Journal of Finance 55(2):773-806. <https://doi.org/10.1111/0022-1082.00226>
 - 备注：数据是美国 1990 年代的，A 股的佣金、印花税结构不同，但「换手越高、净收益越低」的机制一致。不构成投资建议。
 
-### 12. 不借钱投资、不加杠杆、不买自己看不懂的
+### 13. 不借钱投资、不加杠杆、不买自己看不懂的
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：零；需要在行情好的时候忍住不「借点钱多赚一点」
 - 收益：杠杆把亏损放大：融资买入后，抵押物市值跌到维持担保比例线以下又没能追加担保，就会被强制平仓，浮亏当场变成实亏，没有「等它涨回来」的机会。监管规定「从事证券交易时间不足半年、缺乏风险承担能力、最近 20 个交易日日均证券类资产低于 50 万元」的客户不得开立信用账户，这个门槛本身就在说明它不是给普通人的工具（中国，2015 年）
@@ -972,7 +1004,7 @@
 - 来源：中国证监会 (2015). 证券公司融资融券业务管理办法（证监会令第 117 号，第十二条）. <https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml>；上海证券交易所. 《上海证券交易所融资融券交易实施细则》解读（投资者教育材料）. <https://www.sse.com.cn/services/tradingservice/margin/edu/c/10074042/files/a1f1c4833302451fb9130dbb94116c56.pdf>
 - 备注：「看不懂的不买」没有直接文献，是共识（C）；用消费贷、信用卡套现去投资是变相杠杆，利率见本节第 3 条。不构成投资建议。
 
-### 13. 用宽基指数基金替代主动管理基金作为长期底仓
+### 14. 用宽基指数基金替代主动管理基金作为长期底仓
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：放弃「选中明星基金经理」的可能性；需要接受和指数一样的下跌
 - 收益：美国主动股票型基金的整体组合接近市场组合，但主动管理的高成本原封不动地变成了投资者更低的净回报；自助法模拟显示很少有基金能产生足以覆盖成本的超额收益（美国，2010 年发表）
@@ -980,7 +1012,7 @@
 - 来源：Fama EF, French KR (2010). Luck versus Skill in the Cross-Section of Mutual Fund Returns. The Journal of Finance 65(5):1915-1947. <https://doi.org/10.1111/j.1540-6261.2010.01598.x>；TODO（待核实：S&P Dow Jones Indices, SPIVA U.S. Scorecard Year-End 2024，网站拒绝自动抓取，其中「长期多数主动大盘基金跑输标普 500」的具体百分比未能核对）；TODO（待核实：中国市场同类研究，未找到可引用的原始文献）
 - 备注：争议：Harvey CR, Liu Y (2022). Luck versus Skill in the Cross Section of Mutual Fund Returns: Reexamining the Evidence. The Journal of Finance 77(3). <https://doi.org/10.1111/jofi.13123> 指出 Fama-French 的自助法存在欠采样问题，即使部分基金有显著超额收益也可能无法拒绝零假设，即「几乎没有基金有技能」的结论可能过强。中国主动基金整体是否跑输指数尚无本节可引用的原始文献。不构成投资建议。
 
-### 14. 同类基金优先选费率低的
+### 15. 同类基金优先选费率低的
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=金钱 -->
 - 成本：零；申购前多看一眼「管理费 + 托管费 + 销售服务费」
 - 收益：费率差异按复利侵蚀：年费率高 1 个百分点，20 年后终值少 0.99^20 ≈ 18.2%，30 年后少约 26%。中国 2023 年起推行公募基金费率改革，下调主动权益类基金管理费率和托管费率上限（具体上限数字待核实）
@@ -988,7 +1020,7 @@
 - 来源：中国证监会 (2023). 证监会有关部门负责人就公募基金费率改革答记者问. <http://www.csrc.gov.cn/csrc/c100028/c7418692/content.shtml>；Fama EF, French KR (2010). 见第 11 条. <https://doi.org/10.1111/j.1540-6261.2010.01598.x>
 - 备注：复利算式为纯算术，假设两只基金费前收益相同；实际还要算申购费、赎回费和 C 类份额的销售服务费。不构成投资建议。
 
-### 15. 别把钱押在一只股票、一个平台、一套房上
+### 16. 别把钱押在一只股票、一个平台、一套房上
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：零；接受「不会正好押中最赚的那一个」
 - 收益：只要几项资产不是完全同涨同跌，把钱分开放，预期收益不变而波动更小，这是 Markowitz 1952 年提出、此后几十年沿用的组合选择基本结论；反过来，钱全在一只股票或一个平台上，它的方差就是你全部的方差，出事时没有任何对冲
@@ -996,7 +1028,7 @@
 - 来源：Markowitz, H. (1952). Portfolio Selection. The Journal of Finance, 7(1), 77–91. <https://doi.org/10.1111/j.1540-6261.1952.tb01525.x>
 - 备注：B 级是因为经典文献是理论推导，没有给出「分散能少亏多少」的实证数字；分散只降波动，不保证不亏。买宽基指数基金（本节第 11 条）本身就是最省事的分散。不构成投资建议。
 
-### 16. 健身房按次付费或短周期付费，除非有一年以上的稳定记录
+### 17. 健身房按次付费或短周期付费，除非有一年以上的稳定记录
 <!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=金钱 -->
 - 成本：单次价格比年卡均摊价高；需要诚实评估自己的去场频率
 - 收益：对美国 3 家健身俱乐部 7,752 名会员 3 年数据的研究：选择月费超过 70 美元合同的会员平均每月只去 4.3 次，折合每次超过 17 美元，而 10 次卡只需每次 10 美元；这些用户在会籍期间平均多付 600 美元。月付会员超过一年仍未退卡的比例比年付会员高 17%（美国，三年面板数据）
@@ -1004,7 +1036,7 @@
 - 来源：DellaVigna S, Malmendier U (2006). Paying Not to Go to the Gym. American Economic Review 96(3):694-719. <https://doi.org/10.1257/aer.96.3.694>
 - 备注：单一研究、美国数据，但机制（高估未来自控力）普遍。已有连续一年每周两次以上记录的人，年卡确实更便宜。
 
-### 17. 大额非必需购买设 24 小时冷静期，网购善用七日无理由退货
+### 18. 大额非必需购买设 24 小时冷静期，网购善用七日无理由退货
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：延后一天满足；退货运费通常自付
 - 收益：省下的是冲动购买中「第二天就不想要了」的那部分，无法给出统一比例；网络购买商品自收到之日起七日内可无理由退货，定作、鲜活易腐、已拆封数字商品、报刊除外（中国，2017 年起施行）
@@ -1012,7 +1044,7 @@
 - 来源：国家市场监督管理总局 (2020 修订). 网络购买商品七日无理由退货暂行办法（总局令第 31 号）. <https://www.gov.cn/zhengce/zhengceku/2020-11/03/content_5557118.htm>
 - 备注：「冷静期」本身是经验规则，没有直接文献；七日退货是它的制度兜底，退货前先确认商品是否在排除清单内、包装是否完好。
 
-### 18. 不为「划线价」和大促囤货
+### 19. 不为「划线价」和大促囤货
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：放弃部分真折扣；需要记住常购商品的日常价
 - 收益：判断锚定于最先看到的数字，之后的调整通常不足，所以「原价 999 现价 499」会系统性抬高你对便宜程度的估计；监管规定折价基准应为促销前七日内同店最低成交价，也就是说划线价并不必然是曾经的售价（中国，2020 年起施行）
@@ -1020,7 +1052,7 @@
 - 来源：Tversky A, Kahneman D (1974). Judgment under Uncertainty: Heuristics and Biases. Science 185(4157):1124-1131. <https://doi.org/10.1126/science.185.4157.1124>；国家市场监督管理总局 (2020). 规范促销行为暂行规定（总局令第 32 号，第二十一条）. <https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_cae53a080be2401e8f91c6d6291539f8.html>
 - 备注：锚定效应是实验室结论，对囤货损失没有直接的金钱量化；囤货的隐性成本还包括过期、占地和「反正有，多用点」。只囤保质期长、确定会用完、单价确实低于历史价的东西。
 
-### 19. 保险优先买消费型，把「返还」「分红」当作不保证的部分
+### 20. 保险优先买消费型，把「返还」「分红」当作不保证的部分
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：消费型保险到期无返还，心理上像「白花了」；需要自己安排储蓄
 - 收益：监管规则要求分红型产品说明书用加粗字体提示「未来的保单红利为非保证利益，其红利分配是不确定的」，且红利演示的利差上限为 4.5% 减去产品预定利率；返还型/分红型的额外保费本质上是交给保险公司代管的储蓄，收益不保证、流动性差（中国，2023 年起施行）
@@ -1028,7 +1060,7 @@
 - 来源：中国银保监会 (2022). 一年期以上人身保险产品信息披露规则（银保监规〔2022〕24 号）. <https://www.gov.cn/zhengce/zhengceku/2023-01/04/content_5735014.htm>
 - 备注：争议：对完全存不下钱的人，返还型的强制储蓄功能有实际价值；本条针对的是有自律的普通人。精算原理上「消费型 + 自己投资」优于「返还型」的量化差距因产品而异，本节没有可引用的系统性数据。不构成投资建议。
 
-### 20. 先存出 3 到 6 个月生活费的应急金，放在随时能取的地方
+### 21. 先存出 3 到 6 个月生活费的应急金，放在随时能取的地方
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=金钱 -->
 - 成本：不花钱，但这笔钱要放弃更高收益，只放活期、货币基金或随时可取的存款
 - 收益：有应急金就不用在失业、生病时借钱（消费贷、最低还款的年化利率见本节第 3 条）或割肉卖掉投资；放在银行的存款受存款保险保护，同一家银行最高偿付 50 万元（中国，2015 年）
@@ -1036,7 +1068,7 @@
 - 来源：国务院 (2015). 存款保险条例（国务院令第 660 号，第五条）. <https://www.gov.cn/zhengce/content/2015-03/31/content_9562.htm>
 - 备注：「3 到 6 个月」是通行经验，没有找到官方或学术原文，故标 C；金额按自己的固定支出算，不按收入算。不构成投资建议。
 
-### 21. 提前还房贷之前先做一道比较题，不要凭感觉
+### 22. 提前还房贷之前先做一道比较题，不要凭感觉
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=金钱 -->
 - 成本：半小时算账；需要诚实估计自己能拿到的税后稳定收益率
 - 收益：算法：设房贷年利率 r（按合同，2026 年 8 月 20 日 5 年期以上 LPR 为 3.5%，实际执行利率为 LPR 加减点），可选替代投资的税后年化收益 g。提前还款的确定收益率就是 r；若 g 稳定大于 r，钱留在投资里更划算；若 g 小于 r 或不确定，提前还款等于锁定一笔无风险的 r。等额本息前期利息占比高，越早还省息越多，这一点用银行 App 的「提前还款试算」直接看数字（中国，2026 年利率）
@@ -1044,7 +1076,7 @@
 - 来源：全国银行间同业拆借中心受中国人民银行授权 (2026). 2026 年 8 月 20 日贷款市场报价利率（LPR）公告. <https://www.chinamoney.com.cn/chinese/rdgz/20260820/3399885.html>
 - 备注：只写算法不下结论：g 很难稳定超过 r 是常态，但留够应急现金优先于任何一方。注意合同里的提前还款违约金条款。不构成投资建议。
 
-### 22. 网购认平台规则和法条，不认主播和「好评」
+### 23. 网购认平台规则和法条，不认主播和「好评」
 <!-- 成本标签: 钱=0 时间=少 毅力=些 收益=中 口径=金钱 -->
 - 成本：不花钱；下单前多看一眼售后条款和定金规则，收货后留好订单、直播回放截图和聊天记录
 - 收益：经营者有欺诈行为的按价款三倍赔偿，不足 500 元按 500 元；平台明知或应知卖家侵权不处理的承担连带责任；直播间和主播不得虚构交易、关注、浏览、点赞等流量、不得发布虚假信息，造成损害的承担民事责任；组织虚假交易、虚假评价帮人刷宣传的罚 100 万元以下，情节严重 100 万到 200 万元并可吊销执照；定金不得超过合同标的额 20%，你不履行定金不退，卖家不履行双倍返还；用个人信息做自动化决策不得在交易价格等条件上搞不合理差别待遇（大数据杀熟）（全国）
@@ -1052,7 +1084,7 @@
 - 来源：全国人大常委会 (2013 修正). 消费者权益保护法（第四十四、五十五条）. <https://www.samr.gov.cn/zfjcj/tzgg/art/2023/art_615af9ed6bcd4974bf853dd2e02bc663.html>（市场监管总局转载）；国家网信办等七部门 (2021). 网络直播营销管理办法（试行）（第十八、二十八条）. <https://www.gov.cn/zhengce/zhengceku/2021-04/23/content_5601682.htm>；全国人大常委会 (2025 修订). 反不正当竞争法（第九、二十五条）. <https://www.ssf.gov.cn/portal/rootfiles/2025/09/01/1758444945285569-1758444945303119.pdf>（全国社保基金理事会转载）；全国人大 (2020). 民法典（第五百八十六、五百八十七条）. <https://www.court.gov.cn/zixun/xiangqing/233181.html>；全国人大常委会 (2021). 个人信息保护法（第二十四条）. <https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958923.html>（国家统计局转载）；山东省市场监管局 (2025). 六起网络不正当竞争典型案例. <https://www.samr.gov.cn/jjj/fbzdjz/art/2025/art_cbaed1c006584baeb6823a6b01325ba4.html>
 - 备注：「哪个平台性价比最高、不容易买到劣质品」没有可引用的官方对比数据，本书不做平台排名，能查到的只有整体抽查（见下一条）。反不正当竞争法 2025 年修订后虚假宣传由旧第八条改为第九条、罚则由第二十条改为第二十五条，2025 年 10 月 15 日起施行，别抄旧条号；山东案例里一家公司组织「刷手」虚假交易 75 笔、本金 68 万余元被查处，罚款数字通报未写。七日无理由退货见本节第 15 条。
 
-### 23. 买大件前先查国家抽检通报、3C 认证和能效标识
+### 24. 买大件前先查国家抽检通报、3C 认证和能效标识
 <!-- 成本标签: 钱=0 时间=少 毅力=否 收益=中 口径=金钱 -->
 - 成本：不花钱；几分钟，在市场监管总局和认监委官网查一下
 - 收益：2024 年国家监督抽查 25250 批次产品，不合格率 14.3%；其中电商渠道抽 7297 批次、不合格率 23.5%，比上年升 1.8 个百分点，实体店抽 8055 批次、不合格率 15.1%；强制性产品认证（3C）证书可在认监委官网「认证结果」栏查真伪；能效标识按产品目录强制管理，标识须含能效等级、能效指标和能效信息码，伪造、冒用或该标不标的依节约能源法处罚（全国）
@@ -2517,7 +2549,15 @@
 - 来源：国务院 (2010 修订). 工伤保险条例（国务院令第 586 号）第十四条列了七种「应当认定为工伤」，含「（六）在上下班途中，受到非本人主要责任的交通事故或者城市轨道交通、客运轮渡、火车事故伤害的」；第十七条「所在单位应当自事故伤害发生之日或者被诊断、鉴定为职业病之日起30日内，向统筹地区社会保险行政部门提出工伤认定申请」「用人单位未按前款规定提出工伤认定申请的，工伤职工或者其近亲属、工会组织在事故伤害发生之日或者被诊断、鉴定为职业病之日起1年内，可以直接向用人单位所在地统筹地区社会保险行政部门提出工伤认定申请」「用人单位未在本条第一款规定的时限内提交工伤认定申请，在此期间发生符合本条例规定的工伤待遇等有关费用由该用人单位负担」；第十九条「职工或者其近亲属认为是工伤，用人单位不认为是工伤的，由用人单位承担举证责任」；第二十条「自受理工伤认定申请之日起60日内作出工伤认定的决定」. <https://www.gov.cn/gongbao/content/2011/content_1778064.htm>
 - 备注：1 年是硬期限，过了就没得申请。举证责任在单位不在你，但你自己也要留证：出事当天的照片、同事联系方式、就诊记录、考勤。第十六条列了三种不认的情形——故意犯罪、醉酒或者吸毒、自残或者自杀。第十五条另有「视同工伤」：在工作时间和工作岗位突发疾病死亡，或者 48 小时之内经抢救无效死亡的。
 
-### 8. 单位没给你交工伤保险，工伤待遇一样有，由单位按同样的标准全额出
+### 8. 别信「撑到工位就算工伤」：突发不适先打 120，不是先赶去打卡
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
+- 成本：0 元
+- 收益：条款要求「在工作时间和工作岗位」突发疾病死亡，或者在 48 小时之内经抢救无效死亡；为了凑条件耽误就医，是拿存活率去换一笔并不确定的赔偿
+- 证据等级：A
+- 来源：工伤保险条例第十五条第一款第（一）项：「在工作时间和工作岗位，突发疾病死亡或者在48小时之内经抢救无效死亡的」视同工伤；第十四条第（六）项只把上下班途中「受到非本人主要责任的交通事故或者城市轨道交通、客运轮渡、火车事故伤害的」列为工伤，途中突发疾病不在其中. <https://www.gov.cn/gongbao/content/2011/content_1778064.htm>
+- 备注：两个条件要同时满足：在工作时间，且在工作岗位。路上发病没到岗的不适用；在岗发病后被送回家或送医、48 小时内经抢救无效死亡的，仍可能适用——决定性的是发病时人在哪，不是最后死在哪。短视频把这条讲成「撑到公司就有钱」，方向正好反了：真正能改变结局的是发病后那几十分钟有没有去医院。另外 48 小时是一条硬线，抢救超过 48 小时反而不算。
+
+### 9. 单位没给你交工伤保险，工伤待遇一样有，由单位按同样的标准全额出
 <!-- 成本标签: 钱=0 时间=中 毅力=些 收益=大 口径=金钱 -->
 - 成本：单位不认就要走仲裁甚至诉讼，几个月起步
 - 收益：条例明写：未参保单位的职工发生工伤，由该单位按条例规定的项目和标准支付费用——项目和标准与参了保的完全一样
@@ -2525,7 +2565,7 @@
 - 来源：工伤保险条例第六十二条第二款：「依照本条例规定应当参加工伤保险而未参加工伤保险的用人单位职工发生工伤的，由该用人单位按照本条例规定的工伤保险待遇项目和标准支付费用。」同条第一款：责令限期参加、补缴，「自欠缴之日起，按日加收万分之五的滞纳金；逾期仍不缴纳的，处欠缴数额1倍以上3倍以下的罚款」. <https://www.gov.cn/gongbao/content/2011/content_1778064.htm>
 - 备注：「公司没给你买工伤险，所以赔不了」是这类事里最常见的一句假话。没参保对单位是加罚，对你不是减赔。
 
-### 9. 伤情稳定后去做劳动能力鉴定，伤残等级直接换算成钱
+### 10. 伤情稳定后去做劳动能力鉴定，伤残等级直接换算成钱
 <!-- 成本标签: 钱=0 时间=中 毅力=否 收益=大 口径=金钱 -->
 - 成本：走一次鉴定流程
 - 收益：一次性伤残补助金按等级折算成月工资：五级 18 个月、六级 16 个月、七级 13 个月、八级 11 个月、九级 9 个月、十级 7 个月的本人工资
@@ -2533,7 +2573,7 @@
 - 来源：工伤保险条例第二十一条「经治疗伤情相对稳定后存在残疾、影响劳动能力的，应当进行劳动能力鉴定」；第二十二条「劳动功能障碍分为十个伤残等级，最重的为一级，最轻的为十级」；第三十六条五、六级待遇（一次性伤残补助金 18/16 个月本人工资，按月伤残津贴为本人工资的 70%/60%）；第三十七条七至十级待遇（13/11/9/7 个月本人工资）. <https://www.gov.cn/gongbao/content/2011/content_1778064.htm>
 - 备注：五、六级保留劳动关系并有按月津贴；七到十级在合同期满或者本人提出解除时，另有一次性工伤医疗补助金（基金出）和一次性伤残就业补助金（单位出），具体标准由省级政府定。鉴定结果出来之前不要签「一次性了结」的协议。
 
-### 10. 工亡的三笔钱要分清：丧葬补助金、供养亲属抚恤金、一次性工亡补助金
+### 11. 工亡的三笔钱要分清：丧葬补助金、供养亲属抚恤金、一次性工亡补助金
 <!-- 成本标签: 钱=0 时间=中 毅力=否 收益=大 口径=金钱 -->
 - 成本：办手续
 - 收益：丧葬补助金为 6 个月的统筹地区上年度职工月平均工资；供养亲属抚恤金按本人工资，配偶每月 40%、其他亲属每人每月 30%；一次性工亡补助金为上一年度全国城镇居民人均可支配收入的 20 倍，全国一个数，不分地区
