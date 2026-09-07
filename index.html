@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高性价比生存指南</title>
+<meta name="description" content="按花掉什么、换回什么检索生存建议：章节、证据等级、钱、时间、毅力。">
+<script>(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark')}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --bg-alt:#f6f6f7; --bg-soft:#f6f6f7; --bg-mute:#f1f1f2; --bg-elv:#ffffff;
+  --divider:#e2e2e3; --gutter:#e2e2e3;
+  --t1:rgba(60,60,67,1); --t2:rgba(60,60,67,.78); --t3:rgba(60,60,67,.56);
+  --brand-1:#3451b2; --brand-2:#3a5ccc; --brand-3:#5672cd; --brand-soft:rgba(100,108,255,.14);
+  --green-1:#18794e; --green-soft:rgba(16,185,129,.14);
+  --yellow-1:#915930; --yellow-soft:rgba(234,179,8,.14);
+  --red-1:#b8272c; --red-soft:rgba(244,63,94,.14);
+  --gray-1:#565a5f; --gray-soft:rgba(142,150,170,.14);
+  --mark:rgba(234,179,8,.32);
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --nav-h:64px; --side-w:272px;
+  color-scheme:light;
+}
+html.dark{
+  --bg:#1b1b1f; --bg-alt:#161618; --bg-soft:#202127; --bg-mute:#2b2b2f; --bg-elv:#202127;
+  --divider:#2e2e32; --gutter:#000000;
+  --t1:rgba(255,255,245,.86); --t2:rgba(235,235,245,.6); --t3:rgba(235,235,245,.38);
+  --brand-1:#a8b1ff; --brand-2:#5c73e7; --brand-3:#3e63dd; --brand-soft:rgba(100,108,255,.16);
+  --green-1:#3dd68c; --green-soft:rgba(16,185,129,.16);
+  --yellow-1:#f9b44e; --yellow-soft:rgba(234,179,8,.16);
+  --red-1:#f66f81; --red-soft:rgba(244,63,94,.16);
+  --gray-1:#a4a8ae; --gray-soft:rgba(142,150,170,.16);
+  --mark:rgba(234,179,8,.28);
+  --shadow:0 1px 2px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--nav-h) + 16px)}
+body{margin:0;background:var(--bg);color:var(--t1);font:14px/1.7 var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--brand-1);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2);text-decoration:underline;text-underline-offset:2px}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand-1);outline-offset:2px;border-radius:4px}
+mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
+[hidden]{display:none!important}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:30;background:var(--bg);border-bottom:1px solid var(--divider)}
+.nav-in{height:100%;display:flex;align-items:center;gap:16px;padding:0 24px}
+.title{display:flex;align-items:center;gap:10px;font-weight:600;font-size:16px;color:var(--t1);white-space:nowrap}
+.title:hover{text-decoration:none;color:var(--t1)}
+.logo{width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,var(--brand-3),var(--brand-1));display:grid;place-items:center;color:#fff;font-size:12px;font-weight:700}
+.search{flex:1;max-width:520px;margin-left:auto;position:relative}
+.search input{width:100%;height:40px;padding:0 44px 0 40px;border-radius:8px;border:1px solid transparent;background:var(--bg-alt);color:var(--t1);font:inherit;font-size:14px;transition:border-color .25s,background .25s}
+.search input:hover{border-color:var(--divider)}
+.search input:focus{outline:0;border-color:var(--brand-1);background:var(--bg)}
+.search input::placeholder{color:var(--t3)}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:18px;height:18px;fill:none;stroke:var(--t3);stroke-width:2;pointer-events:none}
+.search kbd{position:absolute;right:10px;top:50%;transform:translateY(-50%);font:500 11px/1 var(--font);color:var(--t3);border:1px solid var(--divider);border-radius:4px;padding:3px 6px;background:var(--bg-elv);pointer-events:none}
+.nav-r{display:flex;align-items:center;gap:8px}
+.icon-btn{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;color:var(--t2);transition:background .25s,color .25s}
+.icon-btn:hover{background:var(--bg-soft);color:var(--t1)}
+.icon-btn svg{width:20px;height:20px;fill:currentColor}
+.switch{position:relative;width:40px;height:22px;border-radius:11px;border:1px solid var(--divider);background:var(--bg-mute);transition:border-color .25s,background .25s;flex:none;margin-left:8px}
+.switch:hover{border-color:var(--t3)}
+.switch .knob{position:absolute;top:1px;left:1px;width:18px;height:18px;border-radius:50%;background:var(--bg-elv);box-shadow:var(--shadow);transition:transform .25s;display:grid;place-items:center}
+html.dark .switch .knob{transform:translateX(18px)}
+.switch svg{width:12px;height:12px;fill:var(--t2)}
+.switch .sun{display:block} .switch .moon{display:none}
+html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
+.menu-btn{display:none}
+
+/* sidebar */
+.sidebar{position:fixed;top:var(--nav-h);bottom:0;left:0;width:var(--side-w);background:var(--bg-alt);padding:32px 32px 96px;overflow-y:auto;overscroll-behavior:contain;z-index:20}
+.group{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid var(--divider)}
+.group:last-of-type{border-bottom:0}
+.gt{font-size:14px;font-weight:700;color:var(--t1);line-height:24px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.gt small{font-weight:400;font-size:12px;color:var(--t3)}
+.sec-links{display:flex;flex-direction:column}
+.sec-link{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:4px 0;font-size:14px;font-weight:500;color:var(--t2);line-height:24px;text-align:left;transition:color .25s;border-radius:0}
+.sec-link:hover{color:var(--t1)}
+.sec-link[aria-pressed="true"]{color:var(--brand-1)}
+.sec-link i{font-style:normal;font-size:12px;color:var(--t3);font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding-top:6px}
+.chip{border:1px solid var(--divider);background:var(--bg-elv);color:var(--t2);border-radius:999px;padding:3px 11px;font-size:12px;font-weight:500;line-height:18px;transition:all .2s}
+.chip:hover{border-color:var(--brand-3);color:var(--t1)}
+.chip[aria-pressed="true"]{background:var(--brand-soft);border-color:var(--brand-1);color:var(--brand-1)}
+.toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t2);padding:4px 0;cursor:pointer;font-weight:500}
+.toggle input{accent-color:var(--brand-1);width:15px;height:15px;margin:0}
+.reset{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 14px;border:1px solid var(--divider);border-radius:20px;font-size:13px;font-weight:500;color:var(--t2);background:var(--bg-elv);transition:all .25s}
+.reset:hover{border-color:var(--brand-1);color:var(--brand-1)}
+.hint{font-size:12px;color:var(--t3);line-height:1.6;margin-top:16px}
+.hint p{margin:4px 0}
+.backdrop{display:none}
+
+/* content */
+.content{padding:calc(var(--nav-h) + 40px) 48px 128px calc(var(--side-w) + 48px)}
+.doc{max-width:900px;margin:0 auto}
+.doc-head{margin-bottom:28px}
+.doc-head h1{font-size:32px;line-height:40px;font-weight:700;letter-spacing:-.02em;margin:0 0 8px}
+.doc-head p{margin:0;color:var(--t2);font-size:16px}
+.doc-head .stat{color:var(--t3);font-size:14px;margin-top:6px}
+.doc-head .stat b{color:var(--brand-1);font-weight:600}
+.sec-block{margin-top:40px}
+.sec-h{display:flex;align-items:baseline;gap:12px;padding-top:24px;border-top:1px solid var(--divider);margin-bottom:8px}
+.sec-h h2{font-size:24px;line-height:32px;font-weight:600;letter-spacing:-.02em;margin:0}
+.sec-h .shown{margin-left:auto;font-size:13px;color:var(--t3);font-variant-numeric:tabular-nums}
+.intro{margin:0 0 20px;color:var(--t2);font-size:14px;max-width:72ch}
+
+.card{background:var(--bg-soft);border:1px solid transparent;border-radius:12px;padding:22px 24px 18px;margin-bottom:16px;transition:border-color .25s,background .25s}
+.card:hover{border-color:var(--divider)}
+.card-h{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.card-h h3{margin:0;font-size:18px;line-height:28px;font-weight:600;letter-spacing:-.01em;flex:1;min-width:0;overflow-wrap:anywhere}
+.card-h .idx{color:var(--t3);font-size:14px;line-height:28px;font-variant-numeric:tabular-nums;min-width:22px}
+.card-h .anchor{opacity:0;color:var(--brand-1);font-size:16px;line-height:28px;font-weight:500;transition:opacity .2s}
+.card:hover .anchor,.anchor:focus-visible{opacity:1}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.badge{display:inline-block;border-radius:10px;padding:0 10px;line-height:20px;font-size:12px;font-weight:600;white-space:nowrap;transform:translateY(0)}
+.badge.tip{background:var(--brand-soft);color:var(--brand-1)}
+.badge.A{background:var(--green-soft);color:var(--green-1)}
+.badge.B{background:var(--yellow-soft);color:var(--yellow-1)}
+.badge.C{background:var(--gray-soft);color:var(--gray-1)}
+.badge.danger{background:var(--red-soft);color:var(--red-1)}
+.badge.warn{background:var(--yellow-soft);color:var(--yellow-1)}
+.badge.plain{background:var(--gray-soft);color:var(--t2);font-weight:500}
+.rows{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px;line-height:1.75}
+.rows .k{color:var(--t3);font-weight:500;font-size:13px;line-height:1.75;padding-top:1px}
+.rows .v{color:var(--t1);min-width:0;overflow-wrap:anywhere}
+.rows .v.note{color:var(--t2)}
+.src{margin-top:14px;border-top:1px solid var(--divider);padding-top:10px}
+.src summary{list-style:none;cursor:pointer;font-size:13px;font-weight:500;color:var(--t2);display:flex;align-items:center;gap:6px;user-select:none}
+.src summary::-webkit-details-marker{display:none}
+.src summary::before{content:"";width:6px;height:6px;border-right:1.5px solid var(--t3);border-bottom:1.5px solid var(--t3);transform:rotate(-45deg);transition:transform .2s;margin-right:2px}
+.src[open] summary::before{transform:rotate(45deg)}
+.src .body{padding-top:8px;font-size:13px;line-height:1.75;color:var(--t2);overflow-wrap:anywhere}
+
+.empty{border:1px dashed var(--divider);border-radius:12px;padding:40px 24px;text-align:center;color:var(--t2);margin-top:24px}
+.empty button{margin-top:12px;padding:7px 16px;border:1px solid var(--divider);border-radius:20px;font-weight:500;background:var(--bg-elv)}
+.empty button:hover{border-color:var(--brand-1);color:var(--brand-1)}
+.status{color:var(--t3);padding:40px 0;text-align:center}
+.status code{font-family:var(--mono);font-size:13px;background:var(--bg-mute);padding:2px 6px;border-radius:4px}
+.foot{margin-top:64px;padding-top:24px;border-top:1px solid var(--divider);color:var(--t3);font-size:13px;line-height:1.7}
+
+@media (max-width:960px){
+  :root{--nav-h:56px}
+  .nav-in{padding:0 16px;gap:10px}
+  .title span{display:none}
+  .search{max-width:none}
+  .search kbd{display:none}
+  .menu-btn{display:grid}
+  .sidebar{transform:translateX(-100%);transition:transform .25s;box-shadow:none;padding:24px 24px 96px;width:min(var(--side-w),86vw)}
+  .sidebar.open{transform:none;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+  .backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:15;opacity:0;pointer-events:none;transition:opacity .25s}
+  .backdrop.on{opacity:1;pointer-events:auto}
+  .content{padding:calc(var(--nav-h) + 24px) 20px 96px}
+  .doc-head h1{font-size:26px;line-height:34px}
+  .card{padding:18px 16px 14px;border-radius:10px}
+  .card-h h3{font-size:16px;line-height:24px}
+  .card-h .idx{line-height:24px}
+  .rows{grid-template-columns:1fr;gap:4px}
+  .rows .k{padding-top:6px}
+  .rows .k:first-child{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <button class="icon-btn menu-btn" id="menu" aria-label="打开筛选" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
+    <a class="title" href="./"><span class="logo">性</span><span>高性价比生存指南</span></a>
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="搜索条目" autocomplete="off" aria-label="搜索条目">
+      <kbd>/</kbd>
+    </label>
+    <div class="nav-r">
+      <a class="icon-btn" href="README.md" title="查看 README.md" aria-label="README"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg></a>
+      <button class="switch" id="theme" aria-label="切换深色模式" title="切换深色模式"><span class="knob"><svg class="sun" viewBox="0 0 24 24"><path d="M12 4a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm8-6a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zM5 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm12.07-5.07a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zM8.05 16.95a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zm9.02 0l.7.71a1 1 0 1 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42zM6.34 5.93l.71.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.41-1.42zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg><svg class="moon" viewBox="0 0 24 24"><path d="M12.1 22c-5.5 0-10-4.5-10-10 0-4.8 3.4-8.9 8-9.8.5-.1.9.4.7.9A8 8 0 0 0 20.9 13c.5-.2 1 .2.9.7-.9 4.7-5 8.3-9.7 8.3z"/></svg></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="group">
+    <div class="gt">章节</div>
+    <div class="sec-links" id="f-sec" data-dim="sec"></div>
+  </div>
+  <div class="group">
+    <div class="gt">证据等级 <small>荟萃/RCT · 有研究 · 共识</small></div>
+    <div class="chips" data-dim="grade">
+      <button class="chip" data-v="A" aria-pressed="false">A 级</button>
+      <button class="chip" data-v="B" aria-pressed="false">B 级</button>
+      <button class="chip" data-v="C" aria-pressed="false">C 级</button>
+    </div>
+  </div>
+  <div class="group">
+    <div class="gt">花钱</div>
+    <div class="chips" data-dim="money">
+      <button class="chip" data-v="0" aria-pressed="false">不花钱</button>
+      <button class="chip" data-v="少" aria-pressed="false">少</button>
+      <button class="chip" data-v="多" aria-pressed="false">多</button>
+    </div>
+  </div>
+  <div class="group">
+    <div class="gt">花时间</div>
+    <div class="chips" data-dim="time">
+      <button class="chip" data-v="少" aria-pressed="false">顺手</button>
+      <button class="chip" data-v="中" aria-pressed="false">几小时</button>
+      <button class="chip" data-v="多" aria-pressed="false">每天占用</button>
+    </div>
+  </div>
+  <div class="group">
+    <div class="gt">要毅力</div>
+    <div class="chips" data-dim="will">
+      <button class="chip" data-v="否" aria-pressed="false">不用</button>
+      <button class="chip" data-v="些" aria-pressed="false">一点</button>
+      <button class="chip" data-v="是" aria-pressed="false">很多</button>
+    </div>
+  </div>
+  <div class="group">
+    <label class="toggle"><input type="checkbox" id="f-dispute"> 只看标了争议的</label>
+    <label class="toggle"><input type="checkbox" id="f-todo"> 只看有待核实的</label>
+    <button class="reset" id="reset">清空筛选</button>
+  </div>
+  <div class="hint">
+    <p>同一组多选是「或」，不同组之间是「且」。</p>
+    <p>每节内按性价比从高到低排，检索不改变顺序。</p>
+    <p>正文与标签来自仓库里的 <a href="README.md">README.md</a>，改正文即改这里。</p>
+  </div>
+</aside>
+
+<main class="content">
+  <div class="doc">
+    <div class="doc-head">
+      <h1>高性价比生存指南</h1>
+      <p>每一条都回答两个问题：花掉什么，换回什么。</p>
+      <div class="stat" aria-live="polite">当前显示 <b id="cnt">–</b> 条，共 <span id="tot">–</span> 条</div>
+    </div>
+    <div id="list">
+      <div class="status" id="status">正在读取 README.md …</div>
+      <div class="empty" id="empty" hidden>
+        没有匹配的条目。去掉一个筛选条件，或换个更短的关键词。
+        <div><button id="reset2">清空筛选</button></div>
+      </div>
+    </div>
+    <div class="foot">数字口径以条目内标注为准：第 1、2 节是 ACM 或特定死因，第 3、4 节是精力/时间，第 5 节是金钱，互不换算。来源核实过程见 docs/核实记录。Unlicense，公有领域。</div>
+  </div>
+</main>
+
+<script>
+/* ---------- 解析 README ---------- */
+function parseReadme(md){
+  const lines = md.split(/\r?\n/);
+  const sections = [];
+  let sec = null, entry = null;
+  const flush = () => { if (entry && sec) { sec.entries.push(entry); } entry = null; };
+  for (const raw of lines){
+    const line = raw.trimEnd();
+    let m;
+    if ((m = /^## (\d)\. (.+)$/.exec(line))) { flush(); sec = {n:m[1], title:m[2].trim(), intro:'', entries:[]}; sections.push(sec); continue; }
+    if (/^## /.test(line)) { flush(); sec = null; continue; }
+    if (!sec) continue;
+    if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:''}; continue; }
+    if ((m = /^<!--\s*成本标签:\s*(.*?)\s*-->/.exec(line)) && entry){
+      for (const kv of m[1].split(/\s+/)){ const [k,v] = kv.split('='); if(k==='钱') entry.money=v; if(k==='时间') entry.time=v; if(k==='毅力') entry.will=v; }
+      continue;
+    }
+    if (entry){
+      if ((m = /^- 成本：(.*)$/.exec(line))) entry.cost = m[1];
+      else if ((m = /^- 收益：(.*)$/.exec(line))) entry.gain = m[1];
+      else if ((m = /^- 证据等级：\s*([ABC])/.exec(line))) entry.grade = m[1];
+      else if ((m = /^- 来源：(.*)$/.exec(line))) entry.src = m[1];
+      else if ((m = /^- 备注：(.*)$/.exec(line))) entry.note = m[1];
+      continue;
+    }
+    if (line && !sec.intro) sec.intro = line;
+  }
+  flush();
+  for (const s of sections) for (const e of s.entries){
+    e.dispute = /^争议/.test(e.note);
+    e.todo = /待核实|TODO/.test(e.src + e.gain + e.note + e.cost);
+    e.hay = [e.title, e.cost, e.gain, e.note, e.src, e.grade].join('\n').toLowerCase();
+  }
+  return sections;
+}
+
+/* ---------- 文本渲染：链接 + 高亮 ---------- */
+const URL_RE = /https?:\/\/[^\s；;]+/g;
+function trimUrl(u){
+  let t = '';
+  for (;;){
+    const ch = u.slice(-1);
+    const unbalanced = ch === ')' && (u.split('(').length < u.split(')').length);
+    if (!/[）。,，]/.test(ch) && !unbalanced) break;
+    t = ch + t; u = u.slice(0, -1);
+  }
+  return [u, t];
+}
+function renderText(el, text, terms){
+  el.textContent = '';
+  let last = 0; URL_RE.lastIndex = 0; let m;
+  const pushText = (s) => { if (s) highlightInto(el, s, terms); };
+  while ((m = URL_RE.exec(text))){
+    pushText(text.slice(last, m.index));
+    const [u, tail] = trimUrl(m[0]);
+    const a = document.createElement('a'); a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.textContent = u;
+    el.appendChild(a); pushText(tail);
+    last = m.index + m[0].length;
+  }
+  pushText(text.slice(last));
+}
+function highlightInto(el, s, terms){
+  if (!terms.length){ el.appendChild(document.createTextNode(s)); return; }
+  const lower = s.toLowerCase(); let i = 0;
+  while (i < s.length){
+    let best = -1, bl = 0;
+    for (const t of terms){ const k = lower.indexOf(t, i); if (k !== -1 && (best === -1 || k < best)) { best = k; bl = t.length; } }
+    if (best === -1){ el.appendChild(document.createTextNode(s.slice(i))); break; }
+    if (best > i) el.appendChild(document.createTextNode(s.slice(i, best)));
+    const mk = document.createElement('mark'); mk.textContent = s.slice(best, best+bl); el.appendChild(mk);
+    i = best + bl;
+  }
+}
+
+/* ---------- 构建 DOM ---------- */
+const LABEL = { money:{'0':'不花钱','少':'花少量钱','多':'花不少钱'}, time:{'少':'顺手','中':'花几小时','多':'每天占时间'}, will:{'否':'不用毅力','些':'要一点毅力','是':'要很多毅力'} };
+let CARDS = [];
+function esc(s){ return s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
+function build(sections){
+  const list = document.getElementById('list');
+  const fsec = document.getElementById('f-sec');
+  for (const s of sections){
+    const b = document.createElement('button'); b.className='sec-link'; b.dataset.v = s.n; b.setAttribute('aria-pressed','false');
+    b.innerHTML = `<span>${s.n}. ${esc(s.title)}</span><i>${s.entries.length}</i>`; fsec.appendChild(b);
+
+    const block = document.createElement('section'); block.className='sec-block'; block.dataset.sec = s.n; block.id = 'sec-'+s.n;
+    block.innerHTML = `<div class="sec-h"><h2>${s.n}. ${esc(s.title)}</h2><span class="shown"><span class="k"></span> / ${s.entries.length}</span></div><p class="intro">${esc(s.intro)}</p>`;
+    for (const e of s.entries){
+      const id = `e-${e.sec}-${e.n}`;
+      const c = document.createElement('article'); c.className='card'; c.id = id;
+      c.innerHTML = `
+        <div class="card-h"><span class="idx">${e.n}</span><h3 class="t"></h3><a class="anchor" href="#${id}" aria-label="本条链接">#</a></div>
+        <div class="badges"></div>
+        <div class="rows">
+          <div class="k">成本</div><div class="v cost"></div>
+          <div class="k">收益</div><div class="v gain"></div>
+          <div class="k">备注</div><div class="v note"></div>
+        </div>
+        <details class="src"><summary>来源</summary><div class="body"></div></details>`;
+      const badges = c.querySelector('.badges');
+      const add = (cls, text) => { const t=document.createElement('span'); t.className='badge '+cls; t.textContent=text; badges.appendChild(t); };
+      add(e.grade, `证据 ${e.grade} 级`);
+      for (const d of ['money','time','will']) if (e[d]) add('plain', LABEL[d][e[d]] || e[d]);
+      if (e.dispute) add('danger', '争议');
+      if (e.todo) add('warn', '含待核实');
+      block.appendChild(c);
+      CARDS.push({e, el:c});
+    }
+    list.appendChild(block);
+  }
+  document.getElementById('tot').textContent = CARDS.length;
+}
+
+/* ---------- 筛选状态 ---------- */
+const DIMS = ['sec','grade','money','time','will'];
+const state = { q:'', sec:new Set(), grade:new Set(), money:new Set(), time:new Set(), will:new Set(), dispute:false, todo:false };
+function readUrl(){
+  const p = new URLSearchParams(location.search);
+  state.q = p.get('q') || '';
+  for (const d of DIMS) state[d] = new Set((p.get(d)||'').split(',').filter(Boolean));
+  state.dispute = p.get('dispute') === '1'; state.todo = p.get('todo') === '1';
+}
+function writeUrl(){
+  const p = new URLSearchParams();
+  if (state.q) p.set('q', state.q);
+  for (const d of DIMS) if (state[d].size) p.set(d, [...state[d]].join(','));
+  if (state.dispute) p.set('dispute','1'); if (state.todo) p.set('todo','1');
+  const qs = p.toString(); history.replaceState(null, '', (qs ? '?'+qs : location.pathname) + location.hash);
+}
+function syncControls(){
+  document.getElementById('q').value = state.q;
+  document.querySelectorAll('[data-dim] [data-v]').forEach(b => b.setAttribute('aria-pressed', String(state[b.parentElement.dataset.dim].has(b.dataset.v))));
+  document.getElementById('f-dispute').checked = state.dispute;
+  document.getElementById('f-todo').checked = state.todo;
+}
+function apply(){
+  const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+  let shown = 0; const perSec = {};
+  for (const {e, el} of CARDS){
+    let ok = true;
+    if (state.sec.size && !state.sec.has(e.sec)) ok = false;
+    if (ok && state.grade.size && !state.grade.has(e.grade)) ok = false;
+    if (ok && state.money.size && !state.money.has(e.money)) ok = false;
+    if (ok && state.time.size && !state.time.has(e.time)) ok = false;
+    if (ok && state.will.size && !state.will.has(e.will)) ok = false;
+    if (ok && state.dispute && !e.dispute) ok = false;
+    if (ok && state.todo && !e.todo) ok = false;
+    if (ok && terms.length && !terms.every(t => e.hay.includes(t))) ok = false;
+    el.hidden = !ok;
+    if (ok){
+      shown++; perSec[e.sec] = (perSec[e.sec]||0)+1;
+      renderText(el.querySelector('.t'), e.title, terms);
+      renderText(el.querySelector('.cost'), e.cost, terms);
+      renderText(el.querySelector('.gain'), e.gain, terms);
+      renderText(el.querySelector('.note'), e.note, terms);
+      renderText(el.querySelector('.src .body'), e.src, terms);
+      const inBody = (e.title+e.cost+e.gain+e.note).toLowerCase();
+      if (terms.length && terms.some(t => e.src.toLowerCase().includes(t)) && !terms.some(t => inBody.includes(t))) el.querySelector('.src').open = true;
+    }
+  }
+  for (const b of document.querySelectorAll('.sec-block')){ const n = perSec[b.dataset.sec]||0; b.hidden = n === 0; b.querySelector('.shown .k').textContent = n; }
+  document.getElementById('cnt').textContent = shown;
+  document.getElementById('empty').hidden = shown !== 0;
+  syncControls(); writeUrl();
+}
+
+/* ---------- 事件 ---------- */
+function wire(){
+  document.querySelectorAll('[data-dim]').forEach(g => g.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-v]'); if (!b) return;
+    const set = state[g.dataset.dim]; set.has(b.dataset.v) ? set.delete(b.dataset.v) : set.add(b.dataset.v); apply();
+  }));
+  document.getElementById('f-dispute').addEventListener('change', e => { state.dispute = e.target.checked; apply(); });
+  document.getElementById('f-todo').addEventListener('change', e => { state.todo = e.target.checked; apply(); });
+  let tm; document.getElementById('q').addEventListener('input', e => { clearTimeout(tm); tm = setTimeout(() => { state.q = e.target.value.trim(); apply(); }, 120); });
+  const reset = () => { state.q=''; for (const d of DIMS) state[d].clear(); state.dispute=false; state.todo=false; apply(); };
+  document.getElementById('reset').addEventListener('click', reset);
+  document.getElementById('reset2').addEventListener('click', reset);
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); document.getElementById('q').focus(); }
+    if (e.key === 'Escape') { if (document.activeElement.id === 'q') document.activeElement.blur(); setMenu(false); }
+  });
+  // 侧栏（移动端抽屉）
+  const sb = document.getElementById('sidebar'), bd = document.getElementById('backdrop'), mb = document.getElementById('menu');
+  const setMenu = (on) => { sb.classList.toggle('open', on); bd.classList.toggle('on', on); mb.setAttribute('aria-expanded', String(on)); };
+  mb.addEventListener('click', () => setMenu(!sb.classList.contains('open')));
+  bd.addEventListener('click', () => setMenu(false));
+  // 深色模式
+  document.getElementById('theme').addEventListener('click', () => {
+    const dark = !document.documentElement.classList.contains('dark');
+    document.documentElement.classList.toggle('dark', dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+}
+
+/* ---------- 启动 ---------- */
+(async function init(){
+  const status = document.getElementById('status');
+  try {
+    if (location.protocol === 'file:') throw new Error('file');
+    const r = await fetch('README.md', {cache:'no-cache'});
+    if (!r.ok) throw new Error('http '+r.status);
+    const sections = parseReadme(await r.text());
+    if (!sections.length) throw new Error('empty');
+    status.remove(); build(sections); readUrl(); wire(); apply();
+    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  } catch (err) {
+    status.innerHTML = err.message === 'file'
+      ? '这个页面要通过 http 打开才能读取 README.md。在仓库目录运行 <code>python -m http.server</code>，然后访问 <code>http://localhost:8000/</code>；或直接用 GitHub Pages 地址。'
+      : `读取 README.md 失败（${esc(String(err.message))}）。确认它和 index.html 在同一目录。`;
+  }
+})();
+</script>
+</body>
+</html>
