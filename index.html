@@ -676,7 +676,8 @@ function wire(){
     const b = ev.target.closest('[data-v]'); if (!b) return;
     const dim = g.dataset.dim, v = b.dataset.v, set = state[dim];
     if (dim === 'sec'){
-      if (v === '' || set.has(v)) set.clear(); else { set.clear(); set.add(v); }
+      // 章节单选：再点一次已选中的不取消，免得双击退回全部章节；要看全部点「全部章节」
+      if (v === '') set.clear(); else { set.clear(); set.add(v); }
     } else {
       set.has(v) ? set.delete(v) : set.add(v);
     }
