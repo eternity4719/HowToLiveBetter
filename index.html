@@ -161,7 +161,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 .badge.r3{background:var(--brand-soft);color:var(--brand-1)}
 .badge.r2{background:var(--green-soft);color:var(--green-1)}
 .badge.r1{background:var(--gray-soft);color:var(--gray-1)}
-.plain{margin:0 0 14px;padding:10px 14px;border-left:2px solid var(--brand-1);background:var(--brand-soft);border-radius:0 6px 6px 0;font-size:15px;line-height:1.75;color:var(--t1);overflow-wrap:anywhere}
+.human{margin:0 0 14px;padding:10px 14px;border-left:2px solid var(--brand-1);background:var(--brand-soft);border-radius:0 6px 6px 0;font-size:15px;line-height:1.75;color:var(--t1);overflow-wrap:anywhere}
 .rows{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px;line-height:1.75}
 .rows .k{color:var(--t3);font-weight:500;font-size:13px;line-height:1.75;padding-top:1px}
 .rows .v{color:var(--t1);min-width:0;overflow-wrap:anywhere}
@@ -210,7 +210,7 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
   .card{padding:18px 16px 14px;border-radius:10px}
   .card-h h3{font-size:16px;line-height:24px}
   .card-h .idx{line-height:24px}
-  .plain{padding:9px 12px;font-size:14px;margin-bottom:12px}
+  .human{padding:9px 12px;font-size:14px;margin-bottom:12px}
   .rows{grid-template-columns:1fr;gap:4px}
   .rows .k{padding-top:6px}
   .rows .k:first-child{padding-top:0}
@@ -406,14 +406,14 @@ function parseReadme(md){
     if ((m = /^#{1,2} (\d+)\. (.+)$/.exec(line))) { flush(); sec = {n:m[1], title:m[2].trim(), intro:'', entries:[]}; sections.push(sec); continue; }
     if (/^#{1,2} /.test(line)) { flush(); sec = null; continue; }
     if (!sec) continue;
-    if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', plain:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:'', level:'', lens:''}; continue; }
+    if ((m = /^### (\d+)\. (.+)$/.exec(line))) { flush(); entry = {sec:sec.n, n:m[1], title:m[2].trim(), cost:'', human:'', gain:'', grade:'', src:'', note:'', money:'', time:'', will:'', level:'', lens:''}; continue; }
     if ((m = /^<!--\s*成本标签:\s*(.*?)\s*-->/.exec(line)) && entry){
       for (const kv of m[1].split(/\s+/)){ const [k,v] = kv.split('='); if(k==='钱') entry.money=v; if(k==='时间') entry.time=v; if(k==='毅力') entry.will=v; if(k==='收益') entry.level=v; if(k==='口径') entry.lens=v; }
       continue;
     }
     if (entry){
       if ((m = /^- 成本：(.*)$/.exec(line))) entry.cost = m[1];
-      else if ((m = /^- 说人话：(.*)$/.exec(line))) entry.plain = m[1];
+      else if ((m = /^- 说人话：(.*)$/.exec(line))) entry.human = m[1];
       else if ((m = /^- 收益：(.*)$/.exec(line))) entry.gain = m[1];
       else if ((m = /^- 证据等级：\s*([ABC])/.exec(line))) entry.grade = m[1];
       else if ((m = /^- 来源：(.*)$/.exec(line))) entry.src = m[1];
@@ -429,7 +429,7 @@ function parseReadme(md){
     e.cs = (COST_W.money[e.money] ?? 0) + (COST_W.time[e.time] ?? 0) + (COST_W.will[e.will] ?? 0);
     e.ratio = e.level === '大' ? (e.cs === 0 ? '极高' : (e.cs <= 2 ? '高' : '一般'))
             : e.level === '中' ? (e.cs === 0 ? '高' : '一般') : '一般';
-    e.hay = [e.title, e.plain, e.cost, e.gain, e.note, e.src, e.grade].join('\n').toLowerCase();
+    e.hay = [e.title, e.human, e.cost, e.gain, e.note, e.src, e.grade].join('\n').toLowerCase();
   }
   return sections;
 }
@@ -569,7 +569,7 @@ function build(sections){
       c.innerHTML = `
         <div class="card-h"><span class="idx">${e.n}</span><h3 class="t"></h3><a class="anchor" href="#${id}" aria-label="本条链接">#</a></div>
         <div class="badges"></div>
-        <p class="plain"></p>
+        <p class="human"></p>
         <div class="rows">
           <div class="k">成本</div><div class="v cost"></div>
           <div class="k">收益</div><div class="v gain"></div>
@@ -588,7 +588,7 @@ function build(sections){
       if (e.dispute) add('danger', '争议');
       if (e.todo) add('warn', '含待核实');
       block.appendChild(c);
-      const card = {e, el:c, key:null, vis:false, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), plain:c.querySelector('.plain'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), details:c.querySelector('.src')}};
+      const card = {e, el:c, key:null, vis:false, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), human:c.querySelector('.human'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), details:c.querySelector('.src')}};
       renderCard(card, [], '');
       CARDS.push(card); CARD_OF.set(c, card); CARD_IO.observe(c);
     }
@@ -637,12 +637,12 @@ function renderCard(card, terms, key){
   const {e, f} = card;
   renderText(f.t, e.title, terms);
   renderText(f.cost, e.cost, terms);
-  f.plain.hidden = !e.plain;
-  if (e.plain) renderText(f.plain, e.plain, terms);
+  f.human.hidden = !e.human;
+  if (e.human) renderText(f.human, e.human, terms);
   renderText(f.gain, e.gain, terms);
   renderText(f.note, e.note, terms);
   renderText(f.src, e.src, terms);
-  const inBody = (e.title+e.plain+e.cost+e.gain+e.note).toLowerCase();
+  const inBody = (e.title+e.human+e.cost+e.gain+e.note).toLowerCase();
   f.details.open = terms.length > 0 && terms.some(t => e.src.toLowerCase().includes(t)) && !terms.some(t => inBody.includes(t));
   card.key = key;
 }
