@@ -67,7 +67,7 @@ html.dark{
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:calc(var(--nav-h) + 16px)}
-body{margin:0;background:var(--bg);color:var(--t1);font:14px/1.7 var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--bg);color:var(--t1);font:14px/1.7 var(--font);-webkit-font-smoothing:antialiased}
 a{color:var(--brand-1);text-decoration:none;transition:color .25s}
 a:hover{color:var(--brand-2);text-decoration:underline;text-underline-offset:2px}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
@@ -139,7 +139,7 @@ html.dark .switch .sun{display:none} html.dark .switch .moon{display:block}
 .sec-h .shown{margin-left:auto;font-size:13px;color:var(--t3);font-variant-numeric:tabular-nums}
 .intro{margin:0 0 20px;color:var(--t2);font-size:14px;max-width:72ch}
 
-.card{background:var(--bg-soft);border:1px solid transparent;border-radius:12px;padding:22px 24px 18px;margin-bottom:16px;transition:border-color .25s,background .25s}
+.card{background:var(--bg-soft);border:1px solid transparent;border-radius:12px;padding:22px 24px 18px;margin-bottom:16px;transition:border-color .25s,background .25s;content-visibility:auto;contain-intrinsic-size:300px;contain-intrinsic-size:auto 300px}
 .card:hover{border-color:var(--divider)}
 .card-h{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
 .card-h h3{margin:0;font-size:18px;line-height:28px;font-weight:600;letter-spacing:-.01em;flex:1;min-width:0;overflow-wrap:anywhere}
@@ -354,6 +354,39 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
 </main>
 
 <script>
+/* ---------- 调试面板：地址后加 ?perf=1 打开，实测各步耗时 ---------- */
+const PERF = (function(){
+  const off = { on:false, log(){}, mark(){} };
+  if (!/[?&]perf=1/.test(location.search)) return off;
+  const box = document.createElement('div');
+  box.style.cssText = 'position:fixed;right:10px;bottom:10px;z-index:99;width:300px;max-height:50vh;overflow:auto;background:rgba(0,0,0,.85);color:#8fe;font:12px/1.5 ui-monospace,Consolas,monospace;padding:8px 10px;border-radius:8px;white-space:pre-wrap;pointer-events:auto';
+  const rows = [];
+  const put = (s) => { rows.unshift(s); if (rows.length > 60) rows.pop(); box.textContent = rows.join('\n'); };
+  const api = {
+    on: true,
+    log(name, t0, extra){ const ms = performance.now() - t0; put(`${ms >= 16 ? '⚠' : '·'} ${name} ${ms.toFixed(1)}ms${extra ? ' ' + extra : ''}`); },
+    mark(s){ put('· ' + s); }
+  };
+  addEventListener('DOMContentLoaded', () => document.body.appendChild(box), {once:true});
+  if (document.readyState !== 'loading') document.body.appendChild(box);
+  // 展开/收起 <details> 的重排代价：强制同步布局来量
+  document.addEventListener('toggle', ev => {
+    if (!ev.target.matches('details')) return;
+    const t0 = performance.now();
+    void document.documentElement.scrollHeight;   // 强制走一遍布局
+    api.log((ev.target.open ? '展开' : '收起') + '重排', t0);
+  }, true);
+  // 掉帧：连续两帧间隔超过 32ms 就记一条
+  let last = performance.now(), worst = 0, since = last;
+  const tick = (t) => { const d = t - last; last = t; if (d > worst) worst = d;
+    if (t - since > 1000){ if (worst > 32) put(`⚠ 最长帧 ${worst.toFixed(0)}ms`); worst = 0; since = t; }
+    requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+  try { new PerformanceObserver(l => { for (const e of l.getEntries()) put(`⚠ 长任务 ${e.duration.toFixed(0)}ms`); })
+    .observe({entryTypes:['longtask']}); } catch (e) {}
+  return api;
+})();
+
 /* ---------- 解析 README ---------- */
 function parseReadme(md){
   const lines = md.split(/\r?\n/);
@@ -495,7 +528,19 @@ const COST_W = { money:{'0':0,'少':1,'多':2}, time:{'少':0,'中':1,'多':2}, 
 const LENS_LABEL = {'死亡率':'换寿命','金钱':'换钱','时间':'换时间精力','自由':'换人身自由'};
 /* ---------- 构建 DOM ---------- */
 const LABEL = { money:{'0':'不花钱','少':'花少量钱','多':'花不少钱'}, time:{'少':'顺手','中':'花几小时','多':'每天占时间'}, will:{'否':'不用毅力','些':'要一点毅力','是':'要很多毅力'} };
-let CARDS = [];
+let CARDS = [], BLOCKS = [];
+// 卡片文字只在「上屏 + 搜索词变了」时重渲染，离屏的先记账，滚进来再补
+let CUR_TERMS = [], CUR_KEY = '';
+const CARD_OF = new WeakMap();
+const CARD_IO = new IntersectionObserver(list => {
+  const t0 = performance.now(); let n = 0;
+  for (const it of list){
+    const card = CARD_OF.get(it.target); if (!card) continue;
+    card.vis = it.isIntersecting;
+    if (card.vis && card.key !== CUR_KEY) { n++; renderCard(card, CUR_TERMS, CUR_KEY); }
+  }
+  if (n) PERF.log('滚动补渲染', t0, n + ' 张');
+}, {rootMargin:'600px 0px'});
 function esc(s){ return s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
 function build(sections){
   const list = document.getElementById('list');
@@ -534,11 +579,12 @@ function build(sections){
       if (e.dispute) add('danger', '争议');
       if (e.todo) add('warn', '含待核实');
       block.appendChild(c);
-      const card = {e, el:c, key:null, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), details:c.querySelector('.src')}};
+      const card = {e, el:c, key:null, vis:false, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), details:c.querySelector('.src')}};
       renderCard(card, [], '');
-      CARDS.push(card);
+      CARDS.push(card); CARD_OF.set(c, card); CARD_IO.observe(c);
     }
     list.appendChild(block);
+    BLOCKS.push({n:s.n, el:block, k:block.querySelector('.shown .k')});
   }
   document.getElementById('tot').textContent = CARDS.length;
 }
@@ -566,6 +612,7 @@ function writeUrl(){
   if (state.q) p.set('q', state.q);
   for (const d of DIMS) if (state[d].size) p.set(d, [...state[d]].join(','));
   if (state.dispute) p.set('dispute','1'); if (state.todo) p.set('todo','1');
+  if (PERF.on) p.set('perf','1');
   const qs = p.toString(); history.replaceState(null, '', (qs ? '?'+qs : location.pathname) + location.hash);
 }
 function syncControls(){
@@ -589,9 +636,11 @@ function renderCard(card, terms, key){
   card.key = key;
 }
 function apply(){
+  const t0 = performance.now();
   const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
   const key = terms.join(' ');
-  let shown = 0; const perSec = {};
+  CUR_TERMS = terms; CUR_KEY = key;
+  let shown = 0, rerender = 0; const perSec = {};
   for (const card of CARDS){
     const {e, el} = card;
     let ok = true;
@@ -605,16 +654,17 @@ function apply(){
     if (ok && state.dispute && !e.dispute) ok = false;
     if (ok && state.todo && !e.todo) ok = false;
     if (ok && terms.length && !terms.every(t => e.hay.includes(t))) ok = false;
-    el.hidden = !ok;
+    if (el.hidden === ok) el.hidden = !ok;
     if (ok){
       shown++; perSec[e.sec] = (perSec[e.sec]||0)+1;
-      if (card.key !== key) renderCard(card, terms, key);
+      if (card.vis && card.key !== key) { rerender++; renderCard(card, terms, key); }
     }
   }
-  for (const b of document.querySelectorAll('.sec-block')){ const n = perSec[b.dataset.sec]||0; b.hidden = n === 0; b.querySelector('.shown .k').textContent = n; }
+  for (const b of BLOCKS){ const n = perSec[b.n]||0; if (b.el.hidden !== (n === 0)) b.el.hidden = n === 0; b.k.textContent = n; }
   document.getElementById('cnt').textContent = shown;
   document.getElementById('empty').hidden = shown !== 0;
   syncControls(); writeUrl();
+  PERF.log('apply', t0, `命中 ${shown} 条，重渲染 ${rerender} 张`);
 }
 
 /* ---------- 事件 ---------- */
@@ -670,11 +720,21 @@ function wire(){
     const r = await fetch('README.md', {cache:'no-cache'});
     if (!r.ok) throw new Error('http '+r.status);
     const md = await r.text();
+    const t1 = performance.now();
     const sections = parseReadme(md);
     if (!sections.length) throw new Error('empty');
     GLOSS = parseGlossary(md);
-    status.remove(); build(sections); buildGlossary(); readUrl(); wire(); apply();
-    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    PERF.log('解析 README', t1);
+    status.remove();
+    const t2 = performance.now(); build(sections); PERF.log('建 DOM', t2, CARDS.length + ' 张卡');
+    buildGlossary(); readUrl(); wire(); apply();
+    PERF.mark(`DOM 节点 ${document.getElementsByTagName('*').length}，术语 ${GLOSS.length}`);
+    if (location.hash){
+      const target = document.getElementById(location.hash.slice(1));
+      target?.scrollIntoView();
+      // 卡片是 content-visibility:auto，首次定位后高度才准，下一帧再对一次
+      if (target) requestAnimationFrame(() => target.scrollIntoView());
+    }
   } catch (err) {
     status.innerHTML = err.message === 'file'
       ? '这个页面要通过 http 打开才能读取 README.md。在仓库目录运行 <code>python -m http.server</code>，然后访问 <code>http://localhost:8000/</code>；或直接用 GitHub Pages 地址。'
