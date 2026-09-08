@@ -404,29 +404,37 @@ function parseGlossary(md){
     if (!c || c[1] === '术语' || /^-+$/.test(c[1])) continue;
     for (const t of c[1].split('、')){
       const term = t.trim(); if (!term) continue;
-      const latin = /^[A-Za-z0-9%. ]+$/.test(term);
-      const src = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      rows.push({term, meaning: c[2], re: new RegExp(latin ? `(?<![A-Za-z0-9])${src}(?![A-Za-z0-9])` : src, 'g')});
+      rows.push({term, meaning: c[2], latin: /^[A-Za-z0-9%. ]+$/.test(term)});
     }
   }
   rows.sort((a,b) => b.term.length - a.term.length);
+  // 合并成一条正则：长词在前保证最长匹配，拉丁术语要求前后不是字母数字
+  const escRe = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const alt = (list) => list.map(g => escRe(g.term)).join('|');
+  const parts = [];
+  const latin = rows.filter(g => g.latin), cjk = rows.filter(g => !g.latin);
+  if (latin.length) parts.push(`(?<![A-Za-z0-9])(?:${alt(latin)})(?![A-Za-z0-9])`);
+  if (cjk.length) parts.push(`(?:${alt(cjk)})`);
+  GLOSS_RE = new RegExp(parts.join('|'), 'g');
+  GLOSS_BY = Object.fromEntries(rows.map(g => [g.term, g]));
   return rows;
 }
+let GLOSS_RE = null, GLOSS_BY = {};
 function termify(root){
-  if (!GLOSS.length) return;
+  if (!GLOSS_RE) return;
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const nodes = []; let n; while ((n = walker.nextNode())) if (!n.parentElement.closest('a,abbr')) nodes.push(n);
   for (const node of nodes){
-    const s = node.nodeValue; const hits = [];
-    for (const g of GLOSS){ g.re.lastIndex = 0; let m; while ((m = g.re.exec(s))) hits.push([m.index, m.index + m[0].length, g]); }
-    if (!hits.length) continue;
-    hits.sort((a,b) => a[0]-b[0] || (b[1]-b[0]) - (a[1]-a[0]));
-    const frag = document.createDocumentFragment(); let pos = 0;
-    for (const [a,b,g] of hits){
-      if (a < pos) continue;
-      if (a > pos) frag.appendChild(document.createTextNode(s.slice(pos, a)));
-      const ab = document.createElement('abbr'); ab.className = 'term'; ab.textContent = s.slice(a,b); ab.title = g.meaning; ab.tabIndex = 0; ab.dataset.term = g.term;
-      frag.appendChild(ab); pos = b;
+    const s = node.nodeValue;
+    GLOSS_RE.lastIndex = 0;
+    if (!GLOSS_RE.test(s)) continue;
+    GLOSS_RE.lastIndex = 0;
+    const frag = document.createDocumentFragment(); let pos = 0, m;
+    while ((m = GLOSS_RE.exec(s))){
+      const g = GLOSS_BY[m[0]]; if (!g) continue;
+      if (m.index > pos) frag.appendChild(document.createTextNode(s.slice(pos, m.index)));
+      const ab = document.createElement('abbr'); ab.className = 'term'; ab.textContent = m[0]; ab.title = g.meaning; ab.tabIndex = 0; ab.dataset.term = g.term;
+      frag.appendChild(ab); pos = m.index + m[0].length;
     }
     if (pos < s.length) frag.appendChild(document.createTextNode(s.slice(pos)));
     node.parentNode.replaceChild(frag, node);
@@ -526,7 +534,9 @@ function build(sections){
       if (e.dispute) add('danger', '争议');
       if (e.todo) add('warn', '含待核实');
       block.appendChild(c);
-      CARDS.push({e, el:c});
+      const card = {e, el:c, key:null, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), details:c.querySelector('.src')}};
+      renderCard(card, [], '');
+      CARDS.push(card);
     }
     list.appendChild(block);
   }
@@ -566,10 +576,24 @@ function syncControls(){
   document.getElementById('f-dispute').checked = state.dispute;
   document.getElementById('f-todo').checked = state.todo;
 }
+// 文字只在搜索词变化时重渲染；筛选按钮只切换显隐，不碰卡片内容
+function renderCard(card, terms, key){
+  const {e, f} = card;
+  renderText(f.t, e.title, terms);
+  renderText(f.cost, e.cost, terms);
+  renderText(f.gain, e.gain, terms);
+  renderText(f.note, e.note, terms);
+  renderText(f.src, e.src, terms);
+  const inBody = (e.title+e.cost+e.gain+e.note).toLowerCase();
+  f.details.open = terms.length > 0 && terms.some(t => e.src.toLowerCase().includes(t)) && !terms.some(t => inBody.includes(t));
+  card.key = key;
+}
 function apply(){
   const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+  const key = terms.join(' ');
   let shown = 0; const perSec = {};
-  for (const {e, el} of CARDS){
+  for (const card of CARDS){
+    const {e, el} = card;
     let ok = true;
     if (state.sec.size && !state.sec.has(e.sec)) ok = false;
     if (ok && state.ratio.size && !state.ratio.has(e.ratio)) ok = false;
@@ -584,13 +608,7 @@ function apply(){
     el.hidden = !ok;
     if (ok){
       shown++; perSec[e.sec] = (perSec[e.sec]||0)+1;
-      renderText(el.querySelector('.t'), e.title, terms);
-      renderText(el.querySelector('.cost'), e.cost, terms);
-      renderText(el.querySelector('.gain'), e.gain, terms);
-      renderText(el.querySelector('.note'), e.note, terms);
-      renderText(el.querySelector('.src .body'), e.src, terms);
-      const inBody = (e.title+e.cost+e.gain+e.note).toLowerCase();
-      if (terms.length && terms.some(t => e.src.toLowerCase().includes(t)) && !terms.some(t => inBody.includes(t))) el.querySelector('.src').open = true;
+      if (card.key !== key) renderCard(card, terms, key);
     }
   }
   for (const b of document.querySelectorAll('.sec-block')){ const n = perSec[b.dataset.sec]||0; b.hidden = n === 0; b.querySelector('.shown .k').textContent = n; }
