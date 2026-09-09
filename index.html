@@ -506,19 +506,34 @@ function trimUrl(u){
   }
   return [u, t];
 }
-function renderText(el, text, terms){
+// Markdown 链接 [文字](地址) 或裸 URL；仓库内的相对路径指向 GitHub 上的源文件
+const REPO_BLOB = 'https://github.com/eternity4719/HowToLiveBetter/blob/main/';
+const MD_LINK_RE = /\[([^\]\n]+)\]\(([^)\s]+)\)/;
+const LINK_RE = new RegExp(MD_LINK_RE.source + '|' + URL_RE.source, 'g');
+function hrefOf(p){
+  if (/^(https?:|mailto:|#)/.test(p)) return p;
+  return REPO_BLOB + p.replace(/^(\.\.?\/)+/, '').split('/').map(encodeURIComponent).join('/');
+}
+function mkLink(href, text){
+  const a = document.createElement('a'); a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = text;
+  return a;
+}
+function renderText(el, text, terms, withTerms = true){
   el.textContent = '';
-  let last = 0; URL_RE.lastIndex = 0; let m;
+  let last = 0; LINK_RE.lastIndex = 0; let m;
   const pushText = (s) => { if (s) highlightInto(el, s, terms); };
-  while ((m = URL_RE.exec(text))){
+  while ((m = LINK_RE.exec(text))){
     pushText(text.slice(last, m.index));
-    const [u, tail] = trimUrl(m[1]);
-    const a = document.createElement('a'); a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.textContent = u;
-    el.appendChild(a); pushText(tail);
+    if (m[3]){
+      const [u, tail] = trimUrl(m[3]);
+      el.appendChild(mkLink(u, u)); pushText(tail);
+    } else {
+      el.appendChild(mkLink(hrefOf(m[2]), m[1]));
+    }
     last = m.index + m[0].length;
   }
   pushText(text.slice(last));
-  termify(el);
+  if (withTerms) termify(el);
 }
 function highlightInto(el, s, terms){
   if (!terms.length){ el.appendChild(document.createTextNode(s)); return; }
@@ -563,7 +578,8 @@ function build(sections){
     b.innerHTML = `<span>${s.n}. ${esc(s.title)}</span><i>${s.entries.length}</i>`; fsec.appendChild(b);
 
     const block = document.createElement('section'); block.className='sec-block'; block.dataset.sec = s.n; block.id = 'sec-'+s.n;
-    block.innerHTML = `<div class="sec-h"><h2>${s.n}. ${esc(s.title)}</h2><span class="shown"><span class="k"></span> / ${s.entries.length}</span></div><p class="intro">${esc(s.intro)}</p>`;
+    block.innerHTML = `<div class="sec-h"><h2>${s.n}. ${esc(s.title)}</h2><span class="shown"><span class="k"></span> / ${s.entries.length}</span></div><p class="intro"></p>`;
+    renderText(block.querySelector('.intro'), s.intro, [], false);
     for (const e of s.entries){
       const id = `e-${e.sec}-${e.n}`;
       const c = document.createElement('article'); c.className='card'; c.id = id;
