@@ -1,4 +1,4 @@
-User-agent: *
+User-agent: *asdad:wq
 Allow: /
 
 Sitemap: https://eternity4719.github.io/HowToLiveBetter/sitemap.xml
