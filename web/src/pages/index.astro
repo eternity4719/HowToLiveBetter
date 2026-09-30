@@ -1,0 +1,8 @@
+---
+// 根目录跳语言的小页：和原来 tools/site/build.mjs 生成的 index.html 同一份内容，
+// 只是换成 Astro 出。noindex，爬虫不收它，读者按浏览器语言分流。
+import { chooserPageParts } from '../lib/astro-page';
+const { lang, head, body } = chooserPageParts();
+---
+<!doctype html>
+<html lang={lang}><head><Fragment set:html={head} /></head><body><Fragment set:html={body} /></body></html>

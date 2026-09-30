@@ -1,0 +1,84 @@
+# Astro 站点：构建 web/ 并发布到 GitHub Pages。
+#
+# 和 book.yml 的分工：book.yml 管电子书（EPUB/PDF/离线单文件）和正文检查，
+# 这里管网站。两边各管一头，互不挡——正文写错了，网站照发（内容是旧的但能看）；
+# 网站构建坏了，电子书照发。
+#
+# 触发路径只收和网站有关的东西：web/ 本身、正文（book/、en/、vi/、README、
+# docs 长文）、认正文用的配置和检查（tools/site、tools/i18n）。
+# 改 EPUB/PDF 模板不触发这里，改 web 也不触发 book.yml 的重型构建。
+name: 网站
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - web/**
+      - book/**
+      - en/**
+      - vi/**
+      - README.md
+      - docs/*.md
+      - tools/site/**
+      - tools/i18n/**
+      - .github/workflows/web.yml
+  pull_request:
+    paths:
+      - web/**
+      - book/**
+      - en/**
+      - vi/**
+      - README.md
+      - docs/*.md
+      - tools/site/**
+      - tools/i18n/**
+      - .github/workflows/web.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: 校验与构建
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - run: npm ci
+        working-directory: web
+
+      # 解析一致（Astro 用的解析器和页面里的是同一份逻辑）→ 构建 →
+      # 渲染一致（构建产物里有全文，hydration 钩子齐，引用不悬空）。
+      # 三步一根链，断一处就红，免得发出爬虫看不懂的页面。
+      - name: 校验、构建、验产物
+        run: npm run verify
+        working-directory: web
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    name: 发布到 Pages
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

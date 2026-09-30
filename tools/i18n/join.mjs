@@ -53,7 +53,7 @@ for (const srcPath of files){
   let trouble = 0;
   const pieces = [];
   for (let k = 0; k < parts.length; k++){
-    const want = src.blocks[k].join('\n');
+    const want = src.blocks[k].flat().join('\n');   // blocks[k] 是「这一块有哪几条」
     const got = read(`${dir}/${parts[k]}`);
     const a = entrySkeleton(want, strings(SOURCE.code));
     const b = entrySkeleton(got, strings(locale));
@@ -68,7 +68,28 @@ for (const srcPath of files){
       bad++; trouble++;
       console.error(`  ${dir}/${parts[k]}：${b.entries.length} 条，原文这块 ${a.entries.length} 条`);
     }
-    pieces.push(k === 0 ? src.head.join('\n') + '\n' + got : got);
+    // 译文块里如果又带了一遍节首（回目录那行 + 「# N. 节名」+ 导读），拼出来就是两份，
+    // 页面上那一节连同它的条目渲染两遍——en 和 vi 五个文件都中过（2026-09-30 迁移到
+    // Astro 时预渲染和运行时解析出来的节数对不上，查出来的）。
+    //
+    // 判据按内容，不按行数：节首的每一行都逐行对上（导读在译文里可能已经翻过，
+    // 对不上就整块留着，宁可多渲染一遍导读也不能把译文正文吃掉）。
+    let body = got;
+    if (k === 0 && src.head.length){
+      const headLines = src.head.join('\n').split('\n').map(l => l.trim()).filter(Boolean);
+      const bodyLines = got.split('\n');
+      let consumed = 0;
+      for (const hl of headLines){
+        const at2 = bodyLines.findIndex((l, i) => i >= consumed && l.trim() === hl);
+        if (at2 < 0) { consumed = -1; break; }   // 对不上：整块保留
+        consumed = at2 + 1;
+      }
+      if (consumed > 0 && /^#{1,2} \d+\. /.test(headLines.find(l => /^#{1,2} \d+\. /.test(l)) || '')){
+        body = bodyLines.slice(consumed).join('\n').replace(/^\n+/, '');
+        console.log(`  ${name} 块 0：译文里带了节首（${headLines.length} 行），已去掉，之前会重复渲染一次`);
+      }
+    }
+    pieces.push(k === 0 ? src.head.join('\n') + '\n' + body : body);
   }
   if (trouble) { console.error(`${locale} ${name}：${trouble} 处对不上，没写进 ${L.dir}book/${name}`); continue; }
 

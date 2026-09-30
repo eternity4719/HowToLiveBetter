@@ -1,0 +1,20 @@
+{
+  "name": "howtolivebetter-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《高性价比人生指南》站点。Astro 生成，GitHub Pages 发布。",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/copy-assets.mjs",
+    "preview": "astro preview",
+    "check": "tsx src/lib/parity.ts",
+    "verify": "npm run check && npm run build && tsx src/lib/render-check.ts"
+  },
+  "dependencies": {
+    "astro": "7.3.4"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15"
+  }
+}

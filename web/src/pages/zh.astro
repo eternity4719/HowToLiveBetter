@@ -1,0 +1,7 @@
+---
+// 中文主页。读的是仓库根那份正文（zh 的 contentDir 是空串），别处和 en/vi 一样。
+import { localePageParts } from '../lib/astro-page';
+const { lang, head, body } = localePageParts('zh');
+---
+<!doctype html>
+<html lang={lang}><head><Fragment set:html={head} /></head><body><Fragment set:html={body} /></body></html>

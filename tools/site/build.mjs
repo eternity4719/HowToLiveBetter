@@ -20,7 +20,10 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(HERE, '../..');
+// 仓库根。直接跑 node 时按文件位置算；被 Astro 构建打包时 import.meta.url 会指到
+// 构建缓存里，读到的全是空——这时按环境变量 HOWTOLIVEBETTER_ROOT 来，
+// web/astro.config.mjs 会在构建前把它指到仓库根（直接跑 node 时不用设）。
+const ROOT = process.env.HOWTOLIVEBETTER_ROOT ? resolve(process.env.HOWTOLIVEBETTER_ROOT) : resolve(HERE, '../..');
 const CHECK = process.argv.includes('--check');
 const read = p => readFileSync(resolve(ROOT, p), 'utf8').replace(/\r\n/g, '\n');
 
@@ -203,7 +206,7 @@ function docLinks(docs, L, strings, S) {
 // 也可以自己点。关掉 JS 也点得动。
 // 只列 PUBLISHED：还没翻完的那种（眼下是越南文）hreflang 和链接里都不出现——
 // 列出来点进去是 404，比不列更糟。翻完重跑这个脚本，它自己回来。
-function chooserPage(site) {
+export function chooserPage(site) {
   const list = PUBLISHED
     .map(l => `    <li><a href="${l.canonical}">${escText(l.name)}</a><small>${escText(l.note)}</small></li>`)
     .join('\n');
@@ -258,7 +261,7 @@ ${pick}
 // 不能出现在 hreflang、跳语言页和页内语言下拉里——那些都是读者会点开的链接，
 // 点进去只有一个 404，比不列更糟。翻完重跑这个脚本，它自己回来。
 const readmeOf = L => (L.contentDir ? L.contentDir + '/' : '') + 'README.md';
-const PUBLISHED = LOCALES.filter(L => existsSync(resolve(ROOT, readmeOf(L))));
+export const PUBLISHED = LOCALES.filter(L => existsSync(resolve(ROOT, readmeOf(L))));
 
 // hreflang 由 PUBLISHED 生成，不在模板里写死：写死了就得记得在加语言、改域名时两处一起改，
 // 漏一处就是一堆指向不存在页面的 hreflang。
@@ -392,7 +395,7 @@ function jsonLd(L, strings, sections, stats) {
 //
 // 每一条都带 xhtml:link 互指：三种语言是同一本书的三种语言，搜索引擎靠这个知道，
 // 不然它会把 en/ 和 vi/ 当成两本不同的书。x-default 指跳语言的小页。
-function sitemapXml() {
+export function sitemapXml() {
   const alternates = PUBLISHED.map(l =>
     `    <xhtml:link rel="alternate" hreflang="${l.htmlLang}" href="${escAttr(l.canonical)}"/>`);
   alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${escAttr(SITE_URL())}"/>`);
@@ -408,7 +411,7 @@ function sitemapXml() {
 
 // robots.txt 和 sitemap.xml 是一对：sitemap 指的那个地址得是真的。一起从 site.json 拼，
 // 换域名就不会只改了一半。
-function robotsTxt() {
+export function robotsTxt() {
   return `User-agent: *
 Allow: /
 
@@ -420,8 +423,8 @@ Sitemap: ${SITE_URL()}sitemap.xml
 // 换域名只改那一处：locales.json 里每种语言的 canonical 和 repoBlob 由它们推出来，
 // 对不上就在 checkUrls() 里报错，不会出现「Pages 发到 A 域名、页面自称是 B 域名」。
 // site 不带尾斜杠：模板里是 {{site}}/en/、{{site}}/og.png，带了会拼出双斜杠。
-const { site: SITE, repo: REPO } = JSON.parse(read('tools/site/site.json'));
-const SITE_URL = () => SITE + '/';
+export const { site: SITE, repo: REPO } = JSON.parse(read('tools/site/site.json'));
+export const SITE_URL = () => SITE + '/';
 
 // locales.json 的 canonical / repoBlob 是从 site.json 抄的。抄错了页面照样生成，
 // 但链接会指向别处，而且没人会一眼看出来。这里逐个对一遍。
@@ -440,8 +443,18 @@ function checkUrls() {
 // SKIP：这一份语言的 README 和正文都还没翻，页面这次不生成。
 // SKIPPED：页面生成了，但目录里列的节或长文还没翻到，这次没进页面。
 // 两回事，分开报，免得把「还没翻」说成「翻坏了」。
-const SKIP = new Set();
-const SKIPPED = [];
+//
+// 下面整段只在直接运行时执行（node tools/site/build.mjs）：
+// tools/offline/build.mjs 和 web/ 的 Astro 构建都 import renderPage，
+// import 时要是顺手写盘，Astro 每次构建都会把仓库根的生成物重写一遍。
+// 判据是 argv[1] 是不是本文件——import 时 argv[1] 是调用方的入口。
+// SKIP/SKIPPED 是模块级的：renderPage 往里写，
+// 直接运行时底下那段读它们，被 import 时调用方自己看。
+export const SKIP = new Set();
+export const SKIPPED = [];
+
+const isMainEntry = !!process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMainEntry) {
 
 const stats = JSON.parse(read('tools/site/stats.json'));
 const template = read('tools/site/page.template.html');
@@ -480,3 +493,4 @@ if (SKIP.size) console.log(`跳过 ${[...SKIP].join('、')}：这一份的 READM
 if (SKIPPED.length){
   console.log(`另有 ${SKIPPED.length} 项在目录里列着、正文还没翻到，这次没进页面：${SKIPPED.slice(0, 6).join('、')}${SKIPPED.length > 6 ? ' …' : ''}`);
 }
+} // isMainEntry：被 import 时到这里结束，调用方只拿 renderPage 等函数

@@ -1,0 +1,8 @@
+---
+// 英文主页（默认语言）。整页由 tools/site/build.mjs 的壳 + web 的预渲染拼出来，
+// 见 src/lib/astro-page.ts 的分工说明。这里只写骨架，内容原样塞进去。
+import { localePageParts } from '../lib/astro-page';
+const { lang, head, body } = localePageParts('en');
+---
+<!doctype html>
+<html lang={lang}><head><Fragment set:html={head} /></head><body><Fragment set:html={body} /></body></html>

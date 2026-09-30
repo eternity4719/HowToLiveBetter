@@ -28,7 +28,11 @@ if (!LOCALES.some(l => l.code === locale)) {
   console.error(`--locale 得是 ${LOCALES.map(l => l.code).join(' / ')} 里的一项`);
   process.exit(2);
 }
-const ENTRIES = 10;   // 一块几条。十条差不多 1 万字，输出在一个任务里做得完
+// 一块的上限：条数和字数都算，哪个先到就切。
+// 条数上限防「十几条都很短」时一块太碎；字数上限防「一条特别长」时一块太大——
+// 31 节第一块光一个条目就 4 万多字，一次翻不完的。
+const ENTRIES = Number(process.env.SPLIT_ENTRIES ?? 8);
+const MAX_BYTES = Number(process.env.SPLIT_MAX_BYTES ?? 6000);
 
 /** 把一节正文切成头部 + 若干块条目。切点只在条目边界上，不能从一条中间断开 */
 export function splitSection(md, perBlock = ENTRIES) {
@@ -49,10 +53,18 @@ export function splitSection(md, perBlock = ENTRIES) {
     return lines.slice(start, stop);
   });
 
+  // blocks[i] 是「第 i 块包含哪几条」，每条一整段（行数组）。
+  // 保持条为单位而不是拍平成行：重切时（tools/i18n/resplit.mjs）要按条整段搬，
+  // 拍平之后只能按行号 splice，一条的长度和另一条不一样就错位了（踩过一次：
+  // 一节报三十多处，看着像译文烂了，其实是搬错了）。
   const blocks = [];
-  for (let i = 0; i < entries.length; i += perBlock){
-    blocks.push(entries.slice(i, i + perBlock).flat());
+  let cur = [], bytes = 0;
+  for (const e of entries){
+    const size = e.join('\n').length;
+    if (cur.length && (bytes + size > MAX_BYTES || cur.length >= perBlock)){ blocks.push(cur); cur = []; bytes = 0; }
+    cur.push(e); bytes += size;
   }
+  if (cur.length) blocks.push(cur);
   return { head, blocks, tailLink, count: entries.length };
 }
 
@@ -63,7 +75,7 @@ export function outDir(locale, file) {
 // ---------------------------------------------------------------- 主流程
 // join.mjs 要 import 这里的 splitSection，所以主流程只在直接跑这个脚本时执行。
 // 不加这一层，join 一 import 就把切好的块重切一遍，刚翻好的一块就被原文盖回去。
-if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main();
 
 async function main(){
 const files = [];
@@ -94,7 +106,7 @@ for (const f of files){
     // 顺手把翻好的几块冲掉就白翻一天（2026-09-30 踩过）。
     if (existsSync(resolve(ROOT, at)) && !process.argv.includes('--force')){ kept++; return; }
     // 第 0 块带头部（回目录那行 + 节标题 + 导读），其余块只带条目，合起来才是一节
-    const text = (i === 0 ? cut.head.join('\n') + '\n' : '') + b.join('\n') + '\n';
+    const text = (i === 0 ? cut.head.join('\n') + '\n' : '') + b.flat().join('\n') + '\n';
     writeFileSync(resolve(ROOT, at), text);
     wrote++;
   });

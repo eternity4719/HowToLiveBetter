@@ -61,12 +61,28 @@ function numbersOf(text) {
  * 正则是各语言自己那份（tools/site/locales/<code>.json 的 xref.pattern），和检索页
  * 把「第 X 条」变成可点的引用用的是同一套。所以这里查的就是读者真能点到的那些指路，
  * 译文里条号节号丢了或者写不成可点的形状，这一层就报出来。
+ *
+ * 顺序：先认区间，再按分隔符切。英文的 listSep 里就含 "to" 和 "-"
+ * （"items 8 to 11" 要切得开），先切的话 "8 to 11" 被切成 "8" 和 "11"，
+ * 区间就再也认不出来——一次翻 22 块之后才发现，第 5 节两处指路报「不见了」。
  */
 function refsOf(text, xref) {
   if (!xref) return [];
   const range = new RegExp(xref.rangeRe);
   const sep = new RegExp(xref.listSep);   // 正则，不是字面串：英文是 ", and to –" 一串
   const out = [];
+  // 区间摊成一个个号，不留「8-11」这种形状：原文写「第 8 到 11 条」、
+  // 英文写 "items 8, 9, 10 and 11" 指的是同一批条目，摊开才比得上。
+  // 上限 40 和检索页一致，防着把法条条款号那种大范围摊成几百个号。
+  const push = (sec, spec) => {
+    const r = range.exec(spec);
+    if (r){
+      const a = +r[1], b = +r[2];
+      if (b >= a && b - a <= RANGE_MAX) for (let i = a; i <= b; i++) out.push(`${sec}${i}`);
+      return;
+    }
+    out.push(`${sec}${spec}`);
+  };
   for (const m of text.matchAll(new RegExp(xref.pattern, 'g'))){
     const g = m.groups ?? {};
     if (g.secs !== undefined){
@@ -75,15 +91,19 @@ function refsOf(text, xref) {
     }
     // 节号缺省就是本节：中文「本节第 3 条」、英文「this section's item 3」
     const sec = g.sec ? 's' + g.sec : '*';
-    for (const part of String(g.nums ?? g.nums2 ?? g.nums3 ?? '').split(sep)){
+    // 先认整串区间再按分隔符切：英文的 listSep 里含 "to" 和 "-"，
+    // 先切的话 "8 to 11" 变成 "8" 和 "11"，区间再也认不出来
+    const spec = String(g.nums ?? g.nums2 ?? g.nums3 ?? '').trim();
+    if (range.test(spec)){ push(sec, spec); continue; }
+    for (const part of spec.split(sep)){
       const t = part.trim();
-      if (!t) continue;
-      const r = range.exec(t);
-      out.push(r ? `${sec}r${r[1]}-${r[2]}` : `${sec}${t}`);
+      if (t) push(sec, t);
     }
   }
   return out.sort();
 }
+// 区间摊开的上限，和检索页 xrefKeys 一样
+const RANGE_MAX = 40;
 
 /**
  * 解析一节正文。head 是节标题和导读，entries 是条目。

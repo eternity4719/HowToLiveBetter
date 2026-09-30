@@ -788,10 +788,19 @@ let CUR_SEC = '';                 // 正在渲染哪一节，供「本节第 X �
 const XREF_RE = RE_XREF;
 // 指路里的分隔符按正则切（英文是 ", and to –" 一串，中文是「、」）
 const XREF_SEP = new RegExp(SITE.xref.listSep);
-// 「8 到 10」摊成 8、9、10；上限 40 是防着把法条条款号那种大范围摊成几百个键
+// 「8 到 10」摊成 8、9、10；上限 40 是防着把法条条款号那种大范围摊成几百个键。
+// 先认整串区间，再按分隔符切：英文的 listSep 里含 "to" 和 "-"，先切的话
+// "8 to 11" 被切成 "8" 和 "11"，区间再也认不出来（译文检查那边同样的坑，见 structure.mjs）
 const xrefKeys = (sec, spec) => {
   const ns = [];
-  for (const part of String(spec).split(XREF_SEP)){
+  const whole = String(spec).trim();
+  const wr = RE_XRANGE.exec(whole);
+  if (wr){
+    const a = +wr[1], b = +wr[2];
+    if (b >= a && b - a <= 40) for (let i = a; i <= b; i++) ns.push(i);
+    return ns.map(n => `${sec}-${n}`).filter(k => ITEMS.has(k));
+  }
+  for (const part of whole.split(XREF_SEP)){
     const r = RE_XRANGE.exec(part);
     if (r){
       const a = +r[1], b = +r[2];
@@ -1072,9 +1081,55 @@ function build(sections){
   }
   document.getElementById('tot').textContent = CARDS.length;
 }
+/* ---------- 预渲染 hydration ----------
+   服务端（web/src/lib/render.ts）按 build() 初次渲染的形状把 DOM 写好，
+   这里按文档顺序索引到 CARDS/BLOCKS/TOC 三张表里。索引完的状态和 build() 刚跑完
+   一样：card.key 都是 null，vis 都是 false，滚进来由 CARD_IO 补渲染（terms=[]，
+   和服务端写的一致，重渲出来是同一个 DOM）。
+   对不上就回退：预渲染块和侧栏目录删掉，走 build() 重建。回退时 console 里留一句，
+   免得渲染器悄悄跑偏了没人知道——正常构建永远不该走到这里。 */
+function indexSsgDom(sections){
+  for (const s of sections){ SECS.set(s.n, s); for (const e of s.entries) ITEMS.set(`${s.n}-${e.n}`, e); }
+  const total = sections.reduce((n, s) => n + s.entries.length, 0);
+  const list = document.getElementById('list');
+  const blocks = [...list.querySelectorAll(':scope > section.sec-block')];
+  const preCards = list.querySelectorAll('article.card').length;
+  if (blocks.length !== sections.length || preCards !== total){
+    console.warn(`预渲染对不上（块 ${blocks.length}/${sections.length}，卡片 ${preCards}/${total}），回退到 build() 重建`);
+    list.querySelectorAll(':scope > section.sec-block').forEach(b => b.remove());
+    const fsec = document.getElementById('f-sec'); fsec.innerHTML = '';
+    document.querySelector('#gloss dl').innerHTML = '';
+    build(sections); buildGlossary();
+    return;
+  }
+  const fsec = document.getElementById('f-sec');
+  const links = [...fsec.querySelectorAll('a[data-go]')];
+  const subs = [...fsec.querySelectorAll('.toc-sub')];
+  let li = 0, si = 0;
+  for (const s of sections){
+    for (const e of s.entries){ const a = links[li++]; if (a) TOC.set(`e-${e.sec}-${e.n}`, a); }
+    const sub = subs[si++]; if (sub) TOC_SEC.set(s.n, sub);
+  }
+  let bi = 0;
+  for (const s of sections){
+    const block = blocks[bi++]; if (!block) break;
+    BLOCKS.push({n:s.n, el:block, k:block.querySelector('.shown .k')});
+    const cards = [...block.querySelectorAll('article.card')];
+    let ci = 0;
+    for (const e of s.entries){
+      const c = cards[ci++]; if (!c) break;
+      const card = {e, el:c, key:null, vis:false, f:{t:c.querySelector('.t'), cost:c.querySelector('.cost'), human:c.querySelector('.human'), gain:c.querySelector('.gain'), note:c.querySelector('.note'), src:c.querySelector('.src .body'), srcN:c.querySelector('.src summary .cnt'), details:c.querySelector('.src')}};
+      CARDS.push(card); CARD_OF.set(c, card); CARD_IO.observe(c);
+    }
+  }
+  document.getElementById('tot').textContent = CARDS.length;
+}
 function buildGlossary(){
   const box = document.getElementById('gloss'); if (!GLOSS.length) { box.hidden = true; return; }
   const dl = box.querySelector('dl');
+  // 预渲染（Astro 构建）已经把 dt/dd 写好了：这里只索引，不重建。
+  // 没有 data-ssg 的页面 dl 是空的，走原来的路，一行没变。
+  if (dl.children.length) return;
   for (const g of [...GLOSS].sort((a,b) => a.term.localeCompare(b.term, SITE.sortLocale))){
     const dt = document.createElement('dt'); dt.textContent = g.term;
     const dd = document.createElement('dd'); dd.textContent = g.meaning;
@@ -1497,7 +1552,15 @@ buildLangPicker();
     GLOSS = parseGlossary(md);
     PERF.log(T('perf.parse'), t1, files.length + ' ' + T('perf.files'));
     status.remove();
-    const t2 = performance.now(); build(sections); PERF.log(T('perf.buildDom'), t2, CARDS.length + ' ' + T('perf.cards'));
+    const t2 = performance.now();
+    // 预渲染 hydration：Astro 构建时已经把 build() 会创建的 DOM 原样写进 HTML
+    // （卡片、侧栏目录、术语表，见 web/src/lib/render.ts），这里只索引现有节点，
+    // 不重新创建。判据是 #list 上的 data-ssg 和同页的语料，两个缺一个都走老路——
+    // 老构建和离线单文件没有 data-ssg，它们的行为一行没变。
+    const listEl = document.getElementById('list');
+    if (EMBED && listEl && listEl.dataset.ssg === '1') indexSsgDom(sections);
+    else build(sections);
+    PERF.log(T('perf.buildDom'), t2, CARDS.length + ' ' + T('perf.cards'));
     buildGlossary(); readUrl(); wire(); apply();
     PERF.mark(T('perf.mark', {dom: document.getElementsByTagName('*').length, terms: GLOSS.length}));
     if (location.hash){

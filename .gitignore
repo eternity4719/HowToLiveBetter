@@ -6,3 +6,6 @@ dist/
 # 翻译中间产物：切出来的块（.i18n/<语言>/<节名>/partNN.md）。译文合进 <语言>/book/ 之后
 # 这份就没用了，join.mjs 每次都从原文重切。重切不覆盖已翻的块，所以它是活的翻译进度。
 .i18n/
+
+# Astro 生成物：本地构建缓存，与 dist/、node_modules/ 一样不入库
+web/.astro/
