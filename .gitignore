@@ -7,5 +7,17 @@ dist/
 # 这份就没用了，join.mjs 每次都从原文重切。重切不覆盖已翻的块，所以它是活的翻译进度。
 .i18n/
 
-# Astro 生成物：本地构建缓存，与 dist/、node_modules/ 一样不入库
+# Astro 生成物：本地和 CI 的构建缓存，由 web/ 的构建出，不入库。
+# 站点直发 GitHub Pages，产物不进仓库（CLAUDE.md「目录结构」一节）
 web/.astro/
+web/dist/
+
+# 旧的手写页面：2026-09-30 切到 Astro 构建后由构建产出，不再入库。
+# tools/site/build.mjs 仍然是库（离线单文件和 Astro 都调它），但它写盘的那些
+# 页面不再跟踪——留着会变成「改了模板忘了重建」的过时副本。
+/index.html
+/en/index.html
+/zh/index.html
+/vi/index.html
+/sitemap.xml
+/robots.txt
