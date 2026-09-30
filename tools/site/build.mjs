@@ -333,8 +333,16 @@ export function renderPage(L, template, stats) {
   html = html
     .replaceAll('href="README.md"', `href="${L.contentBase}README.md"`)
     .replaceAll('href="book/"', `href="${L.contentBase}book/"`)
-    .replaceAll('src="ads/', `src="${L.assetBase}`)
-    .replace(`<a class="title" href="./">`, `<a class="title" href="${L.dir || './'}">`);
+    .replaceAll('src="ads/', `src="${L.assetBase}`);
+
+  // logo 指向本站的这一页，用绝对地址（模板里的 "./" 是相对路径）
+  // 曾经写成 L.dir（「en/」这种），从 /en/ 点就解析成 /en/en/，zh 那边是 /zh/zh/。
+  // 相对路径只在「相对谁」不变时才成立，而这一页自己就在那个目录里——
+  // L.contentBase 也不行，en 那份是 "./"（指自己）、zh 那份是 "../"（指上一级，跳出本站）。
+  // L.canonical 由 site.json 推出，和 hreflang、canonical 同源，改域名一起跟着走。
+  html = html.replace(
+    `<a class="title" href="./">`,
+    `<a class="title" href="${L.canonical}">`);
 
   const config = {
     code: L.code, dir: L.dir, contentBase: L.contentBase, assetBase: L.assetBase,

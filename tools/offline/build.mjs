@@ -76,8 +76,9 @@ must(`href="${L.contentBase}README.md"`, ' README.md 链接');
 must(`href="${L.contentBase}book/"`, ' book/ 链接');
 html = html
   .replaceAll(`href="${L.contentBase}README.md"`, `href="${REPO}/blob/main/${(L.contentDir ? L.contentDir + '/' : '') + 'README.md'}"`)
-  .replaceAll(`href="${L.contentBase}book/"`, `href="${REPO}/tree/main/${L.contentDir ? L.contentDir + '/book' : 'book'}"`)
-  .replace(`<a class="title" href="${L.dir || './'}">`, `<a class="title" href="${SITE}${L.dir}">`);
+  .replaceAll(`href="${L.contentBase}book/"`, `href="${REPO}/tree/main/${L.contentDir ? L.contentDir + '/book' : 'book'}"`);
+  // logo 不用改：build.mjs 给的已经是 L.canonical（线上那一页的绝对地址），
+  // 离线副本里点它正好跳去线上看更新，本地打开也不会解析成 /en/en/。
 
 // 侧栏广告图和赞赏码转 data URI，否则离线打开是个裂图
 for (const [img, mime] of [['ads/mcyyy-side.webp', 'image/webp'], ['ads/wechat-reward.png', 'image/png']]) {
