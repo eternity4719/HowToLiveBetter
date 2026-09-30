@@ -37,7 +37,7 @@ The AI assistant skill works with Claude Code and Codex. Once it is installed, a
 </td></tr>
 <tr><td align="right"><b>Other languages</b></td><td align="left">
 
-[English](https://streamentry.github.io/HowToLiveBetter/en/) and [Tiếng Việt](https://streamentry.github.io/HowToLiveBetter/vi/) are first-party translations maintained in this repository. [Русский](https://dlgrv.github.io/HowToLiveBetter/ru/) and [Español](https://dlgrv.github.io/HowToLiveBetter/es/) are community translations maintained by [dlgrv](https://github.com/dlgrv) ([repository](https://github.com/dlgrv/HowToLiveBetter))
+English is the default edition, and this page is the source content; translations lag behind it, so the Chinese original (the repository root README) wins whenever they disagree. Tiếng Việt is being translated and is not online yet. [Русский](https://dlgrv.github.io/HowToLiveBetter/ru/) and [Español](https://dlgrv.github.io/HowToLiveBetter/es/) are community translations maintained by [dlgrv](https://github.com/dlgrv) ([repository](https://github.com/dlgrv/HowToLiveBetter))
 
 </td></tr>
 <tr><td align="right"><b>Related tools</b></td><td align="left">

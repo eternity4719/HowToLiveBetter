@@ -37,7 +37,7 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 </td></tr>
 <tr><td align="right"><b>其他语言</b></td><td align="left">
 
-**官方**：[English](https://streamentry.github.io/HowToLiveBetter/en/)（默认，访问 `/` 就是它） · [Tiếng Việt](https://streamentry.github.io/HowToLiveBetter/vi/)，本仓库维护，译文跟不上时以中文原文为准。
+**官方**：[English](https://streamentry.github.io/HowToLiveBetter/en/)（默认，访问 `/` 就是它） · 中文（本页，原始内容都在这里），译文跟不上时以中文原文为准。Tiếng Việt 在翻，尚未上线。
 **他人维护**：[Русский](https://dlgrv.github.io/HowToLiveBetter/ru/) · [Español](https://dlgrv.github.io/HowToLiveBetter/es/)，[dlgrv](https://github.com/dlgrv) 的翻译（[仓库](https://github.com/dlgrv/HowToLiveBetter)）
 
 </td></tr>
