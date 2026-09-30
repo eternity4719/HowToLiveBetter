@@ -1,0 +1,49 @@
+[
+  {
+    "code": "en",
+    "default": true,
+    "dir": "en/",
+    "contentBase": "./",
+    "assetBase": "../ads/",
+    "repoBlob": "https://github.com/streamentry/HowToLiveBetter/blob/main/en/",
+    "htmlLang": "en",
+    "ogLocale": "en_US",
+    "sortLocale": "en",
+    "name": "English",
+    "accept": "en",
+    "canonical": "https://streamentry.github.io/HowToLiveBetter/en/",
+    "note": "Default edition",
+    "contentDir": "en"
+  },
+  {
+    "code": "vi",
+    "dir": "vi/",
+    "contentBase": "./",
+    "assetBase": "../ads/",
+    "repoBlob": "https://github.com/streamentry/HowToLiveBetter/blob/main/vi/",
+    "htmlLang": "vi",
+    "ogLocale": "vi_VN",
+    "sortLocale": "vi",
+    "name": "Tiếng Việt",
+    "accept": "vi",
+    "canonical": "https://streamentry.github.io/HowToLiveBetter/vi/",
+    "note": "Bản dịch tiếng Việt",
+    "contentDir": "vi"
+  },
+  {
+    "code": "zh",
+    "dir": "zh/",
+    "contentBase": "../",
+    "assetBase": "../ads/",
+    "repoBlob": "https://github.com/streamentry/HowToLiveBetter/blob/main/",
+    "htmlLang": "zh-CN",
+    "ogLocale": "zh_CN",
+    "sortLocale": "zh",
+    "name": "中文",
+    "accept": "zh",
+    "canonical": "https://streamentry.github.io/HowToLiveBetter/zh/",
+    "note": "原文，译本以它为准",
+    "source": true,
+    "contentDir": ""
+  }
+]

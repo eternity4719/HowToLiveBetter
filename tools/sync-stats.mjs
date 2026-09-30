@@ -1,5 +1,5 @@
 // 统计对齐：改完条目跑一次。按顺序做四件事：
-// ① 重算全书的统计数字，回写 README.md、index.html、tools/og.html；
+// ① 重算全书的统计数字，回写 README.md、tools/site/stats.json、tools/og.html；
 // ② 调 check-refs.mjs 重算 docs/引用对照.md；
 // ③ 调 check-plain.mjs 查说人话，不合格只提示不中断；
 // ④ 用无头 Chrome 把 tools/og.html 重新截成 og.png。
@@ -18,7 +18,7 @@
 // 数字口径：条目数 = book/*.md 里的 ### 标题数；节数 = book/*.md 的文件数；
 // A/B/C = 证据等级行的首字母（带（争议）后缀的照样算）；争议 = 备注以「争议」开头的条数；
 // TODO = 正文里含「待核实」或「TODO」的行数；链接 = 「- 来源：」和「- 备注：」行里的 http(s) 总数；
-// 性价比三档的规则抄自 index.html。
+// 性价比三档的规则抄自检索页模板（tools/site/page.template.html）。
 // 切行用 /\r?\n/，理由见 check-refs.mjs 文件头。
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdtempSync, rmSync, statSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
@@ -30,12 +30,12 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const CHECK = process.argv.includes('--check');
 const read = f => readFileSync(join(ROOT, f), 'utf8');
 
-// 档位规则和 index.html 的 COST_W、e.ratio 两行一致；那两行改了这里必须跟着改，所以先比对一次
-const indexText = read('index.html');
+// 档位规则和检索页模板的 COST_W、e.ratio 两行一致；那两行改了这里必须跟着改，所以先比对一次
+const indexText = read('tools/site/page.template.html');
 const COST_W_LINE = "const COST_W = { money:{'0':0,'少':1,'多':2}, time:{'少':0,'中':1,'多':2}, will:{'否':0,'些':1,'是':2} };";
 const RATIO_LINE = "e.ratio = e.level === '大' ? (e.cs === 0 ? '极高' : (e.cs <= 2 ? '高' : '一般'))";
-if (!indexText.includes(COST_W_LINE)) throw new Error('index.html 的 COST_W 行变了，请同步本脚本里的成本权重');
-if (!indexText.includes(RATIO_LINE)) throw new Error('index.html 的 e.ratio 行变了，请同步本脚本里的档位规则');
+if (!indexText.includes(COST_W_LINE)) throw new Error('检索页模板的 COST_W 行变了，请同步本脚本里的成本权重');
+if (!indexText.includes(RATIO_LINE)) throw new Error('检索页模板的 e.ratio 行变了，请同步本脚本里的档位规则');
 
 const W = {
   money: { '0': 0, '少': 1, '多': 2 },
@@ -99,14 +99,22 @@ const EDITS = [
   ['README.md', '性价比段', /全书 (\d+) 条中性价比极高 \d+ 条（\d+%）、高 \d+ 条（\d+%）、一般 \d+ 条（\d+%）/g,
     `全书 ${entries} 条中性价比极高 ${ratio['极高']} 条（${pct['极高']}%）、高 ${ratio['高']} 条（${pct['高']}%）、一般 ${ratio['一般']} 条（${pct['一般']}%）`],
   ['README.md', '正文文件数', /正文按节拆成 (\d+) 个文件/g, `正文按节拆成 ${sections} 个文件`],
-  ['index.html', '五处描述', /(\d+) 条建议/g, `${entries} 条建议`],
-  ['index.html', 'numberOfPages', /numberOfPages":(\d+)/g, `numberOfPages":${entries}`],
-  ['index.html', '页头条目数', /\d+ 节 (\d+) 条/g, `${sections} 节 ${entries} 条`],
-  ['index.html', '页脚文件数', /下的 (\d+) 个文件/g, `下的 ${sections} 个文件`],
   ['tools/og.html', 'og 条目数', /<b>(\d+)<\/b> 条建议/g, `<b>${entries}</b> 条建议`],
   ['tools/og.html', 'og A 级数', /A 级证据 <b>(\d+)<\/b> 条/g, `A 级证据 <b>${grade.A}</b> 条`],
   ['tools/og.html', 'og 链接数', /<b>(\d+)<\/b> 条原始文献链接/g, `<b>${links}</b> 条原始文献链接`],
 ];
+
+// 检索页的数字不进页面源码：模板和三份字典里写的是 {{entries}} 这类占位符，由
+// tools/site/build.mjs 从 stats.json 填。stats.json 是这几个数字唯一的落点，三种语言共用。
+const STATS_PATH = 'tools/site/stats.json';
+const stats = {
+  entries, sections, gradeA: grade.A, gradeB: grade.B, gradeC: grade.C,
+  dispute, todo, links,
+  ratioTop: ratio['极高'], ratioTopPct: pct['极高'],
+  ratioHigh: ratio['高'], ratioHighPct: pct['高'],
+  ratioMid: ratio['一般'], ratioMidPct: pct['一般'],
+};
+const statsText = JSON.stringify(stats, null, 2) + '\n';
 
 const texts = new Map();
 const stale = [];
@@ -127,6 +135,10 @@ for (const [file, label, pattern, repl] of EDITS) {
 }
 
 if (CHECK) {
+  if (read(STATS_PATH) !== statsText) {
+    stale.push(STATS_PATH);
+    console.log(`  ${STATS_PATH} stats.json：过时`);
+  }
   if (stale.length === 0) {
     console.log('\n统计数字检查通过');
     process.exit(0);
@@ -136,6 +148,14 @@ if (CHECK) {
 }
 
 for (const [file, text] of texts) if (text !== read(file)) writeFileSync(join(ROOT, file), text);
+if (read(STATS_PATH) !== statsText) writeFileSync(join(ROOT, STATS_PATH), statsText);
+
+// stats.json 变了，三份生成出来的页面跟着变，一起重建，免得本地开的是旧数字
+const siteBuild = spawnSync(process.execPath, [join(ROOT, 'tools', 'site', 'build.mjs'), '--check'], { encoding: 'utf8' });
+if (siteBuild.status !== 0) {
+  console.log((siteBuild.stdout || '') + (siteBuild.stderr || ''));
+  throw new Error('tools/site/build.mjs --check 没通过：检索页还没按新统计数字重建。先跑 node tools/site/build.mjs 再提交');
+}
 
 // ② 重算交叉引用对照表：插入或删除条目会让后面的「第 X 条」集体错位，而错位后的条号
 // 往往仍在范围内（2026-09-19 第 7 节那 6 处就是），只有把「引用 → 目标标题」摊开入库，

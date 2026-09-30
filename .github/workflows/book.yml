@@ -1,16 +1,20 @@
 # 正文一改就重新生成三样，挂到固定的 Release「epub-latest」上，下载链接不变：
-#   EPUB        https://github.com/eternity4719/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.epub
-#   PDF         https://github.com/eternity4719/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.pdf
-#   离线单文件  https://github.com/eternity4719/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.html
+#   EPUB        https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.epub
+#   PDF         https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.pdf
+#   离线单文件  https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.html
 # PR 只生成并校验，不发布，产物在 Actions 页面的 artifact 里。
 name: 电子书
 
+# 触发条件里带上了 en/**、vi/**、zh/** 和 tools/i18n/**：译文和检索页也是正文的一部分了
 on:
   push:
     branches: [main]
     paths:
       - README.md
       - index.html
+      - en/**
+      - zh/**
+      - vi/**
       - og.png
       - ads/**
       - book/**
@@ -21,6 +25,9 @@ on:
     paths:
       - README.md
       - index.html
+      - en/**
+      - zh/**
+      - vi/**
       - og.png
       - ads/**
       - book/**
@@ -41,6 +48,25 @@ env:
   TYPST_VERSION: '0.15.1'
 
 jobs:
+  # 译文检查：拿中文原文逐条对 en/ 和 vi/（tools/i18n/check.mjs，判据在 tools/i18n/structure.mjs）。
+  # 查的是丢东西：节数条数、六个字段、成本标签注释、证据等级、收益/成本/来源三栏的数字、
+  # 交叉引用的条号节号、链接数量。翻译 PR 在这里红就知道该翻哪一条，不用作者读译文。
+  # 单独一个 job：译文没对齐不该连累 EPUB、PDF 和离线单文件的发布。
+  i18n:
+    name: 译文检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 英文与越南文对齐中文原文
+        run: node tools/i18n/check.mjs
+      - name: 检索页生成物和模板、字典一致
+        run: node tools/site/build.mjs --check
+      - name: 中文文案和模板一致
+        run: node tools/site/extract.mjs --check
+
   # 交叉引用检查。单独一个 job，不挂在 build 里：锚点没补好不该连累 EPUB、PDF 和
   # 离线单文件的发布，那是两回事。PR 上照样红，main 上该发的还是发出去。
   # 本地那条链路（sync-stats.mjs）要记得跑才会跑，
@@ -78,6 +104,19 @@ jobs:
         with:
           node-version: 22
       - run: node tools/sync-stats.mjs --check
+
+  # 检索页检查：三份语言页、跳语言的小页、sitemap.xml、robots.txt 是否和模板与字典对得上。
+  # 和上面三个一样是「本地跑过才会更新」的生成物，网页上直接改模板的 PR 经过不了本地那条链路。
+  # 单独一个 job，不挡电子书发布：页面生成物过时和 EPUB 该不该重发是两回事。
+  site:
+    name: 检索页检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/site/build.mjs --check
 
   build:
     runs-on: ubuntu-latest

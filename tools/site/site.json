@@ -1,0 +1,5 @@
+{
+  "_comment": "站点地址和仓库地址，全书只有这两处和「部署到哪个域名」有关。改域名只改这里。site 不带尾斜杠：模板里是 {{site}}/en/、{{site}}/og.png，带了会拼出双斜杠。locales.json 里每种语言的 canonical 和 repoBlob 由这两个值推出来，build.mjs 每次会对一遍，对不上直接报错。",
+  "site": "https://streamentry.github.io/HowToLiveBetter",
+  "repo": "https://github.com/streamentry/HowToLiveBetter"
+}
