@@ -2,6 +2,9 @@
 
 <img src="og.png" alt="高性价比人生指南 —— 用最少的钱、时间和精力，换回最多的寿命、金钱和人身自由" width="820">
 
+> Vietnamese: https://streamentry.github.io/HowToLiveBetter/vi/
+> English: https://streamentry.github.io/HowToLiveBetter/en/
+
 # 高性价比人生指南
 
 讲怎么活得久、怎么少生病，出了意外怎么救。讲怎么少花冤枉钱，哪些事会让人被骗、摊上官司。讲没工作没钱时能去领什么，开店、开公司、做网站要办什么手续。也讲恋爱结婚生孩子、出国和学手艺。<br>
