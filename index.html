@@ -7,7 +7,6 @@
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://streamentry.github.io/HowToLiveBetter/">
 <link rel="alternate" hreflang="en" href="https://streamentry.github.io/HowToLiveBetter/en/">
-<link rel="alternate" hreflang="vi" href="https://streamentry.github.io/HowToLiveBetter/vi/">
 <link rel="alternate" hreflang="zh-CN" href="https://streamentry.github.io/HowToLiveBetter/zh/">
 <link rel="alternate" hreflang="x-default" href="https://streamentry.github.io/HowToLiveBetter/">
 <style>
@@ -37,8 +36,9 @@ small{display:block;font-weight:400;color:rgba(60,60,67,.6);margin-top:3px}
 <script>
   const q = new URLSearchParams(location.search).get('lang');
   const list = [{"code":"en","url":"https://streamentry.github.io/HowToLiveBetter/en/","test":{}},{"code":"zh","url":"https://streamentry.github.io/HowToLiveBetter/zh/","test":{}}];
+  const dflt = "https://streamentry.github.io/HowToLiveBetter/en/";
   const hit = q ? list.find(l => l.code === q) : list.find(l => l.test.test(navigator.language || ''));
-  location.replace((hit || list[0]).url + location.hash);
+  location.replace((hit && hit.url) || dflt);
 </script>
 </body>
 </html>

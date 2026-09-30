@@ -199,16 +199,20 @@ function docLinks(docs, L, strings, S) {
   return `${escText(strings['docs.label'])}${S.listSep}${links.join(' · ')}`;
 }
 
-// 根目录那个小页：默认英文，浏览器要越南语就去 /vi/，也可以自己点。关掉 JS 也点得动。
-// 只列 PUBLISHED：越南语那份还没翻完，列出来点进去是 404。
+// 根目录那个小页：默认英文（PUBLISHED 里 default 的那种），浏览器要别的语言就去那种，
+// 也可以自己点。关掉 JS 也点得动。
+// 只列 PUBLISHED：还没翻完的那种（眼下是越南文）hreflang 和链接里都不出现——
+// 列出来点进去是 404，比不列更糟。翻完重跑这个脚本，它自己回来。
 function chooserPage(site) {
   const list = PUBLISHED
     .map(l => `    <li><a href="${l.canonical}">${escText(l.name)}</a><small>${escText(l.note)}</small></li>`)
     .join('\n');
+  // 跳转表按 accept 排，命中不了就回默认那一种。?lang=xx 可以指定。
   const pick = `  const q = new URLSearchParams(location.search).get('lang');
   const list = ${JSON.stringify(PUBLISHED.map(l => ({ code: l.code, url: l.canonical, test: new RegExp('^' + l.accept, 'i') })))};
+  const dflt = ${JSON.stringify((PUBLISHED.find(l => l.default) ?? PUBLISHED[0])?.canonical ?? site + '/')};
   const hit = q ? list.find(l => l.code === q) : list.find(l => l.test.test(navigator.language || ''));
-  location.replace((hit || list[0]).url + location.hash);`;
+  location.replace((hit && hit.url) || dflt);`;
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -217,10 +221,7 @@ function chooserPage(site) {
 <title>高性价比人生指南 · Choose your language</title>
 <meta name="robots" content="noindex">
 <link rel="canonical" href="${site}/">
-<link rel="alternate" hreflang="en" href="${site}/en/">
-<link rel="alternate" hreflang="vi" href="${site}/vi/">
-<link rel="alternate" hreflang="zh-CN" href="${site}/zh/">
-<link rel="alternate" hreflang="x-default" href="${site}/">
+${hreflangLinks()}
 <style>
 body{font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
   margin:0;min-height:100vh;display:grid;place-items:center;background:#fff;color:#1b1b1f}
@@ -377,17 +378,23 @@ function jsonLd(L, strings, sections, stats) {
   return JSON.stringify(doc, null, 0).replace(/<\/script/gi, '<\\/script');
 }
 // sitemap.xml 也由这里生成，跟着这次真正生成的页面走。原来是手写的：域名单独抄了
-// 一份、列的是 README.md（Pages 上那不是页面）、三份语言页一个都没有。
+// 一份、列的是 README.md（Pages 上那不是页面）、三种语言页一个都没有。
 // 不写 <lastmod>：它得跟着正文改，每次重新生成都变，纯粹制造无意义的 diff；
 // 写一个过期的日期比不写更糟，Google 的说明里 lastmod 本来就是可选的。
+//
+// 每一条都带 xhtml:link 互指：三种语言是同一本书的三种语言，搜索引擎靠这个知道，
+// 不然它会把 en/ 和 vi/ 当成两本不同的书。x-default 指跳语言的小页。
 function sitemapXml() {
-  const urls = [
-    { loc: SITE_URL(), priority: '1.0' },              // 跳语言的小页
-    ...PUBLISHED.map(l => ({ loc: l.canonical, priority: l.default ? '0.9' : '0.8' })),
-  ];
+  const alternates = PUBLISHED.map(l =>
+    `    <xhtml:link rel="alternate" hreflang="${l.htmlLang}" href="${escAttr(l.canonical)}"/>`);
+  alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${escAttr(SITE_URL())}"/>`);
+  const url = (loc, priority) =>
+    `  <url>\n    <loc>${escText(loc)}</loc>\n${alternates.join('\n')}\n    <priority>${priority}</priority>\n  </url>`;
   return '<?xml version="1.0" encoding="UTF-8"?>\n'
-    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    + urls.map(u => `  <url>\n    <loc>${escText(u.loc)}</loc>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+    + ' xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+    + url(SITE_URL(), '1.0') + '\n'                              // 跳语言的小页
+    + PUBLISHED.map(l => url(l.canonical, l.default ? '0.9' : '0.8')).join('\n')
     + '\n</urlset>\n';
 }
 
