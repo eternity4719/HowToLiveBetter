@@ -4,24 +4,14 @@
 # 这里管网站。两边各管一头，互不挡——正文写错了，网站照发（内容是旧的但能看）；
 # 网站构建坏了，电子书照发。
 #
-# 触发路径只收和网站有关的东西：web/ 本身、正文（book/、en/、vi/、README、
-# docs 长文）、认正文用的配置和检查（tools/site、tools/i18n）。
-# 改 EPUB/PDF 模板不触发这里，改 web 也不触发 book.yml 的重型构建。
+# 触发：push 到 main 就自动构建发布，不再按路径过滤——改了什么都跟着发，
+# 免得正文更新了而网站没动。PR 只构建不发布；改 EPUB/PDF 模板不触发这里
+#（book.yml 管那一头）。
 name: 网站
 
 on:
   push:
     branches: [main]
-    paths:
-      - web/**
-      - book/**
-      - en/**
-      - vi/**
-      - README.md
-      - docs/*.md
-      - tools/site/**
-      - tools/i18n/**
-      - .github/workflows/web.yml
   pull_request:
     paths:
       - web/**
