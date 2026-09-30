@@ -11,7 +11,6 @@ on:
     branches: [main]
     paths:
       - README.md
-      - index.html
       - en/**
       - zh/**
       - vi/**
@@ -24,7 +23,6 @@ on:
   pull_request:
     paths:
       - README.md
-      - index.html
       - en/**
       - zh/**
       - vi/**
@@ -62,8 +60,6 @@ jobs:
           node-version: 22
       - name: 英文与越南文对齐中文原文
         run: node tools/i18n/check.mjs
-      - name: 检索页生成物和模板、字典一致
-        run: node tools/site/build.mjs --check
       - name: 中文文案和模板一致
         run: node tools/site/extract.mjs --check
 
@@ -104,19 +100,6 @@ jobs:
         with:
           node-version: 22
       - run: node tools/sync-stats.mjs --check
-
-  # 检索页检查：三份语言页、跳语言的小页、sitemap.xml、robots.txt 是否和模板与字典对得上。
-  # 和上面三个一样是「本地跑过才会更新」的生成物，网页上直接改模板的 PR 经过不了本地那条链路。
-  # 单独一个 job，不挡电子书发布：页面生成物过时和 EPUB 该不该重发是两回事。
-  site:
-    name: 检索页检查
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: node tools/site/build.mjs --check
 
   build:
     runs-on: ubuntu-latest

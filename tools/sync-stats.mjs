@@ -150,12 +150,11 @@ if (CHECK) {
 for (const [file, text] of texts) if (text !== read(file)) writeFileSync(join(ROOT, file), text);
 if (read(STATS_PATH) !== statsText) writeFileSync(join(ROOT, STATS_PATH), statsText);
 
-// stats.json 变了，三份生成出来的页面跟着变，一起重建，免得本地开的是旧数字
-const siteBuild = spawnSync(process.execPath, [join(ROOT, 'tools', 'site', 'build.mjs'), '--check'], { encoding: 'utf8' });
-if (siteBuild.status !== 0) {
-  console.log((siteBuild.stdout || '') + (siteBuild.stderr || ''));
-  throw new Error('tools/site/build.mjs --check 没通过：检索页还没按新统计数字重建。先跑 node tools/site/build.mjs 再提交');
-}
+// stats.json 变了，网站下次构建就带上新数字：web.yml 的触发路径含 book/** 和 stats.json
+// 所在的 tools/site/**，push 之后 CI 自动重建。不在这里调 Astro 构建——
+// 一是慢（全站预渲染），二是构建产物直发 Pages，不经过仓库，本地跑了也只是看看。
+// 唯一要在本地确认的是解析器没和模板跑偏（改了 COST_W/e.ratio 才需要）：
+// cd web && npm run check。
 
 // ② 重算交叉引用对照表：插入或删除条目会让后面的「第 X 条」集体错位，而错位后的条号
 // 往往仍在范围内（2026-09-19 第 7 节那 6 处就是），只有把「引用 → 目标标题」摊开入库，
