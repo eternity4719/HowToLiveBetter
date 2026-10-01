@@ -291,9 +291,13 @@ node tools/pdf/build.mjs                   # PDF，另需 pandoc ≥ 3.1 和 typ
 
 正文按节拆成 34 个文件放在 [book/](book/)，点上面目录里的节名进入。拆开是因为单文件已经超过 GitHub 渲染 Markdown 的 512 KB 上限，后面的节显示不出来；[在线检索页](https://streamentry.github.io/HowToLiveBetter/)会把这些文件合起来读，用法不变。
 
+## 致谢与第三方资料
+
+- [geekan/HowToLiveLonger](https://github.com/geekan/HowToLiveLonger)：本仓库保留了一份其英文 README 的[第三方资料快照](third_party/geekan-HowToLiveLonger/README_en.md)，并同时保留[原始 The Unlicense](third_party/geekan-HowToLiveLonger/LICENSE) 与[来源说明](third_party/geekan-HowToLiveLonger/NOTICE.md)。感谢 geekan 与贡献者整理这些长寿研究线索。该快照作为资料来源保存，其中的健康结论不会自动视为本书已经核实或采纳；进入正文的内容仍按本仓库自己的原始文献核实、证据分级和争议标注规则处理。
+
 ## 许可
 
-正文用 [CC BY 4.0](LICENSE) 发布，范围是 book/、docs/ 和本 README 的文字。你可以转载、改编、商用，不用来问作者，但要做到三件事：
+正文用 [CC BY 4.0](LICENSE) 发布，范围是 book/、docs/ 和本 README 的文字；`third_party/` 下的第三方材料除外，按各自目录中保留的原始许可证与来源说明发布。你可以转载、改编、商用，不用来问作者，但要做到三件事：
 
 - 写明出处：「高性价比人生指南」，附上仓库链接 https://github.com/eternity4719/HowToLiveBetter 。
 - 附上许可证链接 https://creativecommons.org/licenses/by/4.0/ 。
