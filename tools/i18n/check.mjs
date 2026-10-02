@@ -30,6 +30,19 @@ const codes = only < 0 ? LOCALES.map(l => l.code) : [process.argv[only + 1]];
 const problems = [];
 const report = (where, what) => problems.push(`${where}：${what}`);
 
+/** 那门语言 README「目录」一节的节名，按节文件名（01-不要早死）索引。
+    页面的侧栏目录读的是 README，译本 book/ 里的节标题是另一处，两处该说同一句话。 */
+function tocTitles(code) {
+  const p = contentPath(code, 'README.md');
+  if (!existsSync(resolve(ROOT, p))) return {};
+  const S = strings(code);
+  const out = {};
+  for (const m of read(p).matchAll(/^\s*\d+\.\s+\[([^\]]+)\]\((book\/[^)]+\.md)\)/gm)){
+    out[m[2].slice('book/'.length).replace(/\.md$/, '')] = m[1];
+  }
+  return out;
+}
+
 for (const code of codes){
   if (code === SOURCE.code) continue;
   const L = LOCALE(code);
@@ -37,6 +50,7 @@ for (const code of codes){
 
   const srcDir = (SOURCE.contentDir ? SOURCE.contentDir + '/' : '') + 'book/';
   const files = readdirSync(resolve(ROOT, srcDir)).filter(f => f.endsWith('.md')).sort();
+  const toc = tocTitles(code);
   const have = [];
   for (const f of files){
     // 译文所在的仓库目录：contentPath，不是 L.dir（那是页面上线上的地址，英文是空串）
@@ -47,8 +61,8 @@ for (const code of codes){
     const dst = entrySkeleton(read(dstPath), S);
     for (const e of dst.entries) e._locale = code;
     if (src.n !== dst.n) report(`${code} book/${f}`, `节号是 ${dst.n}，原文 ${src.n}`);
-    // 节标题和导读：条目之外，节首那几行也得翻
-    for (const w of STRUCT.compareSection(src, dst, `${code} book/${f}`)) problems.push(w);
+    // 节标题和导读：条目之外，节首那几行也得翻。节标题还要跟 README 目录里那一份一致
+    for (const w of STRUCT.compareSection(src, dst, `${code} book/${f}`, toc[f.replace(/\.md$/, '')])) problems.push(w);
     if (src.entries.length !== dst.entries.length)
       report(`${code} book/${f}`, `条目数 ${dst.entries.length}，原文 ${src.entries.length}`);
     for (let i = 0; i < Math.min(src.entries.length, dst.entries.length); i++)

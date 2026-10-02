@@ -210,13 +210,18 @@ export const STRUCT = {
     * 结果 en 和 vi 一半的节标题是中文的，有的还多出一份，页面上那一节渲染两遍。
     * 这两条都是机器查得出来的：节标题跟原文一字不差就是没翻；导读里只要还有
     * 整段没翻的中文就是没翻完。 */
-  compareSection(a, b, tag) {
+  // `toc` 是那门语言 README 目录里的节名。给了就要求译本的节标题跟它一字不差：
+  // 页面侧栏读的是 README，book 文件的节标题是另一处，同一节说两句话的话读者的
+  // 两处搜索对不上，这层该拦。
+  compareSection(a, b, tag, toc) {
     const out = [];
     const han = s => /[㐀-鿿]/.test(s);          // 汉字。引号里照抄的法条名不算漏译
     if (a.n !== b.n) out.push(`${tag}：节号是 ${b.n}，原文 ${a.n}`);
     if (!b.title.trim()) out.push(`${tag}：节标题是空的`);
     else if (a.title && b.title === a.title)
       out.push(`${tag}：节标题「${b.title}」跟中文原文一字不差，这一行没翻`);
+    else if (toc && b.title !== toc)
+      out.push(`${tag}：节标题「${b.title}」跟目录里的「${toc}」不一致`);
 
     // 导读逐段比。节首的导读是散文，但「整段还是中文」是查得出来的：把一行里
     // 照抄的中文（法条名、书名）剔掉之后，剩下的还是汉字，就是没翻。
