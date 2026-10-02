@@ -22,6 +22,18 @@ These are machine-checked by `tools/i18n/check.mjs`. Any violation fails the bui
    The same number of entries, in the same order. Section headings and intro paragraphs
    are translated, not dropped. If a block has no `# ` section heading, do not invent one.
 
+   Everything in headings and intros is translated, including the **entry heading text**
+   (`### 21. 每天都喝酒、一停就手抖心慌的人，别自己硬戒` → `### 21. Người uống rượu mỗi
+   ngày, …`) and the **section heading** (`# 6. 反面清单` → `# 6. Danh sách phản tác dụng`).
+   A heading left in Chinese fails the check — it is what a reader sees first in search
+   results and in the sidebar. The one exception: statute and book names quoted inside
+   「」 or 《》 in a heading stay as they are (rule 6).
+
+   A section's `# N. …` line must match the title in that language's README table of
+   contents word for word — the page sidebar is built from the README, so the two places
+   have to say the same thing. Change both the README line and the block's line in
+   `.i18n/<locale>/<section>/part00.md`; the `book/` file is regenerated from the block.
+
 2. **Field labels** (six per entry, in this order):
 
    | Chinese | English | Vietnamese |
@@ -55,6 +67,19 @@ These are machine-checked by `tools/i18n/check.mjs`. Any violation fails the bui
    nữ"; 「每百万人 302 例」 → "302 per million" / "302 trên một triệu". Amounts of six or
    more digits keep the shape 「约 X 万元（精确值 元）」 → "about 120,000 yuan (exact figure
    1130040 yuan)" / "khoảng 120.000 tệ (con số chính xác 1130040 tệ)".
+
+   The conversion only works when the scale word is there. 「200 余万元」「10 万元」
+   → "hơn 2.000.000 tệ"? No — the checker counts digit sequences, so the source's 200
+   and 10 must survive as 200 and 10: write 「200 余万元」 as "200 vạn tệ trở lên" and
+   「10 万元」 as "10 vạn tệ". Converting "10 万元" to "100.000" drops a digit the source
+   has and adds one it does not, and the Benefits column is where the book's whole
+   checkability rests.
+
+   **Vietnamese only:** statute article numbers written in Chinese numerals in the source
+   「第一千零四十五条」 become "Điều 1045" — the checker knows the number was in the source.
+   Amounts are the opposite case: 「3,018 人」 becomes "3.018 người" (thousands separator),
+   but 「3,177」 stays "3.177" only because that group has three digits; 「1130040」 stays
+   as written. Never re-group digits the source did not group.
 
    The Notes field is prose, so "40 例" may become "several dozen". The three fields above
    may not.
@@ -91,7 +116,20 @@ These are machine-checked by `tools/i18n/check.mjs`. Any violation fails the bui
    "Disputed" / "Tranh cãi". Keep the literal word "TODO" wherever it appears. The checker
    counts disputed entries and unverified items; the counts have to match.
 
-8. **Register.** Short declarative sentences, one idea each, roughly 15–25 words, never
+   **Vietnamese only:** a space after the colon is fine — the checker skips leading
+   whitespace. What it does need is the marker word itself at the start: `- Ghi chú:
+   Tranh cãi.` reads the same as `- Ghi chú:Tranh cãi.` and both pass. What fails is a
+   marker in the middle of the note, or an entry the source did not dispute getting one.
+
+8. **No Chinese left in running prose.** Apart from the quotations rules 5 and 6 allow
+   (statute text, statute and book names, bibliographic identifiers like 国务院令第 768 号,
+   organisation names in parentheses), a Chinese word sitting inside an English or
+   Vietnamese sentence is a missed translation — the reader sees it. Common in practice:
+   a connective that came through as 本身 / 普遍 / 恰 / 口径, or a heading left untranslated.
+   Keep the whole phrase translated rather than splicing a Chinese word into the middle
+   of a Vietnamese one ("cũng普遍 đánh giá" → "cũng đánh giá").
+
+9. **Register.** Short declarative sentences, one idea each, roughly 15–25 words, never
    over 40. Explicit subjects: you, the doctor, the court, the company. Calm. No
    exclamation marks. No lecturing. No AI-sounding filler: no "It is worth noting that",
    no "essentially", no repeated "in other words", no uplifting summary sentence at the end
@@ -99,14 +137,22 @@ These are machine-checked by `tools/i18n/check.mjs`. Any violation fails the bui
    "output", "a shield"). Negation, scope, conditions and judgements are content — do not
    cut them as filler.
 
-9. **Glossary.** Use the exact terms in `tools/i18n/glossary.en.mjs` (English) or
+10. **Glossary.** Use the exact terms in `tools/i18n/glossary.en.mjs` (English) or
    `tools/i18n/glossary.vi.mjs` (Vietnamese). Recurring terms must be worded the same way
    everywhere, or the book contradicts itself.
 
 ## Checking your work
 
 After writing, the file is compared against the Chinese source: entry count, entry
-numbers, field presence and order, the cost-tag comment, evidence grades, every number in
-the three checked fields, cross-reference numbers, and link counts. Fix what it reports
-before finishing. `node tools/i18n/join.mjs book/<file> --locale <code>` runs that
-comparison for one section if you want to see it directly.
+numbers, field presence and order, the cost-tag comment, evidence grades, disputed and
+unverified markers, every number in the three checked fields, cross-reference numbers,
+link counts — plus the three lines that are easy to leave behind: the section heading, the
+section intro, and each entry's own heading. Fix everything it reports before finishing.
+
+`node tools/i18n/join.mjs book/<file> --locale <code>` runs that comparison for one
+section. `bash tools/i18n/join-ready.sh <code>` joins every section you have finished and
+prints the failures for the ones you have not.
+
+A section that reports 「切了 N 块，译文只有 M 块」 has a block file in the wrong place or
+a stray extra one — list the folder and compare the entry numbers each block starts with
+against the source.
