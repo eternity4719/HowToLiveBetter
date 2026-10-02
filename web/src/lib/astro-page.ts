@@ -2,14 +2,14 @@
 //
 // 分工（别串了）：
 // · 壳（SEO 头、hreflang、JSON-LD、界面文案、site-config、跳语言页、sitemap、robots）
-//   全部由 tools/site/build.mjs 出，Astro 只是调 renderPage/chooserPage/sitemapXml/robotsTxt。
+//   全部由 tools/site/build.mjs 出，Astro 只是调 renderPage/chooserJump/sitemapXml/robotsTxt。
 //   域名、文案、统计数字改那边，这里自动跟上。
 // · 预渲染（卡片、侧栏目录、术语表）和语料内联由 web/ 出（render.ts + 下面这个文件）。
 //   爬虫看到的全文从这里来。
 //
 // 注入全走字符串锚点，和 tools/offline/build.mjs 一个路数：锚点找不到就抛错，
 // 不要静默发出半成品——少一段预渲染，页面看起来正常但爬虫少看几百条。
-import { renderPage, chooserPage, sitemapXml, robotsTxt, SITE } from '../../../tools/site/build.mjs';
+import { renderPage, chooserJump, sitemapXml, robotsTxt } from '../../../tools/site/build.mjs';
 import { locale, readRepo } from './site';
 import { loadLocale } from './load';
 import { buildGloss } from './parse';
@@ -92,9 +92,9 @@ export function localePageParts(code) {
   return { ...splitDoc(html), ...rest };
 }
 
-/** 跳语言小页三段。 */
-export function chooserPageParts() {
-  return splitDoc(chooserPage(SITE));
+/** ?lang=xx 老链接的跳转脚本，整段塞进根页面的 head。没带 lang 就不跳。 */
+export function chooserJumpParts() {
+  return chooserJump();
 }
 
-export { chooserPage, sitemapXml, robotsTxt };
+export { chooserJump, sitemapXml, robotsTxt };

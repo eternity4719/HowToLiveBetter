@@ -18,7 +18,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { LOCALES, SOURCE, LOCALE, strings } from '../site/locales.mjs';
+import { LOCALES, SOURCE, LOCALE, strings, contentPath } from '../site/locales.mjs';
 import { STRUCT, entrySkeleton } from './structure.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -39,7 +39,8 @@ for (const code of codes){
   const files = readdirSync(resolve(ROOT, srcDir)).filter(f => f.endsWith('.md')).sort();
   const have = [];
   for (const f of files){
-    const dstPath = `${L.dir}book/${f}`;
+    // 译文所在的仓库目录：contentPath，不是 L.dir（那是页面上线上的地址，英文是空串）
+    const dstPath = contentPath(code, `book/${f}`);
     if (!existsSync(resolve(ROOT, dstPath))) continue;
     have.push(f);
     const src = entrySkeleton(read(srcDir + f), strings(SOURCE.code));
@@ -56,8 +57,9 @@ for (const code of codes){
     if (!/^\[.*\]\((?:\.\.\/|\.\/)?README\.md\)/.test(first))
       report(`${code} book/${f}`, `第一行「${first.slice(0, 40)}」不是回本语言目录的链接`);
   }
-  const all = existsSync(resolve(ROOT, `${L.dir}README.md`));
-  console.log(`${L.name}（${L.dir}）：正文 ${have.length}/${files.length} 节已翻${all ? '' : '，README 还没有'}`);
+  const repoDir = (L.contentDir ? L.contentDir + '/' : '') || './';
+  const all = existsSync(resolve(ROOT, contentPath(code, 'README.md')));
+  console.log(`${L.name}（${repoDir}，页面上 ${L.dir || '/' }）：正文 ${have.length}/${files.length} 节已翻${all ? '' : '，README 还没有'}`);
 }
 
 if (problems.length){

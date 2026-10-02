@@ -12,7 +12,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { LOCALES, SOURCE, strings } from '../site/locales.mjs';
+import { LOCALES, SOURCE, strings, contentPath } from '../site/locales.mjs';
 import { splitSection } from './split.mjs';
 import { STRUCT, entrySkeleton } from './structure.mjs';
 
@@ -91,13 +91,16 @@ for (const srcPath of files){
     }
     pieces.push(k === 0 ? src.head.join('\n') + '\n' + body : body);
   }
-  if (trouble) { console.error(`${locale} ${name}：${trouble} 处对不上，没写进 ${L.dir}book/${name}`); continue; }
+  // 写进仓库里的译文目录：contentPath，不是 L.dir。L.dir 是页面上线上的地址，
+  // 英文那份是空串（页面在根上），拿它拼就是 book/ —— 中文原文那一份。
+  const dst = contentPath(locale, `book/${name}`);
+  if (trouble) { console.error(`${locale} ${name}：${trouble} 处对不上，没写进 ${dst}`); continue; }
 
   let out = pieces.join('\n');
   const tail = `${dir}/tail.txt`;
   if (existsSync(resolve(ROOT, tail))) out += '\n' + read(tail);
-  mkdirSync(dirname(resolve(ROOT, `${L.dir}book/${name}`)), { recursive: true });
-  writeFileSync(resolve(ROOT, `${L.dir}book/${name}`), out);
+  mkdirSync(dirname(resolve(ROOT, dst)), { recursive: true });
+  writeFileSync(resolve(ROOT, dst), out);
   done++;
   console.log(`${locale} book/${name}：${parts.length} 块合好，${src.count} 条，${((out.length / 1024) | 0)}K`);
 }

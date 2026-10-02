@@ -9,7 +9,8 @@
     "build": "astro build && node scripts/copy-assets.mjs",
     "preview": "astro preview",
     "check": "tsx src/lib/parity.ts",
-    "verify": "npm run check && npm run build && tsx src/lib/render-check.ts"
+    "verify": "npm run check && npm run build && npm run check-lang && tsx src/lib/render-check.ts",
+    "check-lang": "tsx src/lib/lang-switcher-check.ts"
   },
   "dependencies": {
     "astro": "7.3.4"

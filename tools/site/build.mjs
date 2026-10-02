@@ -202,63 +202,43 @@ function docLinks(docs, L, strings, S) {
   return `${escText(strings['docs.label'])}${S.listSep}${links.join(' · ')}`;
 }
 
-// 根目录那个小页：默认英文（PUBLISHED 里 default 的那种），浏览器要别的语言就去那种，
-// 也可以自己点。关掉 JS 也点得动。
-// 只列 PUBLISHED：还没翻完的那种（眼下是越南文）hreflang 和链接里都不出现——
+// 根 URL 现在直接发英文（默认语言就住在根上，见 locales.json 里 en 的 dir: ""）。
+// 以前这里是「跳语言的小页」——一块小 HTML，开 JS 就按 navigator.language 跳走。
+// 那一版有两个问题：① 根 URL 发出的是中文标题的跳页，英文默认并没有真的落在根上；
+// ② 自动跳转会把读者直接送走，页内的语言下拉和锚点都没机会用。
+// 现在保留的只有它唯一无可替代的一点：?lang=xx 这个老链接形式（README 和别处都这么写过）。
+// 命中就跳，命中不了就留在英文页上——页内下拉随时能换。
+//
+// 只列 PUBLISHED：还没翻完的那种 hreflang 和跳转表里都不出现——
 // 列出来点进去是 404，比不列更糟。翻完重跑这个脚本，它自己回来。
-export function chooserPage(site) {
-  const list = PUBLISHED
-    .map(l => `    <li><a href="${l.canonical}">${escText(l.name)}</a><small>${escText(l.note)}</small></li>`)
-    .join('\n');
-  // 跳转表按 accept 排，命中不了就回默认那一种。?lang=xx 可以指定。
-  const pick = `  const q = new URLSearchParams(location.search).get('lang');
-  const list = ${JSON.stringify(PUBLISHED.map(l => ({ code: l.code, url: l.canonical, test: new RegExp('^' + l.accept, 'i') })))};
-  const dflt = ${JSON.stringify((PUBLISHED.find(l => l.default) ?? PUBLISHED[0])?.canonical ?? site + '/')};
-  const hit = q ? list.find(l => l.code === q) : list.find(l => l.test.test(navigator.language || ''));
-  location.replace((hit && hit.url) || dflt);`;
-  return `<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>高性价比人生指南 · Choose your language</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="${site}/">
-${hreflangLinks()}
-<style>
-body{font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
-  margin:0;min-height:100vh;display:grid;place-items:center;background:#fff;color:#1b1b1f}
-main{max-width:520px;padding:32px 20px;text-align:center}
-h1{font-size:22px;margin:0 0 6px}
-p{color:rgba(60,60,67,.72);margin:0 0 22px}
-ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-a{display:block;padding:13px 16px;border:1px solid #e2e2e3;border-radius:12px;color:#3451b2;text-decoration:none;font-weight:600}
-a:hover{background:#f6f6f7}
-small{display:block;font-weight:400;color:rgba(60,60,67,.6);margin-top:3px}
-@media (prefers-color-scheme: dark){
-  body{background:#1b1b1f;color:#f6f6f7}p{color:rgba(235,235,245,.68)}small{color:rgba(235,235,245,.55)}
-  a{border-color:#2b2b2f;color:#93a8ef}a:hover{background:#202127}}
-</style>
-</head>
-<body>
-<main>
-  <h1>高性价比人生指南</h1>
-  <p>选一种语言 · Choose a language</p>
-  <ul>
-${list}
-  </ul>
-</main>
-<script>
-${pick}
+export function chooserJump() {
+  // 跳转表按 accept 排。?lang=xx 命中就走，命中不了（没带、带了不认识的那种）就什么都不做，
+  // 读者留在这一页上——默认语言就在这儿，页内下拉随时能换。
+  //
+  // accept 传字符串（「en」「vi」「zh」），正则留到页面里现 new RegExp。
+  // 曾经在这儿塞 new RegExp 再 JSON.stringify，出来的是 {}（RegExp 序列化不出自己），
+  // 于是 l.test.test 抛 TypeError，整个脚本当场死掉，跳转一次也没真发生过。
+  const picks = PUBLISHED.map(l => ({ code: l.code, url: l.canonical, accept: l.accept }));
+  return `<script>
+(function(){
+  var q = new URLSearchParams(location.search).get('lang');
+  if (!q) return;                                   // 没带 lang：就在这一页上，不跳
+  var list = ${JSON.stringify(picks)};
+  var hit = list.filter(function(l){
+    return l.code === q || new RegExp('^' + l.accept, 'i').test(q);
+  })[0];
+  if (!hit) return;                                  // 带了一种没有的语言：留在原地
+  var url = hit.url + location.search.replace(/[?&]lang=[^&]*/, '')
+                   .replace(/^\?/, '?').replace(/^&/, '?') + location.hash;
+  if (url !== location.href) location.replace(url);
+})();
 </script>
-</body>
-</html>
 `;
 }
 
 // ---------------------------------------------------------------- 渲染一份页面
-// 这一轮真的会生成页面的语言：README 在的才算。还没翻完的语言（眼下是 vi）
-// 不能出现在 hreflang、跳语言页和页内语言下拉里——那些都是读者会点开的链接，
+// 这一轮真的会生成页面的语言：README 在的才算。还没翻完的那种语言
+// 不能出现在 hreflang 和页内语言下拉里——那些都是读者会点开的链接，
 // 点进去只有一个 404，比不列更糟。翻完重跑这个脚本，它自己回来。
 const readmeOf = L => (L.contentDir ? L.contentDir + '/' : '') + 'README.md';
 export const PUBLISHED = LOCALES.filter(L => existsSync(resolve(ROOT, readmeOf(L))));
@@ -351,6 +331,9 @@ export function renderPage(L, template, stats) {
     code: L.code, dir: L.dir, contentBase: L.contentBase, assetBase: L.assetBase,
     repoBlob: L.repoBlob, htmlLang: L.htmlLang, sortLocale: L.sortLocale,
     locales: PUBLISHED.map(l => l.code), langNames: Object.fromEntries(PUBLISHED.map(l => [l.code, l.name])),
+    // 每种语言页面上线上的地址，末尾带斜杠（默认语言是 ''，页面就在根上）。
+    // 页内的语言下拉要靠它算跳转目标，所以得整张表，不能只有当前这页的 dir。
+    langDirs: Object.fromEntries(PUBLISHED.map(l => [l.code, l.dir])),
     offline: false,
     files: contents.map(c => c.path),      // 这一份真正收了哪几节，页面照这个取
     docFiles: docs.map(d => d.path),
@@ -401,12 +384,22 @@ export function sitemapXml() {
   alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${escAttr(SITE_URL())}"/>`);
   const url = (loc, priority) =>
     `  <url>\n    <loc>${escText(loc)}</loc>\n${alternates.join('\n')}\n    <priority>${priority}</priority>\n  </url>`;
+  // 每条只列一次。默认语言住在根上，它的 canonical 就是 SITE_URL()，
+  // 而根 URL 本来就要单列一条（读者直接打开的就是它）——不去重 sitemap 里
+  // 同一个地址会出现两次，一次 1.0 一次 0.9。
+  const seen = new Set();
+  const entry = (loc, priority) => {
+    if (seen.has(loc)) return '';
+    seen.add(loc);
+    return url(loc, priority) + '\n';
+  };
+  let out = entry(SITE_URL(), '1.0');
+  for (const l of PUBLISHED) out += entry(l.canonical, l.default ? '0.9' : '0.8');
   return '<?xml version="1.0" encoding="UTF-8"?>\n'
     + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
     + ' xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
-    + url(SITE_URL(), '1.0') + '\n'                              // 跳语言的小页
-    + PUBLISHED.map(l => url(l.canonical, l.default ? '0.9' : '0.8')).join('\n')
-    + '\n</urlset>\n';
+    + out
+    + '</urlset>\n';
 }
 
 // robots.txt 和 sitemap.xml 是一对：sitemap 指的那个地址得是真的。一起从 site.json 拼，
@@ -430,6 +423,7 @@ export const SITE_URL = () => SITE + '/';
 // 但链接会指向别处，而且没人会一眼看出来。这里逐个对一遍。
 function checkUrls() {
   for (const l of LOCALES) {
+    // dir 是空串时拼出来正好是 SITE + '/'：默认语言就住在根 URL 上（要求 2）
     const wantCanonical = SITE + '/' + l.dir;
     const wantBlob = REPO + '/blob/main/' + (l.contentDir ? l.contentDir + '/' : '');
     if (l.canonical !== wantCanonical)
@@ -464,7 +458,6 @@ for (const L of LOCALES){
   const text = renderPage(L, template, stats);
   if (text !== null) targets.push({ path: `${L.dir}index.html`, text });
 }
-targets.push({ path: 'index.html', text: chooserPage(SITE) });
 targets.push({ path: 'sitemap.xml', text: sitemapXml() });
 targets.push({ path: 'robots.txt', text: robotsTxt() });
 

@@ -25,9 +25,17 @@ export function strings(code) {
   return raw;
 }
 
-/** 语言目录，末尾带斜杠：en/、vi/、zh/ */
+/** 语言目录（页面上线上的地址），末尾带斜杠。默认语言在根上，是 ''：en/、vi/、zh/ */
 export const dir = code => locale(code).dir;
 /** 正文所在的仓库根相对目录，末尾无斜杠：zh 是 ''（就在根上），en 是 'en' */
 export const contentDir = code => locale(code).contentDir;
-/** 浏览器那边的相对根：zh 是 ../，en/vi 是 ./。给页面里的 fetch 和相对链接用 */
+/** 浏览器那边的相对根：zh 是 ../，根上那份是 en/。给页面里的 fetch 和相对链接用 */
 export const base = code => locale(code).contentBase;
+
+/** 正文所在的仓库根相对路径：contentPath('en', 'book/x.md') 是 en/book/x.md。
+    仓库里找译文一律走这里，别用 dir()——dir 是线上地址，en 的 dir 现在是空串（页面在根上），
+    拿它拼仓库路径会拼成 book/x.md，也就是中文原文那一份。 */
+export const contentPath = (code, rel) => {
+  const d = contentDir(code);
+  return d ? d + '/' + rel : rel;
+};

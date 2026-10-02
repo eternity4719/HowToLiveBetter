@@ -3,7 +3,7 @@
 <img src="og.png" alt="高性价比人生指南 —— 用最少的钱、时间和精力，换回最多的寿命、金钱和人身自由" width="820">
 
 > Vietnamese: https://streamentry.github.io/HowToLiveBetter/vi/
-> English: https://streamentry.github.io/HowToLiveBetter/en/
+> English: https://streamentry.github.io/HowToLiveBetter/
 
 # 高性价比人生指南
 
@@ -40,7 +40,7 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 </td></tr>
 <tr><td align="right"><b>其他语言</b></td><td align="left">
 
-**官方**：[English](https://streamentry.github.io/HowToLiveBetter/en/)（默认，访问 `/` 就是它） · 中文（本页，原始内容都在这里），译文跟不上时以中文原文为准。Tiếng Việt 在翻，尚未上线。
+**官方**：[English](https://streamentry.github.io/HowToLiveBetter/)（默认，访问 `/` 就是它） · 中文（本页，原始内容都在这里），译文跟不上时以中文原文为准。Tiếng Việt 在翻，尚未上线。
 **他人维护**：[Русский](https://dlgrv.github.io/HowToLiveBetter/ru/) · [Español](https://dlgrv.github.io/HowToLiveBetter/es/)，[dlgrv](https://github.com/dlgrv) 的翻译（[仓库](https://github.com/dlgrv/HowToLiveBetter)）
 
 </td></tr>
@@ -283,7 +283,7 @@ node tools/pdf/build.mjs                   # PDF，另需 pandoc ≥ 3.1 和 typ
 
 每节内条目按性价比从高到低排列。「不要早死」「不要浪费时间」这类节标题说的是这一节想防住的结果，条目本身要做还是别做，以条目标题为准。长文另见 [docs/家庭应急装备清单.md](docs/家庭应急装备清单.md)、[docs/做平台要办哪些证.md](docs/做平台要办哪些证.md)、[docs/结婚划不划算.md](docs/结婚划不划算.md) 、[docs/遇到陌生人出事该不该停.md](docs/遇到陌生人出事该不该停.md) 和 [docs/生物钟和夜班.md](docs/生物钟和夜班.md)。每条来源的核实过程记录在 [docs/核实记录](docs/核实记录/)。
 
-`en/index.html`、`zh/index.html`、`vi/index.html` 是三种语言的在线检索页：按关键词、章节、证据等级和成本维度（花钱、花时间、要毅力）筛选条目，数据直接读本目录下那一份 README 和 `book/`。根目录的 `index.html` 是跳语言的小页，按浏览器语言去 `/en/`（默认，英文）或 `/vi/`，关掉 JavaScript 也能自己点。在仓库设置里开启 GitHub Pages（Deploy from a branch，分支 main，目录 /）后即可访问。
+三种语言的在线检索页是 `index.html`（英文，默认）、`vi/index.html`、`zh/index.html`：按关键词、章节、证据等级和成本维度（花钱、花时间、要毅力）筛选条目，数据直接读那一种语言的 README 和 `book/`。英文就是根 URL 打开的那一页；页头的语言下拉换语言，当前筛到哪一条、定位在哪一条都跟着过去（`/en/` 是英文的老地址，会转到根上）。在仓库设置里开启 GitHub Pages（Deploy from a branch，分支 main，目录 /）后即可访问。
 
 页面源码是 `tools/site/page.template.html`，三份页面都由 `node tools/site/build.mjs` 从模板加 `tools/site/locales/*.json` 生成，生成物入库是为了让 Pages 直接发；改页面改模板和字典，别改生成出来的那三份。`tools/epub/` 是电子书生成脚本，`cd tools/epub && npm ci && npm run build` 在本地出一本 EPUB 到 `dist/`；GitHub Actions 在正文改动后自动跑同一个脚本并更新 Release。
 

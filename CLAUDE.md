@@ -83,31 +83,38 @@
 
 | 路径 | 是什么 | 谁维护 |
 | --- | --- | --- |
-| `/` | 跳语言的小页，按浏览器语言去 `/en/` 或 `/vi/`，关掉 JS 也能点 | `tools/site/build.mjs` 生成 |
-| `/en/` | 英文站（默认） | 译文，见 `en/` |
+| `/` | **英文站（默认语言就住在根 URL 上）** | 译文，见 `en/` |
+| `/en/` | 上面那一页的别名，跟着转到 `/` | 转发页，`web/src/pages/en.astro` |
 | `/vi/` | 越南文站 | 译文，见 `vi/` |
 | `/zh/` | 中文站，读的是**仓库根**那份正文 | 原始内容都在根上 |
 
+**根 URL 为什么是英文而不是跳语言页**：默认语言住在根上是要求（要求 2）。以前 `/` 是一块「跳语言的小页」，开 JS 按 `navigator.language` 跳走——那样根 URL 发出的是中文标题的跳页，英文并没有真的落在根上，而且自动跳转把读者直接送走，页内语言下拉和锚点都没机会用。现在 `/` 直接是英文正文页，语言选择就在页头下拉里（要求 4：换语言保留 `?q=` 和 `#e-xx-y`）。保留下来的只有老链接形式 `/?lang=vi`，由 `chooserJump()` 那段小脚本接住，命中就跳、没带就留在原地。`/en/` 留着一块转发页，因为 README 和别处早就散着 `/en/` 的链接。
+
+**改 `locales.json` 的 `dir` 前先想清楚它被谁用**：它既是页面上线的目录（默认语言是空串 = 根），也被 `tools/offline/build.mjs` 拿来拼线上链接。**仓库里找译文一律走 `contentPath()`（按 `contentDir` 拼），别用 `dir`**——英文的 `dir` 现在是空串，拿它拼路径会拼到 `book/`，也就是中文原文那一份。2026-10-02 差点踩这个坑：`join.mjs` 原来用 `L.dir` 写盘，改成根上之后英文译文会被写进中文原文。
+
 **中文正文仍在仓库根**：`README.md`、`book/`、`docs/` 都没挪。`zh/index.html` 用 `contentBase: '../'` 指回根上那一份，所以作者改的还是原来那些文件，GitHub 渲染的还是仓库根的 README。en/vi 各自有 `README.md`、`book/`、`docs/`，是那一份语言的副本。
 
-检索页的源码是 `tools/site/page.template.html`，**三份页面都由 Astro 构建（`web/`）从模板加 `tools/site/locales/<code>.json` 生成，构建产物直发 Pages，不经过仓库**。改页面改模板和字典，别去 `web/dist` 里改（那是构建缓存，已 gitignore）。根目录那个跳语言的小页也是 Astro 出的。
+检索页的源码是 `tools/site/page.template.html`，**三份正文页面都由 Astro 构建（`web/`）从模板加 `tools/site/locales/<code>.json` 生成，构建产物直发 Pages，不经过仓库**。改页面改模板和字典，别去 `web/dist` 里改（那是构建缓存，已 gitignore）。`/en/` 那块转发页和根上那段 `?lang=` 跳转脚本也是 Astro 出的。
+
+**`web && npm run verify` 是四步一根链**：解析一致（`parity.ts`）→ 构建 → 语言下拉落点（`lang-switcher-check.ts`）→ 渲染一致（`render-check.ts`）。第三步单独在那儿，是因为语言下拉是从构建产物里抠出来真跑的——页内那段 `buildLangPicker` 读 `location`，只有浏览器才有，这里给它一份假的。抠的是发出去的那份代码本身，不是照着抄的，所以抄错测不出来。它拦的是这一类错：选项地址曾经写成 `SITE.dir`（「这一页在哪」），跟「要去哪种语言」无关，从 `/zh/` 选英文还是落在 `/zh/`，换语言等于没换。
 
 ### 站点怎么上线
 - **部署用 GitHub Pages 的 workflow 发布**（`.github/workflows/web.yml`，2026-09-30 从分支发布切过来的）：CI 里跑 `web/` 的 Astro 构建，产物（`web/dist`）直接发 Pages，**不入库**。`.nojekyll` 由构建拷进产物，别删根上那份，删了构建也跟着没了。
-- **构建时把卡片直接写进 HTML**（预渲染）：爬虫和关掉 JS 的读者不用等 JS 就看到全文。这是 Astro 迁移的全部理由——之前是客户端渲染，`en/index.html` 里 95 KB 全是框架，一个正文字都没有，AI 抓取器和链接预览只能看到空壳。
-- **预渲染和运行时是同一份逻辑的两份拷贝**：`web/src/lib/parse.ts` 抄模板的 `parseReadme`，`web/src/lib/render.ts` 抄模板的 `build()` 初次渲染。两份各自演化迟早对不上，对不上时爬虫和读者看到的就不是一本书了。所以有两道机器检查，`web/` 里跑 `npm run verify` 一次全过：① `npm run check`（`parity.ts`）把原版 `parseReadme` 从模板里抠出来逐字段比；② `render-check.ts` 跑在构建产物上，查每条六个栏的每个词都在 HTML 里、hydration 钩子齐、引用不悬空。**改模板的渲染逻辑必须同时改 `render.ts`，改判据是这两道都绿。**
+- **构建时把卡片直接写进 HTML**（预渲染）：爬虫和关掉 JS 的读者不用等 JS 就看到全文。这是 Astro 迁移的全部理由——之前是客户端渲染，`en/index.html` 里 95 KB 全是框架，一个正文字都没有，AI 抓取器和链接预览只能看到空壳。（英文那份页面现在叫 `index.html`，在根上，`en/index.html` 是转发页。）
+- **预渲染和运行时是同一份逻辑的两份拷贝**：`web/src/lib/parse.ts` 抄模板的 `parseReadme`，`web/src/lib/render.ts` 抄模板的 `build()` 初次渲染。两份各自演化迟早对不上，对不上时爬虫和读者看到的就不是一本书了。所以有三道机器检查，`web/` 里跑 `npm run verify` 一次全过：① `npm run check`（`parity.ts`）把原版 `parseReadme` 从模板里抠出来逐字段比；② `npm run check-lang`（`lang-switcher-check.ts`）把构建产物里那段 `buildLangPicker` 抠出来、给它一份假的 `location` 真跑，逐个落点核对语言下拉的地址、`?q=` 和锚点；③ `render-check.ts` 跑在构建产物上，查每条六个栏的每个词都在 HTML 里、hydration 钩子齐、引用不悬空。**改模板的渲染逻辑必须同时改 `render.ts`，改判据是这三道都绿。**
 - **浏览器里还是原来那个页面**：预渲染只负责首屏和爬虫，JS 跑起来后索引现有 DOM（模板里的 `indexSsgDom`），筛选、搜索、弹窗、高亮全是原来的逻辑。对不上就回退重建并 `console.warn`——正常构建永远不该走到那里。
 - **域名只写在 `tools/site/site.json` 的 `site` 和 `repo` 两个值里**，别的文件一处都不许再抄。`locales.json` 里每种语言的 `canonical` 和 `repoBlob` 是从这两个值推出来的，构建时逐个对一遍（`checkUrls()`），**对不上直接抛错**，不会出现「Pages 发到 A 域名、页面自称是 B 域名」。`sitemap.xml` 和 `robots.txt` 由 Astro 的两个 endpoint 从同一处生成，域名单独抄一遍就会漏。
 - **四种链接要分清，改域名时只动前两种**：① 站点链接（`*.github.io/…`）和② 面向读者的 GitHub 链接（页面里的文件链接、`/releases/download/…`）跟着 `site.json` 走；③ `git clone` 那行、④ 「写明出处／Credit the source」和 Star History 图这三处**永远指向上游 `eternity4719/HowToLiveBetter`**，它们是在说明这本书的出处，不是本站的地址。2026-09-30 换域名时按这个分的，核对的判据是 `grep -c eternity4719 README.md en/README.md` 各应为 3，且都在那三类位置上。
 - **`tools/site/build.mjs` 现在是库**：`renderPage` 给离线单文件构建和 Astro 调，写盘逻辑只在直接运行时走。仓库根不再有它生成的页面（`index.html`、`*/index.html`、`sitemap.xml`、`robots.txt` 都已删），所以 `build.mjs --check` 的 CI job 跟着退役了——模板和字典的一致性由 Astro 构建本身保证（字典缺键直接抛错），由 `extract.mjs --check` 守中文文案。
 - **CI 分两套，互不挡**：`book.yml` 管电子书和正文检查，`web.yml` 管网站（校验→构建→发布）。`web.yml` 的触发路径只收和网站有关的文件，改 EPUB/PDF 模板不触发网站构建，反之亦然。
-- **没翻完的语言不会上线，但会被列出来**：`PUBLISHED`（README 在的才算）决定 hreflang、跳语言页和页内语言下拉——`vi/index.html` 不存在时页面上也没有一个点进去 404 的越南语入口。构建日志里报「跳过 vi」和「另有 N 项在目录里列着、正文还没翻到」，前者是没生成页面，后者是页面生成了但目录里那一节还没有译文。
+- **没翻完的语言不会上线，但会被列出来**：`PUBLISHED`（README 在的才算）决定 hreflang 和页内语言下拉——`vi/index.html` 不存在时页面上也没有一个点进去 404 的越南语入口。构建日志里报「跳过 vi」和「另有 N 项在目录里列着、正文还没翻到」，前者是没生成页面，后者是页面生成了但目录里那一节还没有译文。
+- **`dir` 和 `contentDir` 不是一回事**（2026-10-02 定的，英文搬到根上之后）：`dir` 是页面上线的目录（英文是 `''`，页面在 `/`），`contentDir` 是正文在仓库里的目录（英文是 `en`）。`tools/site/locales.mjs` 的 `contentPath()` 把两者接起来，仓库里拼路径只用它。页面上的相对根是第三个东西 `contentBase`（英文那份页面在根上，读的是 `en/`，所以是 `en/` 不是 `./`）。
 
 **正文按节拆成 `book/01-*.md` … `book/34-*.md`（2026-09-08 拆的，原来单文件 531 KB，超过 GitHub 渲染 Markdown 的 512 KB 上限，后面的节显示不出来也跳不了锚点）。** README 只留导读、术语表和目录，新增或修改条目改对应的 book 文件；检索页先读 README 拿目录里的文件列表，再并发读这些文件（清单由构建给，见 `SITE.files`）。每节文件第一行是回总目录的链接，第二行空行，第三行是 `# N. 节名`。
 
 ### 译文怎么维护
 - **流程和判据写在 `tools/i18n/BRIEF.md`**，翻译任务的提示词和结构检查的判据是同一份。词表 `tools/i18n/glossary.{en,vi}.mjs`。
-- 一次翻一节。`node tools/i18n/split.mjs book/NN-*.md --locale en` 把它切成十来个条一块放进 `.i18n/en/<节名>/partNN.md`（**已翻过的块不会被覆盖**，改参数重跑不会冲掉译文），翻译完 `node tools/i18n/join.mjs book/NN-*.md --locale en` 逐块校一遍再合成 `en/book/NN-*.md`。
+- 一次翻一节。`node tools/i18n/split.mjs book/NN-*.md --locale en` 把它切成十来个条一块放进 `.i18n/en/<节名>/partNN.md`（**已翻过的块不会被覆盖**，改参数重跑不会冲掉译文），翻译完 `node tools/i18n/join.mjs book/NN-*.md --locale en` 逐块校一遍再合成 `en/book/NN-*.md`。一轮翻好几节用 `bash tools/i18n/join-ready.sh en vi`——它按「块里还带 `- 成本：` 就是没翻」挑出翻全了的节，挨个 join。
 - `node tools/i18n/check.mjs`（CI 的「译文检查」job）拿中文原文逐条对译文：条数条号、六个字段的有无与顺序、**成本标签注释逐字照抄**、证据等级、争议与待核实的条数、**收益/成本/来源三栏的数字一个不多一个不少**（量级词换算除外，见 `tools/i18n/structure.mjs` 里 `numbersOf` 的说明）、「第 X 条」指路的条号节号、来源与备注里的链接数量。判据在 `structure.mjs`，join 和 check 共用同一份。
 - **译文不许改数字**。中文「167 万」在英文里只能写成 1,670,000、在越南文里只能写成 1.670.000，这是量级换算，`structure.mjs` 放行；除此之外数字对不上就是错。这一层机器查得出来，所以译文不需要作者审。
 - 越南文里 **条目 = "mục"，节 = "phần"，法条的款 = "khoản (2)"**——三个词不能混。「第 13 节」写成 "phần 13"，写成 "mục 13" 读者就当成第 13 条了。

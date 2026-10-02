@@ -9,13 +9,13 @@ On living longer and getting sick less, and on what to do when someone has an ac
 
 You do not have to do all of it. This is a shortlist ordered by value for money, not a task list. Taking one or two entries with you counts. The author has not done most of them either.
 
-[![Search online](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://streamentry.github.io/HowToLiveBetter/en/)
+[![Search online](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://streamentry.github.io/HowToLiveBetter/)
 [![Items](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-635%20%E6%9D%A1-18794e?style=flat-square)](#contents)
 [![Evidence grades](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20422%20%C2%B7%20B%20162%20%C2%B7%20C%2051-915930?style=flat-square)](#evidence-grades)
 [![Original sources](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1407%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![Licence](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#licence)
 
-### [Open the search page](https://streamentry.github.io/HowToLiveBetter/en/) · [Let an AI answer from the book (skill)](skills/life-decision-guide/README.md)
+### [Open the search page](https://streamentry.github.io/HowToLiveBetter/) · [Let an AI answer from the book (skill)](skills/life-decision-guide/README.md)
 
 The AI assistant skill works with Claude Code and Codex. Once it is installed, ask it something like "should I sign as a guarantor for a friend". It looks up the relevant items in the book first, then answers, and says which section and which item the answer comes from.
 
@@ -96,7 +96,7 @@ English is the default edition, and this page is the source content; translation
 
 - **You do not have to do all of it**: this is a shortlist ordered by value for money, not a task list. Taking one or two entries with you counts. Leave the rest and come back when you need them. The remark that this is easy to say and hard to do is fair. The author has not done most of it either. It is written down so that you can find it at the moment you need it. If you want the cheap ones, see "only the ones most worth doing" below.
 - **If you want an AI to look things up**: the repository ships a Chinese skill ([skills/life-decision-guide](skills/life-decision-guide/)). Both Claude Code and Codex can install it. Once it is installed, ask it directly, for example "should I sign as a guarantor for a friend" or "is a two-hour daily commute worth it". It first pulls the relevant items out of the text, then answers, ranking them the way the book ranks things, and it says which section and which item the answer comes from. If it cannot find anything, it says so. It does not invent numbers. How to install it is in [the notes in that directory](skills/life-decision-guide/README.md).
-- **If you want to filter by criteria**: open the [search page](https://streamentry.github.io/HowToLiveBetter/en/). You can filter by keyword, by section and by evidence grade. You can also filter on the three costs, money spent, time spent and willpower needed, and several filters can be combined. The text on the page is read straight from the files in `book/`. When the text changes, the page changes with it.
+- **If you want to filter by criteria**: open the [search page](https://streamentry.github.io/HowToLiveBetter/). You can filter by keyword, by section and by evidence grade. You can also filter on the three costs, money spent, time spent and willpower needed, and several filters can be combined. The text on the page is read straight from the files in `book/`. When the text changes, the page changes with it.
 - **Items point at each other** (things like "see item 17 in section 8"). On the search page such a reference carries a dotted underline. Click it and the title and the "In plain language" line of the item it points to appear in place. To go there for real, press "Go there". If the filters happen to be hiding that item, the page clears the filters by itself. On GitHub, reading the text directly, these references are not clickable. But every one of them says what it points to, for example "see item 18 (write down the IOU when you lend money)". You know which item is meant without following it.
 - **If you want to read in order**: within each section the items run from the best value for money to the worst. Start with the first few of each section.
 - **If you want to read it offline or send it to someone**: download the [single-file offline HTML](https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.html). The whole book, search and filters, is in that one file. Double-click it and it opens. No server, no network. You can send it straight through WeChat.
@@ -122,7 +122,7 @@ An item looks like this:
 
 ## Run your own copy
 
-Most people do not need to deploy anything. The [search page](https://streamentry.github.io/HowToLiveBetter/en/) is already there, and if you want it offline, download the [single-file offline HTML](https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.html). Double-click it and it opens.
+Most people do not need to deploy anything. The [search page](https://streamentry.github.io/HowToLiveBetter/) is already there, and if you want it offline, download the [single-file offline HTML](https://github.com/streamentry/HowToLiveBetter/releases/download/epub-latest/HowToLiveBetter.html). Double-click it and it opens.
 
 If you do want to run it on your own computer or your own server:
 
@@ -283,7 +283,7 @@ The `index.html` in the repository root is the online search page. It filters it
 
 ## The text
 
-The text is split by section into 34 files in [book/](book/). Click a section name in the contents above to go in. It is split because a single file has already gone past the 512 KB limit GitHub allows when rendering Markdown, and the sections after that point stop showing. The [search page](https://streamentry.github.io/HowToLiveBetter/en/) reads these files together, and the way it works has not changed.
+The text is split by section into 34 files in [book/](book/). Click a section name in the contents above to go in. It is split because a single file has already gone past the 512 KB limit GitHub allows when rendering Markdown, and the sections after that point stop showing. The [search page](https://streamentry.github.io/HowToLiveBetter/) reads these files together, and the way it works has not changed.
 
 ## Licence
 

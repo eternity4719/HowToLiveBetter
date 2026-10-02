@@ -1281,18 +1281,26 @@ function wire(){
 }
 
 /* ---------- 语言切换 ----------
-   三种语言的页面在 /en/、/zh/、/vi/，文件名和锚点都一样，所以换语言只要换目录：
-   当前的筛选参数和 #e-13-1 一起带过去，落点还是同一条。离线副本没有目录可跳，隐藏。 */
+   各语言的页面只在目录上不同（/、/zh/、/vi/），文件名和锚点都一样，所以换语言只要换目录：
+   当前的筛选参数和 #e-13-1 一起带过去，落点还是同一条。离线副本没有目录可跳，隐藏。
+
+   站点的根要从当前目录里退出来再拼，不能拿 SITE.dir 直接拼：SITE.dir 是「这一页所在
+   目录」（页面在 /vi/ 就是 vi/），拿它拼出来还是同一页，换语言等于没换。退掉当前这层
+   之后拿 SITE.langDirs[code] 拼，才是目标语言的那一页。默认语言 dir 是空串，退不掉，
+   这时 here 本身��是站点的根。 */
 function buildLangPicker(){
   const sel = document.getElementById('lang');
   if (!sel) return;
-  const here = location.pathname.replace(/[^/]*$/, '');      // 当前页所在目录
+  const here = location.pathname.replace(/[^/]*$/, '');      // 当前页所在目录，如 /HowToLiveBetter/vi/
+  const root = SITE.dir && here.endsWith(SITE.dir)           // 站点根，如 /HowToLiveBetter/
+    ? here.slice(0, -SITE.dir.length) : here;
+  const dirs = SITE.langDirs || {};                          // 离线单文件版没有这一项
   for (const code of SITE.locales){
     const o = document.createElement('option');
     o.value = code; o.textContent = SITE.langNames[code];
     o.selected = code === SITE.code;
     if (SITE.offline || code === SITE.code){ o.disabled = code === SITE.code; }
-    else o.dataset.url = (here === SITE.dir ? here : SITE.dir) + location.search + location.hash;
+    else o.dataset.url = root + (dirs[code] || '') + location.search + location.hash;
     sel.appendChild(o);
   }
   if (SITE.offline){ sel.closest('.lang').hidden = true; return; }
