@@ -1,16 +1,16 @@
 {
-  "entries": 641,
+  "entries": 650,
   "sections": 34,
-  "gradeA": 425,
-  "gradeB": 165,
+  "gradeA": 428,
+  "gradeB": 171,
   "gradeC": 51,
-  "dispute": 60,
-  "todo": 2,
-  "links": 1443,
-  "ratioTop": 109,
+  "dispute": 65,
+  "todo": 3,
+  "links": 1539,
+  "ratioTop": 111,
   "ratioTopPct": 17,
-  "ratioHigh": 292,
-  "ratioHighPct": 46,
-  "ratioMid": 240,
-  "ratioMidPct": 37
+  "ratioHigh": 294,
+  "ratioHighPct": 45,
+  "ratioMid": 245,
+  "ratioMidPct": 38
 }

@@ -1,0 +1,27 @@
+# 失效链接检查：每周一跑一次全书外链，结果写在这次运行的 Summary 页里。
+# 只报告不报错（脚本退出码恒为 0），所以这个工作流永远是绿的，要看结果得点进去。
+# 「确定失效」那一档（404、410、DOI 查无此号）才需要修；
+# 「没连上」多半是 gov.cn 挡了境外机房 IP，连着几周都在才值得看；
+# 「加密握手不兼容」是老政府站的加密方式 Node 不认，浏览器能开，不用修。
+# 不挂在 book.yml 里：几百个外站的通断跟正文改没改无关，每次推送都跑既慢又吵。
+name: 失效链接检查
+
+on:
+  schedule:
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: 失效链接检查
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/check-links.mjs
