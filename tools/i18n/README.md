@@ -30,6 +30,11 @@ node tools/site/build.mjs
 `join` 就能看到还差哪几块。`join-ready.sh` 用的就是这个判据——一个块里还带 `- 成本：`，
 就是这块还没翻。
 
+**节标题改哪一份**：两边都要改，`<语言>/README.md` 的目录里一份、`.i18n/<语言>/<节名>/part00.md`
+的块 0 里一份。`book/` 那份是 join 从块 0 合出来的，改了它，下次 join 就被覆盖回去
+（2026-10-02 改完 book/ 里三节，第二天 CI 就报「节标题跟目录不一致」——就是只改了一半）。
+`check.mjs` 拿 README 目录里那份跟译本节标题对字，两边得说同一句话。
+
 **仓库里的路径一律走 `contentPath(code, rel)`（`tools/site/locales.mjs`），别用 `dir`。**
 `dir` 是页面上线的目录，英文那份是空串（页面在根 URL 上）；`contentDir` 才是正文在仓库里
 的位置（英文是 `en`）。拿 `dir` 拼路径会拼到 `book/`——中文原文那一份，`join.mjs` 那样写
