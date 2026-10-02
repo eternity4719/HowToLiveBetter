@@ -47,6 +47,8 @@ for (const code of codes){
     const dst = entrySkeleton(read(dstPath), S);
     for (const e of dst.entries) e._locale = code;
     if (src.n !== dst.n) report(`${code} book/${f}`, `节号是 ${dst.n}，原文 ${src.n}`);
+    // 节标题和导读：条目之外，节首那几行也得翻
+    for (const w of STRUCT.compareSection(src, dst, `${code} book/${f}`)) problems.push(w);
     if (src.entries.length !== dst.entries.length)
       report(`${code} book/${f}`, `条目数 ${dst.entries.length}，原文 ${src.entries.length}`);
     for (let i = 0; i < Math.min(src.entries.length, dst.entries.length); i++)

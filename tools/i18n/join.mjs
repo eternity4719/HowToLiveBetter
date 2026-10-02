@@ -58,6 +58,12 @@ for (const srcPath of files){
     const a = entrySkeleton(want, strings(SOURCE.code));
     const b = entrySkeleton(got, strings(locale));
     for (const e of b.entries) e._locale = locale;   // 字段名按译文那门语言认
+    // 第 0 块自带节首，节号/标题/导读在这一块里校（译文块是整节的一小块，不是整节）。
+    // 拿整节那一份（src + 第 0 块合起来）当基准：want 只是条目，节首在 want 里没有。
+    if (k === 0 && /^#{1,2} \d+\. /m.test(got)){
+      const secA = entrySkeleton(src.head.join('\n') + '\n' + want, strings(SOURCE.code));
+      for (const w of STRUCT.compareSection(secA, b, `${locale} ${name} 块 0 节首`)){ bad++; trouble++; console.error('  ' + w); }
+    }
     for (const [i, x] of a.entries.entries()){
       const y = b.entries[i];
       const tag = `${name} 块 ${k} 第 ${x.n} 条`;
@@ -68,28 +74,22 @@ for (const srcPath of files){
       bad++; trouble++;
       console.error(`  ${dir}/${parts[k]}：${b.entries.length} 条，原文这块 ${a.entries.length} 条`);
     }
-    // 译文块里如果又带了一遍节首（回目录那行 + 「# N. 节名」+ 导读），拼出来就是两份，
-    // 页面上那一节连同它的条目渲染两遍——en 和 vi 五个文件都中过（2026-09-30 迁移到
-    // Astro 时预渲染和运行时解析出来的节数对不上，查出来的）。
+    // 节首（回目录那行 + 「# N. 节名」 + 导读）归第 0 块管，译文该翻的就在第 0 块里。
     //
-    // 判据按内容，不按行数：节首的每一行都逐行对上（导读在译文里可能已经翻过，
-    // 对不上就整块留着，宁可多渲染一遍导读也不能把译文正文吃掉）。
+    // 这里只判「有没有」，不判「翻没翻」——翻没翻是 check.mjs 的事（它拿节标题跟原文
+    // 逐字比，一模一样就是没翻）。曾经在这里反过来做：拿原文节首的每一行去译文块里
+    // 逐行找，对上了就把译文那份节首去掉、再把中文节首拼上去。结果是译文里翻好的节名
+    // 被当成「多出来的」删掉，中文那份留着——en 和 vi 一半的节标题是中文的，
+    // 有的还多出一份（中文在前、翻好的在后），页面上那一节连同条目渲染两遍。
+    // 拼的时候不该拿原文去覆盖译文：原文那一份在 book/ 里摆着，译文自己带节首才对。
     let body = got;
-    if (k === 0 && src.head.length){
-      const headLines = src.head.join('\n').split('\n').map(l => l.trim()).filter(Boolean);
-      const bodyLines = got.split('\n');
-      let consumed = 0;
-      for (const hl of headLines){
-        const at2 = bodyLines.findIndex((l, i) => i >= consumed && l.trim() === hl);
-        if (at2 < 0) { consumed = -1; break; }   // 对不上：整块保留
-        consumed = at2 + 1;
-      }
-      if (consumed > 0 && /^#{1,2} \d+\. /.test(headLines.find(l => /^#{1,2} \d+\. /.test(l)) || '')){
-        body = bodyLines.slice(consumed).join('\n').replace(/^\n+/, '');
-        console.log(`  ${name} 块 0：译文里带了节首（${headLines.length} 行），已去掉，之前会重复渲染一次`);
-      }
+    if (k === 0 && src.head.length && !/^#{1,2} \d+\. /m.test(got)){
+      // 第 0 块没带节首（少数块是这样切的）：补上，但补的是中文原文那份，所以报出来。
+      // 不报的话 check.mjs 只会说「节标题跟原文一样」，看不出是这里补上去的。
+      body = src.head.join('\n') + '\n' + got;
+      console.error(`  ${name} 块 0：译文块里没有节首，先补了中文原文那份——节名和导读得在 .i18n/${locale}/${name.replace(/\.md$/, '')}/part00.md 里翻好`);
     }
-    pieces.push(k === 0 ? src.head.join('\n') + '\n' + body : body);
+    pieces.push(body);
   }
   // 写进仓库里的译文目录：contentPath，不是 L.dir。L.dir 是页面上线上的地址，
   // 英文那份是空串（页面在根上），拿它拼就是 book/ —— 中文原文那一份。

@@ -162,6 +162,39 @@ function label(S, f) { return S.fields[f].replace(/[：:]$/, ''); }
  */
 export const STRUCT = {
   ALWAYS, FIELDS,
+  /** 整节的判据：节号、节标题、导读。条目逐条比是 compare()。
+    *
+    * 节标题和导读以前没人查，join.mjs 又拿中文原文那一份盖在译文前面（2026-10-02 修），
+    * 结果 en 和 vi 一半的节标题是中文的，有的还多出一份，页面上那一节渲染两遍。
+    * 这两条都是机器查得出来的：节标题跟原文一字不差就是没翻；导读里只要还有
+    * 整段没翻的中文就是没翻完。 */
+  compareSection(a, b, tag) {
+    const out = [];
+    const han = s => /[㐀-鿿]/.test(s);          // 汉字。引号里照抄的法条名不算漏译
+    if (a.n !== b.n) out.push(`${tag}：节号是 ${b.n}，原文 ${a.n}`);
+    if (!b.title.trim()) out.push(`${tag}：节标题是空的`);
+    else if (a.title && b.title === a.title)
+      out.push(`${tag}：节标题「${b.title}」跟中文原文一字不差，这一行没翻`);
+
+    // 导读逐段比。节首的导读是散文，但「整段还是中文」是查得出来的：把一行里
+    // 照抄的中文（法条名、书名）剔掉之后，剩下的还是汉字，就是没翻。
+    // 只在原文有导读时查，段落数不强制——译文可以合并或拆开自然段。
+    if (a.intro.length && !b.intro.length) out.push(`${tag}：导读不见了，原文有 ${a.intro.length} 段`);
+    for (const line of b.intro){
+      if (!han(line)) continue;   // 整段没有汉字，不用往下剔了
+      // 照抄的部分：法条名、书名、括注、链接。剩下的还有汉字，就是整段还没翻。
+      // 只剔「紧贴汉字、含汉字」的这些形式——英文里写 (breaking line) 是普通括注，
+      // 一并剔掉会把真漏译的段落放过去。
+      const s = line
+        .replace(/^\[.*\]\(.*\)$/, '')                                  // 回目录那行
+        .replace(/「[^」]*」|『[^』]*』|《[^》]*》/g, '')                // 照抄的法条名、书名
+        .replace(/\[[^\]]*\]\([^)]*\)/g, '')                             // 照抄的链接
+        .replace(/[（(][^)）]*[㐀-鿿][^)）]*[）)]/g, '')                  // 含汉字的括注
+        .trim();
+      if (han(s)) out.push(`${tag}：导读里这一段还没翻：「${line.slice(0, 30)}…」`);
+    }
+    return out;
+  },
   compare(a, b, tag) {
     const out = [];
     const S = strings(SOURCE.code);
