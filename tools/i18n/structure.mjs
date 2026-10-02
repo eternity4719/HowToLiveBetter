@@ -202,6 +202,16 @@ function label(S, f) { return S.fields[f].replace(/[：:]$/, ''); }
  * 逐条比。返回问题清单（空数组就是这块对了）。dstLabel 是给报告前缀用的语言名。
  * 这一套就是 check.mjs 的判据，抽出来是为了 join 逐块校时用同一份。
  */
+/** 汉字。「」《》里照抄的法条名、书名不算漏译（BRIEF 规则 6 明确允许）。 */
+const han = s => /[㐀-鿿]/.test(s);
+/** 剔掉允许照抄的部分，再看还有没有汉字——有就是漏译。 */
+const titleBare = s => String(s)
+  .replace(/「[^」]*」|『[^』]*』|《[^》]*》/g, '')
+  .replace(/（[^）]*）/g, '')
+  .replace(/\([^)]*\)/g, '')
+  .replace(/<https?:\/\/[^>]*>/g, '')
+  .trim();
+
 export const STRUCT = {
   ALWAYS, FIELDS,
   /** 整节的判据：节号、节标题、导读。条目逐条比是 compare()。
@@ -215,7 +225,6 @@ export const STRUCT = {
   // 两处搜索对不上，这层该拦。
   compareSection(a, b, tag, toc) {
     const out = [];
-    const han = s => /[㐀-鿿]/.test(s);          // 汉字。引号里照抄的法条名不算漏译
     if (a.n !== b.n) out.push(`${tag}：节号是 ${b.n}，原文 ${a.n}`);
     if (!b.title.trim()) out.push(`${tag}：节标题是空的`);
     else if (a.title && b.title === a.title)
@@ -248,6 +257,11 @@ export const STRUCT = {
     const D = strings(b._locale ?? SOURCE.code);
     if (a.n !== b.n) out.push(`${tag}：条号是 ${b.n}，原文 ${a.n}`);
     if (!b.title.trim()) out.push(`${tag}：标题是空的`);
+    // 标题正文不能还是中文（法条名、书名、括注里的照抄不算——那些是 BRIEF 规则 6 允许的）。
+    // 条正文逐栏校了六遍，标题这一行以前没人管，翻漏了就一直漏着
+    // （2026-10-02 在 vi 02 和 vi 20 各查出来几条）。
+    else if (a.title && han(titleBare(b.title)) && b.title === a.title)
+      out.push(`${tag}：标题「${b.title}」跟中文原文一字不差，这一行没翻`);
 
     // 成本标签逐字照抄：检索页的筛选和地址栏全靠它，三种语言共用一套中文取值
     if (a.tag !== b.tag) out.push(`${tag}：成本标签「${b.tag}」和原文「${a.tag}」不一样，要一字不改照抄`);
