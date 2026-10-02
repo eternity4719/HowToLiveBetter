@@ -62,6 +62,8 @@ jobs:
           node-version: 22
       - name: 英文与越南文对齐中文原文
         run: node tools/i18n/check.mjs
+      - name: 长文指路的条号节号跟着原文
+        run: node tools/i18n/check-docs.mjs
       - name: 中文文案和模板一致
         run: node tools/site/extract.mjs --check
 

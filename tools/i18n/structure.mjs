@@ -48,18 +48,24 @@ function cnNumber(s) {
   return total > 0 ? String(total) : null;
 }
 
-/** 一栏里所有「第<中文数字>条 / 编 / 号 / 款」这类法条编号换算出来的数字。
+/** 一栏里所有法条编号里的中文数字换算成的阿拉伯数字。
  *
- * 一条法条可以并排写：「第一千零五十二、一千零五十三条规定」——「第」只出现在头一个，
- * 后面几个是顿号连着的。所以先把「第…条」整串切出来，再按顿号/逗号逐个读。 */
+ * 原文的编号是汉字（「第一千零四十五条」），译文按 BRIEF 要求写成「Điều 1045」——
+ * 那个 1045 是原文就有的，不算译文自己加的数。
+ *
+ * 一条法条可以并排写：「第一千零五十二、一千零五十三条」「第十六、十七条」——
+ * 「第」只在头一个，后面几个是顿号连着的。所以先把「第…条」整串切出来（串里
+ * 允许顿号继续接数字），再按顿号逐个读。只认「第 + 数字 + 条」的话，第二、三个
+ * 编号全都读不到，译文里对应的数字就被报成「多了原文没有的」（越南文那边每条
+ * 法条都踩一次）。
+ */
 function cnNumbersOf(field) {
   const out = new Set();
   const D = '[零〇一二三四五六七八九十百千]';
-  for (const m of String(field).matchAll(new RegExp(`第${D}{1,8}[条款项号章节][^。；;]{0,40}`, 'g'))){
+  const run = new RegExp(`第${D}{1,8}(?:[、,，]${D}{1,8})*[条款项号章节]`, 'g');
+  for (const m of String(field).matchAll(run)){
     for (const p of m[0].slice(1).split(/[、,，]/)){
-      const digits = new RegExp(`^${D}{1,8}`).exec(p.trim());
-      if (!digits) continue;
-      const v = cnNumber(digits[0]);
+      const v = cnNumber(p.replace(/[条款项号章节]$/, ''));
       if (v) out.add(v);
     }
   }
