@@ -27,6 +27,45 @@ const SCALE_WORDS = [
 ];
 const SCALE_VALUES = SCALE_WORDS.map(([v]) => String(v));
 
+// 中文数字转阿拉伯数字：法条编号在原文里是汉字（「第一千零四十五条」），译文按 BRIEF
+// 要求写成「Điều 1045」——那 1045 是原文就有的那个数，不是译文自己加的。
+// 不转换的话，越南文这一栏每条法条都报「多了原文没有的数字」，
+// 英文因为把编号拼成 "one thousand and forty-five" 反而躲过去了，纯属侥幸。
+const CN_DIGITS = { 零: 0, 〇: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
+const CN_UNITS = { 十: 10, 百: 100, 千: 1000 };
+function cnNumber(s) {
+  // 「一千零四十五」= 1045：「零」不占位，只表示这一段没读数
+  let total = 0, section = 0, cur = 0;
+  for (const ch of s){
+    if (ch in CN_DIGITS){ cur = CN_DIGITS[ch]; continue; }
+    const u = CN_UNITS[ch];
+    if (!u) return null;                     // 万、亿之类这里不拆（法条编号里不出现）
+    // 「十五」开头没有「一」，十就是 10 不是 0+10
+    section += (cur === 0 && u === 10 ? 1 : cur) * u;
+    cur = 0;
+  }
+  total = section + cur;
+  return total > 0 ? String(total) : null;
+}
+
+/** 一栏里所有「第<中文数字>条 / 编 / 号 / 款」这类法条编号换算出来的数字。
+ *
+ * 一条法条可以并排写：「第一千零五十二、一千零五十三条规定」——「第」只出现在头一个，
+ * 后面几个是顿号连着的。所以先把「第…条」整串切出来，再按顿号/逗号逐个读。 */
+function cnNumbersOf(field) {
+  const out = new Set();
+  const D = '[零〇一二三四五六七八九十百千]';
+  for (const m of String(field).matchAll(new RegExp(`第${D}{1,8}[条款项号章节][^。；;]{0,40}`, 'g'))){
+    for (const p of m[0].slice(1).split(/[、,，]/)){
+      const digits = new RegExp(`^${D}{1,8}`).exec(p.trim());
+      if (!digits) continue;
+      const v = cnNumber(digits[0]);
+      if (v) out.add(v);
+    }
+  }
+  return [...out];
+}
+
 function numbersOf(text) {
   const s = String(text);
   const norm = n => n.replace(/[.,](?=\d{3}\b)/g, '');
@@ -149,7 +188,10 @@ function decorate(e, S) {
   e.refs = refsOf(all, S.xref);
   e.links = all.match(/https?:\/\//g)?.length ?? 0;
   e.order = FIELDS.filter(f => e.fields[f] !== undefined);
-  e.dispute = new RegExp('^' + S.dispute).test(e.fields.note ?? '');
+  // trimStart：字段名和内容之间可能有空格（「- Ghi chú: Tranh cãi. …」，越南文那边
+  // 就是这样写的），不带这个 trim 的话 ^Tranh cãi 匹配不上，一条争议条目会被报成
+  // 「原文标了争议，译文没标」。锚点还是 ^，正文中间提到争议不算。
+  e.dispute = new RegExp('^' + S.dispute).test((e.fields.note ?? '').trimStart());
   e.todo = S.todo.some(w => all.includes(w) || (e.fields.cost ?? '').includes(w));
 }
 
@@ -222,10 +264,13 @@ export const STRUCT = {
     // 数字：收益、成本、来源三栏逐个对。全书可核对性的底座，一个都不许动。
     // 备注是散文，「40 例」这类个数和量级本来就随语言变（「several dozen」），
     // 数字不许动的是前三个栏（CLAUDE.md 的原话：收益栏是全书可核对性的底座）。
-    // 唯一的例外是量级换算：源文「167 万」在英文里只能写成 1,670,000，那不算改了数字。
+    // 两个例外：
+    // ① 量级换算：源文「167 万」在英文里只能写成 1,670,000，那不算改了数字。
+    // ② 中文数字：源文「第一千零四十五条」按 BRIEF 要写成「Điều 1045」，
+    //    那个 1045 是原文就有的，放进允许名单（见 cnNumber）。
     for (const f of ['gain', 'cost', 'src']){
       const A = a.numbers[f], B = b.numbers[f];
-      const allowed = new Set([...A.ns, ...A.scale]);
+      const allowed = new Set([...A.ns, ...A.scale, ...cnNumbersOf(a.fields[f] ?? '')]);
       const miss = [...new Set(A.ns.filter(x => !B.ns.includes(x)))];
       const extra = [...new Set(B.ns.filter(x => !allowed.has(x)))];
       if (miss.length) out.push(`${tag}：${label(D, f)}栏少了原文的数字 ${miss.join('、')}`);
