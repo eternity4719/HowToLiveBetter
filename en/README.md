@@ -5,14 +5,14 @@
 # A High-Return Life Guide
 
 On living longer and getting sick less, and on what to do when someone has an accident. On not wasting money, and on which things get people scammed or sued. On what you can apply for when you have no job and no money, and what registration a shop, a company or a website needs. Also on dating, marriage and children, on going abroad, and on learning a trade.<br>
-635 pieces of advice. Each one states what it costs, what it buys back, how strong the evidence is, and cites nothing but journal papers and official documents.
+641 pieces of advice. Each one states what it costs, what it buys back, how strong the evidence is, and cites nothing but journal papers and official documents.
 
 You do not have to do all of it. This is a shortlist ordered by value for money, not a task list. Taking one or two entries with you counts. The author has not done most of them either.
 
 [![Search online](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://streamentry.github.io/HowToLiveBetter/)
-[![Items](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-635%20%E6%9D%A1-18794e?style=flat-square)](#contents)
-[![Evidence grades](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20422%20%C2%B7%20B%20162%20%C2%B7%20C%2051-915930?style=flat-square)](#evidence-grades)
-[![Original sources](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1407%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
+[![Items](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-641%20%E6%9D%A1-18794e?style=flat-square)](#contents)
+[![Evidence grades](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20425%20%C2%B7%20B%20165%20%C2%B7%20C%2051-915930?style=flat-square)](#evidence-grades)
+[![Original sources](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1443%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![Licence](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#licence)
 
 ### [Open the search page](https://streamentry.github.io/HowToLiveBetter/) · [Let an AI answer from the book (skill)](skills/life-decision-guide/README.md)

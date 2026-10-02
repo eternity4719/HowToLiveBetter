@@ -5,14 +5,14 @@
 # Cẩm Nang Sống Hiệu Quả Cao
 
 Về cách sống lâu và cách ít bệnh hơn, và về việc làm gì khi có người bị tai nạn. Về cách đừng phí tiền, và về những việc gì khiến người ta bị lừa đảo hoặc bị kiện tụng. Về bạn có thể xin được những gì khi không có việc làm và không có tiền, và một cửa hàng, một công ty hay một trang web cần đăng ký những giấy tờ gì. Cũng về yêu đương, kết hôn và con cái, về đi nước ngoài, và về học một nghề.<br>
-635 lời khuyên. Mỗi lời nêu rõ tốn cái gì, đổi lại được cái gì, bằng chứng chắc tới đâu, và chỉ trích dẫn bài báo bài khoa cùng tài liệu chính thức.
+641 lời khuyên. Mỗi lời nêu rõ tốn cái gì, đổi lại được cái gì, bằng chứng chắc tới đâu, và chỉ trích dẫn bài báo bài khoa cùng tài liệu chính thức.
 
 Bạn không nhất thiết phải làm hết. Đây là danh sách ngắn đã xếp theo hiệu quả chi phí, không phải danh sách việc phải làm. Mang đi một hai mục là được. Tác giả cũng chưa làm phần lớn trong số đó.
 
 [![Search online](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://streamentry.github.io/HowToLiveBetter/vi/)
-[![Items](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-635%20%E6%9D%A1-18794e?style=flat-square)](#mục-lục)
-[![Evidence grades](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20422%20%C2%B7%20B%20162%20%C2%B7%20C%2051-915930?style=flat-square)](#mức-bằng-chứng)
-[![Original sources](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1407%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
+[![Items](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-641%20%E6%9D%A1-18794e?style=flat-square)](#mục-lục)
+[![Evidence grades](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20425%20%C2%B7%20B%20165%20%C2%B7%20C%2051-915930?style=flat-square)](#mức-bằng-chứng)
+[![Original sources](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1443%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![Licence](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#giấy-phép)
 
 ### [Mở trang tra cứu](https://streamentry.github.io/HowToLiveBetter/vi/) · [Để AI trả lời theo sách (skill)](skills/life-decision-guide/README.md)

@@ -87,6 +87,9 @@ console.log(`条目 ${entries} ｜ 节 ${sections} ｜ A ${grade.A} B ${grade.B}
 console.log(`性价比 极高 ${ratio['极高']}（${pct['极高']}%） 高 ${ratio['高']}（${pct['高']}%） 一般 ${ratio['一般']}（${pct['一般']}%）`);
 console.log('');
 
+// 译本的 README 也带着同一批数字（首屏那句、四个徽章）。数字口径一样，正文也一样，
+// 所以这里一并回写——以前只管 README.md 那一份，译文里的数字停在某一节翻完那一刻，
+// 越翻越旧（2026-10-02 en/vi 停在 635，真实 641）。三个 README 的这些数字该永远一样。
 const EDITS = [
   ['README.md', '首屏条目数', /(\d+) 条建议/g, `${entries} 条建议`],
   ['README.md', '条目徽章', /%E6%9D%A1%E7%9B%AE-(\d+)%20%E6%9D%A1/g, `%E6%9D%A1%E7%9B%AE-${entries}%20%E6%9D%A1`],
@@ -99,6 +102,16 @@ const EDITS = [
   ['README.md', '性价比段', /全书 (\d+) 条中性价比极高 \d+ 条（\d+%）、高 \d+ 条（\d+%）、一般 \d+ 条（\d+%）/g,
     `全书 ${entries} 条中性价比极高 ${ratio['极高']} 条（${pct['极高']}%）、高 ${ratio['高']} 条（${pct['高']}%）、一般 ${ratio['一般']} 条（${pct['一般']}%）`],
   ['README.md', '正文文件数', /正文按节拆成 (\d+) 个文件/g, `正文按节拆成 ${sections} 个文件`],
+  // 译本 README：首屏那句的数字、四个徽章。字面不同（英越各有各的说法），只按形状替换，
+  // 所以每种语言各列一条正则——数字的位置是那门语言的句子结构决定的。
+  ['en/README.md', '首屏条目数', /(\d+) pieces of advice/g, `${entries} pieces of advice`],
+  ['en/README.md', '条目徽章', /%E6%9D%A1%E7%9B%AE-(\d+)%20%E6%9D%A1/g, `%E6%9D%A1%E7%9B%AE-${entries}%20%E6%9D%A1`],
+  ['en/README.md', '证据分级徽章', /A%20(\d+)%20%C2%B7%20B%20\d+%20%C2%B7%20C%20\d+/g, `A%20${grade.A}%20%C2%B7%20B%20${grade.B}%20%C2%B7%20C%20${grade.C}`],
+  ['en/README.md', '文献链接徽章', /-(\d+)%20%E6%9D%A1%E9%93%BE%E6%8E%A5/g, `-${links}%20%E6%9D%A1%E9%93%BE%E6%8E%A5`],
+  ['vi/README.md', '首屏条目数', /(\d+) lời khuyên/g, `${entries} lời khuyên`],
+  ['vi/README.md', '条目徽章', /%E6%9D%A1%E7%9B%AE-(\d+)%20%E6%9D%A1/g, `%E6%9D%A1%E7%9B%AE-${entries}%20%E6%9D%A1`],
+  ['vi/README.md', '证据分级徽章', /A%20(\d+)%20%C2%B7%20B%20\d+%20%C2%B7%20C%20\d+/g, `A%20${grade.A}%20%C2%B7%20B%20${grade.B}%20%C2%B7%20C%20${grade.C}`],
+  ['vi/README.md', '文献链接徽章', /-(\d+)%20%E6%9D%A1%E9%93%BE%E6%8E%A5/g, `-${links}%20%E6%9D%A1%E9%93%BE%E6%8E%A5`],
   ['tools/og.html', 'og 条目数', /<b>(\d+)<\/b> 条建议/g, `<b>${entries}</b> 条建议`],
   ['tools/og.html', 'og A 级数', /A 级证据 <b>(\d+)<\/b> 条/g, `A 级证据 <b>${grade.A}</b> 条`],
   ['tools/og.html', 'og 链接数', /<b>(\d+)<\/b> 条原始文献链接/g, `<b>${links}</b> 条原始文献链接`],
