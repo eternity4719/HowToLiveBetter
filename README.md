@@ -44,6 +44,8 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 
 [howtolivebetter.net](https://howtolivebetter.net/)，[littleben](https://github.com/littleben) 做的打勾清单：加待办、标记做到没有、收藏
 
+[微信小程序版](https://github.com/HuiTurn/HowToLiveBetter)，[HuiTurn](https://github.com/HuiTurn) 做的小程序：分类、收藏、每日一读、全文搜索，离线可用。
+
 </td></tr>
 </table>
 
