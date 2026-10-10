@@ -62,6 +62,10 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 
 [高性价比人生指南结构化数据集](https://github.com/sin0317/htlb-dataset)，[sin0317](https://github.com/sin0317) 做的结构化数据：全书条目解析成 JSON、CSV、SQLite，每天自动同步（正文 CC BY 4.0，代码 MIT）
 
+[高性价比工作指南](https://github.com/NiceCao/HowToWorkBetter)，[NiceCao](https://github.com/NiceCao) 写的上班篇：选行业、选公司、谈薪、社保公积金、被裁怎么拿最多、跳槽涨薪、副业、向上管理、反 PUA、劳动合同与劳动仲裁、工伤、职业转型、商务礼仪，51 章 454 条，每条同样写成本、证据等级和原始出处（正文 CC BY 4.0，代码 MIT）
+
+[上班宝](https://shangbanbao.com)，[NiceCao](https://github.com/NiceCao) 做的小工具：把《人生指南》和《工作指南》放在一起，每天推 3 条、可搜索、可提问，答案只依据两本书的条目并标出依据
+
 </td></tr>
 </table>
 
