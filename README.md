@@ -62,6 +62,8 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 
 [高性价比人生指南结构化数据集](https://github.com/sin0317/htlb-dataset)，[sin0317](https://github.com/sin0317) 做的结构化数据：全书条目解析成 JSON、CSV、SQLite，每天自动同步（正文 CC BY 4.0，代码 MIT）
 
+[高性价比人生指南·手绘地图版](https://life.xfun.fun/)，[sagiriiiiii](https://github.com/sagiriiiiii) 做的手绘风网站：34 节画成一张能拖动的地图，每条做成能翻面的卡片，随手抽一张、拼音首字母搜索、一键生成分享海报
+
 </td></tr>
 </table>
 
