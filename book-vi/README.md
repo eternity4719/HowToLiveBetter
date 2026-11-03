@@ -46,7 +46,7 @@ Bản dịch đang làm dần từng chương. Chương nào chưa dịch thì l
 5. [Đừng lãng phí tiền](05-dung-lang-phi-tien.md) ✅ đã dịch
 6. [Danh sách ngược (những thứ tưởng đáng mà không đáng)](06-danh-sach-phan-dien.md) ✅ đã dịch
 7. [Sống thế nào khi không có tiền](07-song-the-nao-khi-khong-co-tien.md) ✅ đã dịch
-8. [Đừng tự đưa mình vào rắc rối: pháp luật và an toàn tài sản](../book/08-别把自己搭进去.md)
+8. [Đừng tự đưa mình vào rắc rối: pháp luật và an toàn tài sản](08-dung-tu-hai-minh.md) ✅ đã dịch
 9. [Ranh giới pháp luật người thường dễ phạm](../book/09-普通人容易踩的法律红线.md)
 10. [Yêu đương và kết hôn có đáng không](../book/10-恋爱和结婚划不划算.md)
 11. [Ranh giới dân lập trình và người làm kỹ thuật dễ phạm](../book/11-程序员和技术人容易踩的红线.md)
