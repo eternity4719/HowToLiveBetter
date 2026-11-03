@@ -43,7 +43,7 @@ Bản dịch đang làm dần từng chương. Chương nào chưa dịch thì l
 2. [Đừng chết từ từ](02-dung-chet-tu-tu.md) ✅ đã dịch
 3. [Đừng lãng phí sức lực](03-dung-lang-phi-suc-luc.md) ✅ đã dịch
 4. [Đừng lãng phí thời gian](04-dung-lang-phi-thoi-gian.md) ✅ đã dịch
-5. [Đừng lãng phí tiền](../book/05-不要浪费钱.md)
+5. [Đừng lãng phí tiền](05-dung-lang-phi-tien.md) ✅ đã dịch
 6. [Danh sách ngược (những thứ tưởng đáng mà không đáng)](../book/06-反面清单.md)
 7. [Sống thế nào khi không có tiền](../book/07-没钱的时候怎么活.md)
 8. [Đừng tự đưa mình vào rắc rối: pháp luật và an toàn tài sản](../book/08-别把自己搭进去.md)
