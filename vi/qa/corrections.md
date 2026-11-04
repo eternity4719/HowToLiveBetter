@@ -27,6 +27,11 @@ Cập nhật: đang thực hiện. Mọi con số dưới đây lấy từ `vi/q
 | S-13 | CAO | Mục 22.3 vẫn còn «cải tạo không giam giữ» cho `拘役` và «giải thích của tòa» cho `司法解释` sau khi đã có quy ước | đọc lại chương 22 | sửa thành «tạm giữ hình sự» và «giải thích tư pháp» | đã sửa |
 | S-14 | CAO | Mục 22.5: phần «Nói dễ hiểu» vẫn viết «dưới tầng hầm một» dù phần «Lợi ích» đã đúng | đọc lại chương 22 | sửa thành «từ tầng hầm hai trở xuống, tức là tầng hầm một vẫn được phép» | đã sửa |
 
+| S-15 | CAO | Bộ kiểm tra số bỏ sót đơn vị `千`/`千余`/`多万`, nên `9 千余元` và `2000 多万` bị coi là thiếu số dù bản dịch đúng | rà 34 chương sau khi gộp | mở rộng bộ chuẩn hóa và đối chiếu số | đã sửa |
+| S-16 | CAO | Mỗi lần gộp lại ghi đè bản đã chuẩn hóa bằng bản thô, làm `610.6 vạn` quay lại và audit báo thiếu số | phát hiện khi chương 11 tái phát | thêm `postmerge.mjs`, bắt buộc gộp → chuẩn hóa → audit | đã sửa |
+| S-17 | TRUNG BÌNH | 22 phần mở đầu cũ thiếu mục mới, có chương thiếu 10 mục; một số tiêu đề còn chữ Hán | kiểm tra tập số mục từng chương | dịch lại 34 phần mở đầu, kiểm tra đủ/không lặp, nối liên kết nội bộ | đã sửa |
+| S-18 | THẤP | `十万分之一` dịch thành «một phần một trăm nghìn», đúng nghĩa nhưng mất con số để đối chiếu | audit chương 20 | đổi thành `1/100.000` | đã sửa |
+
 ## 2. Quy trình sửa một mục
 
 1. Đọc nguyên tác của đúng mục đó, không đọc câu rời.
