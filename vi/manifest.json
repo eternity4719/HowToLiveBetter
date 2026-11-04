@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:04:00.956Z",
+ "generatedAt": "2026-11-04T02:09:43.849Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 17,
+  "chaptersComplete": 19,
   "entriesSource": 767,
-  "entriesPresent": 724,
-  "entriesVerified": 493,
-  "coverage": 0.6428
+  "entriesPresent": 733,
+  "entriesVerified": 520,
+  "coverage": 0.678
  },
  "chapters": [
   {
@@ -218,37 +218,26 @@
    "zh": "16-得了慢性病之后怎么活.md",
    "vi": "16-song-sau-khi-mac-benh-man-tinh.md",
    "entriesSource": 14,
-   "entriesTranslated": 9,
-   "missingEntries": [
-    10,
-    11,
-    12,
-    13,
-    14
-   ],
-   "missingNumbers": 6,
+   "entriesTranslated": 14,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 17,
    "zh": "17-家里有老人.md",
    "vi": "17-nha-co-nguoi-gia.md",
    "entriesSource": 13,
-   "entriesTranslated": 9,
-   "missingEntries": [
-    10,
-    11,
-    12,
-    13
-   ],
-   "missingNumbers": 5,
+   "entriesTranslated": 13,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 18,
