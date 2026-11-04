@@ -25,6 +25,7 @@ const files = [
   ...readdirSync(resolve(ROOT, 'book')).filter(f => /^\d\d-.*\.md$/.test(f)).map(f => `book/${f}`),
   ...readdirSync(resolve(ROOT, 'docs')).filter(f => f.endsWith('.md') && f !== '引用对照.md').map(f => `docs/${f}`),
   'README.md',
+  'README.zh.md',
 ];
 
 // url -> 第一次出现的位置

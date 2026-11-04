@@ -24,10 +24,10 @@ bookFiles.forEach(f => anchorOf.set(f, 'sec-' + (basename(f).match(/^\d+/)?.[0] 
 docFiles.forEach((f, i) => anchorOf.set(f, `doc-${i + 1}`));
 
 const pages = [
-  { src: 'README.md', md: `# 前言\n\n${description}\n\n${frontMd}`, anchor: 'front' },
-  { src: 'README.md', md: contentsMd.replace(/^## 目录/, '# 各节简介'), anchor: 'contents' },
+  { src: 'README.zh.md', md: `# 前言\n\n${description}\n\n${frontMd}`, anchor: 'front' },
+  { src: 'README.zh.md', md: contentsMd.replace(/^## 目录/, '# 各节简介'), anchor: 'contents' },
   ...[...bookFiles, ...docFiles].map(src => ({ src, md: splitLongItems(stripBackLink(read(src))), anchor: anchorOf.get(src) })),
-  { src: 'README.md', md: aboutMd(), anchor: 'about' },
+  { src: 'README.zh.md', md: aboutMd(), anchor: 'about' },
 ];
 
 function aboutMd() {
@@ -50,7 +50,7 @@ function rewriteLinks(md, src) {
   return md.replace(/\]\(([^)\s]+)(\s+"[^"]*")?\)/g, (all, href, title) => {
     if (/^(https?:|mailto:)/.test(href)) return all;
     // README 里指向自身小节的锚点（#目录 这种）在书里不一定有，指回 GitHub 上的 README
-    if (href.startsWith('#')) return `](${REPO}/blob/main/README.md${href}${title ?? ''})`;
+    if (href.startsWith('#')) return `](${REPO}/blob/main/README.zh.md${href}${title ?? ''})`;
     const [path] = href.split('#');
     const target = posix.normalize(posix.join(posix.dirname(src), path));
     const anchor = anchorOf.get(target);

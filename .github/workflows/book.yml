@@ -11,6 +11,7 @@ on:
     branches: [main]
     paths:
       - README.md
+      - README.zh.md
       - index.html
       - selfcheck.html
       - og.png
@@ -22,6 +23,7 @@ on:
   pull_request:
     paths:
       - README.md
+      - README.zh.md
       - index.html
       - selfcheck.html
       - og.png

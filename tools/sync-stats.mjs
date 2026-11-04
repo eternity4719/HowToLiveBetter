@@ -1,5 +1,5 @@
 // 统计对齐：改完条目跑一次。按顺序做四件事：
-// ① 重算全书的统计数字，回写 README.md、index.html、tools/og.html；
+// ① 重算全书的统计数字，回写 README.zh.md、index.html、tools/og.html；
 // ② 调 check-refs.mjs 重算 docs/引用对照.md，调 updates.mjs 重算 updates.json；
 // ③ 调 check-plain.mjs 查说人话，不合格只提示不中断；
 // ④ 用无头 Chrome 把 tools/og.html 重新截成 og.png。
@@ -84,17 +84,17 @@ console.log(`性价比 极高 ${ratio['极高']}（${pct['极高']}%） 高 ${ra
 console.log('');
 
 const EDITS = [
-  ['README.md', '首屏条目数', /(\d+) 条建议/g, `${entries} 条建议`],
-  ['README.md', '条目徽章', /%E6%9D%A1%E7%9B%AE-(\d+)%20%E6%9D%A1/g, `%E6%9D%A1%E7%9B%AE-${entries}%20%E6%9D%A1`],
-  ['README.md', '证据分级徽章', /A%20(\d+)%20%C2%B7%20B%20\d+%20%C2%B7%20C%20\d+/g, `A%20${grade.A}%20%C2%B7%20B%20${grade.B}%20%C2%B7%20C%20${grade.C}`],
-  ['README.md', '文献链接徽章', /-(\d+)%20%E6%9D%A1%E9%93%BE%E6%8E%A5/g, `-${links}%20%E6%9D%A1%E9%93%BE%E6%8E%A5`],
-  ['README.md', '怎么读里的 A 级数', /大型试验的 (\d+) 条/g, `大型试验的 ${grade.A} 条`],
-  ['README.md', '怎么读里的极高条数', /勾选性价比「极高」，得到 (\d+) 条/g, `勾选性价比「极高」，得到 ${ratio['极高']} 条`],
-  ['README.md', '证据分级段', /全书 (\d+) 条中 A 级 \d+ 条、B 级 \d+ 条、C 级 \d+ 条，另有 \d+ 条标注了争议、\d+ 处/g,
+  ['README.zh.md', '首屏条目数', /(\d+) 条建议/g, `${entries} 条建议`],
+  ['README.zh.md', '条目徽章', /%E6%9D%A1%E7%9B%AE-(\d+)%20%E6%9D%A1/g, `%E6%9D%A1%E7%9B%AE-${entries}%20%E6%9D%A1`],
+  ['README.zh.md', '证据分级徽章', /A%20(\d+)%20%C2%B7%20B%20\d+%20%C2%B7%20C%20\d+/g, `A%20${grade.A}%20%C2%B7%20B%20${grade.B}%20%C2%B7%20C%20${grade.C}`],
+  ['README.zh.md', '文献链接徽章', /-(\d+)%20%E6%9D%A1%E9%93%BE%E6%8E%A5/g, `-${links}%20%E6%9D%A1%E9%93%BE%E6%8E%A5`],
+  ['README.zh.md', '怎么读里的 A 级数', /大型试验的 (\d+) 条/g, `大型试验的 ${grade.A} 条`],
+  ['README.zh.md', '怎么读里的极高条数', /勾选性价比「极高」，得到 (\d+) 条/g, `勾选性价比「极高」，得到 ${ratio['极高']} 条`],
+  ['README.zh.md', '证据分级段', /全书 (\d+) 条中 A 级 \d+ 条、B 级 \d+ 条、C 级 \d+ 条，另有 \d+ 条标注了争议、\d+ 处/g,
     `全书 ${entries} 条中 A 级 ${grade.A} 条、B 级 ${grade.B} 条、C 级 ${grade.C} 条，另有 ${dispute} 条标注了争议、${todo} 处`],
-  ['README.md', '性价比段', /全书 (\d+) 条中性价比极高 \d+ 条（\d+%）、高 \d+ 条（\d+%）、一般 \d+ 条（\d+%）/g,
+  ['README.zh.md', '性价比段', /全书 (\d+) 条中性价比极高 \d+ 条（\d+%）、高 \d+ 条（\d+%）、一般 \d+ 条（\d+%）/g,
     `全书 ${entries} 条中性价比极高 ${ratio['极高']} 条（${pct['极高']}%）、高 ${ratio['高']} 条（${pct['高']}%）、一般 ${ratio['一般']} 条（${pct['一般']}%）`],
-  ['README.md', '正文文件数', /正文按节拆成 (\d+) 个文件/g, `正文按节拆成 ${sections} 个文件`],
+  ['README.zh.md', '正文文件数', /正文按节拆成 (\d+) 个文件/g, `正文按节拆成 ${sections} 个文件`],
   ['index.html', '五处描述', /(\d+) 条建议/g, `${entries} 条建议`],
   ['index.html', 'numberOfPages', /numberOfPages":(\d+)/g, `numberOfPages":${entries}`],
   ['index.html', '页头条目数', /\d+ 节 (\d+) 条/g, `${sections} 节 ${entries} 条`],

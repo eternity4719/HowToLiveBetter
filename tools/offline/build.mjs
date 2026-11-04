@@ -11,7 +11,7 @@ const STAMP = buildStamp();
 const COMMIT = gitCommit();
 
 // ---------- 正文 ----------
-const readme = read('README.md');
+const readme = read('README.zh.md');
 const files = [...new Set([...readme.matchAll(/\]\((book\/[^)]+\.md)\)/g)].map(m => m[1]))].sort();
 if (!files.length) throw new Error('README 目录里没找到 book/ 文件，离线版会是空的');
 // 长文（docs/*.md）也要带上：检索页的长文弹窗就地渲染它们，离线副本里没有就只剩
@@ -42,11 +42,11 @@ html = html.slice(0, html.indexOf(GA_START)) + html.slice(html.indexOf(GA_END) +
 if (/googletagmanager|google-analytics/.test(html)) throw new Error('剥掉标记之间的内容后仍有统计域名残留，离线版会往外发请求');
 
 // 相对链接在本地打开时是死的，改成线上地址
-must('href="README.md"', ' README.md 链接');
+must('href="README.zh.md"', ' README.md 链接');
 must('href="book/"', ' book/ 链接');
 must('href="selfcheck.html"', ' 自查页链接');
 html = html
-  .replaceAll('href="README.md"', `href="${REPO}/blob/main/README.md"`)
+  .replaceAll('href="README.zh.md"', `href="${REPO}/blob/main/README.zh.md"`)
   .replaceAll('href="selfcheck.html"', `href="${SITE}selfcheck.html"`)
   .replaceAll('href="book/"', `href="${REPO}/tree/main/book"`)
   .replaceAll('<a class="title" href="./"', `<a class="title" href="${SITE}"`);

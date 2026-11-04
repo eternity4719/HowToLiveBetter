@@ -25,14 +25,14 @@ const contentsMd = book.contentsMd.replace(/^## 目录/, '# 各节简介');
 // ---------- 页面清单 ----------
 // 每页：xhtml 文件名、来源 md 的仓库路径（用来解析相对链接）、md 正文
 const pages = [
-  { file: 'front.xhtml', src: 'README.md', title: '前言', md: `# ${TITLE}\n\n${description}\n\n${frontMd}` },
-  { file: 'contents.xhtml', src: 'README.md', title: '各节简介', md: contentsMd },
+  { file: 'front.xhtml', src: 'README.zh.md', title: '前言', md: `# ${TITLE}\n\n${description}\n\n${frontMd}` },
+  { file: 'contents.xhtml', src: 'README.zh.md', title: '各节简介', md: contentsMd },
   ...bookFiles.map((src, i) => ({ file: `ch${String(i + 1).padStart(2, '0')}.xhtml`, src, md: splitLongItems(stripBackLink(read(src))) })),
   ...docFiles.map((src, i) => ({ file: `doc${i + 1}.xhtml`, src, md: splitLongItems(stripBackLink(read(src))) })),
-  { file: 'about.xhtml', src: 'README.md', title: '版本说明', md: aboutMd() },
+  { file: 'about.xhtml', src: 'README.zh.md', title: '版本说明', md: aboutMd() },
 ];
 const pageByPath = new Map(pages.map(p => [p.src, p.file]));
-pageByPath.set('README.md', 'front.xhtml');
+pageByPath.set('README.zh.md', 'front.xhtml');
 
 function aboutMd() {
   const commitLine = COMMIT ? `- 对应提交：[${COMMIT.slice(0, 7)}](${REPO}/commit/${COMMIT})` : '';

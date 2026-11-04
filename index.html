@@ -346,7 +346,7 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
   <div style="max-width:760px;margin:0 auto;padding:32px 20px;line-height:1.7">
     <h1>高性价比人生指南</h1>
     <p>用最少的钱、时间、精力和毅力，换回最多的寿命、金钱、时间和人身自由。全书 34 节 767 条，每条写明成本、收益、证据等级和原始出处。收益按受益人分四档算：你自己、配偶与直系亲属、朋友同事、陌生人，档次越低回报期望越小、风险越要写清。</p>
-    <p>本页的筛选功能需要 JavaScript。正文可直接阅读：<a href="README.md">README.md</a> 里的目录，正文在 <a href="book/">book/</a>。</p>
+    <p>本页的筛选功能需要 JavaScript。正文可直接阅读：<a href="README.zh.md">README.md</a> 里的目录，正文在 <a href="book/">book/</a>。</p>
     <ol>
       <li>不要早死：交通、火灾、燃气、毒蘑菇、溺水、跌落、疫苗、癌症筛查、心理危机、家庭应急装备</li>
       <li>不要慢慢死：烟酒、运动、睡眠、饮食、久坐</li>
@@ -396,7 +396,7 @@ abbr.term:hover{border-bottom-color:var(--brand-1);color:var(--brand-1)}
       <kbd>/</kbd>
     </label>
     <div class="nav-r">
-      <a class="icon-btn" href="README.md" title="查看 README.md" aria-label="README"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg></a>
+      <a class="icon-btn" href="README.zh.md" title="查看 README.zh.md" aria-label="README"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg></a>
       <a class="icon-btn" href="https://github.com/eternity4719/HowToLiveBetter" target="_blank" rel="noopener" title="在 GitHub 上查看源仓库" aria-label="GitHub 仓库"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5.6 18.3 6 18.3 6c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
       <button class="switch" id="theme" aria-label="切换深色模式" title="切换深色模式"><span class="knob"><svg class="sun" viewBox="0 0 24 24"><path d="M12 4a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm8-6a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zM5 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm12.07-5.07a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zM8.05 16.95a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zm9.02 0l.7.71a1 1 0 1 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42zM6.34 5.93l.71.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.41-1.42zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg><svg class="moon" viewBox="0 0 24 24"><path d="M12.1 22c-5.5 0-10-4.5-10-10 0-4.8 3.4-8.9 8-9.8.5-.1.9.4.7.9A8 8 0 0 0 20.9 13c.5-.2 1 .2.9.7-.9 4.7-5 8.3-9.7 8.3z"/></svg></span></button>
     </div>
@@ -1606,7 +1606,7 @@ document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !TIP.hid
   const EMBED = window.__CORPUS__;
   try {
     if (!EMBED && location.protocol === 'file:') throw new Error('file');
-    const md = EMBED ? EMBED.readme : await readText('README.md');
+    const md = EMBED ? EMBED.readme : await readText('README.zh.md');
     const files = [...new Set(Array.from(md.matchAll(/\]\((book\/[^)]+\.md)\)/g), m => m[1]))].sort();
     if (!files.length) throw new Error('empty');
     // 更新记录取不到不影响读正文，只是不显示「最近更新」
@@ -1664,7 +1664,7 @@ document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !TIP.hid
       });
       return;
     }
-    status.innerHTML = `读取正文失败（${esc(String(err.message))}）。确认 README.md 和 book/ 目录都在 index.html 旁边。`;
+    status.innerHTML = `读取正文失败（${esc(String(err.message))}）。确认 README.zh.md 和 book/ 目录都在 index.html 旁边。`;
   }
 })();
 </script>

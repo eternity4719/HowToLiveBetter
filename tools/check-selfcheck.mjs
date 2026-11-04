@@ -24,7 +24,7 @@ const element = id => {
 const warnings = [];
 const oldAnswers = {'p:age':'30', 'p:sex':'f', 'p:kid':'n', '2:低钠盐':'n', '1:乙肝两对半':'y'};
 const context = vm.createContext({
-  window:{__CORPUS__:{readme:read('README.md'), parts}},
+  window:{__CORPUS__:{readme:read('README.zh.md'), parts}},
   document:{getElementById:element},
   localStorage:{getItem:() => JSON.stringify(oldAnswers), setItem:() => {}},
   location:{protocol:'http:'}, scrollTo:() => {},

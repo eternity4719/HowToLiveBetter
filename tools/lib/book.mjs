@@ -37,7 +37,7 @@ export function stripBackLink(md) {
 
 // README 里从某个标题到下一个标题之间的一段
 export function readBook() {
-  const readme = read('README.md');
+  const readme = read('README.zh.md');
   const lines = readme.split('\n');
   const between = (from, to) => {
     const a = lines.findIndex(l => l.startsWith(from));

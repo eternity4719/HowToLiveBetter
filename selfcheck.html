@@ -497,7 +497,7 @@ document.getElementById('reset').addEventListener('click', () => { ans = {}; sav
   const status = document.getElementById('status');
   try {
     const EMBED = window.__CORPUS__;
-    const readme = EMBED ? EMBED.readme : await (await fetch('README.md', {cache:'no-cache'})).text();
+    const readme = EMBED ? EMBED.readme : await (await fetch('README.zh.md', {cache:'no-cache'})).text();
     const files = [...new Set(Array.from(readme.matchAll(/\]\((book\/[^)]+\.md)\)/g), m => m[1]))]
       .filter(f => GROUPS.some(g => g.qs.some(q => f.startsWith(`book/${String(q.sec).padStart(2,'0')}-`))));
     const parts = await Promise.all(files.map(async f => EMBED ? EMBED.parts[f] : (await fetch(f, {cache:'no-cache'})).text()));
