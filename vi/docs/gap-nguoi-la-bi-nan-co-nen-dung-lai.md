@@ -1,8 +1,10 @@
-# Trên đường gặp người lạ gặp chuyện, bỏ đi hay dừng lại
+[← Về mục lục](../README.md)
+
+# Trên đường thấy người lạ gặp chuyện, bỏ đi hay dừng lại
 
 Đây là bản bài dài của mục 2 phần 13 (người già ngã, có người nằm xuống thì đừng vội đỡ). Cả sách chia người hưởng lợi thành bốn bậc, chuẩn xếp bậc là khả năng phần lợi này sau này quay lại với chính bạn lớn đến đâu. Người lạ là bậc thấp nhất. Khả năng đối phương báo đáp bạn thì nhỏ, mà bạn cũng không biết đối phương là người thế nào. Nên ở đây bài không khuyên bạn phải làm gì, chỉ liệt kê cho đủ khoản phải trả của cả ba con đường. Chọn con đường nào là do bạn quyết.
 
-Chỉ áp dụng ở Trung Quốc: toàn bộ điều luật, thủ tục và mức phạt trong bài là của Trung Quốc đại lục.
+Chỉ áp dụng ở Trung Quốc: điều luật, thủ tục và mức phạt trong bài đều là của Trung Quốc đại lục, trừ phần nói về luật nước ngoài.
 
 **Bài này không đưa ra một xác suất nào.** Mỗi tầng chi phí dưới đây đều có thật, và đều có điều khoản để tra. Nhưng «một trăm người cứu người thì mấy người thật sự vướng chuyện», loại số liệu này không có thống kê công khai. Quy ước của cả sách là số không chắc thì thà không viết. Vì vậy đừng đọc «ở đây liệt kê bảy tầng» thành «bảy tầng này đều sẽ rơi xuống đầu bạn».
 
@@ -13,7 +15,7 @@ Chỉ áp dụng ở Trung Quốc: toàn bộ điều luật, thủ tục và m�
 | Tính hợp pháp | Hợp pháp. Người bình thường không có nghĩa vụ cứu người lạ, trong Bộ luật Hình sự cũng không có tội danh «thấy mà không cứu». Đây là nói theo pháp luật Trung Quốc; các nước như Đức thì khác, xem bên dưới | Hợp pháp | Hợp pháp |
 | Thời gian | 0 | Vài phút. Gọi 120 sẽ để lại số của bạn | Nửa ngày trở lên, có thể phải theo đến bệnh viện |
 | Khả năng sau này bị người ta tìm đến | Thấp nhất | Bạn chính là người đã để lại số | Cao nhất |
-| Phía bên kia nhận được gì | 0 | Xe cấp cứu đến sớm hơn | Lớn nhất |
+| Người gặp nạn nhận được gì | 0 | Xe cấp cứu đến sớm hơn | Lớn nhất |
 
 ## Sau khi dừng lại, những khoản chi phí có thể phát sinh, từ nhẹ đến nặng
 
@@ -39,17 +41,17 @@ Chỉ áp dụng ở Trung Quốc: toàn bộ điều luật, thủ tục và m�
 
 ## Khi quyết định dừng lại, cách làm đỡ tốn công nhất
 
-1. **Đừng ra tay bế, đỡ.** Điểm này không có đáp án thứ hai. Lý do nằm ở phía y học: đỡ cứng có thể làm xuất huyết não nặng thêm, cũng có thể làm tổn thương cột sống nặng thêm. Về phía pháp luật thì không phải lo: thiệt hại gây ra trong quá trình cứu người đã được Bộ luật Dân sự Điều 184 miễn trừ.
+1. **Đừng ra tay bế, đỡ.** Điểm này không có đáp án thứ hai. Lý do nằm ở phía y học: đỡ người ta dậy một cách mạnh tay có thể làm xuất huyết não nặng thêm, cũng có thể làm tổn thương cột sống nặng thêm. Còn về pháp luật thì không phải lo: thiệt hại gây ra trong quá trình cứu người đã được Bộ luật Dân sự Điều 184 miễn trừ.
 2. Đứng cách một quãng, gọi người ta một tiếng, xem người ta có thở bình thường không. Gọi không đáp, không thở bình thường thì ấn mạnh vào lồng ngực, xem mục 1 phần 13. Nếu còn thở bình thường thì đứng nguyên tại chỗ gọi 120, báo rõ vị trí.
 3. Kéo một người đi đường cùng làm với mình, đồng thời mở điện thoại quay lại. Có người làm chứng, lại có video, dùng được hơn là sau này tranh cãi với người ta.
 4. Đừng một mình bế người ta lên xe, cũng đừng tự bỏ tiền ra đưa người ta đi bệnh viện. Bước này tốn tiền nhất, mà sau này cũng khó gỡ nhất.
-5. Nếu cứu người mà chính bạn bị thương hoặc phải bỏ tiền ra, muốn đòi lại khoản tiền này thì xem mục 39 phần 13 (cứu người bị thương, kẹt tiền thì làm thế nào).
+5. Nếu cứu người mà chính bạn bị thương hoặc phải bỏ tiền ra, muốn đòi lại khoản tiền này thì xem mục 39 phần 13 (cứu người mà bị thương, lại phải bỏ tiền thì làm thế nào).
 
 ## Nguồn
 
 - Đại hội đại biểu nhân dân toàn quốc (2020). Bộ luật Dân sự (các điều 184, 1019, 1020, 1198). Viện Kiểm sát nhân dân tối cao đăng lại toàn văn. <https://www.spp.gov.cn/spp/fl/202006/t20200602_463888.shtml>
 - Tòa án nhân dân tối cao (sửa đổi lần thứ hai năm 2022, có hiệu lực từ ngày 10 tháng 4 năm 2022). Giải thích về việc áp dụng Bộ luật Tố tụng dân sự nước Cộng hòa Nhân dân Trung Hoa (Điều 90). <https://www.court.gov.cn/zixun/xiangqing/353651.html>
-- Ủy ban Thường vụ Đại hội đại biểu nhân dân toàn quốc (sửa đổi năm 2023, có hiệu lực từ ngày 1 tháng 1 năm 2024). Bộ luật Tố tụng dân sự (các điều 152, 164). Ủy ban Phát triển và Cải cách thành phố Thượng Hải đăng lại toàn văn. <https://fgw.sh.gov.cn/ys-syjf-zc-2,4.1-h5/20240408/073febdb2b04464390546232d4089f51.html>
+- Ủy ban Thường vụ Đại hội đại biểu nhân dân toàn quốc (sửa đổi năm 2023, có hiệu lực từ ngày 1 tháng 1 năm 2024). Bộ luật Tố tụng dân sự (các điều 152, 164). Ủy ban Phát triển và Cải cách thành phố Thượng Hải đăng lại toàn văn. <https://fgw.sh.gov.cn/ys-syjf-zc-2.4.1-h5/20240408/073febdb2b04464390546232d4089f51.html>
 - Quốc vụ viện (2006). Quy định về việc nộp phí tố tụng (Nghị lệnh số 481 của Quốc vụ viện, các điều 6, 29). <https://www.gov.cn/ziliao/flfg/2006-12/29/content_483682.htm>
 - Ủy ban Thường vụ Đại hội đại biểu nhân dân toàn quốc (2025). Luật Xử phạt vi phạm hành chính về an ninh trật tự (sửa đổi năm 2025, có hiệu lực từ ngày 1 tháng 1 năm 2026, Điều 26 khoản 1 và Điều 50 khoản 5). <https://www.spp.gov.cn/spp/fl/202506/t20250627_699863.shtml>
 - Ủy ban Thường vụ Đại hội đại biểu nhân dân toàn quốc (sửa đổi năm 2018). Bộ luật Tố tụng hình sự (Điều 111). Viện Kiểm sát nhân dân khu tự trị Ninh Hạ đăng lại toàn văn. <https://www.nx.jcy.gov.cn/zwsy/qwfb/202011/t20201119_608817.html>

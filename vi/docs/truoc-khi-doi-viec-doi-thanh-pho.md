@@ -4,29 +4,29 @@
 
 Chỉ áp dụng ở Trung Quốc: toàn bộ thủ tục, cơ quan, con số và căn cứ pháp lý trong bài là của Trung Quốc đại lục.
 
-Những việc mà đổi việc và đổi thành phố kéo theo nằm rải ở phần 2, 4, 5, 7, 11, 15, 19 và vài phần khác của sách. Dưới đây, bài này xếp chúng thành bốn cuốn sổ để bạn đối chiếu trước khi quyết định: sức khỏe, người và quan hệ, thời gian, tiền. Tiếp theo, bài xếp theo thứ tự thời gian những thủ tục phải làm trước khi đi, lúc nhận việc và sau khi chuyển tới nơi mới. Mỗi mục chỉ ghi cần đối chiếu điều gì và làm gì. Con số cùng căn cứ nằm ở mục được nhắc ngay trước phần ngoặc đơn. Đi hay ở, đi đâu là việc bạn tự tính, bài này không kết luận thay bạn. Người bị công ty cắt giảm nhân sự thì làm theo bài dài [Bị cắt giảm nhân sự rồi, làm gì trước](../docs/bi-cat-giam-roi-lam-gi-truoc.md).
+Những việc mà đổi việc và đổi thành phố kéo theo nằm rải ở phần 2, 4, 5, 7, 11, 15, 19 và vài phần khác của sách. Dưới đây, bài này xếp chúng thành bốn cuốn sổ để bạn đối chiếu trước khi quyết định: sức khỏe, người và quan hệ, thời gian, tiền. Tiếp theo, bài xếp theo thứ tự thời gian những thủ tục phải làm trước khi đi, lúc nhận việc và sau khi chuyển tới nơi mới. Mỗi mục chỉ ghi cần đối chiếu điều gì và làm gì. Con số cùng căn cứ nằm ở mục được nhắc ngay trước dấu ngoặc đơn. Đi hay ở, đi đâu là việc bạn tự tính, bài này không kết luận thay bạn. Người bị công ty cắt giảm nhân sự thì làm theo bài dài [Bị cắt giảm nhân sự rồi, làm gì trước](../docs/bi-cat-giam-roi-lam-gi-truoc.md).
 
 ## Trước khi quyết định: sổ sức khỏe
 
 1. Nếu vị trí mới phải làm ca đêm, bạn tính theo số năm. Cứ thêm 5 năm làm ca đêm thì bệnh tim mạch tăng thêm khoảng 7%. Bạn đưa khoản này vào ngay lúc chọn việc, mà không tốn gì. Xem mục 39 phần 2 (làm ca đêm càng lâu thì nguy cơ tim mạch càng cao).
-2. Bạn hỏi rõ mỗi tuần thực tế phải làm bao nhiêu giờ. Tuần làm 70 giờ và tuần làm 56 giờ cho ra lượng việc gần như nhau. Xem mục 13 phần 3 (đừng chỉ tăng giờ làm mỗi tuần).
+2. Bạn hỏi rõ mỗi tuần thực tế phải làm bao nhiêu giờ. Tuần làm 70 giờ và tuần làm 56 giờ cho ra lượng việc gần như nhau. Xem mục 13 phần 3 (đừng một mực tăng giờ làm mỗi tuần).
 3. Nếu vị trí phải tiếp xúc với bụi, tiếng ồn hoặc hóa chất, lúc phỏng vấn bạn hỏi ba câu: có nguy hại nghề nghiệp hay không, hợp đồng có ghi khoản đó hay không, và ai trả tiền khám sức khỏe trước khi vào làm. Xem mục 9 phần 19 (trước khi vào vị trí có bụi, tiếng ồn, hóa chất).
 4. Ba lần khám sức khỏe nghề nghiệp ở nơi làm mới, gồm trước khi vào làm, trong thời gian làm và khi rời việc, đều do đơn vị sắp xếp và trả tiền. Xem mục 9 phần 19 (ba lần khám sức khỏe nghề nghiệp do đơn vị sắp xếp và trả tiền).
 
 ## Trước khi quyết định: sổ quan hệ con người
 
 1. Nếu bạn muốn đi vì bị bắt nạt lâu ngày ở đơn vị, trước hết hãy ghi lại và giữ chứng cứ. Người từng bị bắt nạt về sau có nguy cơ mắc bệnh tim và đột quỵ cao hơn khoảng 60%. Đổi việc là cách tốn kém nhất, nên đi hay ở bạn tự tính. Xem mục 16 phần 19 (bị bắt nạt lâu ngày ở đơn vị).
-2. Khi bạn chuyển tới thành phố mới, những người trước đây thường gặp sẽ ở xa. Người ít qua lại với ai thì xác suất tử vong trong cùng thời gian cao hơn khoảng 30%. Đến nơi mới, bạn hãy coi việc gặp gỡ người khác đều đặn là một khoản chi cho sức khỏe. Xem mục 9 phần 22 (coi việc gặp gỡ đều đặn là một khoản chi cho sức khỏe).
+2. Khi bạn chuyển tới thành phố mới, những người trước đây thường gặp sẽ ở xa. Người ít qua lại với ai thì xác suất tử vong trong cùng khoảng thời gian đó cao hơn khoảng 30%. Đến nơi mới, bạn hãy coi việc gặp gỡ người khác đều đặn là một khoản chi cho sức khỏe. Xem mục 9 phần 22 (coi việc gặp gỡ đều đặn là một khoản chi cho sức khỏe).
 3. Nếu bạn đổi thành phố chỉ để về sống chung với người yêu ở xa, cái khó nằm ở ba tháng đầu sau khi về ở chung. Trong số các cặp đoàn tụ, một phần ba chia tay trong vòng 3 tháng. Xem mục 6 phần 10 (ba tháng đầu sau khi về ở chung).
-4. Nếu bạn vừa gặp biến cố như mất người thân hay mất việc, mà có người khuyên bạn nghỉ việc đến nơi khác làm lại từ đầu, hãy lùi quyết định đó ba tháng. Trước đó, bạn kể câu chuyện cho một người không có quyền lợi gì trong việc này. Xem mục 12 phần 29 (quyết định lớn không thể đảo lại thì lùi về sau).
+4. Nếu bạn vừa gặp biến cố như mất người thân hay mất việc, mà có người khuyên bạn nghỉ việc đến nơi khác làm lại từ đầu, hãy lùi quyết định đó ba tháng. Trước khi quyết, bạn kể câu chuyện cho một người không có quyền lợi gì trong việc này. Xem mục 12 phần 29 (quyết định lớn không thể đảo lại thì lùi về sau).
 5. Quyết định quan trọng thì để sau khi ngủ dậy rồi chốt, đừng chốt lúc đêm khuya. Xem mục 10 phần 3 (đêm khuya không quyết việc lớn).
 
 ## Trước khi quyết định: sổ thời gian
 
 1. Trước hết bạn xem từ chỗ ở mới tới chỗ làm mất bao lâu một chiều. Một chiều bớt được 30 phút thì mỗi tuần bạn tiết kiệm được 5 giờ. Xem mục 18 phần 4 (chọn chỗ ở thì đặt thời gian đi làm lên trước).
-2. Khoản tính thời gian đi làm này còn tranh cãi. Cũng có nghiên cứu cho rằng đi làm xa được bù lại bằng công việc hoặc chỗ ở tốt hơn. Xem mục 18 phần 4 (rút ngắn thời gian đi làm một chiều).
+2. Cách tính thời gian đi làm còn tranh cãi. Cũng có nghiên cứu cho rằng đi làm xa được bù lại bằng công việc hoặc chỗ ở tốt hơn. Xem mục 18 phần 4 (rút ngắn thời gian đi làm một chiều).
 3. Bạn đã làm ở đơn vị hiện tại bao nhiêu năm thì không đưa vào bài toán này. Bạn chỉ tính từ nay còn phải bỏ ra bao nhiêu và còn lấy lại được bao nhiêu. Xem mục 3 phần 4 (chỉ nhìn khoản bỏ ra và khoản thu về ở tương lai).
-4. Nếu bạn định sang thành phố mới thử một thời gian, hãy viết sẵn một câu trước khi đi: đến ngày ấy tháng ấy mà chưa đạt chỉ tiêu nào đó thì dừng. Xem mục 2 phần 4 (trước khi bắt đầu thì viết rõ điều kiện rút lui).
+4. Nếu bạn định sang thành phố mới thử một thời gian, hãy viết sẵn một câu trước khi đi: đến một ngày tháng cụ thể mà chưa đạt chỉ tiêu nào đó thì dừng. Xem mục 2 phần 4 (trước khi bắt đầu thì viết rõ điều kiện rút lui).
 
 ## Trước khi quyết định: sổ tiền
 
@@ -42,7 +42,7 @@ Những việc mà đổi việc và đổi thành phố kéo theo nằm rải �
 1. Nếu bạn từng ký thỏa thuận hạn chế cạnh tranh, trước hết hãy xem nó có ràng buộc được bạn hay không. Thỏa thuận này chỉ ràng buộc được người quản lý cấp cao, nhân viên kỹ thuật cấp cao và người có nghĩa vụ giữ bí mật, thời hạn dài nhất 2 năm. Xem mục 12 phần 11 (đã ký thỏa thuận hạn chế cạnh tranh).
 2. Trong thời gian bị hạn chế cạnh tranh, công ty phải trả tiền bù hằng tháng. Nếu hai bên không thỏa thuận con số, công ty trả bằng 30% lương bình quân của 12 tháng trước khi bạn nghỉ việc. Xem mục 12 phần 11 (đã ký thỏa thuận hạn chế cạnh tranh).
 3. Nếu thỏa thuận có hiệu lực, công ty cũng đã trả tiền hằng tháng đầy đủ mà bạn vẫn sang làm cho đối thủ, bạn phải nộp tiền vi phạm hợp đồng. Xem mục 12 phần 11 (đã ký thỏa thuận hạn chế cạnh tranh).
-4. Số ngày phép năm chưa nghỉ thì khi rời việc, công ty quy đổi theo số thời gian bạn đã làm trong năm đó rồi thanh toán hết. Bạn đừng ký tờ «tự nguyện từ bỏ phép năm». Xem mục 2 phần 19 (phép năm tính theo thâm niên cộng dồn).
+4. Số ngày phép năm chưa nghỉ, khi rời việc, công ty quy đổi theo thời gian bạn đã làm trong năm đó rồi thanh toán hết. Bạn đừng ký tờ «tự nguyện từ bỏ phép năm». Xem mục 2 phần 19 (phép năm tính theo thâm niên cộng dồn).
 5. Tiền làm thêm giờ còn nợ thì bạn tính cho xong cùng lúc. Đơn yêu cầu trọng tài lao động về tiền lương và tiền làm thêm giờ phải nộp trong vòng 1 năm sau khi bạn nghỉ việc. Xem mục 1 phần 19 (tiền làm thêm giờ) và mục 19 phần 8 (trọng tài lao động 1 năm).
 6. Trước khi trả máy tính và tài khoản, bạn lưu lại phiếu lương, bảng chấm công, hợp đồng lao động, hồ sơ bảo hiểm xã hội và tin nhắn. Xem mục 8 phần 19 (lưu lại trước khi rời việc).
 7. Với cuộc nói chuyện có thể khiến hai bên trở mặt, bạn cứ bật ghi âm. Cuộc nói chuyện mà chính bạn tham gia thì không cần xin phép bên kia trước. Xem mục 41 phần 8 (cứ bật ghi âm).
@@ -71,15 +71,15 @@ Những việc mà đổi việc và đổi thành phố kéo theo nằm rải �
 
 1. Khi chọn chỗ ở, bạn tính cả mảng xanh quanh đó, và khoản này không tốn tiền. Đừng hiểu thành cứ đi công viên là sống lâu hơn. Xem mục 10 phần 22 (tính cả mảng xanh quanh chỗ ở).
 2. Tiền đặt cọc bao nhiêu, khi nào trả lại, trường hợp nào được trừ, bạn yêu cầu ghi hết vào hợp đồng trước khi ký. Xem mục 1 phần 15 (số tiền đặt cọc, thời điểm trả lại và các trường hợp bị trừ).
-3. Trước khi ký, bạn đến trung tâm đăng ký bất động sản tra quyền sở hữu và tình trạng thế chấp. Mọi khoản tiền đều chuyển khoản, nội dung chuyển ghi rõ tiền thuê nhà nào của tháng nào. Xem mục 6 phần 15 (đối chiếu giấy chứng nhận quyền sở hữu và tình trạng thế chấp).
+3. Trước khi ký, bạn đến trung tâm đăng ký bất động sản tra quyền sở hữu và tình trạng thế chấp. Mọi khoản tiền đều chuyển khoản, nội dung chuyển khoản ghi rõ tiền thuê nhà nào, của tháng nào. Xem mục 6 phần 15 (đối chiếu giấy chứng nhận quyền sở hữu và tình trạng thế chấp).
 4. Tiền thuê và tiền đặt cọc thì bạn trả thẳng cho chủ nhà, không qua tay môi giới. Xem mục 3 phần 15 (môi giới không được thu hộ, trả hộ tiền thuê và tiền đặt cọc).
 5. Nếu bạn thuê căn hộ thuộc loại cho thuê dài hạn, trước hết hãy tra xem bên cho thuê có công bố tài khoản giám sát vốn hay không, đừng ham rẻ mà trả một lần cả năm. Xem mục 4 phần 15 (tài khoản giám sát vốn).
-6. Bạn đừng thuê nhà ngăn phòng tạm. Bếp, nhà vệ sinh, ban công và hầm chứa đồ không được dùng để ở. Xem mục 8 phần 15 (đừng thuê nhà ngăn phòng tạm).
+6. Bạn đừng thuê nhà ngăn phòng. Bếp, nhà vệ sinh, ban công và hầm chứa đồ không được dùng để ở. Xem mục 8 phần 15 (đừng thuê nhà ngăn phòng).
 7. Nhà bị bán trong thời hạn thuê thì hợp đồng thuê vẫn có hiệu lực, bạn không phải dọn đi. Xem mục 5 phần 15 (hợp đồng thuê vẫn có hiệu lực).
 8. Nếu chủ nhà cắt nước, cắt điện, thay khóa hoặc đến tận nơi đe dọa để đuổi bạn, trước hết bạn báo cảnh sát để giữ lại biên bản ghi việc cảnh sát đã đến hiện trường. Xem mục 2 phần 15 (báo cảnh sát giữ chứng cứ trước).
 9. Tiền trong quỹ dự trữ nhà ở rút ra được để trả tiền thuê. Bạn nộp đơn xong thì trung tâm quỹ phải trả lời trong 3 ngày. Xem mục 3 phần 5 (quỹ dự trữ nhà ở không chỉ để mua nhà).
-10. Người từ nơi khác đến làm việc phải làm việc ổn định ở địa phương đủ số năm quy định mới được nộp đơn xin nhà ở xã hội cho thuê. Xếp hàng không mất tiền, đăng ký sớm thì tới lượt sớm. Xem mục 16 phần 7 (khó khăn về nhà ở thì xếp hàng nhà ở xã hội cho thuê trước).
-11. Nếu bạn mua nhà cũ ở thành phố mới mà để môi giới thu tiền nhà hộ, môi giới phải nhận qua tài khoản tiền gửi chuyên dụng cho vốn giao dịch do chính họ mở tại ngân hàng. Xem mục 7 phần 15 (tài khoản tiền gửi chuyên dụng cho vốn giao dịch).
+10. Người từ nơi khác đến phải có việc làm ổn định ở địa phương đủ số năm quy định mới được nộp đơn xin nhà ở xã hội cho thuê. Xếp hàng không mất tiền, đăng ký sớm thì tới lượt sớm. Xem mục 16 phần 7 (khó khăn về nhà ở thì xếp hàng nhà ở xã hội cho thuê trước).
+11. Nếu bạn mua nhà cũ ở thành phố mới mà để môi giới thu hộ tiền mua nhà, môi giới phải nhận qua tài khoản tiền gửi chuyên dụng cho vốn giao dịch do chính họ mở tại ngân hàng. Xem mục 7 phần 15 (tài khoản tiền gửi chuyên dụng cho vốn giao dịch).
 12. Nếu bạn có hộ khẩu thành thị và muốn về nông thôn ở lâu dài, hãy chỉ thuê nhà của nông dân, mỗi lần ký dài nhất 20 năm. Đừng mua đất làm nhà ở nông thôn và nhà xây trên đất đó. Xem mục 9 phần 15 (chỉ thuê nhà nông dân).
 
 ## Sau khi chuyển tới: bảo hiểm xã hội, bảo hiểm y tế và khám bệnh

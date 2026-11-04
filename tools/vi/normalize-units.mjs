@@ -23,6 +23,20 @@ const conv = s => s
   .replace(/(\d)\.(\d)/g, '$1,$2')
   .replace(/\u0000/g, '.');
 
+const protect = (line) => {
+  const store = [];
+  const put = (m) => { store.push(m); return `\u0001${store.length - 1}\u0001`; };
+  const masked = line
+    .replace(/https?:\/\/[^\s<>()]+/g, put)
+    .replace(/\b10\.\d{4,9}\/[^\s<>()]+/g, put)
+    .replace(/\bGB(?:\s*\/?\s*T)?\s*\d+(?:\.\d+)*/g, put)
+    .replace(/\b[A-Z]{2,}\s*\d+(?:\.\d+)+/g, put)
+    .replace(/\b\d+\.\d+\.\d+\b/g, put)
+    .replace(/(?<=(?:mục|điều|chương|phần|section)\s)\d+\.\d+/gi, put);
+  return { masked, store };
+};
+const restore = (line, store) => line.replace(/\u0001(\d+)\u0001/g, (m, i) => store[Number(i)] ?? m);
+
 const dirs = [resolve(ROOT, 'vi/book'), resolve(ROOT, 'vi/docs')];
 let changed = 0;
 for (const dir of dirs) for (const f of readdirSync(dir).filter(f => f.endsWith('.md'))) {
@@ -30,7 +44,8 @@ for (const dir of dirs) for (const f of readdirSync(dir).filter(f => f.endsWith(
   const text = readFileSync(p, 'utf8');
   const lines = text.split('\n').map(line => {
     if (line.startsWith('- Nguồn:')) return line;
-    const next = conv(line);
+    const { masked, store } = protect(line);
+    const next = restore(conv(masked), store);
     if (next !== line) changed++;
     return next;
   });

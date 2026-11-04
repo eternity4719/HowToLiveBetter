@@ -10,19 +10,19 @@ Toàn sách chia nội dung theo chủ đề, nên chuyện mang thai, sinh nở
 
 1. Mỗi ngày bạn uống một viên acid folic 0,4 mg, và bắt đầu uống trước khi mang thai 3 tháng. Xem mục 1 phần 27 (acid folic).
 2. Bạn gọi điện cho cơ quan bảo hiểm xã hội hoặc bảo hiểm y tế, hỏi cho rõ số tháng tham gia bảo hiểm sinh sản liên tục đã đủ chưa. Xem mục 11 phần 27 (bảo hiểm sinh sản).
-3. Bạn nói trước với người nhà sống cùng rằng từ nay không ai hút thuốc trong nhà. Xem mục 2 phần 2 (đừng hút thuốc trong nhà và trong xe).
+3. Bạn thống nhất với người nhà sống cùng rằng từ nay không ai hút thuốc trong nhà. Xem mục 2 phần 2 (đừng hút thuốc trong nhà và trong xe).
 4. Nếu trong nhà có người sống nhờ thu nhập của bạn, bạn mua bảo hiểm nhân thọ định kỳ cho người kiếm tiền trước. Xem mục 40 phần 5 (bảo hiểm nhân thọ định kỳ).
 
 ## II. Sau khi có thai, trước khi sinh
 
-1. Trước tuần thai 13, bạn đến trung tâm y tế cộng đồng lập «Sổ sức khỏe mẹ và con». Các lần khám thai miễn phí bắt đầu từ cuốn sổ này. Xem mục 2 phần 27 (sổ sức khỏe mẹ và con).
+1. Trước tuần thai 13, bạn đến trung tâm y tế cộng đồng lập «Sổ sức khỏe mẹ và con». Bạn nhận các lần khám thai miễn phí từ cuốn sổ này. Xem mục 2 phần 27 (sổ sức khỏe mẹ và con).
 2. Ngay lần khám thai đầu tiên, bạn làm xét nghiệm HIV, giang mai và viêm gan B. Ba xét nghiệm này bạn không phải tự trả tiền. Xem mục 3 phần 27 (ba xét nghiệm HIV, giang mai, viêm gan B).
 3. Suốt thai kỳ, bạn không hút một điếu thuốc nào và cũng không uống một ngụm rượu nào. Xem mục 4 phần 27 (một điếu thuốc, một ngụm rượu cũng không).
 4. Khi khám thai, bạn nói rõ tiền sử bệnh của mình. Nếu bạn có yếu tố nguy cơ cao của tiền sản giật, bác sĩ sẽ cân nhắc xem bạn có nên uống aspirin liều nhỏ từ sau tuần thai 12 hay không. Xem mục 5 phần 27 (aspirin liều nhỏ).
 5. Từ tuần thai 24 trở đi, bạn làm một lần sàng lọc đái tháo đường thai kỳ. Xem mục 6 phần 27 (sàng lọc đái tháo đường thai kỳ).
 6. Sau tuần thai 20, bạn đừng tự uống các loại thuốc giảm đau như ibuprofen. Xem mục 5 phần 34 (thuốc giảm đau như ibuprofen).
 7. Bạn học thuộc danh sách «đi bệnh viện ngay», và nói cho người sống cùng nhà cùng thuộc. Xem mục 7 phần 27 (danh sách đi bệnh viện ngay).
-8. Trong lúc khám thai, bạn hỏi luôn bệnh viện có làm sinh không đau hay không. Xem mục 9 phần 27 (sinh không đau).
+8. Trong lúc khám thai, bạn hỏi luôn bệnh viện có giảm đau khi sinh hay không. Xem mục 9 phần 27 (giảm đau khi sinh).
 9. Khi không có chỉ định y học, bạn đừng chủ động yêu cầu mổ lấy thai. Xem mục 10 phần 27 (mổ lấy thai).
 10. Nếu bạn sinh ở nơi khác với nơi tham gia bảo hiểm, bạn hỏi trước xem có phải làm thủ tục đăng ký sinh nở ngoài nơi cư trú hay không. Xem mục 11 phần 27 (bảo hiểm sinh sản).
 11. Thời gian nghỉ thai sản ít nhất là 98 ngày, và bạn có thể nghỉ trước khi sinh 15 ngày. Xem mục 2 phần 18 (nghỉ thai sản).
@@ -47,9 +47,9 @@ Toàn sách chia nội dung theo chủ đề, nên chuyện mang thai, sinh nở
 
 ## V. Tháng đầu sau khi sinh
 
-1. Trong vòng một tháng, bạn đến đồn công an để đăng ký khai sinh cho con. Xem mục 15 phần 27 (đăng ký khai sinh).
+1. Trong vòng một tháng, bạn đến đồn công an khai báo nhập hộ khẩu cho con. Xem mục 15 phần 27 (khai báo nhập hộ khẩu).
 2. Sau khi nhập hộ khẩu, bạn đến nơi đăng ký hộ khẩu của con để xin trợ cấp nuôi con, mỗi con 3600 tệ một năm. Xem mục 1 phần 18 (trợ cấp nuôi con).
-3. Bạn cho con ngủ ngửa trên một mặt phẳng cứng. Bạn cho con ngủ cùng phòng nhưng khác giường, và trên giường của con không để đồ mềm. Xem mục 1 phần 20 (ngủ ngửa).
+3. Bạn cho con ngủ ngửa trên một mặt phẳng cứng. Con ngủ cùng phòng với bạn nhưng khác giường, và trên giường của con không để đồ mềm. Xem mục 1 phần 20 (ngủ ngửa).
 4. Nếu cho con uống sữa công thức, bạn pha bằng nước từ 70 ℃ trở lên, và đổ bỏ phần sữa uống thừa. Xem mục 5 phần 20 (pha sữa công thức).
 5. Con chưa đủ 3 tháng mà thân nhiệt lên tới 38 ℃ thì bạn đưa con đi bệnh viện ngay. Xem mục 8 phần 20 (thân nhiệt 38 ℃).
 6. Khi bạn thấy sắp không kìm được cơn giận, bạn đặt con xuống cũi rồi đi ra chỗ khác vài phút. Xem mục 9 phần 20 (đừng lắc em bé).
