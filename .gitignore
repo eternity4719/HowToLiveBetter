@@ -2,3 +2,10 @@
 .junie/
 node_modules/
 dist/
+vi/qa/tasks/
+vi/qa/tasks.json
+vi/qa/out/
+vi/qa/doc-tasks/
+vi/qa/docs-out/
+vi/qa/intros/
+vi/qa/shots/

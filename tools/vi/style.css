@@ -1,0 +1,140 @@
+/* Bản tiếng Việt — thiết kế sách phi hư cấu: giấy ngà ấm, xanh navy, vàng đồng nhạt. */
+@font-face { font-family: "Literata"; src: url("fonts/Literata-Regular.ttf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Literata"; src: url("fonts/Literata-SemiBold.ttf"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Literata"; src: url("fonts/Literata-Italic.ttf"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("fonts/BeVietnamPro-Regular.ttf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("fonts/BeVietnamPro-SemiBold.ttf"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Cormorant"; src: url("fonts/Cormorant-SemiBold.ttf"); font-weight: 600; font-style: normal; }
+
+html { font-size: 100%; }
+body {
+  font-family: "Literata", "Noto Serif", Georgia, "Times New Roman", serif;
+  color: #1c2430;
+  background: transparent;
+  line-height: 1.68;
+  margin: 0 5%;
+  padding: 0;
+  widows: 2;
+  orphans: 2;
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  hyphens: auto;
+  -webkit-text-size-adjust: 100%;
+}
+
+p { margin: 0; text-indent: 1.2em; text-align: justify; }
+p + p { margin-top: 0.1em; }
+h1 + p, h2 + p, h3 + p, h4 + p, .label + p, blockquote p, li p, td p, .entry-title + p, .callout p:first-child, .sources p:first-child { text-indent: 0; }
+em { font-style: italic; }
+strong { font-weight: 600; }
+a { color: #2b4a78; text-decoration: none; overflow-wrap: anywhere; word-break: break-word; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Be Vietnam Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #16233a;
+  font-weight: 600;
+  line-height: 1.28;
+  text-indent: 0;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+h1 { font-size: 2em; margin: 0 0 0.9em; }
+h2 { font-size: 1.35em; margin: 1.9em 0 0.7em; }
+h3 { font-size: 1.1em; margin: 1.6em 0 0.55em; }
+h4 { font-size: 0.98em; margin: 1.2em 0 0.4em; }
+
+/* ---------- trang bìa, trang tiêu đề ---------- */
+body.cover-page { margin: 0; padding: 0; background: #faf6ec; }
+.cover { margin: 0; padding: 0; text-align: center; }
+.cover img { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; padding: 0; }
+
+.titlepage { text-align: center; padding: 18% 4% 0; }
+.titlepage .tp-kicker { font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.78em; letter-spacing: 0.28em; text-transform: uppercase; color: #8a6d2f; text-indent: 0; }
+.titlepage h1 { font-family: "Cormorant", "Literata", Georgia, serif; font-weight: 600; font-size: 2.9em; letter-spacing: 0.01em; margin: 0.5em 0 0.35em; }
+.titlepage .tp-sub { font-family: "Literata", Georgia, serif; font-style: italic; font-size: 1.08em; color: #46536a; text-indent: 0; margin: 0 6%; }
+.titlepage .tp-rule { width: 22%; margin: 2em auto; border: 0; border-top: 1px solid #b08a3e; }
+.titlepage .tp-author { font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.95em; letter-spacing: 0.06em; color: #24344f; text-indent: 0; }
+.titlepage .tp-trans { font-size: 0.86em; color: #5a6578; margin-top: 0.6em; text-indent: 0; }
+.titlepage .tp-imprint { margin-top: 22%; font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.7em; letter-spacing: 0.2em; text-transform: uppercase; color: #8a7a5c; text-indent: 0; }
+
+/* ---------- mở chương ---------- */
+.chapter { margin-top: 0; }
+.chapter-head { margin: 0 0 2em; padding-top: 0.6em; }
+.chapter-kicker { font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.72em; letter-spacing: 0.3em; text-transform: uppercase; color: #96763a; text-indent: 0; margin: 0 0 0.6em; }
+.chapter-head h1 { font-size: 2.15em; margin: 0 0 0.55em; }
+.chapter-head .ch-rule { border: 0; border-top: 2px solid #16233a; width: 3.2em; margin: 0 0 1.4em; }
+.chapter-intro { font-size: 1.02em; }
+.chapter-intro p { text-align: justify; }
+.chapter-intro p:first-of-type::first-letter { font-family: "Cormorant", "Literata", Georgia, serif; font-size: 3.1em; line-height: 0.86; float: left; padding: 0.08em 0.12em 0 0; color: #8a6d2f; font-weight: 600; }
+.chapter-intro p + p { margin-top: 0.55em; }
+.chapter-intro strong { color: #24344f; }
+
+/* ---------- mục ---------- */
+.entry { margin: 2.4em 0 0; padding-top: 1.1em; border-top: 1px solid #e6dfcf; page-break-inside: auto; }
+.entry-title { font-size: 1.14em; margin: 0 0 0.35em; display: block; }
+.entry-no { display: inline-block; min-width: 1.55em; margin-right: 0.45em; font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.82em; font-weight: 600; color: #96763a; letter-spacing: 0.02em; }
+.entry-meta { font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.72em; letter-spacing: 0.04em; color: #5c6575; text-indent: 0; margin: 0 0 1.25em; }
+.entry-meta .grade { display: inline-block; margin-right: 0.7em; padding: 0.08em 0.5em; border: 1px solid #b08a3e; color: #7a5c22; font-weight: 600; letter-spacing: 0.08em; }
+.entry-meta .cost { color: #5c6575; }
+
+.field { margin: 0 0 1em; }
+.field .label, .callout .label, .note .label, .sources .label {
+  display: block;
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a6d2f;
+  text-indent: 0;
+  margin: 0 0 0.28em;
+}
+.field p { text-indent: 0; }
+.callout {
+  margin: 1.15em 0 1.3em;
+  padding: 0.85em 1.05em;
+  background: #f8f2e4;
+  border-left: 3px solid #b08a3e;
+  page-break-inside: avoid;
+}
+.callout p { text-indent: 0; }
+.callout .label { color: #7a5c22; }
+.sources { margin: 1.1em 0 0.9em; font-size: 0.82em; line-height: 1.52; color: #4d5666; }
+.sources p { text-indent: 0; word-break: break-word; overflow-wrap: break-word; }
+.sources a { color: #3c567c; }
+.note { margin: 1.1em 0 0; padding-top: 0.75em; border-top: 1px solid #e6dfcf; font-size: 0.95em; }
+.note p { text-indent: 0; }
+.juris { color: #7a3f2a; font-weight: 600; }
+.disputed { color: #7a3f2a; font-weight: 600; }
+.xref { border-bottom: 1px dotted #96763a; }
+
+/* ---------- danh sách, bảng, trích ---------- */
+ul, ol { margin: 0.6em 0 0.9em; padding-left: 1.4em; }
+li { margin: 0.22em 0; text-align: justify; }
+li p { text-indent: 0; }
+blockquote { margin: 1.2em 0; padding: 0.2em 0 0.2em 1em; border-left: 2px solid #c9b07a; color: #3d485a; font-style: italic; }
+blockquote p { text-indent: 0; text-align: left; hyphens: none; -webkit-hyphens: none; }
+hr { border: 0; border-top: 1px solid #d8cfbb; margin: 2em 0; }
+table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 1.1em 0; font-size: 0.86em; line-height: 1.45; }
+th, td { border: 1px solid #d8cfbb; padding: 0.35em 0.5em; vertical-align: top; text-align: left; overflow-wrap: break-word; }
+th { background: #f4eedf; font-family: "Be Vietnam Pro", Arial, sans-serif; font-weight: 600; }
+code, pre { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.86em; }
+pre { white-space: pre-wrap; word-break: break-word; border: 1px solid #d8cfbb; padding: 0.6em; background: #f8f4e9; }
+img { max-width: 100%; height: auto; }
+
+/* ---------- trang phụ ---------- */
+.frontmatter h1 { font-size: 1.9em; margin-top: 0.2em; }
+.frontmatter h2 { font-size: 1.2em; }
+.frontmatter p { text-align: justify; }
+.frontmatter ul { margin-top: 0.4em; }
+.appendix h1, .backmatter h1 { font-size: 1.9em; }
+.cover-credit { font-size: 0.8em; color: #5c6575; text-indent: 0; }
+
+/* ---------- mục lục ---------- */
+nav#toc ol { list-style: none; padding-left: 0; margin: 0; }
+nav#toc ol ol { padding-left: 1.1em; margin: 0.35em 0 0.9em; }
+nav#toc li { margin: 0.5em 0; text-align: left; }
+nav#toc > ol > li > a { font-family: "Be Vietnam Pro", Arial, sans-serif; font-weight: 600; font-size: 0.98em; color: #16233a; }
+nav#toc ol ol a { font-size: 0.9em; color: #3d485a; }
+nav#toc a { text-decoration: none; }

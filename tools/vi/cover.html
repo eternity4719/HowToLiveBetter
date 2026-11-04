@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Bìa — Cẩm nang sống đáng giá</title>
+<style>
+  @font-face { font-family: "Cormorant"; src: url("../fonts/Cormorant-SemiBold.ttf"); font-weight: 600; }
+  @font-face { font-family: "Literata"; src: url("../fonts/Literata-Italic.ttf"); font-style: italic; font-weight: 400; }
+  @font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-SemiBold.ttf"); font-weight: 600; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1600px; height: 2400px; overflow: hidden; }
+  body {
+    background: #f7f1e3;
+    color: #16233a;
+    font-family: "Be Vietnam Pro", Arial, sans-serif;
+    position: relative;
+  }
+  .field {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(1200px 900px at 50% 38%, #fdf9ef 0%, #f7f1e3 55%, #efe6d2 100%);
+  }
+  .frame {
+    position: absolute; inset: 96px;
+    border: 1px solid rgba(22, 35, 58, 0.22);
+  }
+  .frame::after {
+    content: ""; position: absolute; inset: 14px;
+    border: 1px solid rgba(168, 132, 44, 0.38);
+  }
+  .bar {
+    position: absolute; left: 96px; top: 0; width: 10px; height: 2400px;
+    background: linear-gradient(180deg, #16233a 0%, #24344f 55%, #a8842c 100%);
+  }
+  .content {
+    position: absolute; left: 170px; right: 170px; top: 250px; bottom: 190px;
+    display: flex; flex-direction: column;
+  }
+  .kicker {
+    font-size: 26px; letter-spacing: 0.34em; text-transform: uppercase;
+    color: #8a6d2f; font-weight: 600;
+  }
+  .title {
+    margin-top: 108px;
+    font-family: "Cormorant", Georgia, serif; font-weight: 600;
+    font-size: 158px; line-height: 1.02; letter-spacing: 0.005em;
+    color: #16233a;
+  }
+  .title .l2 { display: block; margin-left: -4px; white-space: nowrap; }
+  .rule {
+    margin-top: 72px; width: 220px; height: 2px; background: #a8842c; position: relative;
+  }
+  .rule::after {
+    content: ""; position: absolute; right: -34px; top: -7px;
+    width: 14px; height: 14px; transform: rotate(45deg);
+    border: 2px solid #a8842c; background: #f7f1e3;
+  }
+  .sub {
+    margin-top: 58px;
+    font-family: "Literata", Georgia, serif; font-style: italic;
+    font-size: 45px; line-height: 1.52; color: #3c4a61;
+    max-width: 1120px;
+  }
+  .themes {
+    margin-top: 96px;
+    font-size: 24px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #7b6a4c; font-weight: 600;
+  }
+  .themes span { color: #b08a3e; padding: 0 0.35em; }
+  .meta {
+    margin-top: auto;
+    border-top: 1px solid rgba(22, 35, 58, 0.28);
+    padding-top: 44px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .meta-left { }
+  .meta .author {
+    font-size: 30px; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 600; color: #16233a;
+  }
+  .meta .orig {
+    margin-top: 16px; font-size: 27px; color: #5a6578; letter-spacing: 0.02em;
+  }
+  .meta .orig span { font-family: "Literata", Georgia, serif; font-style: italic; }
+  .meta-right {
+    text-align: right; font-size: 23px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #8a6d2f; line-height: 1.7; font-weight: 600;
+  }
+  .meta-right .n { color: #16233a; letter-spacing: 0.1em; }
+  .seal {
+    position: absolute; right: 152px; top: 152px;
+    width: 76px; height: 76px; border: 1px solid rgba(168, 132, 44, 0.6);
+    transform: rotate(45deg);
+  }
+  .seal::after {
+    content: ""; position: absolute; inset: 9px; border: 1px solid rgba(168, 132, 44, 0.6);
+  }
+</style>
+</head>
+<body>
+  <div class="field"></div>
+  <div class="bar"></div>
+  <div class="frame"></div>
+  <div class="content">
+    <div class="kicker">Sách phi hư cấu · Bản dịch tiếng Việt</div>
+    <div class="title">Cẩm nang<span class="l2">sống đáng giá</span></div>
+    <div class="rule"></div>
+    <div class="sub">Đổi ít tiền, thời gian và sức lực<br>lấy nhiều tuổi thọ, tiền bạc và tự do hơn.</div>
+    <div class="themes">Tuổi thọ<span>·</span>Thời gian<span>·</span>Tiền bạc<span>·</span>Tự do<span>·</span>Gia đình<span>·</span>Công việc</div>
+    <div class="meta">
+      <div class="meta-left">
+        <div class="author">Nguyên tác của eternity4719</div>
+        <div class="orig"><span>《高性价比人生指南》</span> · 767 mục lời khuyên</div>
+      </div>
+      <div class="meta-right">
+        <div class="n">Bản dịch</div>
+        <div>HowToLiveBetter-vi</div>
+      </div>
+    </div>
+  </div>
+  <div class="seal"></div>
+</body>
+</html>
