@@ -23,9 +23,9 @@ const conv = s => s
   .replace(/(\d)\.(\d)/g, '$1,$2')
   .replace(/\u0000/g, '.');
 
-const dir = resolve(ROOT, 'vi/book');
+const dirs = [resolve(ROOT, 'vi/book'), resolve(ROOT, 'vi/docs')];
 let changed = 0;
-for (const f of readdirSync(dir).filter(f => f.endsWith('.md'))) {
+for (const dir of dirs) for (const f of readdirSync(dir).filter(f => f.endsWith('.md'))) {
   const p = resolve(dir, f);
   const text = readFileSync(p, 'utf8');
   const lines = text.split('\n').map(line => {

@@ -48,7 +48,7 @@ Kết quả là: chỉ có dưới 3% người thực hiện được thích ứ
 
 Làm bao nhiêu năm cũng vậy. Nguyên nhân ngay ở đoạn trên: ban ngày bạn vẫn phải gặp sáng, vẫn phải sống đời sống xã hội ban ngày, mấy manh mối này suốt kéo đồng hồ chủ lại.
 
-Nguồn: Folkard S (2008). Do permanent night workers show circadian adjustment? A review based on the endogenous melatonin rhythm. Chronobiology International. <https://doi.org/10.1080/07420520802106835>
+Nguồn: Folkard S (2008). Do permanent night workers show circadian adjustment? A review based on the endogenous melatonin rhythm. Chronobiology International. <https://doi.org/10,1080/07420520802106835>
 
 ## VI. Biết thế nào là bản thân sai lệch đang hại người, không phải đơn thuần thiếu ngủ
 
@@ -70,7 +70,7 @@ Khi hành vi và đồng hồ sinh học lệch nhau khoảng 12 giờ, kết qu
 
 Vì nhiệt lượng cố định, thí nghiệm lại khống chế trong phòng thí nghiệm, nên mấy biến hóa này không thể đổ cho "thiếu ngủ" hay "ăn nhiều". **Chỉ riêng sai lệch đã đủ gây mấy biến hóa này.**
 
-Nguồn: Scheer FA, Hilton MF, Mantzoros CS, Shea SA (2009). Adverse metabolic and cardiovascular consequences of circadian misalignment. PNAS, 106(11), 4453-4458. <https://doi.org/10.1073/pnas.0808180106>
+Nguồn: Scheer FA, Hilton MF, Mantzoros CS, Shea SA (2009). Adverse metabolic and cardiovascular consequences of circadian misalignment. PNAS, 106(11), 4453-4458. <https://doi.org/10,1073/pnas.0808180106>
 
 ## VII. Thứ đầu tiên đổi được: dời ăn cơm về ban ngày
 
@@ -88,7 +88,7 @@ Một tổng quan hệ thống chuyên tìm loại thử nghiệm ngẫu nhiên 
 
 Nên hiện nói được chỉ nhiêu đây: **lúc ca đêm đem ăn cơm cố tập trung ban ngày, có thử nghiệm ngẫu nhiên chống lưng, nhưng chứng cứ còn mỏng.** Nó không tốn tiền, cũng không khó làm, muốn thử cứ thử. Còn thứ hai thử được, ở mục VIII (có thể dời đồng hồ qua không): dùng ánh sáng đem đồng hồ sinh học dời qua trọn.
 
-Nguồn: Chellappa SL 等 (2021). Daytime eating prevents internal circadian misalignment and glucose intolerance in night work. Science Advances. <https://doi.org/10.1126/sciadv.abg9910>；Chellappa SL 等 (2025). Daytime eating during simulated night work mitigates changes in cardiovascular risk factors: secondary analyses of a randomized controlled trial. Nature Communications. <https://doi.org/10.1038/s41467-025-57846-y>；Wulandari F 等 (2026). Cardiometabolic status among shift workers under meal time regulation: A systematic review of randomized controlled trials. Nutrition and Health. <https://doi.org/10.1177/02601060261464874>
+Nguồn: Chellappa SL 等 (2021). Daytime eating prevents internal circadian misalignment and glucose intolerance in night work. Science Advances. <https://doi.org/10,1126/sciadv.abg9910>；Chellappa SL 等 (2025). Daytime eating during simulated night work mitigates changes in cardiovascular risk factors: secondary analyses of a randomized controlled trial. Nature Communications. <https://doi.org/10,1038/s41467-025-57846-y>；Wulandari F 等 (2026). Cardiometabolic status among shift workers under meal time regulation: A systematic review of randomized controlled trials. Nutrition and Health. <https://doi.org/10,1177/02601060261464874>
 
 ## VIII. Dời đồng hồ qua được không
 
@@ -102,7 +102,7 @@ Nghiên cứu của Czeisler et al. năm 1990: 8 nam trẻ làm một tuần ca 
 
 Điều kiện trị liệu, ban đêm cho quang mạnh 7000 tới 12000 lux, ban ngày ngủ trong môi trường gần như toàn đen. Sau bốn ngày, điểm thân nhiệt thấp nhất dời tới gần 3 giờ chiều. Coi như cả cái đảo ngược.
 
-Nguồn: Czeisler CA, Johnson MP, Duffy JF, Brown EN, Ronda JM, Kronauer RE (1990). Exposure to bright light and darkness to treat physiologic maladaptation to night work. New England Journal of Medicine, 322(18), 1253-1259. <https://doi.org/10.1056/NEJM199005033221801>
+Nguồn: Czeisler CA, Johnson MP, Duffy JF, Brown EN, Ronda JM, Kronauer RE (1990). Exposure to bright light and darkness to treat physiologic maladaptation to night work. New England Journal of Medicine, 322(18), 1253-1259. <https://doi.org/10,1056/NEJM199005033221801>
 
 ### Ba thứ thiếu một không được
 
@@ -128,7 +128,7 @@ Một tổng hợp phân tích gom 11 nghiên cứu: quang liệu để tổng g
 
 Một nghiên cứu phòng thí nghiệm khác dùng quang mạnh gián đoạn. Nhóm trị liệu tiết melatonin và đoạn ngủ an bài trùng lắp 4,90 giờ, nhóm đối chiếu chỉ có 2,62 giờ (P=0.002). Trượt xuống thành tích nhận thức nhóm đối chiếu xuất hiện ở ca đêm cuối cùng, ở nhóm trị liệu bị đè xuống. Tác giả viết rõ trong kết luận, bộ cách này còn cần kiểm chứng trên người công nhân ca đêm thật.
 
-Nguồn: Zhao C, Li N, Miao W, He Y, Lin Y (2025). A systematic review and meta-analysis on light therapy for sleep disorders in shift workers. Scientific Reports. <https://doi.org/10.1038/s41598-024-83789-3>；Lammers-van der Holst HM 等 (2021). Efficacy of intermittent exposure to bright light for treating maladaptation to night work on a counterclockwise shift work rotation. Scandinavian Journal of Work, Environment & Health. <https://doi.org/10.5271/sjweh.3953>
+Nguồn: Zhao C, Li N, Miao W, He Y, Lin Y (2025). A systematic review and meta-analysis on light therapy for sleep disorders in shift workers. Scientific Reports. <https://doi.org/10,1038/s41598-024-83789-3>；Lammers-van der Holst HM 等 (2021). Efficacy of intermittent exposure to bright light for treating maladaptation to night work on a counterclockwise shift work rotation. Scandinavian Journal of Work, Environment & Health. <https://doi.org/10,5271/sjweh.3953>
 
 ### Một việc chưa ai đo
 
