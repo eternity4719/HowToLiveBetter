@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:00:49.690Z",
+ "generatedAt": "2026-11-04T02:04:00.956Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 15,
+  "chaptersComplete": 17,
   "entriesSource": 767,
-  "entriesPresent": 713,
-  "entriesVerified": 463,
-  "coverage": 0.6037
+  "entriesPresent": 724,
+  "entriesVerified": 493,
+  "coverage": 0.6428
  },
  "chapters": [
   {
@@ -192,39 +192,26 @@
    "zh": "14-账号与信息安全.md",
    "vi": "14-tai-khoan-va-an-toan-thong-tin.md",
    "entriesSource": 12,
-   "entriesTranslated": 10,
-   "missingEntries": [
-    11,
-    12
-   ],
-   "missingNumbers": 2,
+   "entriesTranslated": 12,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 15,
    "zh": "15-租房与买房.md",
    "vi": "15-thue-va-mua-nha.md",
    "entriesSource": 18,
-   "entriesTranslated": 9,
-   "missingEntries": [
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18
-   ],
-   "missingNumbers": 3,
+   "entriesTranslated": 18,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 16,

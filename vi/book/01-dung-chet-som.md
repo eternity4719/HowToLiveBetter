@@ -20,7 +20,6 @@ Các mục trong chương chia theo chủ đề thành mấy khối dưới đâ
 
 **Khủng hoảng tâm lý**: có ý nghĩ tự tử thì gọi 12356 (mục 25), có ý nghĩ tự tử thì nói với một người trước (mục 32), cờ bạc đến mức vay tiền để đánh tiếp (mục 37), cái giá phải trả sau khi uống thuốc trừ sâu hoặc hít khí gas mà được cứu về (mục 33), cái giá phải trả sau khi ngã từ trên cao (mục 34), cái giá của việc thiếu một quả thận (mục 35), hỏi thẳng người bên cạnh xem họ có từng nghĩ đến tự tử không (mục 43).
 
-
 ### 1. Thắt dây an toàn, cả ghế trước lẫn ghế sau
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Mỗi lần lên xe bạn mất thêm 2 giây.

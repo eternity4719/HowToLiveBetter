@@ -18,7 +18,6 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Bạn đời đồng giới và khuynh hướng tình dục**: bạn đời đồng giới nên làm xong giấy ủy quyền, giám hộ tự định và di chúc (mục 18), đừng cưới bằng cách giấu khuynh hướng tình dục (mục 19).
 
-
 ### 1. Quen nhiều người hơn thay vì bám riết lấy một người: hai người có hợp nhau hay không, trước khi gặp mặt không đoán ra được
 <!-- nhan-chi-phi: tien=0 thoi-gian=vua y-chi=chut loi-ich=vua quy-mo=thoi-gian -->
 - Chi phí: Không tốn tiền. Thời gian thì dành cho việc quen thêm vài người, đừng nghĩ đi nghĩ lại về cùng một người. Cái khó là nhịn được, không bám riết lấy một người.

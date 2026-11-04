@@ -20,7 +20,6 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Thi cử**: không nhờ người thi hộ và không mua bán đáp án (mục 29).
 
-
 ### 1. Không chuyển tiếp trong nhóm tin tai nạn, dịch bệnh, vụ việc chưa rõ thật giả; không chỉnh ảnh, không dùng AI dựng ảnh hiện trường
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Không tốn tiền. Trước khi chuyển tiếp, bạn nhìn qua một lượt xem đó có phải thông báo do cơ quan chức năng đăng không. Không chắc thì đừng chuyển, cũng đừng sửa ảnh, đừng thêm chữ «nghe nói». Cái khó là nén được cơn muốn làm người đầu tiên loan tin.

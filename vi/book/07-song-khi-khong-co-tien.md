@@ -18,7 +18,6 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Chỗ ở và bữa ăn**: xếp hàng xin nhà ở xã hội cho thuê (mục 16), nén chi phí ở và ăn xuống mức thấp nhất (mục 17).
 
-
 ### 1. Thất nghiệp thì trước hết nộp đơn xin tiền bảo hiểm thất nghiệp qua mạng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn tiền. Bạn dùng điện thoại là nộp được đơn, cả ba cổng đều dùng được: ứng dụng 12333 trên điện thoại, ứng dụng nhỏ thẻ bảo hiểm xã hội điện tử trong WeChat hoặc Alipay, và Cổng dịch vụ công bảo hiểm xã hội quốc gia. Bạn có thẻ bảo hiểm xã hội hoặc căn cước công dân trong tay là làm được, đa số địa phương không phải đến tận nơi. Điều kiện trước tiên là bạn đã làm xong đăng ký thất nghiệp.

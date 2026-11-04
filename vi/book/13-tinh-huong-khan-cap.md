@@ -22,7 +22,6 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Xâm hại tình dục và phơi nhiễm HIV**: có thể đã phơi nhiễm HIV (mục 38), sau khi bị xâm hại tình dục (mục 42).
 
-
 ### 1. Có người ngã xuống, gọi không đáp, không thở bình thường thì lập tức ấn mạnh vào lồng ngực, nhờ người xung quanh gọi 120 và tìm AED
 <!-- nhan-chi-phi: tien=0 thoi-gian=vua y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Lớp hồi sức tim phổi của Hội Chữ thập đỏ hoặc của bệnh viện kéo dài nửa ngày đến một ngày, học một lần là đủ dùng nhiều năm. Chưa học vẫn làm được: chồng hai tay lên nhau, đặt ở điểm giữa đường nối hai núm vú, ấn mạnh xuống khoảng 2 lần mỗi giây, đừng dừng lại.

@@ -22,7 +22,6 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Lái xe, nuôi chó và chống trộm**: gây tai nạn giao thông thì đừng bỏ chạy (mục 1), đã uống rượu thì không cầm vô lăng (mục 7), nuôi chó phải xích dây (mục 30), cửa ra vào và cửa sổ phải lắp khóa tốt (mục 46).
 
-
 ### 1. Gặp tai nạn giao thông thì trước hết dừng xe, cứu người, báo cảnh sát, đừng bỏ chạy
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Không tốn tiền. Bạn dừng xe, bật đèn cảnh báo nguy hiểm, cứu người, gọi điện báo cảnh sát; chờ cảnh sát giao thông nhiều nhất mất một hai giờ. Nếu là vụ nhỏ, không ai bị thương và hai bên không tranh cãi về sự việc, bạn chụp ảnh hiện trường trước. Sau đó bạn ghi lại họ tên, số điện thoại, biển số xe, số giấy phép lái xe, số giấy chứng nhận bảo hiểm của bên kia và chỗ bị đâm. Hai bên ký xong thì có thể rời hiện trường trước, rồi tự thương lượng với nhau.
