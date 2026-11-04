@@ -1,45 +1,43 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T02:30:09.083Z
+- Thời điểm: 2026-11-04T02:44:50.769Z
 - Nguồn: `e2605d3`
-- Chương đủ mục: 29/34
-- Mục đã dịch lại và gộp: 683/767 (89.0%); hiện có 758 mục trong sách
-- Mục thiếu số: 25; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
+- Chương đủ mục: 34/34
+- Mục đã dịch lại và gộp: 767/767 (100.0%); hiện có 767 mục trong sách
+- Mục thiếu số: 0; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
 - Kết quả: đạt các bước đã chạy
 
 ## audit: đạt
 
 ```
-20-刚出生的孩子怎么带.md → 20-cham-tre-so-sinh.md: 缺 0，数字 1，链接 0，中文 0，短 0
-30-上学以后的孩子.md → 30-con-cai-tuoi-di-hoc.md: 缺 3，数字 2，链接 0，中文 0，短 0
-31-十八岁之后有哪几条路.md → 31-nhung-con-duong-sau-tuoi-muoi-tam.md: 缺 1，数字 1，链接 0，中文 0，短 0
-32-出国留学.md → 32-du-hoc-nuoc-ngoai.md: 缺 2，数字 6，链接 0，中文 0，短 0
-33-残疾之后怎么活.md → 33-song-sau-khi-khuyet-tat.md: 缺 1，数字 6，链接 0，中文 0，短 0
-34-家里的常备药别吃出事.md → 34-thuoc-san-trong-nha-dung-de-uong-thanh-hoa.md: 缺 2，数字 5，链接 0，中文 0，短 0
+章节 34，中文 767 条，越南语 767 条
+缺条 0，缺字段 0，缺数字的条 0，缺链接的条 0
+来源栏外的中文 0 字，偏短字段 0，偏长字段 2609
+来源栏与原文不一致 0 条，说人话含研究行话 0 条，引文里中文 0 字，标题含中文 0 条
 ```
 
 ## manifest: đạt
 
 ```
-Manifest: 29/34 chương đủ, 683/767 mục đã dịch lại và gộp (89.0%); hiện có 758 mục trong sách
+Manifest: 34/34 chương đủ, 767/767 mục đã dịch lại và gộp (100.0%); hiện có 767 mục trong sách
 ```
 
 ## build: đạt
 
 ```
-Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 758 mục (A 492 · B 214 · C 52), 9 phụ lục, 6145 KB chưa nén
+Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 767 mục (A 495 · B 220 · C 52), 9 phụ lục, 6246 KB chưa nén
 ```
 
 ## content: đạt
 
 ```
-34 chương, 758 mục, 9 phụ lục; 0 vấn đề
+34 chương, 767 mục, 9 phụ lục; 0 vấn đề
 ```
 
 ## links: đạt
 
 ```
-2330 liên kết nội bộ, 0 hỏng; 2547 liên kết ngoài (không kiểm tra mạng)
+2359 liên kết nội bộ, 0 hỏng; 2575 liên kết ngoài (không kiểm tra mạng)
 ```
 
 ## epubcheck: đạt

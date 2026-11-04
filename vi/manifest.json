@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:38:16.056Z",
+ "generatedAt": "2026-11-04T02:44:47.536Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 33,
+  "chaptersComplete": 34,
   "entriesSource": 767,
-  "entriesPresent": 765,
-  "entriesVerified": 754,
-  "coverage": 0.9831
+  "entriesPresent": 767,
+  "entriesVerified": 767,
+  "coverage": 1
  },
  "chapters": [
   {
@@ -25,7 +25,7 @@
    "entriesSource": 48,
    "entriesTranslated": 48,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -38,7 +38,7 @@
    "entriesSource": 47,
    "entriesTranslated": 47,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -103,7 +103,7 @@
    "entriesSource": 23,
    "entriesTranslated": 23,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -129,7 +129,7 @@
    "entriesSource": 29,
    "entriesTranslated": 29,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -272,7 +272,7 @@
    "entriesSource": 17,
    "entriesTranslated": 17,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -452,16 +452,13 @@
    "zh": "34-家里的常备药别吃出事.md",
    "vi": "34-thuoc-san-trong-nha-dung-de-uong-thanh-hoa.md",
    "entriesSource": 13,
-   "entriesTranslated": 11,
-   "missingEntries": [
-    12,
-    13
-   ],
-   "missingNumbers": 5,
+   "entriesTranslated": 13,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   }
  ]
 }

@@ -63,7 +63,9 @@ const parseNum = t => {
 };
 const numbers = s => {
   const expanded = num(s)
-    .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*(万|亿|千)/g, (m, n, u) => String(Math.round(parseNum(n) * (u === '万' ? 1e4 : u === '亿' ? 1e8 : 1e3))))
+    .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*万亿/g, (m, n) => String(Math.round(parseNum(n) * 1e12)))
+    .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*千\s*(?:余)?\s*(?:元|块)/g, (m, n) => String(Math.round(parseNum(n) * 1e3)))
+    .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*(万|亿)/g, (m, n, u) => String(Math.round(parseNum(n) * (u === '万' ? 1e4 : 1e8))))
     .replace(/(\d+(?:[.,]\d+)*)\s*(trăm triệu|trăm nghìn|nghìn tỷ)/gi, (m, n, u) => String(Math.round(parseNum(n) * ({ 'trăm triệu': 1e8, 'trăm nghìn': 1e5, 'nghìn tỷ': 1e12 }[u.toLowerCase()]))))
     .replace(/(\d+(?:[.,]\d+)*)\s*(nghìn|triệu|tỷ)/gi, (m, n, u) => String(Math.round(parseNum(n) * ({ 'nghìn': 1e3, 'triệu': 1e6, 'tỷ': 1e9 }[u.toLowerCase()]))));
   return [...expanded.matchAll(/\d+(?:[.,]\d+)*/g)].map(m => m[0].replace(/[.,]/g, ''));

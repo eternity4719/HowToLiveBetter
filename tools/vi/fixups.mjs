@@ -9,6 +9,15 @@ const FIXES = [
    '### 32. Ý nghĩ tự tử vừa nảy ra thì nói ngay cho một người bên cạnh, giao mấy chục phút đó cho họ',
    '### 32. Ý nghĩ tự tử vừa nảy ra thì nói ngay với một người bên cạnh, đừng ở một mình trong mấy chục phút đó'],
 
+
+  ['vi/book/01-dung-chet-som.md',
+   '90895,5 tỷ tệ',
+   '9.089,55 tỷ tệ'],
+
+  ['vi/book/01-dung-chet-som.md',
+   '25007,5 tỷ tệ',
+   '2.500,75 tỷ tệ'],
+
   ['vi/book/18-nuoi-con-co-dang-khong.md',
    'Vi phạm thì bị phạt 1000 đến 5000 tệ mỗi người. Muốn đòi bồi thường thì đi thế nào, xem phần 19.',
    'Nếu đơn vị vi phạm quy định về tăng ca hoặc ca đêm trong thời gian cho con bú thì bị phạt 1000 đến 5000 tệ mỗi người. Còn bị giảm lương hay sa thải trái pháp luật thì đi trọng tài lao động để đòi phục hồi hoặc bồi thường; cách làm xem phần 19.'],
