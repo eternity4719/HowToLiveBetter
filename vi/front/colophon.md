@@ -26,7 +26,7 @@ Nếu bạn sửa nội dung, hãy ghi rõ là đã sửa. Giấy phép CC BY 4.
 
 ## Phông chữ
 
-Ấn bản dùng các phông chữ phát hành theo SIL Open Font License 1.1: Literata (Google Fonts), Be Vietnam Pro (Google Fonts), Cormorant Garamond (Google Fonts). Giấy phép kèm theo trong thư mục `fonts/` của tệp EPUB.
+Ấn bản dùng các phông chữ phát hành theo SIL Open Font License 1.1: Literata (Google Fonts), Be Vietnam Pro (Google Fonts), Cormorant Garamond (Google Fonts). Phông phụ HTLB Symbols, dùng cho các ký hiệu như ℃, ≥, γ, là bản rút gọn và đổi tên của DejaVu Serif, theo giấy phép Bitstream Vera. Thông báo bản quyền và giấy phép nằm trong siêu dữ liệu của từng tệp phông trong thư mục `fonts/` của tệp EPUB, và trong `vi/fonts/` của kho mã nguồn.
 
 ## Miễn trừ
 
