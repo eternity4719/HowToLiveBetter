@@ -2,6 +2,8 @@
 
 Bản dịch tiếng Việt của 《高性价比人生指南》 (HowToLiveBetter), nguyên tác của **eternity4719**: <https://github.com/eternity4719/HowToLiveBetter>.
 
+Kho mã nguồn, bản phát hành và nơi gửi báo lỗi của bản tiếng Việt: <https://github.com/thuongtin/HowToLiveBetter>.
+
 Ấn bản điện tử: **`dist/HowToLiveBetter-vi.epub`** (EPUB 3, reflowable, ngôn ngữ `vi`).
 
 ## Nội dung

@@ -5,7 +5,9 @@
 *Đổi ít tiền, thời gian và sức lực lấy nhiều tuổi thọ, tiền bạc và tự do hơn*
 
 Nguyên tác: 《高性价比人生指南》 của **eternity4719**.
-Kho mã nguồn: <https://github.com/eternity4719/HowToLiveBetter>
+Kho mã nguồn nguyên tác: <https://github.com/eternity4719/HowToLiveBetter>
+
+Bản tiếng Việt: **Cẩm nang sống đáng giá — bản dịch tiếng Việt**. Kho mã nguồn, bản phát hành và nơi gửi báo lỗi: <https://github.com/thuongtin/HowToLiveBetter>
 
 Bản dịch tiếng Việt kế thừa bản dịch cộng đồng của **chuanman2707** (CC BY 4.0), được đối chiếu lại với nguyên bản tiếng Trung, dịch bổ sung các mục mới, hiệu đính và thiết kế cho ấn bản này bởi **nhóm HowToLiveBetter-vi**.
 
@@ -18,7 +20,7 @@ Bản dịch tiếng Việt kế thừa bản dịch cộng đồng của **chua
 
 Khi trích dẫn hoặc phát hành lại, xin ghi:
 
-> «Cẩm nang sống đáng giá», nguyên tác của eternity4719, bản dịch tiếng Việt của nhóm HowToLiveBetter-vi (dựa trên bản dịch cộng đồng của chuanman2707), giấy phép CC BY 4.0. Nguồn: https://github.com/eternity4719/HowToLiveBetter
+> «Cẩm nang sống đáng giá», nguyên tác của eternity4719, bản dịch tiếng Việt của nhóm HowToLiveBetter-vi (dựa trên bản dịch cộng đồng của chuanman2707), giấy phép CC BY 4.0. Nguồn nguyên tác: https://github.com/eternity4719/HowToLiveBetter. Bản tiếng Việt: https://github.com/thuongtin/HowToLiveBetter
 
 Nếu bạn sửa nội dung, hãy ghi rõ là đã sửa. Giấy phép CC BY 4.0 cho phép sao chép, phân phối, sửa đổi và sử dụng thương mại, miễn là ghi công và giữ giấy phép cho phần được phép.
 

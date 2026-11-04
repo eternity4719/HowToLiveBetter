@@ -1,6 +1,6 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T03:38:01.008Z
+- Thời điểm: 2026-11-04T06:04:35.672Z
 - Nguồn: `e2605d3`
 - Chương đủ mục: 34/34
 - Mục đã dịch lại và gộp: 767/767 (100.0%); hiện có 767 mục trong sách
@@ -25,7 +25,7 @@ Manifest: 34/34 chương đủ, 767/767 mục đã dịch lại và gộp (100.0
 ## build: đạt
 
 ```
-Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 767 mục (A 495 · B 220 · C 52), 9 phụ lục, 6248 KB chưa nén
+Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 767 mục (A 495 · B 220 · C 52), 9 phụ lục, 6249 KB chưa nén
 ```
 
 ## content: đạt
@@ -37,7 +37,7 @@ Manifest: 34/34 chương đủ, 767/767 mục đã dịch lại và gộp (100.0
 ## links: đạt
 
 ```
-2364 liên kết nội bộ, 0 hỏng; 2575 liên kết ngoài (không kiểm tra mạng)
+2364 liên kết nội bộ, 0 hỏng; 2578 liên kết ngoài (không kiểm tra mạng)
 ```
 
 ## epubcheck: đạt

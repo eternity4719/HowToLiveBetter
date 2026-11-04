@@ -14,7 +14,7 @@ Bản tiếng Việt giữ nguyên cách làm đó. Chúng tôi không biến cu
 
 ## Về chất lượng bản dịch
 
-Đây là một cuốn sách dài, có gần 800 mục và hàng nghìn con số. Bản dịch được thực hiện có sự hỗ trợ của công cụ AI, sau đó được kiểm tra tự động theo từng mục: đối chiếu số liệu, liên kết, cấu trúc và độ đầy đủ với nguyên bản tiếng Trung. Những chỗ lệch số, thiếu câu hoặc thiếu dẫn chứng đều bị đánh dấu và sửa lại. Dù vậy, sai sót vẫn có thể còn. Nếu bạn phát hiện một con số bị dịch sai, một câu bị hiểu nhầm hoặc một chỗ tối nghĩa, xin gửi về kho mã nguồn của dự án. Một cuốn sách như thế này chỉ tốt lên khi người đọc chỉ ra chỗ sai.
+Đây là một cuốn sách dài, có gần 800 mục và hàng nghìn con số. Bản dịch được thực hiện có sự hỗ trợ của công cụ AI, sau đó được kiểm tra tự động theo từng mục: đối chiếu số liệu, liên kết, cấu trúc và độ đầy đủ với nguyên bản tiếng Trung. Những chỗ lệch số, thiếu câu hoặc thiếu dẫn chứng đều bị đánh dấu và sửa lại. Dù vậy, sai sót vẫn có thể còn. Nếu bạn phát hiện một con số bị dịch sai, một câu bị hiểu nhầm hoặc một chỗ tối nghĩa, xin gửi về kho mã nguồn của bản tiếng Việt: <https://github.com/thuongtin/HowToLiveBetter>. Một cuốn sách như thế này chỉ tốt lên khi người đọc chỉ ra chỗ sai.
 
 ## Một lời nhắc
 
