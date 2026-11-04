@@ -47,9 +47,25 @@ function fieldMap(body, labels) {
   return out;
 }
 
+const parseNum = t => {
+  if (t.includes(',') && t.includes('.')) return Number(t.replace(/\./g, '').replace(',', '.'));
+  if (t.includes(',')) {
+    // «1,234» khó phân biệt nghìn hay thập phân; coi là thập phân trừ khi có đúng 3 chữ số và phần nguyên dài
+    const [a, b] = t.split(',');
+    return b.length === 3 && a.length > 1 ? Number(a + b) : Number(a + '.' + b);
+  }
+  if (t.includes('.')) {
+    const [a, b] = t.split('.');
+    if (b.length === 3 && a.length > 1) return Number(a + b);
+    return Number(t);
+  }
+  return Number(t);
+};
 const numbers = s => {
-  const expanded = num(s).replace(/(\d+(?:[.,]\d+)?)\s*(万|亿)/g,
-    (m, n, u) => String(parseFloat(n.replace(',', '.')) * (u === '万' ? 1e4 : 1e8)));
+  const expanded = num(s)
+    .replace(/(\d+(?:[.,]\d+)*)\s*(万|亿)/g, (m, n, u) => String(Math.round(parseNum(n) * (u === '万' ? 1e4 : 1e8))))
+    .replace(/(\d+(?:[.,]\d+)*)\s*(trăm triệu|trăm nghìn|nghìn tỷ)/gi, (m, n, u) => String(Math.round(parseNum(n) * ({ 'trăm triệu': 1e8, 'trăm nghìn': 1e5, 'nghìn tỷ': 1e12 }[u.toLowerCase()]))))
+    .replace(/(\d+(?:[.,]\d+)*)\s*(nghìn|triệu|tỷ)/gi, (m, n, u) => String(Math.round(parseNum(n) * ({ 'nghìn': 1e3, 'triệu': 1e6, 'tỷ': 1e9 }[u.toLowerCase()]))));
   return [...expanded.matchAll(/\d+(?:[.,]\d+)*/g)].map(m => m[0].replace(/[.,]/g, ''));
 };
 const urls = s => (s.match(/https?:\/\/[^\s<>）)」】]+/g) ?? []).map(u => u.replace(/[.,;]+$/, ''));

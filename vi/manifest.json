@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T00:56:27.142Z",
+ "generatedAt": "2026-11-04T00:59:36.259Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,10 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 4,
+  "chaptersComplete": 5,
   "entriesSource": 767,
-  "entriesTranslated": 675,
-  "coverage": 0.8801
+  "entriesPresent": 682,
+  "entriesVerified": 112,
+  "coverage": 0.146
  },
  "chapters": [
   {
@@ -22,19 +23,13 @@
    "zh": "01-不要早死.md",
    "vi": "01-dung-chet-som.md",
    "entriesSource": 48,
-   "entriesTranslated": 43,
-   "missingEntries": [
-    44,
-    45,
-    46,
-    47,
-    48
-   ],
-   "missingNumbers": 18,
+   "entriesTranslated": 48,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 2,
@@ -48,7 +43,7 @@
     46,
     47
    ],
-   "missingNumbers": 19,
+   "missingNumbers": 17,
    "sourceMismatch": 0,
    "lowRatio": 1,
    "cjkOutsideSource": 0,
@@ -59,16 +54,13 @@
    "zh": "03-不要浪费精力.md",
    "vi": "03-dung-lang-phi-suc-luc.md",
    "entriesSource": 27,
-   "entriesTranslated": 25,
-   "missingEntries": [
-    26,
-    27
-   ],
-   "missingNumbers": 6,
+   "entriesTranslated": 27,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 4,
@@ -77,7 +69,7 @@
    "entriesSource": 18,
    "entriesTranslated": 18,
    "missingEntries": [],
-   "missingNumbers": 1,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -96,7 +88,7 @@
     50,
     51
    ],
-   "missingNumbers": 14,
+   "missingNumbers": 13,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -115,7 +107,7 @@
     34,
     35
    ],
-   "missingNumbers": 8,
+   "missingNumbers": 7,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -143,11 +135,11 @@
    "entriesSource": 46,
    "entriesTranslated": 46,
    "missingEntries": [],
-   "missingNumbers": 12,
+   "missingNumbers": 8,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "complete"
+   "status": "partial"
   },
   {
    "chapter": 9,
@@ -177,7 +169,7 @@
     22,
     23
    ],
-   "missingNumbers": 6,
+   "missingNumbers": 5,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -229,7 +221,7 @@
     47,
     48
    ],
-   "missingNumbers": 15,
+   "missingNumbers": 16,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -337,7 +329,7 @@
     23,
     24
    ],
-   "missingNumbers": 5,
+   "missingNumbers": 4,
    "sourceMismatch": 0,
    "lowRatio": 1,
    "cjkOutsideSource": 0,
@@ -399,7 +391,7 @@
     24,
     25
    ],
-   "missingNumbers": 3,
+   "missingNumbers": 2,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -448,7 +440,7 @@
     12,
     13
    ],
-   "missingNumbers": 2,
+   "missingNumbers": 1,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -496,7 +488,7 @@
    "missingEntries": [
     14
    ],
-   "missingNumbers": 6,
+   "missingNumbers": 5,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -528,7 +520,7 @@
    "missingEntries": [
     17
    ],
-   "missingNumbers": 2,
+   "missingNumbers": 1,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,

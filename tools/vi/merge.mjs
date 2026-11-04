@@ -53,6 +53,9 @@ for (const f of readdirSync(OUT).filter(f => /^ch\d\d-\d+\.md$/.test(f))) {
 const zhFiles = readdirSync(ZH).filter(f => f.endsWith('.md')).sort();
 const viFiles = readdirSync(VI).filter(f => f.endsWith('.md')).sort();
 const report = { merged: [], skipped: [], entries: 0, missing: [] };
+const LOG = resolve(ROOT, 'vi/qa/merged.json');
+let mergedLog = {};
+try { mergedLog = JSON.parse(readFileSync(LOG, 'utf8')); } catch {}
 
 for (const [idx, zf] of zhFiles.entries()) {
   const vf = viFiles[idx];
@@ -82,8 +85,10 @@ for (const [idx, zf] of zhFiles.entries()) {
   const next = `[← Mục lục](../README.md)\n\n${titleLine}\n\n${intro}\n\n${body}`.replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
   if (!check) writeFileSync(resolve(VI, vf), next);
   report.merged.push({ chapter: ch, vi: vf, entries: z.entries.length });
+  mergedLog[ch] = { vi: vf, entries: z.entries.length, at: new Date().toISOString() };
   report.entries += z.entries.length;
 }
 
+if (!check) writeFileSync(LOG, JSON.stringify(mergedLog, null, 1));
 console.log(`${check ? 'Kiểm' : 'Gộp'}: ${report.merged.length} chương, ${report.entries} mục; ${report.skipped.length} chương còn thiếu`);
 for (const s of report.skipped) console.log(`  - ch${s.chapter} ${s.vi}: thiếu ${s.missing} mục (${s.list.join(', ')})`);

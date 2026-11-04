@@ -45,7 +45,7 @@ const md = `# Báo cáo kiểm tra bản tiếng Việt
 - Thời điểm: ${new Date().toISOString()}
 - Nguồn: \`${manifest.source.sourceCommit}\`
 - Chương đủ mục: ${manifest.totals.chaptersComplete}/${manifest.totals.chapters}
-- Mục: ${manifest.totals.entriesTranslated}/${manifest.totals.entriesSource} (${(100 * manifest.totals.coverage).toFixed(1)}%)
+- Mục đã dịch lại và gộp: ${manifest.totals.entriesVerified}/${manifest.totals.entriesSource} (${(100 * manifest.totals.coverage).toFixed(1)}%); hiện có ${manifest.totals.entriesPresent} mục trong sách
 - Mục thiếu số: ${audit.totals.numMissing}; nguồn lệch: ${audit.totals.sourceMismatch}; chữ Hán ngoài Nguồn: ${audit.totals.cjkOutsideSource}; tiêu đề còn chữ Hán: ${audit.totals.titleCjk}
 - Kết quả: ${failed.length ? 'CÓ LỖI' : 'đạt các bước đã chạy'}
 

@@ -15,6 +15,9 @@ const fmt = n => {
 const conv = s => s
   .replace(/(\d+(?:[.,]\d+)?)\s*(?:万|vạn)/g, (m, n) => fmt(Number(n.replace(',', '.')) * 1e4) ?? m)
   .replace(/(\d+(?:[.,]\d+)?)\s*(?:亿|ức)/g, (m, n) => fmt(Number(n.replace(',', '.')) * 1e8) ?? m)
+  .replace(/(\d+(?:[.,]\d+)?)\s*trăm triệu/gi, (m, n) => fmt(Number(n.replace(',', '.')) * 100) + ' triệu')
+  .replace(/(\d+(?:[.,]\d+)?)\s*trăm nghìn/gi, (m, n) => fmt(Number(n.replace(',', '.')) * 100) + ' nghìn')
+  .replace(/(\d+(?:[.,]\d+)?)\s*nghìn tỷ/gi, (m, n) => fmt(Number(n.replace(',', '.')) * 1000) + ' tỷ')
   // dấu thập phân kiểu Việt Nam: 0.65 → 0,65; giữ nguyên nhóm nghìn 3.400.000
   .replace(/\b\d{1,3}(?:\.\d{3})+\b/g, m => m.split('.').join('\u0000'))
   .replace(/(\d)\.(\d)/g, '$1,$2')
