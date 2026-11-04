@@ -1,72 +1,74 @@
-# Làm nền tảng cần những giấy phép gì: bảng đối chiếu và bảng quyết sách chọn máy chủ
+# Làm nền tảng cần những giấy phép gì: bảng đối chiếu và bảng quyết định chọn máy chủ
 
-Bài dài này tương ứng phần 26 trong README. Ở đây chỉ để ba bảng và mấy đoạn dễ nhầm nhất. Nội dung mục và nguồn đều ở README. Đăng ký công ty, khai thuế thế nào, xem phần 12 (khởi nghiệp và làm ăn). Người kỹ thuật đi làm thuê đừng đạp những vạch đó, xem phần 11 (lập trình viên và dân kỹ thuật).
+Bài dài này ứng với phần 26 của README. Ở đây chỉ có ba bảng và mấy đoạn dễ hiểu nhầm nhất. Nội dung từng mục và nguồn đều nằm trong README. Cách đăng ký công ty và cách khai thuế thì xem phần 12 (khởi nghiệp và làm ăn). Những vạch đỏ mà người làm kỹ thuật đi làm thuê phải tránh thì xem phần 11 (lập trình viên và người làm kỹ thuật).
 
-## I. Trước phán xem bạn làm loại kinh doanh nào
+Chỉ áp dụng ở Trung Quốc: toàn bộ giấy phép, thủ tục và căn cứ pháp lý trong bài là của Trung Quốc đại lục.
 
-Một site thường đồng thời dính mấy loại kinh doanh. Dính mấy loại, phải làm mấy tấm giấy, không chỉ lựa một tấm làm.
+## I. Trước hết phải xác định bạn đang làm loại nghiệp vụ nào
 
-| Việc bạn đang làm | Loại hình kinh doanh tương ứng | Cần gì | Căn cứ chính |
+Một website thường dính vào nhiều loại nghiệp vụ cùng lúc. Dính mấy loại thì phải làm mấy loại giấy phép, không thể chỉ chọn một loại mà làm.
+
+| Việc bạn đang làm | Loại nghiệp vụ tương ứng | Cần giấy gì | Căn cứ chính |
 |---|---|---|---|
-| Site thông tin không thu tiền, blog cá nhân, site chính công ty | Dịch vụ tin tức internet phi kinh doanh | Lưu án ICP. Nó không phải giấy phép, là trước mở site báo danh với bộ môn chủ quản | Cách Quản lý Dịch vụ Tin tức Internet, Điều 4 |
-| Thu tiền người dùng như hội viên, dịch vụ tăng giá trị, nội dung trả phí | Dịch vụ tin tức internet kinh doanh | Giấy phép kinh doanh viễn thông gia tăng (nghiệp vụ dịch vụ tin tức). Quản là chuyện bạn thu tiền người dùng | Điều 3, 4, 7 cùng văn kiện |
-| Bán hàng hay dịch vụ ngay trên website, App của mình, không có người khác vào mở cửa hàng; hoặc chỉ mở mini-program, tài khoản công khai, cửa hàng online | Cục Quản lý Thông tin liên lạc tỉnh Quảng Đông cho biết, theo yêu cầu của Bộ Công nghiệp và Công nghệ thông tin, loại này không tính là nghiệp vụ viễn thông gia tăng | Không cần làm giấy phép viễn thông gia tăng. Hễ cho người khác vào mở cửa hàng thì phải làm giấy theo hai dòng ngay trên và ngay dưới: thu tiền người dùng, và dắt mối hai bên mua bán | Bản hỏi đáp thường gặp 2025 của Cục Quản lý Thông tin liên lạc tỉnh Quảng Đông, câu hỏi thứ nhất |
-| Dắt mối cho hai bên mua bán, xử lý giao dịch và đơn hàng | Nghiệp vụ xử lý dữ liệu trực tuyến và xử lý giao dịch | Giấy phép kinh doanh viễn thông gia tăng (B21). Quản là chuyện bạn thay hai bên mua bán xử lý giao dịch | Danh mục phân loại Nghiệp vụ Viễn thông (bản 2015) B21 |
-| Phát trực tiếp có streamer lên hình, phát trực tiếp game | Biểu diễn mạng | Giấy phép kinh doanh văn hóa mạng, phạm vi kinh doanh gồm biểu diễn mạng. Không có nó, trên site không cho streamer lên hình | Cách Quản lý Hoạt động Kinh doanh Biểu diễn Mạng, Điều 4 |
-| Tự làm chương trình video, hay gom chương trình chỗ khác lại, hay cho người dùng tải video lên site | Dịch vụ chương trình nghe nhìn internet | Giấy phép truyền bá chương trình nghe nhìn mạng thông tin. Quản là chuyện trên site phát chương trình video | Quy định Quản lý Dịch vụ Chương trình Nghe nhìn Internet, Điều 7, 8 |
-| Trong phát trực tiếp đưa hàng bán | Marketing phát trực tiếp mạng | Giấy tờ nên làm theo mấy dòng trên. Ngoài ra còn phải kiểm nghiệm thương gia, lưu giữ ký lục | Cách Quản lý Marketing Phát trực tiếp Mạng (thí hành), Điều 8 |
-| Làm tin tức thông tin | Dịch vụ tin tức internet | Giấy phép dịch vụ tin tức internet. Không có nó, trên site không phát tin tức được | Quy định Quản lý Dịch vụ Phát trực tiếp Internet, Điều 5 |
-| Tự xây phòng máy bán máy chủ, bán băng thông | Nghiệp vụ trung tâm dữ liệu internet, nghiệp vụ dịch vụ tiếp nhập internet | Giấy phép kinh doanh viễn thông gia tăng (B11, B14). Quản là chuyện bạn bán phòng máy và băng thông cho người khác | Danh mục phân loại Nghiệp vụ Viễn thông (bản 2015) B11, B14 |
+| Website thông tin không thu tiền, blog cá nhân, trang web của công ty | Dịch vụ thông tin internet không kinh doanh | Đăng ký ICP. Đây không phải giấy phép mà là bước báo danh với cơ quan quản lý trước khi mở trang | Điều 4 «Biện pháp quản lý dịch vụ thông tin internet» |
+| Hội viên, dịch vụ giá trị gia tăng, nội dung trả phí mà bạn thu tiền của người dùng | Dịch vụ thông tin internet có kinh doanh | Giấy phép kinh doanh nghiệp vụ viễn thông giá trị gia tăng (nghiệp vụ dịch vụ thông tin). Giấy này quản đúng việc bạn thu tiền của người dùng | Điều 3, 4 và 7 của văn bản trên |
+| Tự bán hàng hóa, dịch vụ trên website hay ứng dụng của mình, không cho người khác vào mở gian hàng; hoặc chỉ mở tiểu trình, tài khoản công chúng, cửa hàng trực tuyến | Cục Quản lý thông tin liên lạc tỉnh Quảng Đông nói rằng theo yêu cầu của Bộ Công nghiệp và Công nghệ thông tin thì trường hợp này không tính là nghiệp vụ viễn thông giá trị gia tăng | Không phải làm giấy phép viễn thông giá trị gia tăng. Nhưng một khi đã cho người khác vào mở gian hàng thì phải làm theo hai dòng sát trên và sát dưới | Mục hỏi đáp thường gặp năm 2025 của Cục Quản lý thông tin liên lạc tỉnh Quảng Đông, câu hỏi thứ nhất |
+| Làm trung gian cho người mua và người bán, xử lý giao dịch và đơn hàng | Nghiệp vụ xử lý dữ liệu trực tuyến và xử lý giao dịch | Giấy phép kinh doanh nghiệp vụ viễn thông giá trị gia tăng (B21). Giấy này quản việc bạn xử lý giao dịch thay cho hai bên mua bán | Mục lục phân loại nghiệp vụ viễn thông (bản 2015) B21 |
+| Phát trực tiếp có người dẫn chương trình lên hình, phát trực tiếp trò chơi | Biểu diễn trên mạng | Giấy phép kinh doanh văn hóa mạng, phạm vi kinh doanh phải ghi có biểu diễn trên mạng. Không có giấy này thì trên trang không được để người dẫn lên hình | Điều 4 «Biện pháp quản lý hoạt động kinh doanh biểu diễn trên mạng» |
+| Tự làm chương trình video, hoặc gom chương trình từ nơi khác, hoặc cho người dùng đăng video lên trang | Dịch vụ chương trình nghe nhìn internet | Giấy phép truyền bá chương trình nghe nhìn qua mạng thông tin. Giấy này quản việc trên trang có phát chương trình video | Điều 7 và 8 «Quy định quản lý dịch vụ chương trình nghe nhìn internet» |
+| Bán hàng trong buổi phát trực tiếp | Tiếp thị qua phát trực tiếp trên mạng | Giấy tờ thì làm theo các dòng trên. Ngoài ra còn phải xác minh người bán và lưu lại hồ sơ | Điều 8 «Biện pháp quản lý tiếp thị qua phát trực tiếp trên mạng (thí điểm)» |
+| Làm tin tức | Dịch vụ thông tin tin tức internet | Giấy phép dịch vụ thông tin tin tức internet. Không có giấy này thì trên trang không được đăng tin | Điều 5 «Quy định quản lý dịch vụ phát trực tiếp internet» |
+| Tự dựng phòng máy để bán máy chủ, bán băng thông | Nghiệp vụ trung tâm dữ liệu internet, nghiệp vụ cung cấp dịch vụ truy nhập internet | Giấy phép kinh doanh nghiệp vụ viễn thông giá trị gia tăng (B11, B14). Giấy này quản việc bạn bán phòng máy và băng thông cho người khác | Mục lục phân loại nghiệp vụ viễn thông (bản 2015) B11, B14 |
 
-Loại phát trực tiếp nào ứng tấm giấy nào, phần ý kiến chỉ đạo 2021 của bảy bộ môn nói thẳng nhất: "nền tảng phát trực tiếp triển khai hoạt động biểu diễn mạng kinh doanh phải có 《Giấy phép Kinh doanh Văn hóa Mạng》và làm lưu án ICP; nền tảng phát trực tiếp triển khai dịch vụ chương trình nghe nhìn mạng phải có 《Giấy phép Truyền bá Chương trình Nghe nhìn Mạng Thông tin》(hay hoàn thành đăng ký trong hệ thống quản lý đăng ký tin tức nền tảng nghe nhìn mạng toàn quốc) và làm lưu án ICP; nền tảng phát trực tiếp triển khai dịch vụ tin tức internet phải có 《Giấy phép Dịch vụ Tin tức Internet》."
+Loại phát trực tiếp nào ứng với tấm giấy nào thì ý kiến chỉ đạo của bảy bộ ngành năm 2021 nói thẳng nhất: «Nền tảng phát trực tiếp có hoạt động biểu diễn trên mạng mang tính kinh doanh phải có giấy phép kinh doanh văn hóa mạng và phải đăng ký ICP; nền tảng phát trực tiếp có dịch vụ chương trình nghe nhìn trên mạng phải có giấy phép truyền bá chương trình nghe nhìn qua mạng thông tin (hoặc hoàn thành đăng ký trong hệ thống quản lý đăng ký thông tin nền tảng nghe nhìn trên mạng toàn quốc) và phải đăng ký ICP; nền tảng phát trực tiếp có dịch vụ thông tin tin tức internet phải có giấy phép dịch vụ thông tin tin tức internet.»
 
-Phát trực tiếp chia ba loại. Có streamer biểu diễn, làm 《Giấy phép Kinh doanh Văn hóa Mạng》. Làm chương trình nghe nhìn mạng, làm 《Giấy phép Truyền bá Chương trình Nghe nhìn Mạng Thông tin》, hay hoàn thành đăng ký trong hệ thống quản lý đăng ký tin tức nền tảng nghe nhìn mạng toàn quốc. Làm tin tức, làm 《Giấy phép Dịch vụ Tin tức Internet》. Hai loại trước đều phải làm lưu án ICP.
+Phát trực tiếp chia làm ba loại. Loại có người dẫn lên biểu diễn thì làm giấy phép kinh doanh văn hóa mạng. Loại làm chương trình nghe nhìn trên mạng thì làm giấy phép truyền bá chương trình nghe nhìn qua mạng thông tin, hoặc hoàn thành đăng ký trong hệ thống quản lý đăng ký thông tin nền tảng nghe nhìn trên mạng toàn quốc. Loại làm tin tức thì làm giấy phép dịch vụ thông tin tin tức internet. Hai loại đầu đều phải đăng ký ICP.
 
-### Ba điểm dễ nhầm
+### Ba chỗ dễ hiểu nhầm
 
-**Thân phận cá nhân làm không được giấy phép viễn thông gia tăng.** Điều kiện xin ghi ngay khoản thứ nhất "người kinh doanh là công ty thành lập theo pháp". Bạn phải có một công ty trước, cá nhân cầm thẻ căn cước đi xin làm không xong. Chỉ kinh doanh trong tỉnh mình, vốn đăng ký công ty không được thấp hơn 1 triệu tệ; kinh doanh qua tỉnh, không được thấp hơn 10 triệu tệ. Tài liệu nộp lên sau, hạn kỳ thẩm tra là 60 ngày, giấy phép hiệu hạn 5 năm. Muốn làm nghiệp vụ thu phí, phải mở công ty lên trước. Mở công ty thế nào xem phần 12 (khởi nghiệp và làm ăn).
+**Cá nhân không xin được giấy phép viễn thông giá trị gia tăng.** Điều kiện xin giấy ghi ngay ở khoản thứ nhất: «người kinh doanh là công ty được thành lập theo pháp luật». Bạn phải có công ty trước đã; cá nhân cầm căn cước công dân đi xin thì không xin được. Chỉ kinh doanh trong tỉnh thì vốn đăng ký của công ty không được thấp hơn 1.000.000 tệ; kinh doanh liên tỉnh thì không được thấp hơn 10.000.000 tệ. Sau khi nộp hồ sơ, thời hạn thẩm tra là 60 ngày, giấy phép có hiệu lực 5 năm. Muốn làm nghiệp vụ thu tiền thì phải mở công ty trước. Cách mở công ty thì xem phần 12 (khởi nghiệp và làm ăn).
 
-**Tấm giấy chương trình nghe nhìn đó, công ty dân doanh cơ bản không lấy được.** Điều kiện xin viết là "có tư cách pháp nhân, là đơn vị độc tư quốc hữu hay quốc hữu khống cổ". Ý là tấm giấy này chỉ phát cho đơn vị quốc gia xuất tư hay quốc gia khống cổ. Nên người khởi nghiệp cá nhân làm video dài, làm chương trình tự chế, không lấy được tấm này. Muốn làm phát trực tiếp, phải làm giấy phép kinh doanh văn hóa mạng.
+**Giấy phép chương trình nghe nhìn thì công ty tư nhân gần như không lấy được.** Điều kiện xin giấy ghi: «có tư cách pháp nhân, là đơn vị do nhà nước đầu tư toàn bộ vốn hoặc do nhà nước nắm cổ phần chi phối». Nghĩa là giấy này chỉ cấp cho đơn vị do nhà nước bỏ vốn hoặc do nhà nước nắm quyền chi phối. Vì vậy người khởi nghiệp cá nhân làm video dài, làm chương trình tự sản xuất thì không lấy được giấy này. Muốn làm phát trực tiếp thì phải làm giấy phép kinh doanh văn hóa mạng.
 
-**Không có văn kiện chính thức nào viết rõ "nền tảng thương mại điện tử bắt buộc làm EDI".** EDI chỉ chính là loại giấy phép B21 trong bảng trên, tên chính thức gọi nghiệp vụ xử lý dữ liệu trực tuyến và xử lý giao dịch. Chỉ nam làm việc của Bộ Công thương chỉ nói một câu "theo giới định nghiệp vụ xin giấy phép kinh doanh nghiệp vụ viễn thông tương ứng". Bộ Công thương còn đáp phúc riêng hai lần: nền tảng gọi xe mạng chỉ cần làm lưu án site, nền tảng giao dịch quyền ích loại và hàng hóa lớn cũng chỉ cần làm lưu án site. Nên ở đây chỉ chiếu nguyên văn định nghĩa B21, việc sinh ý này của bạn nên làm hay không, phải bạn và cục quản lý thông tín địa phương phán. Trước động thủ làm, trước gọi điện cho cục thông tín thuộc địa hạt hỏi rõ một lần.
+**Không có văn bản chính thức nào nói rõ «nền tảng thương mại điện tử bắt buộc phải làm EDI».** EDI chính là loại giấy phép B21 trong bảng trên, tên chính thức là nghiệp vụ xử lý dữ liệu trực tuyến và xử lý giao dịch. Hướng dẫn thủ tục của Bộ Công nghiệp và Công nghệ thông tin chỉ nói một câu: «căn cứ vào việc xác định nghiệp vụ mà xin giấy phép kinh doanh nghiệp vụ viễn thông tương ứng». Bộ này còn trả lời riêng hai lần: nền tảng gọi xe trực tuyến chỉ cần đăng ký website, nền tảng giao dịch các loại quyền lợi và giao dịch hàng hóa khối lượng lớn cũng chỉ cần đăng ký website. Vì vậy ở đây chỉ chép nguyên văn định nghĩa của B21; việc bạn có phải làm giấy này hay không thì bạn và Cục Quản lý thông tin liên lạc tại địa phương phải tự xác định. Trước khi bắt tay làm, hãy gọi điện cho Cục Quản lý thông tin liên lạc nơi bạn đặt trụ sở để hỏi cho rõ.
 
-## II. Nghĩa vụ hàng ngày của bản thân nền tảng
+## II. Nghĩa vụ hằng ngày của bản thân nền tảng
 
-Lấy được giấy, chỉ là được phép khai trương. Dưới đây là việc sau khai trương ngày ngày phải làm. Không làm được phạt bao nhiêu tiền, viết trong các mục phần 26.
+Có giấy phép mới chỉ là được phép mở cửa. Dưới đây là những việc phải làm hằng ngày sau khi mở cửa. Không làm được thì bị phạt bao nhiêu tiền, con số nằm trong từng mục của phần 26.
 
-| Nghĩa vụ | Chỉ tiêu cứng | Xuất xứ |
+| Nghĩa vụ | Chỉ tiêu cứng | Căn cứ |
 |---|---|---|
-| Đối chiếu và đăng ký thương gia mở tiệm trên nền tảng bạn | Ít nhất mỗi sáu tháng đối chiếu cập nhật lại một lần | Cách Giám quản Giao dịch Mạng, Điều 24 |
-| Báo tin tức thân phận thương gia lên trên | Mỗi năm tháng 1 và tháng 7 báo cho bộ môn giám quản thị trường | Điều 25 cùng văn kiện |
-| Báo tin tức liên quan thuế lên trên | Trong một tháng sau khi mỗi quý kết thúc báo cho cơ quan thuế | Quy định Báo đưa Tin tức Liên quan Thuế của Xí nghiệp Nền tảng Internet, Điều 4 |
-| Lưu giữ tin tức giao dịch | Từ ngày giao dịch hoàn thành không ít hơn ba năm | Luật Thương mại Điện tử, Điều 31 |
-| Lưu giữ nội dung phát trực tiếp và nhật trình | Sáu mươi ngày | Quy định Quản lý Dịch vụ Phát trực tiếp Internet, Điều 16 |
-| Lưu giữ video biểu diễn mạng | Không ít hơn sáu mươi ngày | Cách Quản lý Hoạt động Kinh doanh Biểu diễn Mạng, Điều 13 |
-| Lưu giữ nhật trình mạng | Không ít hơn sáu tháng | Luật An toàn Mạng, Điều 23 khoản 3 |
-| Xử lý thông tri xâm quyền | Chuyển lời thanh minh của thương gia cho bên khiếu nại. Chuyển qua đủ mười lăm ngày chưa có hồi đáp thì khôi phục | Luật Thương mại Điện tử, Điều 43 |
-| Thiết lập cửa khiếu nại đầu tố | Để vị trí dễ thấy, bấm tiện | Quy định Trị lý Sinh thái Nội dung Tin tức Mạng, Điều 16 |
+| Đối chiếu và đăng ký người bán mở gian hàng trên nền tảng của bạn | Ít nhất sáu tháng một lần phải đối chiếu và cập nhật lại | Điều 24 «Biện pháp giám sát quản lý giao dịch mạng» |
+| Báo cáo thông tin nhận dạng của người bán | Tháng 1 và tháng 7 hằng năm báo cho cơ quan quản lý thị trường | Điều 25 của văn bản trên |
+| Báo cáo thông tin liên quan đến thuế | Trong tháng đầu tiên sau khi mỗi quý kết thúc, báo cho cơ quan thuế | Điều 4 «Quy định về việc báo cáo thông tin liên quan đến thuế của doanh nghiệp nền tảng internet» |
+| Lưu giữ thông tin giao dịch | Không ít hơn ba năm, tính từ ngày giao dịch hoàn tất | Điều 31 Luật Thương mại điện tử |
+| Lưu giữ nội dung phát trực tiếp và nhật ký | Sáu mươi ngày | Điều 16 «Quy định quản lý dịch vụ phát trực tiếp internet» |
+| Lưu giữ video biểu diễn trên mạng | Không ít hơn sáu mươi ngày | Điều 13 «Biện pháp quản lý hoạt động kinh doanh biểu diễn trên mạng» |
+| Lưu giữ nhật ký mạng | Không ít hơn sáu tháng | Khoản 3 Điều 23 Luật An toàn mạng |
+| Xử lý thông báo xâm phạm quyền | Chuyển lời phản hồi của người bán cho bên khiếu nại. Quá mười lăm ngày kể từ ngày chuyển mà vẫn không có kết quả thì phải khôi phục nội dung | Điều 43 Luật Thương mại điện tử |
+| Đặt lối vào để khiếu nại, tố cáo | Đặt ở vị trí dễ thấy, bấm vào là dùng được | Điều 16 «Quy định quản lý hệ sinh thái nội dung thông tin trên mạng» |
 
-Hạn kỳ lưu giữ có bốn bộ, mỗi bộ tính riêng. Tin tức giao dịch giữ ba năm, nội dung phát trực tiếp giữ sáu mươi ngày, nhật trình mạng giữ sáu tháng. Tin tức thân phận thương gia trên nền tảng, tính từ ngày họ rời nền tảng giữ ba năm. Làm phương án lưu trữ theo điều dài nhất thiết kế, đừng theo điều ngắn nhất.
+Thời hạn lưu giữ có bốn bộ, mỗi bộ tính theo một cách. Thông tin giao dịch giữ ba năm, nội dung phát trực tiếp giữ sáu mươi ngày, nhật ký mạng giữ sáu tháng. Thông tin nhận dạng của người bán trên nền tảng thì tính từ ngày họ rời nền tảng và giữ ba năm. Khi làm phương án lưu trữ, bạn hãy thiết kế theo mốc dài nhất, đừng theo mốc ngắn nhất.
 
-## III. Chọn máy chủ: ba bậc chọn thế nào
+## III. Chọn máy chủ: ba mức chọn thế nào
 
-Trước trả lời mấy câu hỏi dưới đây, rồi mới đi so giá.
+Trước hết hãy trả lời mấy câu hỏi dưới đây, rồi mới đi so giá.
 
-| Câu hỏi | Nếu đáp án là | Thì |
+| Câu hỏi | Nếu câu trả lời là | Thì |
 |---|---|---|
-| Site ngừng một ngày bạn chịu nổi không | Chịu được | VPS (máy chủ ảo) rẻ nhất là đủ dùng |
-| Có người dùng đăng ký, giao dịch, tải lên không | Có | Dùng cloud host của xưởng mây chính thống. Chọn loại sao lưu toàn máy lúc nào cũng được, cũng tăng cấu hình tạm thời được |
-| Có người chuyên quản máy chủ không | Không | Đừng ủy thác cả máy móc tại phòng máy |
-| Băng thông hay phần cứng có phải khoản tiêu lớn nhất | Phải, và có người chuyên quản | Lúc này mới nghĩ ủy thác cả máy móc tại phòng máy |
+| Trang của bạn dừng một ngày, bạn có chịu được không | Chịu được | VPS (máy chủ ảo) rẻ nhất là đủ dùng |
+| Có người dùng đăng ký, giao dịch, tải lên hay không | Có | Dùng máy chủ đám mây của nhà cung cấp lớn. Chọn loại sao lưu được toàn bộ máy bất cứ lúc nào, và nâng cấu hình tạm thời được |
+| Có người chuyên quản máy chủ hay không | Không | Đừng đem cả máy đi gửi ở phòng máy |
+| Băng thông hoặc phần cứng có phải khoản chi lớn nhất hay không | Đúng, và có người chuyên quản | Lúc này mới tính đến việc gửi cả máy ở phòng máy |
 
-**Nhà dịch vụ nhỏ không phải không dùng được, là dùng trước phải tra giấy trước.** Ủy thác máy móc tại phòng máy, cung cấp tiếp nhập lên mạng cho người khác, hai việc này bản thân đã phải giấy phép. Chúng thuộc nghiệp vụ viễn thông gia tăng. Cách tra là mở hệ thống quản lý tổng hợp thị trường nghiệp vụ viễn thông Bộ Công thương tsm.miit.gov.cn, tra theo tên đầy đủ công ty một lần. Tra không ra giấy, trực tiếp loại. Loại giá rẻ được một nửa, nguy cơ thường là ba thứ: máy bán quá số, ông chủ bỏ chạy, nguồn trên bị phong. Thật xảy chuyện, nhà dịch vụ có giấy, bạn còn khiếu nại được tới cục quản lý thông tín; không giấy, bạn ngay cả tìm ai kêu cũng không biết.
+**Nhà cung cấp nhỏ không phải là không dùng được, nhưng dùng thì phải tra giấy phép trước.** Gửi máy ở phòng máy và cung cấp đường truy nhập cho người khác, hai việc này tự thân đã cần giấy phép. Chúng thuộc nghiệp vụ viễn thông giá trị gia tăng. Cách tra là mở hệ thống thông tin quản lý tổng hợp thị trường nghiệp vụ viễn thông của Bộ Công nghiệp và Công nghệ thông tin tại địa chỉ tsm.miit.gov.cn, tra theo tên đầy đủ của công ty một lần. Tra không ra giấy phép thì loại thẳng. Loại rẻ được một nửa thường có ba rủi ro: bán vượt số máy đang có, chủ bỏ trốn, đường truyền phía trên bị chặn. Khi sự cố thật sự xảy ra, nếu nhà cung cấp có giấy phép thì bạn còn khiếu nại được lên Cục Quản lý thông tin liên lạc; nếu họ không có giấy phép thì bạn không biết tìm ai để kêu.
 
-**Để trong nước hay ngoài nước.** Máy chủ để trong nước, phải làm lưu án. Nhà tiếp nhập không cho phép cung cấp tiếp nhập cho site chưa lưu án. Để ngoài nước, quả thật lượn được lưu án. Nhưng người dùng của bạn ở trong nước, tiền thu cũng ở trong nước. Những nghĩa vụ nền tảng phần 26 mục 5 tới 10 viết, một điều cũng không thiếu được. Để ngoài nước còn phải gánh thêm một tầng chi phí dữ liệu xuất cảnh. Truyền tin tức cá nhân người dùng trong nước lên máy ngoài nước, đây gọi xuất cảnh. Xuất cảnh phải thỏa một trong bốn điều kiện Điều 38 Luật Bảo hộ Tin tức Cá nhân liệt. Còn phải riêng lấy đồng ý của bản nhân, không trộn trong hiệp nghị trọn gói để người ta cùng bấm. Dính bao nhiêu người, tính theo "tích lũy từ ngày 1 tháng 1 năm đó". Chưa đủ 100.000 người, ba con đường dưới đây đều khỏi đi. 100.000 tới 1.000.000 người, hoặc ký hợp đồng chuẩn, hoặc đi làm chứng nhận. Trên 1.000.000 người, phải đề báo đánh giá an toàn.
+**Đặt trong nước hay đặt ngoài nước.** Máy chủ đặt trong nước thì phải đăng ký ICP. Nhà cung cấp đường truy nhập không được cấp đường truy nhập cho trang chưa đăng ký. Đặt ở ngoài nước thì quả thật lách được khâu đăng ký. Nhưng người dùng của bạn ở trong nước, tiền thu được cũng ở trong nước. Những nghĩa vụ nền tảng ghi ở mục 5 đến mục 10 của phần 26 thì không thiếu được điều nào. Đặt ở ngoài nước còn phải gánh thêm một lớp chi phí đưa dữ liệu ra nước ngoài. Đưa thông tin cá nhân của người dùng trong nước lên máy đặt ở nước ngoài chính là đưa dữ liệu ra nước ngoài. Việc này phải thỏa mãn một trong bốn điều kiện liệt kê tại Điều 38 Luật Bảo vệ thông tin cá nhân. Bạn còn phải lấy sự đồng ý riêng của chính người đó, không được gộp vào một bản thỏa thuận chung để người ta bấm một lần cho tất cả. Số người liên quan tính theo cách «cộng dồn từ ngày 1 tháng 1 của năm đó». Dưới 100.000 người thì không phải đi ba con đường dưới đây. Từ 100.000 đến 1.000.000 người thì hoặc ký hợp đồng mẫu, hoặc đi làm chứng nhận. Trên 1.000.000 người thì phải khai báo để đánh giá an toàn.
 
-**Sao lưu.** Sao lưu ít nhất để hai chỗ, và đừng đem hai phần để cùng một khu vực của cùng một nhà dịch vụ. Điều này không có căn cứ pháp quy, thuần kinh nghiệm.
+**Sao lưu.** Bản sao lưu phải để ít nhất ở hai nơi, và đừng để cả hai bản ở cùng một khu vực của cùng một nhà cung cấp. Điều này không có căn cứ pháp quy, hoàn toàn là kinh nghiệm.
 
 ## IV. Ranh giới của tài liệu này
 
-- Mọi điều khoản viết trên đây, lấy cột Nguồn của phần 26 trong README cuốn sách làm chuẩn. Ở đó có văn hiệu, số điều và liên kết.
-- Loại quy chương này đổi rất nhanh. Nội dung phần này kiểm thực tháng 9 năm 2026. Trước khi thật muốn trích dẫn, xin tự mở lại trang nguyên văn một lần. Nhất là phải xem hai chỗ: Luật An toàn Mạng từ ngày 1 tháng 1 năm 2026 số điều có điều chỉnh; quy tắc người chưa thành niên trong thưởng phát trực tiếp tháng 4 năm 2026 đổi thành phân bậc theo tuổi.
-- Có mấy chỗ không lấy được nguyên văn, đã viết rõ từng chỗ trong [ghi chép kiểm chứng](ghi-chep-kiem-chung/them-phan-26-lam-nen-tang.md). Một chỗ là nền tảng thương mại điện tử rốt cuộc có bắt buộc làm EDI không, chính thức có văn rõ không. Chỗ nữa là phần giải thích tư pháp đem kinh doanh không giấy phép dịch vụ văn hóa mạng hay nghe nhìn trực tiếp xử theo tội kinh doanh phi pháp.
+- Mọi điều khoản nêu trên đều lấy cột Nguồn của phần 26 trong README làm chuẩn. Ở đó có số hiệu văn bản, số điều và đường dẫn.
+- Loại quy định này sửa rất nhanh. Nội dung phần này được kiểm chứng vào tháng 9 năm 2026. Trước khi thật sự trích dẫn, bạn hãy tự mở lại trang gốc một lần. Đặc biệt phải xem hai chỗ: cách đánh số điều của Luật An toàn mạng thay đổi từ ngày 1 tháng 1 năm 2026; quy định về người chưa thành niên trong việc thưởng khi phát trực tiếp đổi sang chia theo nhóm tuổi từ tháng 4 năm 2026.
+- Có mấy chỗ không lấy được bản gốc, đã ghi rõ từng chỗ trong [ghi chép kiểm chứng](ghi-chep-kiem-chung/them-phan-26-lam-nen-tang.md). Một chỗ là nền tảng thương mại điện tử rốt cuộc có bắt buộc phải làm EDI hay không, và cơ quan chính thức có văn bản nào nói rõ hay không. Chỗ còn lại là bản giải thích tư pháp xử thẳng hành vi kinh doanh dịch vụ văn hóa mạng hoặc nghe nhìn mà không có giấy phép theo tội kinh doanh trái phép.
