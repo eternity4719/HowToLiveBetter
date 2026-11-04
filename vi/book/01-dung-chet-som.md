@@ -2,23 +2,23 @@
 
 # 1. Đừng chết sớm
 
-Phần này nói về ba việc. Việc thứ nhất là những cái chết do tai nạn và thương tích, như tai nạn giao thông, hỏa hoạn, ngộ độc. Việc thứ hai là một số ít loại vaccine và xét nghiệm sàng lọc có chứng cứ chắc nhất. Việc thứ ba là cơ thể phát ra tín hiệu gì thì bạn nên đi khám. Các con số ở cột Lợi ích đến từ thử nghiệm chia nhóm ngẫu nhiên, từ nghiên cứu theo dõi một nhóm lớn người trong nhiều năm, hoặc từ thống kê chính thức. Cột Chi phí là ước lượng sơ bộ của tác giả theo giá thị trường, chỉ để so sánh các mục với nhau, nên bạn đừng mang đi trích dẫn.
+Chương này nói ba việc. Việc thứ nhất là những cái chết do tai nạn và thương tích, như tai nạn giao thông, hỏa hoạn, ngộ độc. Việc thứ hai là một số ít vaccine và xét nghiệm sàng lọc có bằng chứng mạnh nhất. Việc thứ ba là khi cơ thể phát ra tín hiệu gì thì nên đi khám. Các con số ở cột Lợi ích đến từ thử nghiệm chia nhóm ngẫu nhiên, nghiên cứu theo dõi một nhóm lớn trong nhiều năm, hoặc thống kê chính thức. Cột Chi phí là ước lượng sơ bộ của tác giả theo giá thị trường, chỉ để so sánh giữa các mục, đừng trích dẫn.
 
-Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+Các mục trong chương chia theo chủ đề thành mấy khối dưới đây; số trong ngoặc là số mục.
 
-**Trên đường**: thắt dây an toàn (mục 1); đội mũ bảo hiểm và cài quai chặt (mục 2); lái xe không vượt tốc độ, không lái xe khi đã uống rượu (mục 9); cho trẻ dưới 4 tuổi ngồi ghế an toàn (mục 10).
+**Trên đường**: thắt dây an toàn (mục 1), đội mũ bảo hiểm và cài quai chặt (mục 2), không vượt tốc độ và không lái xe sau khi uống rượu (mục 9), ghế an toàn cho trẻ dưới 4 tuổi (mục 10).
 
-**Lửa, gas và điện trong nhà**: lắp máy báo khói (mục 3); ống mềm dẫn gas và bếp gas hết hạn thì thay (mục 4); không đẩy xe đạp điện vào hành lang chung (mục 6). Chuẩn bị đủ bình chữa cháy, chăn chữa cháy, mặt nạ thoát hiểm và túi sơ cứu (mục 26); đeo kính bảo hộ cùng tấm che mặt rồi mới dùng máy mài góc (mục 42).
+**Lửa, gas và điện trong nhà**: lắp máy báo khói (mục 3), thay ống mềm dẫn gas và bếp gas hết hạn (mục 4), không dắt xe đạp điện vào hành lang chung (mục 6), chuẩn bị bình chữa cháy, chăn chữa cháy, mặt nạ thoát hiểm và túi sơ cứu (mục 26), đeo kính bảo hộ và tấm che mặt khi dùng máy mài góc (mục 42), xuống bể phốt hay hố ga phải thông gió, kiểm tra và có người giám sát (mục 46).
 
-**Tai nạn của trẻ nhỏ, người già và ngoài thiên nhiên**: lắp chốt giới hạn cho cửa sổ và ban công (mục 11); trẻ em gần nước thì không rời mắt (mục 12); trên 60 tuổi tập thăng bằng và sức mạnh chân (mục 13). Không hái, không mua, không ăn nấm rừng (mục 5); không nhặt, không tháo, không bán mảnh kim loại không rõ nguồn (mục 36); trước khi bước lên mặt băng ngoài trời, hãy khoan lỗ đo độ dày (mục 41).
+**Tai nạn của trẻ nhỏ, người già và ngoài thiên nhiên**: lắp chốt giới hạn cho cửa sổ và ban công (mục 11), trẻ em gần nước thì không rời mắt (mục 12), người trên 60 tuổi tập thăng bằng và sức mạnh chân (mục 13), không hái và không ăn nấm rừng (mục 5), không nhặt mảnh kim loại không rõ nguồn (mục 36), đo độ dày băng trước khi bước lên (mục 41), mộc nhĩ ngâm thì ăn hết trong bữa (mục 48).
 
-**Vaccine**: xét nghiệm năm chỉ số viêm gan B (mục 14); bị đinh, gai gỗ đâm hoặc vết thương dính đất thì đi xử lý trong ngày (mục 15). Phụ nữ tiêm vaccine HPV (mục 16); tiêm vaccine cúm mỗi năm (mục 20); tiêm vaccine zona thần kinh (mục 21); tiêm vaccine phế cầu (mục 22).
+**Vaccine**: xét nghiệm viêm gan B (mục 14), uốn ván (mục 15), vaccine HPV (mục 16), vaccine cúm (mục 20), vaccine zona (mục 21), vaccine phế cầu (mục 22).
 
-**Sàng lọc và xét nghiệm tìm bệnh**: đo huyết áp, cao thì uống thuốc hạ về mức chuẩn (mục 7); đi xét nghiệm đường huyết lúc đói một lần (mục 8); tầm soát ung thư vú (mục 17); tầm soát ung thư cổ tử cung (mục 18). Tầm soát ung thư đại trực tràng (mục 19); xét nghiệm vi khuẩn Helicobacter pylori (mục 23); chụp CT lồng ngực liều thấp (mục 24). Đo mật độ xương bằng máy DXA (mục 39); nhờ bác sĩ kê thuốc chống loãng xương (mục 40).
+**Sàng lọc và xét nghiệm tìm bệnh**: đo huyết áp (mục 7), đường huyết lúc đói (mục 8), sàng lọc ung thư vú (mục 17), ung thư cổ tử cung (mục 18), ung thư đại trực tràng (mục 19), vi khuẩn Helicobacter pylori (mục 23), CT ngực liều thấp (mục 24), mật độ xương bằng DXA (mục 39), thuốc chống loãng xương (mục 40), thuốc chống đông khi phát hiện rung nhĩ (mục 44), xét nghiệm viêm gan C (mục 45), nội soi dạ dày (mục 47).
 
-**Tín hiệu của cơ thể và sức khỏe tình dục**: nước tiểu có máu nhìn thấy bằng mắt thường (mục 27); chức năng cương dương có vấn đề, trước hết đi khám tim mạch (mục 28); giảm cân, bỏ thuốc, giữ huyết áp và đường huyết ổn định (mục 29). Quan hệ tình dục dùng bao cao su suốt quá trình (mục 30); đi xét nghiệm HIV một lần (mục 31); hỏi thuốc dự phòng trước phơi nhiễm (mục 38).
+**Tín hiệu của cơ thể và sức khỏe tình dục**: nước tiểu có máu nhìn thấy được (mục 27), rối loạn cương dương thì khám tim mạch trước (mục 28), giảm cân và bỏ thuốc để cải thiện (mục 29), bao cao su và không dùng chung kim tiêm (mục 30), xét nghiệm HIV (mục 31), thuốc dự phòng trước phơi nhiễm (mục 38).
 
-**Khủng hoảng tâm lý**: gọi 12356, trong nhà không tích trữ thuốc ngủ và thuốc trừ sâu (mục 25); ý nghĩ tự tử vừa nảy ra thì nói ngay cho một người bên cạnh (mục 32); khi đánh bạc đến mức vay tiền đánh tiếp (mục 37). Đừng lấy "cứu được rồi" làm điểm tựa (mục 33); đừng đánh cược "nằm vài ngày là khỏi" vào ngã từ trên cao (mục 34); đừng lấy "thiếu một quả thận không sao" đổi tiền (mục 35). Hỏi thẳng người bên cạnh đang có tâm trạng không ổn "bạn có từng nghĩ đến tự tử không" (mục 43).
+**Khủng hoảng tâm lý**: gọi 12356 (mục 25), nói ngay với một người bên cạnh (mục 32), cờ bạc đến mức vay tiền để đánh tiếp (mục 37), uống thuốc trừ sâu hoặc khí gas rồi được cứu về (mục 33), ngã từ trên cao (mục 34), thiếu một quả thận (mục 35), hỏi thẳng người bên cạnh có từng nghĩ đến tự tử không (mục 43).
 
 ### 1. Thắt dây an toàn, cả ghế trước lẫn ghế sau
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->

@@ -23,6 +23,9 @@ Cập nhật: đang thực hiện. Mọi con số dưới đây lấy từ `vi/q
 | S-09 | TRUNG | Đơn vị Trung Quốc («vạn», «亿») và dấu thập phân không thống nhất | quét toàn văn | `normalize-units.mjs`: «10 vạn» → «100.000», «0.65» → «0,65», giữ nhóm nghìn | đã chạy, sẽ chạy lại sau khi gộp |
 | S-10 | TRUNG | Phần mở đầu 34 chương còn là bản cũ, có chương nhắc số mục đã lệch | so sánh `vi/book` với `book` | dịch lại phần mở đầu, kiểm tra tập số mục | chưa xong |
 | S-11 | THẤP | Nhãn `Chỉ tham khảo TQ` rải rác, không thống nhất | quét `Ghi chú` | chuẩn hóa thành «Chỉ áp dụng ở Trung Quốc:» ở đầu ghi chú | đang làm |
+| S-12 | CAO | Mục 1.34: `90895.5 亿元` dịch thành «90895,5 tỷ tệ», sai 10 lần (đúng là 9.089,55 tỷ) | đối chiếu số tự động sau khi bổ sung đơn vị `tỷ/triệu` | sửa cả hai con số; bổ sung kiểm tra đơn vị | đã sửa |
+| S-13 | CAO | Mục 22.3 vẫn còn «cải tạo không giam giữ» cho `拘役` và «giải thích của tòa» cho `司法解释` sau khi đã có quy ước | đọc lại chương 22 | sửa thành «tạm giữ hình sự» và «giải thích tư pháp» | đã sửa |
+| S-14 | CAO | Mục 22.5: phần «Nói dễ hiểu» vẫn viết «dưới tầng hầm một» dù phần «Lợi ích» đã đúng | đọc lại chương 22 | sửa thành «từ tầng hầm hai trở xuống, tức là tầng hầm một vẫn được phép» | đã sửa |
 
 ## 2. Quy trình sửa một mục
 

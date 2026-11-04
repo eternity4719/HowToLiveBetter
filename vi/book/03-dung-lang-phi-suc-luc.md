@@ -8,7 +8,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Chú ý khi làm việc**: tắt thông báo không cần thiết (mục 1), đổi email và tin nhắn sang xử lý theo đợt (mục 5), chặn cả những ngắt vài giây bên ngoài (mục 6). Mỗi lúc chỉ làm một việc (mục 7), ở văn phòng mở thì dùng nút tai (mục 12), đừng chỉ biết tăng giờ làm việc mỗi tuần (mục 13).
 
-**Ngủ và thức khuya**: cố định giờ thức dậy (mục 2), ngủ đủ 7 đến 8 tiếng mỗi đêm (mục 3), sau hai giờ chiều không động vào caffeine (mục 4). Một tiếng trước khi ngủ không nhìn màn hình phát sáng (mục 8), đến giờ thì ngủ (mục 9), đêm khuya không quyết định việc lớn (mục 10), chiều buồn ngủ thì chợp 10 phút (mục 11).
+**Ngủ và thức khuya**: cố định giờ thức dậy (mục 2), ngủ đủ 7 đến 8 tiếng mỗi đêm (mục 3), sau hai giờ chiều không động vào caffeine (mục 4). Một tiếng trước khi ngủ không nhìn màn hình phát sáng (mục 8), đến giờ thì ngủ (mục 9), đêm khuya không quyết định việc lớn (mục 10), chiều buồn ngủ thì chợp 10 phút (mục 11). Mất ngủ kéo dài thì làm trị liệu nhận thức – hành vi trước (mục 26); ngáy, ngưng thở khi ngủ hoặc ban ngày buồn ngủ thì đi kiểm tra chứng ngưng thở khi ngủ (mục 27).
 
 **Ý nghĩ trong đầu**: nghĩ đi nghĩ lại cùng một việc tồi tệ thì đổi sang việc phải động tay (mục 14), coi những ý nghĩ kiểu "mọi việc chắc chắn sẽ tệ hơn" như triệu chứng (mục 15). Lúc thấy "mọi người đều nhìn thấy mình mất mặt", đem ước tính đó chia hai (mục 21), coi "người khác đòi tôi phải hoàn hảo" như triệu chứng (mục 22).
 

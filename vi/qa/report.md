@@ -1,10 +1,10 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T00:59:14.655Z
+- Thời điểm: 2026-11-04T01:01:12.247Z
 - Nguồn: `e2605d3`
-- Chương đủ mục: 6/34
-- Mục: 682/767 (88.9%)
-- Mục thiếu số: 157; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
+- Chương đủ mục: 5/34
+- Mục đã dịch lại và gộp: 112/767 (14.6%); hiện có 682 mục trong sách
+- Mục thiếu số: 174; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
 - Kết quả: đạt các bước đã chạy
 
 ## audit: đạt
@@ -21,7 +21,7 @@
 ## manifest: đạt
 
 ```
-Manifest: 6/34 chương đủ, 682/767 mục (88.9%)
+Manifest: 5/34 chương đủ, 112/767 mục đã dịch lại và gộp (14.6%); hiện có 682 mục trong sách
 ```
 
 ## build: đạt
