@@ -16,7 +16,7 @@ const targets = [
   { name: 'title', file: 'titlepage.xhtml', clip: 'body' },
   { name: 'colophon', file: 'colophon.xhtml', clip: 'body' },
   { name: 'note', file: 'note.xhtml', clip: '.frontmatter' },
-  { name: 'nav', file: 'nav.xhtml', clip: 'nav#toc' },
+  { name: 'toc', file: 'toc.xhtml', clip: 'nav#toc' },
   { name: 'chapter-open', file: 'ch01.xhtml', clip: '.chapter-head' },
   { name: 'entry', file: 'ch01.xhtml', clip: '#s01e1' },
   { name: 'entry22', file: 'ch22.xhtml', clip: '#s22e1' },
