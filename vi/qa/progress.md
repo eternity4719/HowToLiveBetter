@@ -5,11 +5,11 @@ Cập nhật: 2026-11-04 (giờ Việt Nam). Mọi số lấy từ `vi/manifest.
 ## Đang ở đâu
 
 - Nguyên tác: 34 chương, 767 mục, 9 bài dài; commit `e2605d3`.
-- Đã dịch lại và gộp: **26/34 chương, 639/767 mục (83,3%)**. Các chương đạt: 1–26 và 22.
-- Đang dịch: 20 lô còn lại của chương 27–34 (job nền), đã xong 106/126 lô.
-- Sách hiện có 752 mục: 639 mục đã dịch lại, phần còn lại vẫn là bản nháp cũ và **chưa được tính là đạt**.
+- Đã dịch lại và gộp: **34/34 chương, 767/767 mục (100%)**. Các chương đạt: 1–34.
+- Đang dịch: Đã dịch xong 126/126 lô; đang chạy soát độc lập 34 chương và 9 bài dài.
+- Sách hiện có 767 mục: 767 mục đã dịch lại, phần còn lại vẫn là bản nháp cũ và **chưa được tính là đạt**.
 - 9/9 bài dài đã dịch lại và gộp.
-- Ebook nháp dựng được: 2,2 MB, EPUBCheck 0 lỗi/0 cảnh báo, 2.199 liên kết nội bộ không hỏng, 2.325 liên kết ngoài.
+- Ebook dựng được: 2,4 MB, EPUBCheck 0 lỗi/0 cảnh báo, 2.199 liên kết nội bộ không hỏng, 2.325 liên kết ngoài.
 
 ## Chất lượng đo được
 
