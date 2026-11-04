@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:24:36.627Z",
+ "generatedAt": "2026-11-04T02:30:05.581Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 26,
+  "chaptersComplete": 29,
   "entriesSource": 767,
-  "entriesPresent": 752,
-  "entriesVerified": 639,
-  "coverage": 0.8331
+  "entriesPresent": 758,
+  "entriesVerified": 683,
+  "coverage": 0.8905
  },
  "chapters": [
   {
@@ -361,48 +361,39 @@
    "zh": "27-怀孕和生产.md",
    "vi": "27-mang-thai-va-sinh-con.md",
    "entriesSource": 20,
-   "entriesTranslated": 16,
-   "missingEntries": [
-    17,
-    18,
-    19,
-    20
-   ],
-   "missingNumbers": 2,
+   "entriesTranslated": 20,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 28,
    "zh": "28-别为了外形把身体搞坏.md",
    "vi": "28-dung-vi-ngoai-hinh-pha-hong-suc-khoe.md",
    "entriesSource": 10,
-   "entriesTranslated": 9,
-   "missingEntries": [
-    10
-   ],
-   "missingNumbers": 3,
+   "entriesTranslated": 10,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 29,
    "zh": "29-遭遇重大打击之后.md",
    "vi": "29-sau-khi-gap-cu-soc-lon.md",
    "entriesSource": 14,
-   "entriesTranslated": 13,
-   "missingEntries": [
-    14
-   ],
-   "missingNumbers": 5,
+   "entriesTranslated": 14,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 30,
