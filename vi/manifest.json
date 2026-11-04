@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T01:25:08.717Z",
+ "generatedAt": "2026-11-04T01:28:22.676Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 9,
+  "chaptersComplete": 10,
   "entriesSource": 767,
-  "entriesPresent": 696,
-  "entriesVerified": 219,
-  "coverage": 0.2855
+  "entriesPresent": 700,
+  "entriesVerified": 266,
+  "coverage": 0.3468
  },
  "chapters": [
   {
@@ -36,18 +36,13 @@
    "zh": "02-不要慢慢死.md",
    "vi": "02-dung-chet-tu-tu.md",
    "entriesSource": 47,
-   "entriesTranslated": 43,
-   "missingEntries": [
-    44,
-    45,
-    46,
-    47
-   ],
-   "missingNumbers": 16,
+   "entriesTranslated": 47,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 3,
