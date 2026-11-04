@@ -1,0 +1,312 @@
+{
+ "sourceCommit": "e2605d3",
+ "generatedAt": "2026-11-04T00:35:21.524Z",
+ "chapters": [
+  {
+   "chapter": "01",
+   "zh": "01-不要早死.md",
+   "vi": "01-dung-chet-som.md",
+   "entries": 48,
+   "batches": 9,
+   "title": "不要早死",
+   "status": "pending"
+  },
+  {
+   "chapter": "02",
+   "zh": "02-不要慢慢死.md",
+   "vi": "02-dung-chet-tu-tu.md",
+   "entries": 47,
+   "batches": 8,
+   "title": "不要慢慢死",
+   "status": "pending"
+  },
+  {
+   "chapter": "03",
+   "zh": "03-不要浪费精力.md",
+   "vi": "03-dung-lang-phi-suc-luc.md",
+   "entries": 27,
+   "batches": 4,
+   "title": "不要浪费精力",
+   "status": "pending"
+  },
+  {
+   "chapter": "04",
+   "zh": "04-不要浪费时间.md",
+   "vi": "04-dung-lang-phi-thoi-gian.md",
+   "entries": 18,
+   "batches": 2,
+   "title": "不要浪费时间",
+   "status": "pending"
+  },
+  {
+   "chapter": "05",
+   "zh": "05-不要浪费钱.md",
+   "vi": "05-dung-lang-phi-tien.md",
+   "entries": 51,
+   "batches": 7,
+   "title": "不要浪费钱",
+   "status": "pending"
+  },
+  {
+   "chapter": "06",
+   "zh": "06-反面清单.md",
+   "vi": "06-danh-sach-nen-tranh.md",
+   "entries": 35,
+   "batches": 7,
+   "title": "反面清单",
+   "status": "pending"
+  },
+  {
+   "chapter": "07",
+   "zh": "07-没钱的时候怎么活.md",
+   "vi": "07-song-khi-khong-co-tien.md",
+   "entries": 23,
+   "batches": 4,
+   "title": "没钱的时候怎么活",
+   "status": "pending"
+  },
+  {
+   "chapter": "08",
+   "zh": "08-别把自己搭进去.md",
+   "vi": "08-dung-tu-chuoc-hoa-vao-than.md",
+   "entries": 46,
+   "batches": 7,
+   "title": "别把自己搭进去：法律与财产安全",
+   "status": "pending"
+  },
+  {
+   "chapter": "09",
+   "zh": "09-普通人容易踩的法律红线.md",
+   "vi": "09-lan-san-do-phap-luat-de-vi-pham.md",
+   "entries": 29,
+   "batches": 5,
+   "title": "普通人容易踩的法律红线",
+   "status": "pending"
+  },
+  {
+   "chapter": "10",
+   "zh": "10-恋爱和结婚划不划算.md",
+   "vi": "10-yeu-va-cuoi-co-dang-khong.md",
+   "entries": 23,
+   "batches": 3,
+   "title": "恋爱和结婚划不划算",
+   "status": "pending"
+  },
+  {
+   "chapter": "11",
+   "zh": "11-程序员和技术人容易踩的红线.md",
+   "vi": "11-lan-san-do-cua-dan-ky-thuat.md",
+   "entries": 21,
+   "batches": 3,
+   "title": "程序员和技术人容易踩的红线",
+   "status": "pending"
+  },
+  {
+   "chapter": "12",
+   "zh": "12-创业与做生意.md",
+   "vi": "12-khoi-nghiep-va-lam-an.md",
+   "entries": 28,
+   "batches": 4,
+   "title": "创业与做生意：别把家底赔进去",
+   "status": "pending"
+  },
+  {
+   "chapter": "13",
+   "zh": "13-紧急情况.md",
+   "vi": "13-tinh-huong-khan-cap.md",
+   "entries": 48,
+   "batches": 9,
+   "title": "紧急情况：先做什么",
+   "status": "pending"
+  },
+  {
+   "chapter": "14",
+   "zh": "14-账号与信息安全.md",
+   "vi": "14-tai-khoan-va-an-toan-thong-tin.md",
+   "entries": 12,
+   "batches": 2,
+   "title": "账号与信息安全",
+   "status": "pending"
+  },
+  {
+   "chapter": "15",
+   "zh": "15-租房与买房.md",
+   "vi": "15-thue-va-mua-nha.md",
+   "entries": 18,
+   "batches": 3,
+   "title": "租房与买房",
+   "status": "pending"
+  },
+  {
+   "chapter": "16",
+   "zh": "16-得了慢性病之后怎么活.md",
+   "vi": "16-song-sau-khi-mac-benh-man-tinh.md",
+   "entries": 14,
+   "batches": 3,
+   "title": "得了慢性病之后怎么活",
+   "status": "pending"
+  },
+  {
+   "chapter": "17",
+   "zh": "17-家里有老人.md",
+   "vi": "17-nha-co-nguoi-gia.md",
+   "entries": 13,
+   "batches": 3,
+   "title": "家里有老人",
+   "status": "pending"
+  },
+  {
+   "chapter": "18",
+   "zh": "18-养孩子划不划算.md",
+   "vi": "18-nuoi-con-co-dang-khong.md",
+   "entries": 7,
+   "batches": 1,
+   "title": "养孩子划不划算",
+   "status": "pending"
+  },
+  {
+   "chapter": "19",
+   "zh": "19-在职离职和工伤.md",
+   "vi": "19-di-lam-nghi-viec-va-tai-nan-lao-dong.md",
+   "entries": 24,
+   "batches": 4,
+   "title": "在职、离职和工伤",
+   "status": "pending"
+  },
+  {
+   "chapter": "20",
+   "zh": "20-刚出生的孩子怎么带.md",
+   "vi": "20-cham-tre-so-sinh.md",
+   "entries": 17,
+   "batches": 3,
+   "title": "刚出生的孩子怎么带",
+   "status": "pending"
+  },
+  {
+   "chapter": "21",
+   "zh": "21-出国旅行与境外安全.md",
+   "vi": "21-du-lich-va-an-toan-nuoc-ngoai.md",
+   "entries": 13,
+   "batches": 2,
+   "title": "出国、旅行与境外安全",
+   "status": "pending"
+  },
+  {
+   "chapter": "22",
+   "zh": "22-怎么放松.md",
+   "vi": "22-thu-gian-the-nao.md",
+   "entries": 12,
+   "batches": 2,
+   "title": "怎么放松：娱乐场所和减压",
+   "status": "pending"
+  },
+  {
+   "chapter": "23",
+   "zh": "23-学什么技能划算.md",
+   "vi": "23-hoc-ky-nang-gi-dang.md",
+   "entries": 25,
+   "batches": 3,
+   "title": "学什么技能划算",
+   "status": "pending"
+  },
+  {
+   "chapter": "24",
+   "zh": "24-看病.md",
+   "vi": "24-di-kham-benh.md",
+   "entries": 15,
+   "batches": 2,
+   "title": "看病：怎么少花钱少走弯路",
+   "status": "pending"
+  },
+  {
+   "chapter": "25",
+   "zh": "25-人走了以后要办什么.md",
+   "vi": "25-viec-phai-lam-khi-nguoi-than-qua-doi.md",
+   "entries": 12,
+   "batches": 2,
+   "title": "人走了以后要办什么",
+   "status": "pending"
+  },
+  {
+   "chapter": "26",
+   "zh": "26-做一个网站或平台.md",
+   "vi": "26-lam-mot-website-hoac-nen-tang.md",
+   "entries": 13,
+   "batches": 2,
+   "title": "做一个网站或平台：资质、备案和服务器",
+   "status": "pending"
+  },
+  {
+   "chapter": "27",
+   "zh": "27-怀孕和生产.md",
+   "vi": "27-mang-thai-va-sinh-con.md",
+   "entries": 20,
+   "batches": 3,
+   "title": "怀孕和生产：从发现怀孕到出院办证",
+   "status": "pending"
+  },
+  {
+   "chapter": "28",
+   "zh": "28-别为了外形把身体搞坏.md",
+   "vi": "28-dung-vi-ngoai-hinh-pha-hong-suc-khoe.md",
+   "entries": 10,
+   "batches": 2,
+   "title": "别为了外形把身体搞坏",
+   "status": "pending"
+  },
+  {
+   "chapter": "29",
+   "zh": "29-遭遇重大打击之后.md",
+   "vi": "29-sau-khi-gap-cu-soc-lon.md",
+   "entries": 14,
+   "batches": 2,
+   "title": "遭遇重大打击之后",
+   "status": "pending"
+  },
+  {
+   "chapter": "30",
+   "zh": "30-上学以后的孩子.md",
+   "vi": "30-con-cai-tuoi-di-hoc.md",
+   "entries": 21,
+   "batches": 4,
+   "title": "上学以后的孩子",
+   "status": "pending"
+  },
+  {
+   "chapter": "31",
+   "zh": "31-十八岁之后有哪几条路.md",
+   "vi": "31-nhung-con-duong-sau-tuoi-muoi-tam.md",
+   "entries": 17,
+   "batches": 4,
+   "title": "十八岁之后有哪几条路",
+   "status": "pending"
+  },
+  {
+   "chapter": "32",
+   "zh": "32-出国留学.md",
+   "vi": "32-du-hoc-nuoc-ngoai.md",
+   "entries": 12,
+   "batches": 2,
+   "title": "出国留学：身份、打工、保险和回国认证",
+   "status": "pending"
+  },
+  {
+   "chapter": "33",
+   "zh": "33-残疾之后怎么活.md",
+   "vi": "33-song-sau-khi-khuyet-tat.md",
+   "entries": 21,
+   "batches": 3,
+   "title": "残疾之后怎么活",
+   "status": "pending"
+  },
+  {
+   "chapter": "34",
+   "zh": "34-家里的常备药别吃出事.md",
+   "vi": "34-thuoc-san-trong-nha-dung-de-uong-thanh-hoa.md",
+   "entries": 13,
+   "batches": 2,
+   "title": "家里的常备药别吃出事",
+   "status": "pending"
+  }
+ ]
+}

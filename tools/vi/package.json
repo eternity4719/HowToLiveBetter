@@ -1,0 +1,16 @@
+{
+  "name": "howtolivebetter-vi-epub",
+  "private": true,
+  "type": "module",
+  "description": "Dựng EPUB 3 tiếng Việt từ vi/book và vi/docs",
+  "scripts": {
+    "build": "node build-epub.mjs",
+    "cover": "node make-cover.mjs"
+  },
+  "dependencies": {
+    "marked": "18.0.13"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.16.0"
+  }
+}
