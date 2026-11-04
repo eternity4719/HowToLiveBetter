@@ -30,6 +30,8 @@ for (const [w, h, tag] of [[620, 1000, 'phone'], [820, 1200, 'tablet'], [1100, 1
     await page.goto(`file://${resolve(dir, t.file)}`, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
     await new Promise(r => setTimeout(r, 250));
+    const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    if (over > 0) console.log(`TRÀN NGANG ${t.name} @${w}px: ${over}px`);
     const el = await page.$(t.clip);
     if (!el) { console.log(`bỏ qua ${t.name}: không thấy ${t.clip}`); continue; }
     const box = await el.boundingBox();

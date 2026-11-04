@@ -27,7 +27,7 @@ p + p { margin-top: 0.1em; }
 h1 + p, h2 + p, h3 + p, h4 + p, .label + p, blockquote p, li p, td p, .entry-title + p, .callout p:first-child, .sources p:first-child { text-indent: 0; }
 em { font-style: italic; }
 strong { font-weight: 600; }
-a { color: #2b4a78; text-decoration: none; }
+a { color: #2b4a78; text-decoration: none; overflow-wrap: anywhere; word-break: break-word; }
 a:hover { text-decoration: underline; }
 
 h1, h2, h3, h4, h5 {

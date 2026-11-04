@@ -12,7 +12,7 @@ for (const t of tasks) {
   const out = resolve(ROOT, t.out);
   if (!existsSync(out)) { console.log(`chờ ${t.id} (${t.vi})`); skip++; continue; }
   try {
-    execFileSync('node', ['tools/vi/check-doc.mjs', t.id], { cwd: ROOT, stdio: 'pipe' });
+    execFileSync('node', ['tools/vi/check-doc.mjs', '--draft', t.id], { cwd: ROOT, stdio: 'pipe' });
   } catch {
     console.log(`chưa đạt ${t.id} (${t.vi})`);
     skip++; continue;
