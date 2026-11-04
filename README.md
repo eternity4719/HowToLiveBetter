@@ -58,6 +58,7 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 
 [Tiếng Việt](https://chuanman2707.github.io/HowToLiveBetter/)，[chuanman2707](https://github.com/chuanman2707) 维护的越南语翻译（[仓库](https://github.com/chuanman2707/HowToLiveBetter)）
 
+[Tiếng Việt (Cải biên theo luật pháp Việt Nam)](https://quangpao.github.io/HowToLiveBetter/)，[quangpao](https://github.com/quangpao) 维护的越南语翻译（[仓库](https://github.com/quangpao/HowToLiveBetter)）
 </td></tr>
 <tr><td align="right"><b>衍生工具</b></td><td align="left">
 
