@@ -1,17 +1,21 @@
 # Phát hành EPUB tiếng Việt: dựng từ main, chạy EPUBCheck, tạo GitHub Release kèm tệp EPUB.
-# Chạy tay: Actions → «Phát hành EPUB tiếng Việt» → Run workflow, nhập tag (vd. vi-v1.0.3).
-# Ghi chú phát hành lấy từ vi/release-notes/<tag>.md; workflow tự thêm SHA-256 vào cuối.
+# Hai cách chạy: đẩy một tag dạng vi-v* lên (git tag vi-v1.0.3 && git push origin vi-v1.0.3),
+# hoặc Actions → «Phát hành EPUB tiếng Việt» → Run workflow, nhập tag.
+# Ghi chú phát hành lấy từ vi/release-notes/<tag>.md, dòng «# …» đầu tiên làm tên release
+# (khi chạy tay có thể nhập tên khác); workflow tự thêm SHA-256 vào cuối.
 name: Phát hành EPUB tiếng Việt
 
 on:
+  push:
+    tags: ['vi-v*']
   workflow_dispatch:
     inputs:
       tag:
         description: 'Tag phát hành, vd. vi-v1.0.3 (phải có vi/release-notes/<tag>.md)'
         required: true
       title:
-        description: 'Tên release'
-        required: true
+        description: 'Tên release (bỏ trống thì lấy dòng tiêu đề của ghi chú)'
+        required: false
 
 permissions:
   contents: write
@@ -51,11 +55,16 @@ jobs:
       - name: Tạo release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ inputs.tag }}
+          TAG: ${{ inputs.tag || github.ref_name }}
           TITLE: ${{ inputs.title }}
         run: |
           notes="vi/release-notes/${TAG}.md"
           test -f "$notes" || { echo "Thiếu $notes"; exit 1; }
+          [ -n "$TITLE" ] || TITLE=$(sed -n 's/^# //p' "$notes" | head -1)
           sha=$(sha256sum dist/HowToLiveBetter-vi.epub | cut -d' ' -f1)
           { cat "$notes"; printf '\n## SHA-256\n\n```\n%s  HowToLiveBetter-vi.epub\n```\n\nDựng từ commit `%s`.\n' "$sha" "${GITHUB_SHA::7}"; } > /tmp/notes.md
-          gh release create "$TAG" dist/HowToLiveBetter-vi.epub --target "$GITHUB_SHA" --title "$TITLE" --notes-file /tmp/notes.md
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
+            gh release create "$TAG" dist/HowToLiveBetter-vi.epub --verify-tag --title "$TITLE" --notes-file /tmp/notes.md
+          else
+            gh release create "$TAG" dist/HowToLiveBetter-vi.epub --target "$GITHUB_SHA" --title "$TITLE" --notes-file /tmp/notes.md
+          fi
