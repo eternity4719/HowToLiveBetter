@@ -1,0 +1,61 @@
+# Phát hành EPUB tiếng Việt: dựng từ main, chạy EPUBCheck, tạo GitHub Release kèm tệp EPUB.
+# Chạy tay: Actions → «Phát hành EPUB tiếng Việt» → Run workflow, nhập tag (vd. vi-v1.0.3).
+# Ghi chú phát hành lấy từ vi/release-notes/<tag>.md; workflow tự thêm SHA-256 vào cuối.
+name: Phát hành EPUB tiếng Việt
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag phát hành, vd. vi-v1.0.3 (phải có vi/release-notes/<tag>.md)'
+        required: true
+      title:
+        description: 'Tên release'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Dựng EPUB
+        run: |
+          npm --prefix tools/vi ci --omit=dev
+          node tools/vi/build-epub.mjs dist/HowToLiveBetter-vi.epub
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: EPUBCheck
+        run: |
+          curl -sSL -o epubcheck.zip https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip
+          unzip -q epubcheck.zip
+          java -jar epubcheck-5.4.0/epubcheck.jar dist/HowToLiveBetter-vi.epub
+
+      - name: Kiểm tra nội dung và liên kết nội bộ
+        run: |
+          mkdir -p /tmp/vi-epub && cd /tmp/vi-epub && unzip -q "$GITHUB_WORKSPACE/dist/HowToLiveBetter-vi.epub" && cd "$GITHUB_WORKSPACE"
+          node tools/vi/check-content.mjs /tmp/vi-epub/OEBPS
+          node tools/vi/check-links.mjs /tmp/vi-epub/OEBPS
+
+      - name: Tạo release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          TITLE: ${{ inputs.title }}
+        run: |
+          notes="vi/release-notes/${TAG}.md"
+          test -f "$notes" || { echo "Thiếu $notes"; exit 1; }
+          sha=$(sha256sum dist/HowToLiveBetter-vi.epub | cut -d' ' -f1)
+          { cat "$notes"; printf '\n## SHA-256\n\n```\n%s  HowToLiveBetter-vi.epub\n```\n\nDựng từ commit `%s`.\n' "$sha" "${GITHUB_SHA::7}"; } > /tmp/notes.md
+          gh release create "$TAG" dist/HowToLiveBetter-vi.epub --target "$GITHUB_SHA" --title "$TITLE" --notes-file /tmp/notes.md
