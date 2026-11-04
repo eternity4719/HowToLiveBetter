@@ -329,7 +329,7 @@ Liên kết tới bài báo, DOI và văn bản pháp luật được giữ nguy
 
 ## Về phông chữ
 
-Sách nhúng sẵn phông Literata (phần thân), Be Vietnam Pro (tiêu đề) và Cormorant Garamond (trang bìa, chữ đầu chương), phát hành theo SIL Open Font License 1.1. Bạn vẫn có thể chọn phông chữ và cỡ chữ của riêng mình trong ứng dụng đọc; khi đó phông nhúng sẽ nhường chỗ cho lựa chọn của bạn.
+Sách nhúng sẵn phông Literata (phần thân), Be Vietnam Pro (tiêu đề) và Cormorant Garamond (trang bìa), phát hành theo SIL Open Font License 1.1, và HTLB Symbols (rút từ DejaVu Serif, giấy phép Bitstream Vera) cho các ký hiệu như ℃, ≥, γ mà ba phông kia không có. Bạn vẫn có thể chọn phông chữ và cỡ chữ của riêng mình trong ứng dụng đọc; khi đó phông nhúng sẽ nhường chỗ cho lựa chọn của bạn.
 `;
   page = { headings: [], linkMap: new Map() };
   pages.push({ file: 'back.xhtml', title: 'Ghi chú kỹ thuật', cls: 'backmatter', body: `<section epub:type="colophon" class="backmatter">${renderMd(md)}</section>` });
@@ -344,6 +344,20 @@ for (const p of pages) {
     : p.file.startsWith('doc') ? (p.headings ?? []).filter(h => h.depth === 2).map(h => ({ href: `${p.file}#${h.id}`, text: h.text })) : [];
   navList.push({ href: p.file, text: p.title, subs });
 }
+// nav.xhtml (đủ 767 mục) chỉ dùng cho menu Mục lục của ứng dụng đọc, không nằm trong mạch đọc.
+// Trang mục lục trong sách (toc.xhtml) chỉ liệt kê chương và phụ lục, mỗi liên kết trỏ tới đầu tệp,
+// không có «#mảnh»: Boox (NeoReader) coi liên kết nội bộ có «#mảnh» như chú thích và mở popup
+// chữ trơn thay vì nhảy trang, nên bấm vào mục trong trang mục lục cũ chỉ ra một khung chữ dính liền.
+const tocBody = `<nav id="toc" class="book-toc" role="doc-toc" aria-label="Mục lục">
+<h1>Mục lục</h1>
+<p class="toc-hint">Danh sách từng mục trong mỗi chương có trong menu Mục lục của ứng dụng đọc.</p>
+<ol>
+${navList.map(n => `<li><a href="${n.href}">${esc(n.text)}</a></li>`).join('\n')}
+</ol>
+</nav>`;
+// Trang mục lục cũng có mặt trong menu Mục lục và NCX; nếu không, Boox hiện tên chương trước đó
+// («Bảng thuật ngữ…») ở chân trang khi đang đứng trên trang mục lục.
+navList.splice(navList.findIndex(n => n.href === 'ch01.xhtml'), 0, { href: 'toc.xhtml', text: 'Mục lục', subs: [] });
 const navBody = `<nav epub:type="toc" id="toc">
 <h1>Mục lục</h1>
 <ol>
@@ -357,24 +371,13 @@ ${navList.map(n => `<li><a href="${n.href}">${esc(n.text)}</a>${n.subs.length ? 
 <li><a epub:type="bodymatter" href="ch01.xhtml">Nội dung</a></li>
 </ol>
 </nav>`;
-// nav.xhtml (đủ 767 mục) chỉ dùng cho menu Mục lục của ứng dụng đọc, không nằm trong mạch đọc.
-// Trang mục lục trong sách (toc.xhtml) chỉ liệt kê chương và phụ lục, mỗi liên kết trỏ tới đầu tệp,
-// không có «#mảnh»: Boox (NeoReader) coi liên kết nội bộ có «#mảnh» như chú thích và mở popup
-// chữ trơn thay vì nhảy trang, nên bấm vào mục trong trang mục lục cũ chỉ ra một khung chữ dính liền.
-const tocBody = `<nav id="toc" class="book-toc" role="doc-toc" aria-label="Mục lục">
-<h1>Mục lục</h1>
-<p class="toc-hint">Danh sách từng mục trong mỗi chương có trong menu Mục lục của ứng dụng đọc.</p>
-<ol>
-${navList.map(n => `<li><a href="${n.href}">${esc(n.text)}</a></li>`).join('\n')}
-</ol>
-</nav>`;
 pages.splice(pages.findIndex(p => p.file === 'ch01.xhtml'), 0, { file: 'toc.xhtml', title: 'Mục lục', body: tocBody });
 
 // ===== OPF =====
 const coverExists = existsSync(resolve(VI, 'cover.png'));
 if (!coverExists) throw new Error('thiếu vi/cover.png — chạy node tools/vi/make-cover.mjs trước');
 const modified = NOW.toISOString().replace(/\.\d{3}Z$/, 'Z');
-const fontFiles = ['Literata-Regular.ttf', 'Literata-SemiBold.ttf', 'Literata-Italic.ttf', 'BeVietnamPro-Regular.ttf', 'BeVietnamPro-SemiBold.ttf', 'Cormorant-SemiBold.ttf'];
+const fontFiles = ['Literata-Regular.ttf', 'Literata-SemiBold.ttf', 'Literata-Italic.ttf', 'BeVietnamPro-Regular.ttf', 'BeVietnamPro-SemiBold.ttf', 'Cormorant-SemiBold.ttf', 'HTLBSymbols-Regular.ttf'];
 const manifestItems = [
   `<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>`,
   `<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>`,
@@ -450,6 +453,8 @@ const container = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 // ===== zip =====
+// ①–⑳ không có trong phông nào được nhúng (kể cả HTLB Symbols), nên đổi thành (1)–(20).
+const circled = html => html.replace(/[\u2460-\u2473]/g, ch => `(${ch.codePointAt(0) - 0x245f})`);
 const entries = [
   { name: 'mimetype', data: Buffer.from('application/epub+zip'), store: true },
   { name: 'META-INF/container.xml', data: Buffer.from(container) },
@@ -459,7 +464,7 @@ const entries = [
   { name: 'OEBPS/style.css', data: readFileSync(resolve(ROOT, 'tools/vi/style.css')) },
   { name: 'OEBPS/cover.png', data: readFileSync(resolve(VI, 'cover.png')) },
   ...fontFiles.map(f => ({ name: `OEBPS/fonts/${f}`, data: readFileSync(resolve(VI, 'fonts', f)) })),
-  ...pages.map(p => ({ name: `OEBPS/${p.file}`, data: Buffer.from(wrap(p.title, p.body, { cls: p.cls ?? '' })) })),
+  ...pages.map(p => ({ name: `OEBPS/${p.file}`, data: Buffer.from(wrap(p.title, circled(p.body), { cls: p.cls ?? '' })) })),
 ];
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, zip(entries, NOW));
