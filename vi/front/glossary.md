@@ -50,8 +50,8 @@ Phần thân sách cố gắng dùng lời thường, nhưng khi dẫn nghiên c
 ## Vài đơn vị và cách viết riêng của sách
 
 - **tệ**: nhân dân tệ (CNY). Sách giữ đơn vị gốc, không quy đổi sang đồng.
-- **vạn**: 10.000. «340 vạn» là 3.400.000. Cách viết này theo nguyên tác; trong đời thường người Việt hay nói «3,4 triệu».
-- **Số thập phân** giữ dấu chấm như bản gốc (0.65) để đối chiếu với bảng số của nghiên cứu; dấu phẩy trong sách dùng để ngăn cách hàng nghìn khi nguyên tác viết như vậy.
+- **vạn**: 10.000. Nguyên tác dùng `万`; bản dịch đã đổi sang cách viết Việt Nam, ví dụ «340 vạn» thành «3.400.000».
+- **Số thập phân** viết theo cách Việt Nam: dấu phẩy ngăn phần thập phân (0,65), dấu chấm ngăn hàng nghìn (248.099). Giá trị không đổi so với nguyên tác.
 - **Năm-bao**: xem mục «Năm-bao thuốc» ở trên.
 - **Điều, khoản, điểm** là cách gọi các phần của văn bản pháp luật Trung Quốc, không tương ứng một-một với cách gọi trong văn bản pháp luật Việt Nam.
 - **「Chỉ áp dụng ở Trung Quốc」**: ghi chú của người dịch, cho biết nội dung mục đó gắn với pháp luật hoặc thủ tục của Trung Quốc đại lục.

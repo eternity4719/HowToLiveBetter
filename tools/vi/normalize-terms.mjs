@@ -13,6 +13,9 @@ const fixes = [
   [/(?<!chi )(?<!tình )tiết trong/g, 'phần trong'],
   // nhãn cảnh báo thống nhất
   [/Chỉ tham khảo TQ:/g, 'Chỉ áp dụng ở Trung Quốc:'],
+  [/Bộ Quản lý khẩn cấp/g, 'Bộ Quản lý Tình trạng Khẩn cấp'],
+  [/Cục Bảo hiểm y tế nhà nước/g, 'Cục Bảo hiểm y tế Quốc gia'],
+  [/Ủy ban Y tế quốc gia/g, 'Ủy ban Y tế Quốc gia'],
   // khoảng tin cậy: giữ nguyên trong Nguồn, ngoài Nguồn dùng KTC
 ];
 const fixLine = (line) => {
