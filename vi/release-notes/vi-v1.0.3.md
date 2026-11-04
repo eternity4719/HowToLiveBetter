@@ -1,4 +1,4 @@
-# Cẩm nang sống đáng giá — bản tiếng Việt (v1.0.3)
+# Cẩm nang sống đáng giá — bản tiếng Việt (v1.0.3, sửa hiển thị Boox)
 
 Bản dịch tiếng Việt đầy đủ của **《高性价比人生指南》** (*HowToLiveBetter*) của **eternity4719**, nguyên tác tại commit `e2605d3`.
 
