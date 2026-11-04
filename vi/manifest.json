@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:09:43.849Z",
+ "generatedAt": "2026-11-04T02:14:39.866Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 19,
+  "chaptersComplete": 21,
   "entriesSource": 767,
-  "entriesPresent": 733,
-  "entriesVerified": 520,
-  "coverage": 0.678
+  "entriesPresent": 741,
+  "entriesVerified": 561,
+  "coverage": 0.7314
  },
  "chapters": [
   {
@@ -257,36 +257,26 @@
    "zh": "19-在职离职和工伤.md",
    "vi": "19-di-lam-nghi-viec-va-tai-nan-lao-dong.md",
    "entriesSource": 24,
-   "entriesTranslated": 19,
-   "missingEntries": [
-    20,
-    21,
-    22,
-    23,
-    24
-   ],
-   "missingNumbers": 4,
+   "entriesTranslated": 24,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 20,
    "zh": "20-刚出生的孩子怎么带.md",
    "vi": "20-cham-tre-so-sinh.md",
    "entriesSource": 17,
-   "entriesTranslated": 14,
-   "missingEntries": [
-    15,
-    16,
-    17
-   ],
-   "missingNumbers": 5,
+   "entriesTranslated": 17,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 21,
