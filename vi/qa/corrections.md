@@ -32,6 +32,8 @@ Cập nhật: đang thực hiện. Mọi con số dưới đây lấy từ `vi/q
 | S-17 | TRUNG BÌNH | 22 phần mở đầu cũ thiếu mục mới, có chương thiếu 10 mục; một số tiêu đề còn chữ Hán | kiểm tra tập số mục từng chương | dịch lại 34 phần mở đầu, kiểm tra đủ/không lặp, nối liên kết nội bộ | đã sửa |
 | S-18 | THẤP | `十万分之一` dịch thành «một phần một trăm nghìn», đúng nghĩa nhưng mất con số để đối chiếu | audit chương 20 | đổi thành `1/100.000` | đã sửa |
 
+| S-19 | CAO | Các sửa tay ở chương 1, 18, 20, 22 bị lần gộp sau ghi đè, lỗi cũ quay lại (`cải tạo không giam giữ`, `dưới tầng hầm một`) | rà lại sau khi gộp chương 31–33 | thêm `fixups.mjs` chạy trong `postmerge.mjs` sau chuẩn hóa | đã sửa |
+
 ## 2. Quy trình sửa một mục
 
 1. Đọc nguyên tác của đúng mục đó, không đọc câu rời.

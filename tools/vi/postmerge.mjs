@@ -11,5 +11,6 @@ run(['tools/vi/merge.mjs']);
 run(['tools/vi/merge-docs.mjs']);
 run(['tools/vi/normalize-units.mjs']);
 run(['tools/vi/normalize-terms.mjs']);
+run(['tools/vi/fixups.mjs']);
 run(['tools/vi/audit.mjs']);
 run(['tools/vi/manifest.mjs']);
