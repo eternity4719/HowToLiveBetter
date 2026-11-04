@@ -52,13 +52,9 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 </td></tr>
 <tr><td align="right"><b>其他语言</b></td><td align="left">
 
-[English](https://book.dlgrv.com/en/) · [Русский](https://book.dlgrv.com/ru/) · [Español](https://book.dlgrv.com/es/) · [Português](https://book.dlgrv.com/pt/) · [العربية](https://book.dlgrv.com/ar/) · [Bahasa Indonesia](https://book.dlgrv.com/id/)，[dlgrv](https://github.com/dlgrv) 维护的翻译（[仓库](https://github.com/dlgrv/HowToLiveBetter)）
+[English](其他语言.md) · [Русский](其他语言.md) · [Español](其他语言.md) · [Português](其他语言.md) · [العربية](其他语言.md) · [Bahasa Indonesia](其他语言.md) · [Tiếng Việt](其他语言.md)
 
-[English（The Evidence-Based Life）](https://parveen0029.github.io/The-Evidence-Based-Life/)，[parveen0029](https://github.com/parveen0029) 维护的另一份英文翻译（[仓库](https://github.com/parveen0029/The-Evidence-Based-Life)）
-
-[Tiếng Việt](https://chuanman2707.github.io/HowToLiveBetter/)，[chuanman2707](https://github.com/chuanman2707) 维护的越南语翻译（[仓库](https://github.com/chuanman2707/HowToLiveBetter)）
-
-[Tiếng Việt（Cải biên theo luật pháp Việt Nam）](https://quangpao.github.io/HowToLiveBetter/)，[quangpao](https://github.com/quangpao) 维护的另一份越南语翻译，法律相关的内容按越南的规定改写（[仓库](https://github.com/quangpao/HowToLiveBetter)）
+读者翻译的版本，各版本的网站和维护者见[其他语言](其他语言.md)
 
 </td></tr>
 <tr><td align="right"><b>衍生工具</b></td><td align="left">
