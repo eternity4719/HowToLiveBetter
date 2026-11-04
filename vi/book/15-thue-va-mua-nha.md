@@ -3,6 +3,7 @@
 # 15. Thuê nhà và mua nhà
 
 Phần này đo bằng tiền. Chỗ dễ mất tiền nhất khi đi thuê nhà là tiền đặt cọc và tiền môi giới. Chỗ tốn tiền nhất khi mua nhà là lãi vay, cùng những chuyện người bán biết mà bạn không biết. Mấy mục ở cuối phần này nói về mua nhà: tiền phải chuyển vào tài khoản nào, tiền đặt cọc và tiền nhà khi nào thì đòi lại được, giao nhà muộn thì làm sao. Còn có cách phòng chuyện người bán bán một căn nhà cho hai người, và cách thương lượng để hạ lãi suất vay mua nhà. Hai mục cuối nói chuyện sau khi đã dọn vào ở: ban quản lý không được cắt nước, cắt điện để ép đóng phí quản lý; nhà mới bị dột trong thời hạn bảo hành thì tìm chủ đầu tư sửa.
+
 ### 1. Số tiền cọc, thời gian hoàn trả và các trường hợp bị trừ phải viết vào hợp đồng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=vua quy-mo=tien -->
 - Chi phí: Không tốn đồng nào, lúc ký hợp đồng bạn chỉ mất thêm chừng mười phút. Phần khó nhất là phải mở lời yêu cầu ngay trước mặt chủ nhà.

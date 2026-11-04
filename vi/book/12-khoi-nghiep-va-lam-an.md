@@ -20,6 +20,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 
 **Rút lui**: lỗ thì rút lui theo đúng trình tự (mục 23).
 
+
 ### 1. Chỉ khởi nghiệp bằng số tiền lỗ được, không đụng vào gia sản, không vay để khai trương
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn tiền. Trước khi bắt tay, bạn tự đặt ra một con số: số tiền này có lỗ sạch cũng không ảnh hưởng đến việc trả nợ mua nhà, nuôi con, chữa bệnh của bạn. Vượt quá con số đó thì bạn không đầu tư nữa. Tiền của người trong nhà và tiền đi vay không tính vào con số này. Phần khó là lúc việc làm ăn trông có khởi sắc, bạn phải nén lại, không rót thêm vào.

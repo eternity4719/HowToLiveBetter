@@ -15,6 +15,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Xét chức danh**: xét chức danh thì tìm kênh nộp hồ sơ (mục 20), chức danh sơ cấp và trung cấp ngành kế toán thì thi thống nhất (mục 21), đừng tìm môi giới làm hộ (mục 22), có chức danh không có nghĩa là được tăng lương (mục 23).
 
 **Học thạc sĩ và tiến sĩ**: tốt nghiệp đại học có nên học tiếp thạc sĩ hay không (mục 24), tốt nghiệp thạc sĩ có nên học tiếp tiến sĩ hay không (mục 25).
+
 ### 1. Chưa đủ 16 tuổi không có lựa chọn "đi làm": đơn vị thuê bạn bị phạt 5000 tệ mỗi tháng, chịu nhận toàn là chỗ thuê chui
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Bạn không tốn đồng nào, chỉ tốn một phút ngồi tính xem mình bao nhiêu tuổi.

@@ -7,6 +7,7 @@ Phần này tính hai khoản là tiền và thời gian; riêng mục về vi�
 Sau mười tám tuổi, số đường có thể đi nhiều hơn hẳn những gì phần này viết ra. Ở đây chỉ thu những con đường có văn bản công khai ở cấp toàn quốc, ngưỡng cửa và chế độ đãi ngộ đối chiếu được từng dòng. Vào doanh nghiệp nhà nước, vào nhà máy, làm thuyền viên, làm nghề tự do, học tiếp cấp ba rồi đại học, tất cả đều là đường đi được. Chỉ có điều những đường đó không có văn bản thống nhất để tra, nên sách không dựa vào cảm giác mà viết điều kiện cho chúng.
 
 Chọn con đường nào là việc của bạn. Phần này chỉ đưa hai thứ: ngưỡng cửa nằm trong văn bản nào, và khi đã bước lên thì có những thời hạn cùng tư cách nào quá hạn là mất. Bài toán nên đi học hay đi làm tính thế nào, chọn kỹ năng ra sao, xem phần 23. Sau khi vào cơ quan, tiền làm thêm giờ, tai nạn lao động và trợ cấp nghỉ việc xem phần 19. Vốn mở cửa hàng, lập công ty và đường rút ra xem phần 12. Du học xem phần 32. Chế độ bảo đảm sau khi mất việc xem phần 7. Những nội dung đó không viết lại.
+
 ### 1. Trước đối ngưỡng cửa một lần: yêu cầu tuổi và học lực của mười hai con đường đều viết chết rõ trong văn kiện
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=thoi-gian -->
 - Chi phí: Không tốn đồng nào. Bạn chỉ cần bỏ ra mười phút để tự đối chiếu một lượt, xem mình có với tới ngưỡng cửa hay không.

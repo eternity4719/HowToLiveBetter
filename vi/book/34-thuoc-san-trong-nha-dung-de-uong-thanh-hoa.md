@@ -9,6 +9,7 @@ Mọi mục trong phần này đều tính theo quy mô tử vong. Phần lớn 
 Những nội dung đã viết ở chỗ khác thì ở đây chỉ nhắc để bạn biết xem ở đâu. Lỡ uống nhầm thuốc hoặc chất tẩy rửa thì trước hết làm gì, xem phần 13, mục 20 (uống nhầm). Thuốc bệnh mạn tính uống đủ theo chỉ định, xem phần 16, mục 1 (uống thuốc đủ theo chỉ định). Mua thuốc kê đơn trên mạng phải qua duyệt đơn trước, xem phần 28, mục 6 (thuốc giảm cân thì đến viện lấy đơn).
 
 Người hưởng lợi của các mục trong phần này là chính bạn và người nhà, thuộc hai bậc cao nhất.
+
 ### 1. Trước khi uống cùng lúc hai loại thuốc cảm hay thuốc giảm đau, nhìn bảng thành phần, paracetamol chỉ được chiếm một loại
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn đồng nào. Bạn chỉ cần liếc qua bảng thành phần trên mỗi hộp thuốc, mất chừng một hai phút.

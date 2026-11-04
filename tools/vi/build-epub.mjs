@@ -248,7 +248,7 @@ for (const [file, id, cls, type] of [
 // chương
 for (const c of chapters) {
   page = { headings: [], linkMap: new Map() };
-  const intro = renderMd(c.intro);
+  const intro = xref(renderMd(c.intro), c.no);
   const body = `<section epub:type="chapter" class="chapter">
 <header class="chapter-head">
 <p class="chapter-kicker">Chương ${String(c.no).padStart(2, '0')}</p>

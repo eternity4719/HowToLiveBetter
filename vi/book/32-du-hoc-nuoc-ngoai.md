@@ -7,6 +7,7 @@ Phần này tính hai khoản là tiền và tự do thân thể, không bàn n�
 Phần này gồm bốn nước Mỹ, Canada, Anh và Úc, số liệu liệt kê riêng từng nước. Nguồn là trang chính thức của cơ quan di trú các nước và Bộ Giáo dục Trung Quốc. **Chính sách du học của các nước đổi rất thường xuyên, còn thường xuyên hơn cả quy định pháp luật của Trung Quốc. Mọi con số trong phần này chốt đến tháng 9 năm 2026. Trước khi lên đường và trước mỗi lần gia hạn visa, bạn hãy theo đường link ở cột nguồn tự tra lại một lần.**
 
 Khi ở nước ngoài gặp chuyện thì tìm đại sứ quán, lãnh sự quán thế nào, 12308 xử lý được việc gì, bảo hiểm y tế và cứu hộ chuyển viện ở nước ngoài mua ra sao, xem phần 21. Bài toán nên đi học hay đi làm, xem phần 23. Tài khoản bị đánh cắp xem phần 14, lừa đảo qua điện thoại xem phần 8. Những nội dung đó không viết lại.
+
 ### 1. Trước khi đóng học phí, trước tra trường có trong danh sách trường được chứng nhận của Trung tâm Dịch vụ Lưu học không
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn đồng nào. Bạn vào mục "tra cứu cơ sở đào tạo được công nhận" của Trung tâm Dịch vụ Lưu học rồi gõ tên trường, chỉ vài phút là xong.

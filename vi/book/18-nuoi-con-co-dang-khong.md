@@ -4,6 +4,7 @@
 
 Phần này tính hai khoản: tiền và thời gian. Giống như phần 10 tính chuyện cưới xin, ở đây chỉ tách các khoản ra cho bạn xem, không kết luận thay bạn. Bạn nào đã mang thai và phải làm thủ tục từng bước thì xem phần 27.
 
+
 ### 1. Tính trước những khoản có thể nhận: trợ cấp nuôi con quốc gia 3600 tệ mỗi con mỗi năm, trả đến 3 tuổi; khấu trừ bổ sung cho thuế thu nhập cá nhân 2000 tệ mỗi con mỗi tháng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn tiền. Trợ cấp thì đến nơi đăng ký hộ khẩu của con để xin, đi một chuyến là xong. Khoản khấu trừ thuế thì điền trên ứng dụng “Thuế thu nhập cá nhân” trong điện thoại, hoặc giao cho đơn vị điền.

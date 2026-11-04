@@ -17,6 +17,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Tâm lý và cách quản con ở nhà**: sàng lọc trầm cảm (mục 8), con mê chơi game (mục 14), con nói mình thích người cùng giới (mục 15), quản con thì đừng ra tay đánh (mục 16), đi học lớp dành cho cha mẹ (mục 17), đừng đưa con vào trường cai nghiện mạng (mục 18), nhận biết vùng riêng tư (mục 19).
 
 **Trên đường và ở sân chơi thể thao**: chưa đủ tuổi thì không đi xe đạp ra đường (mục 20), chơi thể thao bị đập vào đầu thì trong ngày hôm đó không vào sân nữa (mục 21).
+
 ### 1. Con nói đau dữ đột ngột, lại ngày một nặng hơn, lập tức đi bệnh viện, đừng cho nó nhịn tới tan học
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Bạn xin nghỉ nửa ngày, rồi dẫn con đi khám cấp cứu.

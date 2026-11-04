@@ -11,6 +11,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Nghỉ việc và bị sa thải**: bị sa thải thì tính rõ N trước (mục 4), không báo trước 30 ngày (mục 5), tiền bồi thường khi chấm dứt hợp đồng trái luật (mục 6), đừng ký giấy «tự nguyện xin nghỉ vì lý do cá nhân» (mục 7), giữ chứng cứ trước khi nghỉ việc (mục 8), giấy xác nhận nghỉ việc (mục 17), thuế thu nhập của khoản bồi thường nghỉ việc (mục 18), bị đòi tiền vi phạm hợp đồng khi nghỉ việc (mục 22), chuyển quan hệ bảo hiểm xã hội sang nơi đóng mới (mục 19).
 
 **Bệnh nghề nghiệp và tai nạn lao động**: ba lần khám sức khỏe nghề nghiệp (mục 9), đơn vị bắt buộc phải cấp đồ bảo hộ (mục 10), làm giám định tai nạn lao động (mục 11), thấy khó chịu đột ngột thì gọi 120 trước (mục 12), không đóng bảo hiểm tai nạn lao động (mục 13), giám định khả năng lao động (mục 14), ba khoản tiền khi chết vì tai nạn lao động (mục 15).
+
 ### 1. Tiền tăng ca tính theo ba bậc 1,5 lần, 2 lần, 3 lần, không trả thì tố cáo thanh tra lao động, quá hạn không trả còn phải cộng thêm 50% đến 100%
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn đồng nào. Hàng ngày bạn tiện tay lưu một bản hồ sơ chấm công, bảng xếp ca, đơn duyệt tăng ca; tin nhắn giao việc của lãnh đạo trong nhóm thì chụp màn hình giữ lại. Khó ở chỗ tháng nào bạn cũng phải nhớ lưu.

@@ -19,6 +19,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Sau khi sinh**: lần khám lại vào ngày thứ 42 sau sinh (mục 16), cho con bú không thay được biện pháp tránh thai (mục 20).
 
 **Tiền và giấy tờ**: xác nhận bảo hiểm sinh sản (mục 11), Giấy chứng nhận y học về sinh (mục 12), sàng lọc máu gót chân và sàng lọc thính lực (mục 13), làm bảo hiểm y tế cư dân cho con (mục 14), khai đăng ký khai sinh (mục 15).
+
 ### 1. Chuẩn bị mang thai đã bắt đầu mỗi ngày bổ 0,4 mg acid folic, uống tới khi đầu thai kỳ đủ 3 tháng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Vài chục tệ một lọ. Phụ nữ nông thôn TQ không phải trả tiền, vì dự án tăng bổ acid folic miễn phí của nhà nước sẽ phát. Mỗi ngày uống một viên, khó ở chỗ ngày nào cũng nhớ

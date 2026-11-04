@@ -3,6 +3,7 @@
 # 14. Tài khoản và an toàn thông tin
 
 Phần này đo bằng tiền và thông tin cá nhân. Khi tài khoản bị người khác đăng nhập, thứ bạn mất trước hết là tiền. Đối phương còn dùng tài khoản của bạn để đi lừa những người trong danh bạ. Danh tính của bạn cũng coi như bị người ta lấy mất.
+
 ### 1. Email, thanh toán, tài khoản mạng xã hội đều bật xác minh hai bước; ưu tiên xác nhận bằng cửa sổ bật trên điện thoại, mã xác minh SMS chỉ đứng sau
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn đồng nào. Mỗi tài khoản bạn chỉ cài một lần, mất chừng hai ba phút là xong.

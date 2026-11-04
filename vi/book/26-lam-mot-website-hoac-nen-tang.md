@@ -3,6 +3,7 @@
 # 26. Làm một website hay nền tảng: tư cách, đăng ký và máy chủ
 
 Bạn muốn làm một website hoặc một ứng dụng. Phần này trả lời bốn việc: về mặt pháp luật thì nó thuộc loại hình kinh doanh nào, phải làm giấy phép nào, đặt máy chủ ở đâu, và ai chịu trách nhiệm về những gì người dùng đăng lên cùng số tiền thu về. Phần này tính bằng tự do thân thể và tiền. Nếu bạn là nhân viên kỹ thuật đi làm thuê thì làn ranh đỏ của bạn nằm ở phần 11. Công ty đăng ký thế nào và khai thuế thế nào thì xem phần 12, phần này không nhắc lại. Bảng đối chiếu các loại giấy phép và bảng quyết định chọn máy chủ xem ở [docs/lam-nen-tang-can-nhung-giay-phep-gi.md](../docs/lam-nen-tang-can-nhung-giay-phep-gi.md).
+
 ### 1. Nền tảng đừng tự thu tiền rồi chuyển cho người bán, để tiền đi qua cơ sở thanh toán có phép quyết toán thẳng
 <!-- nhan-chi-phi: tien=0 thoi-gian=vua y-chi=khong loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Không tốn tiền. Bạn chỉ tốn chút thời gian để nối sản phẩm của một cơ sở thanh toán có phép. Cơ sở thanh toán có phép là công ty đã lấy được giấy phép thanh toán của ngân hàng trung ương. Bạn dùng tính năng chia tiền hoặc giao dịch bảo đảm của họ thì tiền người mua đi thẳng sang người bán, không vào tài khoản của chính nền tảng

@@ -5,6 +5,7 @@
 Phần này đo bằng tiền và thời gian, và nói việc đi khám bệnh nên đi thế nào: khám ở bệnh viện nào trước, chuyển lên trên ra sao, tiền bớt được ở chỗ nào. Ngoài ra còn nói cấp cứu xếp hàng thế nào, và sau khi chữa xong vết thương nặng thì phải làm những giám định nào, làm những giấy tờ nào. Bạn được hưởng chế độ gì thì xem phần 7. Bệnh mạn tính quản lý lâu dài thế nào thì xem phần 16. Tại chỗ cấp cứu nên làm gì trước thì xem phần 13.
 
 Phần này chủ yếu dựa theo «Một số biện pháp đẩy nhanh xây dựng hệ thống điều trị phân tuyến», do Văn phòng Quốc vụ viện ban hành tháng 4 năm 2026. Điều trị phân tuyến nghĩa là dựa vào bệnh nặng hay nhẹ để quyết định bạn nên đến bệnh viện cấp nào trước. Văn bản này gắn thẳng chuyện «xuống tuyến dưới» với chuyện «tiết kiệm tiền». Nhưng tốc độ triển khai ở mỗi nơi một khác, nên phần thân bài chỉ viết quy tắc ở cấp quốc gia. Cụ thể đến vùng quyết toán của bạn thì phải lấy cách nói của cơ quan bảo hiểm y tế và cơ quan y tế địa phương làm chuẩn. Vùng quyết toán là nơi bạn tham gia bảo hiểm y tế, thường là một thành phố.
+
 ### 1. Bệnh thường khám ở cộng đồng trước, chuyển tuyến từng cấp lên trên, vạch khởi tuyến nằm viện tính nối tiếp
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=vua quy-mo=tien -->
 - Chi phí: Không tốn tiền. Bạn phải đi một lần ở cơ sở cộng đồng trước. Phần khó nhất là nhịn, không đi thẳng lấy số chuyên gia.

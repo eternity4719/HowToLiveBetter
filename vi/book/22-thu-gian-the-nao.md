@@ -4,6 +4,7 @@
 
 Nửa đầu phần này nói những khoản tiền dễ bỏ oan ở chỗ giải trí và lối thoát hiểm nằm ở đâu; thước đo là tiền và tự do thân thể. Nửa sau nói cách giảm căng thẳng; thước đo là sức lực và tỷ lệ tử vong mọi nguyên nhân. Con số của hai nửa không quy đổi sang nhau. Hai mục cuối, 11 và 12, nói cách chơi mà không gặp chuyện: uống rượu thì đừng ngâm suối nước nóng hay xông hơi; trượt tuyết, đạp xe thì đội mũ bảo hiểm; thước đo là tỷ lệ tử vong. Phần 3 đã viết nên làm gì trước khi tinh thần xuống thấp; ở đây đưa cách làm cụ thể hơn.
 
+
 ### 1. Vào KTV, quán bar, phòng escape room thì trước tiên nhìn xem lối thoát hiểm ở đâu, bị khóa hay bị chặn thì đổi chỗ khác
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Lúc bước vào cửa, ngước lên nhìn 10 giây.

@@ -25,6 +25,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Tâm lý và người chăm sóc**: nguy cơ tự tử trong mười năm đầu sau khi bị khuyết tật (mục 2), người chăm sóc phải giữ sức khỏe của chính mình (mục 4).
 
 **Rối loạn tâm thần và giám hộ**: nằm viện vì rối loạn tâm thần lấy tự nguyện làm nguyên tắc (mục 3), muốn xác định năng lực hành vi thì phải xin tòa án (mục 18), người giám hộ xác định theo thứ tự pháp định (mục 19).
+
 ### 1. Sau tổn thương tủy sống đột nhiên đau đầu dữ dội, ra mồ hôi, trước hết dìu ngồi thẳng, nới quần áo, đồng thời gọi cấp cứu (TQ: 120)
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Chỉ có ba động tác, vài chục giây là xong.

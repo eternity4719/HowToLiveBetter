@@ -18,6 +18,7 @@ Các mục trong chương chia theo chủ đề thành mấy khối dưới đâ
 
 **Câu trả lời do AI đưa ra**: dựa vào chatbot AI để tự đoán bệnh (mục 31).
 
+
 ### 1. Đừng uống vitamin tổng hợp để sống lâu hay phòng bệnh tim mạch
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=tien -->
 - Chi phí: Mỗi ngày khoảng 0,5 đến 2 tệ, một năm 200 đến 700 tệ. Uống không tốn thời gian, chỉ một viên là xong. Uống lâu dễ sinh tâm lý phụ thuộc, hôm nào không uống lại thấy như thiếu một việc gì.

@@ -5,6 +5,7 @@
 Phần này nói về mấy cách «động vào cơ thể để đổi ngoại hình»: nhịn đói, uống thuốc, tiêm, mổ. Quyết định làm mấy việc này phần lớn ra đời từ việc so mình với người khác, nhưng cái giá thì rơi hết lên chính bạn, và một phần không nhỏ trong đó không thể đảo lại.
 
 Phần này không đánh giá việc ai muốn biến mình thành người thế nào, đó là chuyện riêng của mỗi người. Cùng một mục tiêu, bạn có thể chọn con đường «có đơn thuốc, có tư cách hành nghề, có khám lại», cũng có thể chọn con đường «mua qua mạng, làm ở tiệm thẩm mỹ, tự tăng liều». Phần này chỉ so xem hai cách làm đó chênh nhau bao nhiêu rủi ro. Cách tính chủ yếu dựa vào những gì thật sự xảy ra trên cơ thể, ví dụ mù mắt, nhập viện, tử vong. Hai mục về thẩm mỹ y khoa còn dính tới trách nhiệm hình sự của tội hành nghề y trái phép.
+
 ### 1. Đừng dùng kiêng cữ cực đoan, nhịn ăn hoặc gây nôn để kiểm soát cân, muốn giảm thì giảm từ phía vận động
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền, ngược lại còn tiết kiệm được cả khoản mua sản phẩm giảm cân.
