@@ -108,7 +108,7 @@ function rewriteHref(href) {
   if (target) return hash ? `${target}#${hash}` : target;
   const doc = docPageByBasename.get(base);
   if (doc) return hash ? `${doc}#${hash}` : doc;
-  if (/(^|\/)README\.md$/.test(norm)) return 'nav.xhtml';
+  if (/(^|\/)README\.md$/.test(norm)) return 'toc.xhtml';
   return `${REPO}/blob/main/${norm}`;
 }
 const docPageByBasename = new Map();
@@ -118,20 +118,42 @@ function renderMd(md) {
   return body.replace(/<!--[\s\S]*?-->/g, '');
 }
 
+// Tham chiếu chéo trong bản dịch có bốn dạng:
+//   «phần 3, mục 18» / «phần 3 mục 18»            → mục 18 của chương 3
+//   «mục 18 phần 3» / «mục 18 của phần 3»          → mục 18 của chương 3 (≈470 chỗ)
+//   «mục 1 và 2 của phần 19», «mục 12 đến 14 phần 8» → từng số thuộc chương 19 / 8
+//   «mục 18» đứng một mình                         → mục 18 của chương đang đọc
+// Bản cũ chỉ nhận dạng thứ nhất và thứ tư, nên «mục 10 của phần 19» bị nối nhầm
+// sang mục 10 của chương đang đọc. chNo = null (phụ lục): chỉ nối các dạng có ghi số phần.
+const xhref = (c, e) => {
+  const id = entryIndex.get(`${c}-${e}`);
+  return id ? `ch${String(c).padStart(2, '0')}.xhtml#${id}` : null;
+};
+const xa = (href, text) => href ? `<a class="xref" href="${href}">${text}</a>` : text;
+const XREF_RE = new RegExp([
+  String.raw`(?:phần|chương)\s+(\d{1,2})\s*,?\s*mục\s+(\d{1,3})\b`,
+  String.raw`mục\s+(\d{1,3})((?:\s*(?:,|và|đến)\s*(?:mục\s+)?\d{1,3}\b)*)(\s*,?\s+(?:của\s+)?(?:phần|chương)\s+)(\d{1,2})\b`,
+  String.raw`mục\s+(\d{1,3})\b`,
+].join('|'), 'g');
+function xrefText(text, chNo) {
+  return text.replace(XREF_RE, (m, c1, e1, e2, list, mid, c2, e3) => {
+    if (c1) return xa(xhref(+c1, +e1), m);
+    if (c2) {
+      const c = +c2;
+      if (!list) return xa(xhref(c, +e2), m);
+      // Nhiều số: nối từng số sang chương đã ghi. «mục 28 và mục 8 phần 8» thì số đầu
+      // có thể thuộc chương đang đọc, không chắc nên để chữ trơn.
+      const ambiguous = /mục/.test(list);
+      const head = ambiguous ? `mục ${e2}` : xa(xhref(c, +e2), `mục ${e2}`);
+      const tail = list.replace(/(mục\s+)?(\d{1,3})/g, (t, w, n) => xa(xhref(c, +n), t));
+      return `${head}${tail}${mid}${c2}`;
+    }
+    return chNo ? xa(xhref(chNo, +e3), m) : m;
+  });
+}
 function xref(html, chNo) {
-  // «phần 3, mục 18» và «mục 18» trong cùng chương → liên kết nội bộ.
-  // Một lượt regex duy nhất để không lồng thẻ <a>.
-  return html.replace(/(phần|chương)\s+(\d{1,2})\s*,\s*mục\s+(\d{1,3})|(mục)\s+(\d{1,3})\b/g,
-    (m, w, c, e, w2, e2, offset, whole) => {
-      if (w) {
-        const id = entryIndex.get(`${Number(c)}-${Number(e)}`);
-        return id ? `<a class="xref" href="ch${String(Number(c)).padStart(2, '0')}.xhtml#${id}">${m}</a>` : m;
-      }
-      const before = whole.slice(Math.max(0, offset - 12), offset);
-      if (/phần\s+\d+\s*,\s*$/.test(before) || /<a[^>]*>$/.test(before)) return m;
-      const id = entryIndex.get(`${chNo}-${Number(e2)}`);
-      return id ? `<a class="xref" href="ch${String(chNo).padStart(2, '0')}.xhtml#${id}">${m}</a>` : m;
-    });
+  // Chỉ thay trong phần chữ, bỏ qua thẻ và nội dung của các thẻ <a> có sẵn để không lồng liên kết.
+  return html.split(/(<a\b[^>]*>[\s\S]*?<\/a>|<[^>]+>)/).map((s, i) => i % 2 ? s : xrefText(s, chNo)).join('');
 }
 
 function renderValue(value, chNo, opts = {}) {
@@ -180,21 +202,28 @@ function costLine(tag) {
   return parts.filter(Boolean).join(' · ');
 }
 
+// Nhãn trường. Dấu «:» ẩn bằng CSS trên trang, nhưng vẫn nằm trong văn bản: Boox và nhiều trình đọc
+// khác hiện cửa sổ xem trước (popup) cho liên kết nội bộ bằng chữ trơn, bỏ hết CSS và ngắt khối,
+// nên thiếu dấu ngăn thì «Chi phí» dính vào câu sau. Trình đọc màn hình cũng đọc liền như vậy.
+const label = name => `<p class="label">${name}<span class="sep">:</span></p>`;
+
 function entryHtml(e, chNo) {
   const f = Object.fromEntries(e.fields.map(x => [x.label, x.value]));
   const grade = (f['Mức chứng cứ'] ?? '').match(/[ABC]/)?.[0] ?? 'C';
   const id = `s${String(chNo).padStart(2, '0')}e${e.no}`;
+  const cost = costLine(e.tag);
+  const field = (cls, name, value, opts) => value ? `<div class="${cls}">\n${label(name)}\n${renderValue(value, chNo, opts)}\n</div>` : '';
   let note = f['Ghi chú'] ? renderValue(f['Ghi chú'], chNo) : '';
   note = note.replace(/^<p>(Chỉ áp dụng ở Trung Quốc:|Chỉ tham khảo TQ:|Chỉ đúng ở Trung Quốc:)/, '<p><strong class="juris">$1</strong>');
   note = note.replace(/^<p>(Còn tranh cãi|Tranh cãi)([:：.])/, '<p><strong class="disputed">$1$2</strong>');
   return `<section class="entry" id="${id}">
-<h2 class="entry-title"><span class="entry-no">${e.no}</span>${esc(e.title)}</h2>
-<p class="entry-meta"><span class="grade ${evidenceClass(grade)}">Mức chứng cứ ${GRADE_LABEL[grade] ?? grade}</span><span class="cost">${esc(costLine(e.tag))}</span></p>
-${f['Chi phí'] ? `<div class="field field-cost"><p class="label">Chi phí</p>${renderValue(f['Chi phí'], chNo)}</div>` : ''}
-${f['Nói dễ hiểu'] ? `<div class="callout"><p class="label">Nói dễ hiểu</p>${renderValue(f['Nói dễ hiểu'], chNo)}</div>` : ''}
-${f['Lợi ích'] ? `<div class="field field-benefit"><p class="label">Lợi ích</p>${renderValue(f['Lợi ích'], chNo)}</div>` : ''}
-${f['Nguồn'] ? `<div class="sources"><p class="label">Nguồn</p>${renderValue(f['Nguồn'], chNo, { noXref: true })}</div>` : ''}
-${note ? `<div class="note"><p class="label">Ghi chú</p>${note}</div>` : ''}
+<h2 class="entry-title"><span class="entry-no">${e.no}.</span> ${esc(e.title)}</h2>
+<p class="entry-meta"><span class="grade ${evidenceClass(grade)}">Mức chứng cứ ${GRADE_LABEL[grade] ?? grade}</span>${cost ? `<span class="sep"> · </span><span class="cost">${esc(cost)}</span>` : ''}</p>
+${field('field field-cost', 'Chi phí', f['Chi phí'])}
+${field('callout', 'Nói dễ hiểu', f['Nói dễ hiểu'])}
+${field('field field-benefit', 'Lợi ích', f['Lợi ích'])}
+${field('sources', 'Nguồn', f['Nguồn'], { noXref: true })}
+${note ? `<div class="note">\n${label('Ghi chú')}\n${note}\n</div>` : ''}
 </section>`;
 }
 
@@ -274,7 +303,7 @@ for (const [i, f] of docFiles.entries()) {
 for (const a of appendices) {
   const p = pages.find(x => x.file === a.file);
   page = { headings: [], linkMap: new Map() };
-  const html = renderMd(p.md.replace(/^\[[^\]]*\]\([^)]*\)\s*\n/, ''));
+  const html = xref(renderMd(p.md.replace(/^\[[^\]]*\]\([^)]*\)\s*\n/, '')), null);
   p.title = p.title ?? page.headings[0]?.text;
   p.headings = page.headings;
   p.body = `<section epub:type="appendix" class="appendix">${html}</section>`;
@@ -310,7 +339,7 @@ Sách nhúng sẵn phông Literata (phần thân), Be Vietnam Pro (tiêu đề) 
 page = { headings: [], linkMap: new Map() };
 const navList = [];
 for (const p of pages) {
-  if (['cover.xhtml', 'nav.xhtml', 'back.xhtml'].includes(p.file)) continue;
+  if (['cover.xhtml', 'back.xhtml'].includes(p.file)) continue;
   const subs = p.chapter ? p.chapter.entries.map(e => ({ href: `${p.file}#s${String(p.chapter.no).padStart(2, '0')}e${e.no}`, text: `${e.no}. ${e.title}` }))
     : p.file.startsWith('doc') ? (p.headings ?? []).filter(h => h.depth === 2).map(h => ({ href: `${p.file}#${h.id}`, text: h.text })) : [];
   navList.push({ href: p.file, text: p.title, subs });
@@ -324,11 +353,22 @@ ${navList.map(n => `<li><a href="${n.href}">${esc(n.text)}</a>${n.subs.length ? 
 <nav epub:type="landmarks" hidden="hidden">
 <ol>
 <li><a epub:type="cover" href="cover.xhtml">Bìa</a></li>
-<li><a epub:type="toc" href="nav.xhtml">Mục lục</a></li>
+<li><a epub:type="toc" href="toc.xhtml">Mục lục</a></li>
 <li><a epub:type="bodymatter" href="ch01.xhtml">Nội dung</a></li>
 </ol>
 </nav>`;
-pages.splice(pages.findIndex(p => p.file === 'ch01.xhtml'), 0, { file: 'nav.xhtml', title: 'Mục lục', body: navBody, nav: true });
+// nav.xhtml (đủ 767 mục) chỉ dùng cho menu Mục lục của ứng dụng đọc, không nằm trong mạch đọc.
+// Trang mục lục trong sách (toc.xhtml) chỉ liệt kê chương và phụ lục, mỗi liên kết trỏ tới đầu tệp,
+// không có «#mảnh»: Boox (NeoReader) coi liên kết nội bộ có «#mảnh» như chú thích và mở popup
+// chữ trơn thay vì nhảy trang, nên bấm vào mục trong trang mục lục cũ chỉ ra một khung chữ dính liền.
+const tocBody = `<nav id="toc" class="book-toc" role="doc-toc" aria-label="Mục lục">
+<h1>Mục lục</h1>
+<p class="toc-hint">Danh sách từng mục trong mỗi chương có trong menu Mục lục của ứng dụng đọc.</p>
+<ol>
+${navList.map(n => `<li><a href="${n.href}">${esc(n.text)}</a></li>`).join('\n')}
+</ol>
+</nav>`;
+pages.splice(pages.findIndex(p => p.file === 'ch01.xhtml'), 0, { file: 'toc.xhtml', title: 'Mục lục', body: tocBody });
 
 // ===== OPF =====
 const coverExists = existsSync(resolve(VI, 'cover.png'));
@@ -341,7 +381,7 @@ const manifestItems = [
   `<item id="css" href="style.css" media-type="text/css"/>`,
   `<item id="cover-img" href="cover.png" media-type="image/png" properties="cover-image"/>`,
   ...fontFiles.map((f, i) => `<item id="font${i + 1}" href="fonts/${f}" media-type="font/ttf"/>`),
-  ...pages.filter(p => p.file !== 'nav.xhtml').map(p => `<item id="${p.file.replace('.xhtml', '')}" href="${p.file}" media-type="application/xhtml+xml"/>`),
+  ...pages.map(p => `<item id="${p.file.replace('.xhtml', '')}" href="${p.file}" media-type="application/xhtml+xml"/>`),
 ];
 const opf = `<?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-id" xml:lang="vi" prefix="schema: http://schema.org/">
@@ -415,6 +455,7 @@ const entries = [
   { name: 'META-INF/container.xml', data: Buffer.from(container) },
   { name: 'OEBPS/content.opf', data: Buffer.from(opf) },
   { name: 'OEBPS/toc.ncx', data: Buffer.from(ncx) },
+  { name: 'OEBPS/nav.xhtml', data: Buffer.from(wrap('Mục lục', navBody)) },
   { name: 'OEBPS/style.css', data: readFileSync(resolve(ROOT, 'tools/vi/style.css')) },
   { name: 'OEBPS/cover.png', data: readFileSync(resolve(VI, 'cover.png')) },
   ...fontFiles.map(f => ({ name: `OEBPS/fonts/${f}`, data: readFileSync(resolve(VI, 'fonts', f)) })),

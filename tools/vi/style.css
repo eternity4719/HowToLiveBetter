@@ -73,7 +73,7 @@ body.cover-page { margin: 0; padding: 0; background: #ffffff; }
 /* ---------- mục ---------- */
 .entry { margin: 2.4em 0 0; padding-top: 1.1em; border-top: 1px solid #555555; page-break-inside: auto; }
 .entry-title { font-size: 1.14em; margin: 0 0 0.35em; display: block; }
-.entry-no { display: inline-block; min-width: 1.55em; margin-right: 0.45em; font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.82em; font-weight: 700; color: #000000; letter-spacing: 0.02em; }
+.entry-no { display: inline-block; min-width: 1.55em; margin-right: 0.2em; font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.82em; font-weight: 700; color: #000000; letter-spacing: 0.02em; }
 .entry-meta { font-family: "Be Vietnam Pro", Arial, sans-serif; font-size: 0.72em; letter-spacing: 0.04em; color: #111111; text-indent: 0; margin: 0 0 1.25em; }
 .entry-meta .grade { display: inline-block; margin-right: 0.7em; padding: 0.08em 0.5em; border: 1px solid #333333; background: #eeeeee; color: #000000; font-weight: 700; letter-spacing: 0.08em; }
 .entry-meta .cost { color: #111111; }
@@ -138,3 +138,9 @@ nav#toc li { margin: 0.5em 0; text-align: left; }
 nav#toc > ol > li > a { font-family: "Be Vietnam Pro", Arial, sans-serif; font-weight: 600; font-size: 0.98em; color: #000000; }
 nav#toc ol ol a { font-size: 0.9em; color: #111111; }
 nav#toc a { text-decoration: none; }
+
+/* Dấu ngăn chỉ để văn bản trơn (popup chú thích của Boox, trình đọc màn hình) không dính chữ;
+   trên trang đã có ngắt khối và khung viền nên ẩn đi. */
+.sep { display: none; }
+.toc-hint { font-size: 0.85em; color: #222222; text-indent: 0; margin: 0 0 1.2em; }
+.book-toc > ol > li { margin: 0.7em 0; }

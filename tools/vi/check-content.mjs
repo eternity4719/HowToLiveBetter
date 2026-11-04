@@ -26,7 +26,7 @@ for (const [no, entries] of source) {
   const file = `ch${String(no).padStart(2, '0')}.xhtml`;
   let html;
   try { html = readFileSync(resolve(dir, file), 'utf8'); } catch { issues.push(`thiếu ${file}`); continue; }
-  const htmlEntries = [...html.matchAll(/<h2 class="entry-title"><span class="entry-no">(\d+)<\/span>([\s\S]*?)<\/h2>/g)]
+  const htmlEntries = [...html.matchAll(/<h2 class="entry-title"><span class="entry-no">(\d+)\.?<\/span>\s*([\s\S]*?)<\/h2>/g)]
     .map(m => ({ no: Number(m[1]), title: strip(m[2]) }));
   if (htmlEntries.length !== entries.length) issues.push(`ch${no}: ${htmlEntries.length} mục trong EPUB, nguồn ${entries.length}`);
   const seen = new Set();
