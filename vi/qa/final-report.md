@@ -49,6 +49,7 @@
 - Chụp 620×1000, 820×1200, 1100×1400 cho bìa, trang tiêu đề, mục lục, mở chương, một mục, phụ lục, trang ấn bản.
 - Phát hiện và sửa tràn ngang 749 px ở phụ lục do URL dài; sau sửa **0 tràn ngang** ở cả ba khổ.
 - Dấu tiếng Việt đủ; không thấy cắt chữ hay ô vuông.
+- **Tương phản cao cho Boox/màn hình màu**: toàn bộ chữ đổi sang đen trên nền trắng; bỏ chữ xám (#5c6575), nhãn vàng nhạt (#8a6d2f), callout kem; callout nay nền trắng viền đen. Tỷ lệ tương phản chữ thân 21:1, chữ phụ 18,9:1, liên kết 12,6:1. Bìa cũng đổi sang đen trên nền trắng ngà.
 - **Chỉ kiểm tra bằng Chromium.** Apple Books có trên máy nhưng phiên chạy không có quyền chụp màn hình; Calibre, Thorium, Kindle, Kobo chưa cài.
 
 ## 4. Cổng chất lượng
