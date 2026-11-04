@@ -8,7 +8,7 @@
 Nguyên tác: **eternity4719** · Bản dịch: **nhóm HowToLiveBetter-vi**
 
 [![EPUB](https://img.shields.io/badge/EPUB-tải%20bản%20mới%20nhất-18794e?style=flat-square)](https://github.com/thuongtin/HowToLiveBetter/releases/latest/download/HowToLiveBetter-vi.epub)
-[![Mục](https://img.shields.io/badge/mục-767%2F767-18794e?style=flat-square)](vi/manifest.json)
+[![Mục](https://img.shields.io/badge/mục-772%2F772-18794e?style=flat-square)](vi/manifest.json)
 [![EPUBCheck](https://img.shields.io/badge/EPUBCheck-0%20lỗi%20%2F%200%20cảnh%20báo-18794e?style=flat-square)](vi/qa/epubcheck.txt)
 [![Giấy phép](https://img.shields.io/badge/giấy%20phép-CC%20BY%204.0-565a5f?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -20,7 +20,7 @@ Nguyên tác: **eternity4719** · Bản dịch: **nhóm HowToLiveBetter-vi**
 
 ## Đây là sách gì
 
-Cuốn sách tính chuyện sống thế nào cho đáng: bỏ ra ít tiền, thời gian và sức lực để đổi lấy nhiều tuổi thọ, tiền bạc và tự do hơn. Sách gồm **34 chương, 767 mục** và **9 bài dài**, viết cho người sống ở Trung Quốc đại lục.
+Cuốn sách tính chuyện sống thế nào cho đáng: bỏ ra ít tiền, thời gian và sức lực để đổi lấy nhiều tuổi thọ, tiền bạc và tự do hơn. Sách gồm **34 chương, 772 mục** và **9 bài dài**, viết cho người sống ở Trung Quốc đại lục.
 
 Mỗi mục trả lời hai câu: phải bỏ ra gì, và được lại gì. Sáu trường được giữ đầy đủ trong bản dịch:
 
@@ -36,7 +36,7 @@ Bản tiếng Việt không thay quy định Trung Quốc bằng quy định Vi�
 ## Tải và đọc
 
 - **EPUB mới nhất**: [HowToLiveBetter-vi.epub](https://github.com/thuongtin/HowToLiveBetter/releases/latest/download/HowToLiveBetter-vi.epub) — EPUB 3, reflowable, ngôn ngữ `vi`.
-- **Bản phát hành hiện tại**: [v1.0.2 — tương phản cao cho Boox/màn hình màu](https://github.com/thuongtin/HowToLiveBetter/releases/tag/vi-v1.0.2).
+- **Bản phát hành hiện tại**: [v1.1.0 — đồng bộ 5 mục mới và 257 mục sửa từ upstream](https://github.com/thuongtin/HowToLiveBetter/releases/tag/vi-v1.1.0).
 - **Bản tiếng Trung gốc**: [README.zh.md](README.zh.md) và [kho nguyên tác](https://github.com/eternity4719/HowToLiveBetter).
 
 Thiết kế dùng chữ đen trên nền trắng, callout viền đen, không dùng chữ xám nhạt — để đọc rõ trên Boox màu và màn hình e-ink.
@@ -94,7 +94,7 @@ Thiết kế dùng chữ đen trên nền trắng, callout viền đen, không d
 
 ## Chất lượng và giới hạn
 
-- **767/767 mục**, 34/34 chương, 9/9 bài dài; audit 0 thiếu số, 0 lệch nguồn.
+- **772/772 mục**, 34/34 chương, 9/9 bài dài; audit 0 thiếu số, 0 lệch nguồn.
 - **EPUBCheck 5.4.0: 0 lỗi, 0 cảnh báo**; 2.364 liên kết nội bộ, 0 hỏng.
 - Đã soát độc lập 34 chương và 9 bài dài; sửa các lỗi ngưỡng điều luật, sai chủ thể, thuật ngữ y khoa và DOI.
 - **Chưa có người bản ngữ đọc toàn bộ.** Mới kiểm tra bằng EPUBCheck và Chromium; chưa thử trực tiếp Apple Books, Kindle, Kobo, Thorium, Calibre.

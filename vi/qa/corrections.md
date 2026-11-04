@@ -38,6 +38,8 @@ Cập nhật: đang thực hiện. Mọi con số dưới đây lấy từ `vi/q
 | S-21 | CAO | Soát 34 chương phát hiện 596 chỗ cần sửa, trong đó 3 lỗi nghiêm trọng và 67 lỗi nặng: ngưỡng `十年以上` dịch thành «trên 10 năm», `近亲属` thành «người thân trực hệ», `长租公寓` thành «căn hộ», `地下一层以下` thành «dưới tầng hầm một», `900 斤` thành 450 kg nhưng ghi 900 cân | soát độc lập từng chương | sửa từng chỗ, giữ nguyên số và Nguồn; audit lại 0 thiếu số, 0 lệch nguồn | đã sửa |
 | S-22 | TRUNG BÌNH | Phụ lục có URL dài không xuống dòng, trang rộng thêm 749 px ở khổ 620 | đo `scrollWidth` khi chụp ảnh | thêm `overflow-wrap: anywhere` cho liên kết; kiểm lại 0 tràn ngang | đã sửa |
 
+| S-23 | CAO | Bản dịch dựa trên snapshot `e2605d3`; upstream đã thêm 5 mục và sửa 257 mục (ngưỡng điều luật, OR/RR, đối tượng áp dụng, nguồn mới) | đồng bộ upstream `d2de3fc` | cập nhật `book/`, dịch bổ sung 5 mục, sửa 257 mục theo delta; audit 772/772, 0 thiếu số/0 lệch nguồn | đã sửa |
+
 ## 2. Quy trình sửa một mục
 
 1. Đọc nguyên tác của đúng mục đó, không đọc câu rời.

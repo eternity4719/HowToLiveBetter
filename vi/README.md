@@ -8,7 +8,7 @@ Kho mã nguồn, bản phát hành và nơi gửi báo lỗi của bản tiếng
 
 ## Nội dung
 
-- 34 chương, 767 mục lời khuyên.
+- 34 chương, 772 mục lời khuyên.
 - Mỗi mục: tiêu đề (một lời khuyên), Chi phí, Nói dễ hiểu, Lợi ích, Mức chứng cứ, Nguồn, Ghi chú.
 - 9 bài dài (phụ lục) về hôn nhân, đồ dùng khẩn cấp, sơ cứu người lạ, giấy phép làm nền tảng, nhịp sinh học và ca đêm, mất việc, sinh con, bệnh mạn tính, đổi việc đổi thành phố.
 - Lời giới thiệu của bản dịch, ghi chú về bối cảnh Trung Quốc, bảng thuật ngữ.

@@ -2,8 +2,8 @@
 
 ## 1. Phạm vi và nguồn
 
-- Nguyên tác: `HowToLiveBetter` của **eternity4719**, bản tiếng Trung tại commit `e2605d3` (2026-11-04).
-- Phạm vi: **34 chương, 767 mục**, 34 phần mở đầu, **9 bài dài**.
+- Nguyên tác: `HowToLiveBetter` của **eternity4719**, bản tiếng Trung tại commit `d2de3fc` (2026-11-04).
+- Phạm vi: **34 chương, 772 mục**, 34 phần mở đầu, **9 bài dài**.
 - Bản dịch tham chiếu bản cộng đồng của **chuanman2707** (CC BY 4.0) nhưng đã đối chiếu lại từng câu với nguyên tác hiện hành; phần lớn được dịch lại.
 - Giấy phép: CC BY 4.0. Đây là ấn bản không chính thức, không liên kết với nhà xuất bản Trung Quốc.
 
@@ -14,7 +14,7 @@
 | EPUB cuối | `dist/HowToLiveBetter-vi.epub` (2,4 MB) |
 | Bản sao tiện dụng | `HowToLiveBetter-vi.epub` ở thư mục gốc |
 | Nguồn dịch | `vi/book/` (34 chương), `vi/docs/` (9 bài), `vi/front/` |
-| Manifest | `vi/manifest.json` — 34/34 chương, 767/767 mục, coverage 1.0 |
+| Manifest | `vi/manifest.json` — 34/34 chương, 772/772 mục, coverage 1.0 |
 | Sổ lỗi | `vi/qa/corrections.md` — 22 mẫu lỗi hệ thống |
 | Kiểm tra kỹ thuật | `vi/qa/epubcheck.txt`, `vi/qa/report.md` |
 | Kiểm tra thị giác | `vi/qa/visual.md`, ảnh trong `vi/qa/shots/` |
@@ -26,7 +26,7 @@
 ### Nội dung
 
 - `audit.json`: **0 mục thiếu, 0 trường thiếu, 0 số thiếu, 0 nguồn lệch, 0 chữ Hán ngoài `Nguồn`, 0 tiêu đề Hán, 0 thuật ngữ nghiên cứu trong «Nói dễ hiểu»**.
-- 34/34 chương khớp số mục với nguyên tác; 767/767 mục đủ sáu trường và cost tag.
+- 34/34 chương khớp số mục với nguyên tác; 772/772 mục đủ sáu trường và cost tag.
 - 9/9 bài dài qua `check-doc` với so sánh số theo giá trị chuẩn (không so chuỗi thô).
 
 ### Soát độc lập
@@ -34,13 +34,14 @@
 - **9/9 bài dài**: 125 chỗ sửa; 15 lỗi nghiêm trọng/nặng. Đáng chú ý: DOI bị bước chuẩn hóa đơn vị đổi dấu chấm, hai thuật ngữ y khoa bị đảo nghĩa trong bài bệnh mạn tính, một điều kiện ly hôn bị bỏ chữ «等恶习», một URL nguồn bị hỏng.
 - **34/34 chương**: 596 chỗ sửa; 3 lỗi nghiêm trọng và 67 lỗi nặng. Ví dụ: `十年以上` bị dịch «trên 10 năm» (làm mất đúng mốc 10 năm), `近亲属` thành «người thân trực hệ» (thu hẹp quyền của anh chị em), `长租公寓` thành «căn hộ» (sai chủ thể), `地下一层以下` thành «dưới tầng hầm một», `900 斤` thành «900 cân» thay vì 450 kg.
 - Sau khi sửa: audit vẫn 0 thiếu số/0 lệch nguồn; các sửa tay đã kiểm chứng được giữ bằng `tools/vi/fixups.mjs`.
+- **Đồng bộ upstream `d2de3fc`**: 5 mục mới (lao phổi, phân hắc ín, hợp đồng lao động để trống, sở thích sau 50 tuổi, thuốc giảm đau và khế ở người bệnh thận) và 257 mục sửa; đã cập nhật theo delta, audit 772/772 sạch. Các thay đổi này được kiểm tra số/nguồn tự động, không chạy lại toàn bộ 34 báo cáo review.
 
 ### EPUB
 
 - EPUBCheck 5.4.0: **0 lỗi, 0 cảnh báo** (`vi/qa/epubcheck.txt`).
 - 34 chương + 9 phụ lục + bìa + trang tiêu đề + mục lục + ấn bản; đúng thứ tự.
-- 2.364 liên kết nội bộ, **0 hỏng**.
-- 2.575 liên kết ngoài; **chưa kiểm tra trực tuyến**.
+- 2.726 liên kết nội bộ, **0 hỏng**.
+- 2.637 liên kết ngoài; **chưa kiểm tra trực tuyến**.
 - `dc:language=vi`, `xml:lang=vi`, `dcterms:modified`, metadata accessibility, nav + NCX + landmarks.
 - Phông nhúng: Literata (thân), Be Vietnam Pro (tiêu đề), Cormorant Garamond (bìa/drop cap), OFL 1.1.
 
@@ -85,9 +86,9 @@ Không chạy `postmerge.mjs` sau khi đã soát: nó gộp lại từ bản nh�
 
 ## 6. Giới hạn
 
-- **Chưa có người bản ngữ đọc toàn bộ 767 mục.** Đây là bản dịch có kiểm tra tự động và soát độc lập bằng mô hình, không phải bản đã qua biên tập viên người Việt.
+- **Chưa có người bản ngữ đọc toàn bộ 772 mục.** Đây là bản dịch có kiểm tra tự động và soát độc lập bằng mô hình, không phải bản đã qua biên tập viên người Việt.
 - **Chưa thử Apple Books, Kindle, Kobo, Thorium, Calibre.** Chỉ có EPUBCheck và Chromium.
-- **Chưa kiểm tra 2.575 liên kết ngoài**; nhiều trang chính phủ Trung Quốc chặn truy cập từ nước ngoài.
+- **Chưa kiểm tra 2.637 liên kết ngoài**; nhiều trang chính phủ Trung Quốc chặn truy cập từ nước ngoài.
 - Chưa thử chế độ tối, cỡ chữ 200%, thiết bị e-ink.
 - Nội dung y khoa/pháp luật là bản dịch trung thành của nguyên tác, không phải lời khuyên y khoa hay pháp lý độc lập; người đọc ở Việt Nam cần kiểm tra quy định Việt Nam trước khi áp dụng.
 

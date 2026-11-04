@@ -25,7 +25,7 @@ Phần này tính hai khoản: tiền và thời gian. Giống như phần 10 t�
 ### 3. Biết điều này: không được giảm lương hay sa thải vì mang thai, sinh con, cho con bú
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn tiền.
-- Nói dễ hiểu: Đơn vị vì bạn mang thai, sinh con, cho con bú mà giảm lương hoặc sa thải bạn đều là trái pháp luật. Khi con chưa đủ một tuổi, mỗi ngày bạn có 1 giờ cho con bú; đơn vị cũng không được xếp bạn tăng ca hay làm ca đêm. Nếu đơn vị vi phạm quy định về tăng ca hoặc ca đêm trong thời gian cho con bú thì bị phạt 1000 đến 5000 tệ mỗi người. Còn bị giảm lương hay sa thải trái pháp luật thì đi trọng tài lao động để yêu cầu được nhận lại việc hoặc bồi thường; cách làm xem phần 19.
+- Nói dễ hiểu: Đơn vị vì bạn mang thai, sinh con, cho con bú mà giảm lương hoặc sa thải bạn đều là trái pháp luật. Khi con chưa đủ một tuổi, mỗi ngày bạn có 1 giờ cho con bú. Đơn vị cũng không được xếp bạn tăng ca hay làm ca đêm. Vi phạm quy định về tăng ca hoặc ca đêm trong thời gian cho con bú thì bị phạt 1000 đến 5000 tệ mỗi người. Còn nếu bị giảm lương hay sa thải trái pháp luật thì đi trọng tài lao động để yêu cầu được nhận lại việc hoặc bồi thường. Cách làm xem phần 19.
 - Lợi ích: Quốc vụ viện quy định: “Đơn vị sử dụng lao động không được vì nữ công nhân viên mang thai, sinh con, cho con bú mà giảm lương, sa thải, chấm dứt hợp đồng lao động hoặc hợp đồng tuyển dụng với họ.” Trong ba khoảng thời gian này, đơn vị không được trừ tiền của bạn, cũng không được sa thải hay chấm dứt hợp đồng. Người đang nuôi con bằng sữa mẹ mà con chưa đủ 1 tuổi thì mỗi ngày có 1 giờ để cho con bú. Đơn vị cũng không được xếp bạn kéo dài thời gian làm việc, không được xếp ca đêm. Vi phạm kiểu tăng ca, làm ca đêm trong thời gian cho con bú thì bị phạt từ 1000 tệ đến 5000 tệ mỗi người. Riêng việc giảm lương, sa thải thì quy định này không kèm mức phạt; người bị sa thải trái pháp luật đi trọng tài lao động để yêu cầu được nhận lại việc hoặc bồi thường.
 - Mức chứng cứ: A
 - Nguồn: 国务院 (2012). 女职工劳动保护特别规定（国令第 619 号，第五条、第九条、第十三条）. <https://www.gov.cn/zhengce/zhengceku/2012-05/07/content_6584.htm>
@@ -56,7 +56,7 @@ Phần này tính hai khoản: tiền và thời gian. Giống như phần 10 t�
 - Lợi ích: Cách nghĩ giống phần 10. Kỳ vọng của người khác có thể tính là một yếu tố để bạn cân nhắc. Nhưng chi phí phải ghi vào sổ của chính bạn, không ghi vào sổ của họ. Riêng “nuôi con để phòng tuổi già” càng phải tính thành một khoản riêng, vì nó giả định năng lực kinh tế và ý muốn của một người khác hai mươi năm sau.
 - Mức chứng cứ: C
 - Nguồn: 作者经验，无直接文献；同类分析见第 10 节
-- Ghi chú: Hãy viết cả “hậu quả của việc không sinh” ra, đặt cạnh “hậu quả của việc sinh” mà so. Chỉ ghi một bên thì không gọi là tính sổ.
+- Ghi chú: Hãy viết cả “hậu quả của việc không sinh” ra, đặt cạnh “hậu quả của việc sinh” mà so.
 
 ### 7. Định sinh muộn vài năm thì trước hết hãy tính khoản tuổi của người vợ: quanh tuổi 40, khả năng thụ thai tự nhiên và tỷ lệ thành công của thụ tinh trong ống nghiệm đều giảm rõ rệt
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-vong -->
