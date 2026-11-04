@@ -16,7 +16,7 @@
 [![在线检索](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://eternity4719.github.io/HowToLiveBetter/)
 [![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-767%20%E6%9D%A1-18794e?style=flat-square)](#目录)
 [![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20495%20%C2%B7%20B%20220%20%C2%B7%20C%2052-915930?style=flat-square)](#证据分级)
-[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-2532%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
+[![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-2554%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#许可)
 [![Claude Code 协助编写](https://img.shields.io/badge/Claude%20Code-%E5%8D%8F%E5%8A%A9%E7%BC%96%E5%86%99-D97757?style=flat-square&logo=claude&logoColor=white)](https://claude.com/claude-code)
 
@@ -211,7 +211,7 @@ A 级只说明「有具体数字、出处可核」，不说明这个数字一定
 
 三项成本的最低档是「不花钱、用时少、不需要毅力」。「用时少」指一次花几分钟以内，或顺手就能做。
 
-全书 767 条中性价比极高 123 条（16%）、高 344 条（45%）、一般 300 条（39%）。中间那档条数多是有意的：底下的收益量级本来就只分大、中、小三级，再往细里切就是装出来的精确。
+全书 767 条中性价比极高 123 条（16%）、高 343 条（45%）、一般 301 条（39%）。中间那档条数多是有意的：底下的收益量级本来就只分大、中、小三级，再往细里切就是装出来的精确。
 
 **这一档是作者自己的判断，不是证据**，按本书的标准它本身只算 C 级；它和证据等级是两回事，谁也不影响谁。一条可以证据是 A 级、性价比却只算一般（带状疱疹疫苗有 97.2% 效力的三期 RCT，但两针三四千元、带状疱疹很少致命），也可以证据只有 C 级、性价比却极高（手机设锁屏密码、SIM 卡设 PIN 码）。「一般」不等于不该做——全书的条目都是建议做的，只是这一档得你自己掂量那笔花销值不值。
 
