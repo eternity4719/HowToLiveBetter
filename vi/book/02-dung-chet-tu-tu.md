@@ -19,6 +19,7 @@ Các mục trong chương chia theo chủ đề thành mấy khối dưới đâ
 **Dầu và khói trong bếp**: nấu ăn và sưởi ấm không đốt than, củi (mục 29), không mua dầu lạc tự ép đóng can rời (mục 40), dùng dầu thực vật thay mỡ heo và bơ (mục 41), xào nấu thì bật máy hút mùi (mục 42).
 
 **Răng, thuốc men và vài thói quen khác**: đánh răng kỹ và làm sạch kẽ răng (mục 10), uống thuốc đều theo chỉ dẫn của bác sĩ (mục 12), ban ngày ra ngoài phơi nắng (mục 31), có điều kiện thì ngâm bồn (mục 36), quanh tuổi mãn kinh mà bốc hỏa thì đi khám để đánh giá liệu pháp hormone (mục 43).
+
 ### 1. Bỏ thuốc lá, càng sớm càng tốt
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=co loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền, ngược lại còn tiết kiệm. Một ngày một bao thuốc khoảng 20–30 tệ, bỏ được thì khoản tiền đó ở lại trong túi bạn. Phần khó là phải chịu đựng giai đoạn cai, thường kéo dài vài tuần đến vài tháng.

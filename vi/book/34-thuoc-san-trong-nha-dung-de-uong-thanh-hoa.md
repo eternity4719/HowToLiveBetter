@@ -1,15 +1,14 @@
 [← Mục lục](../README.md)
 
-# 34. Thuốc sẵn trong nhà đừng để uống thành họa
+# 34. Thuốc thường dùng trong nhà, đừng để uống thành tai họa
 
-Thuốc hạ sốt, thuốc giảm đau, thuốc cảm, thuốc dạ dày hay thuốc tiêu chảy, nhiều loại bạn ra tiệm thuốc là tự mua được. Nhưng mua không cần đơn không có nghĩa là uống thế nào cũng xong. Phần này không nói từng thứ bệnh nên uống thuốc gì, mà chỉ chọn ra mấy việc mà một động tác là đủ để tránh hậu quả nặng.
+Thuốc hạ sốt, thuốc giảm đau, thuốc cảm, thuốc dạ dày, thuốc tiêu chảy, nhiều loại ra hiệu thuốc là tự mua được. Mua không cần đơn không có nghĩa là uống kiểu nào cũng được. Phần này không nói mỗi bệnh nên uống thuốc gì, chỉ chọn ra mấy việc mà một động tác là tránh được hậu quả nặng.
 
-Mọi mục trong phần này đều tính theo quy mô tử vong, tính cả các điểm cuối sức khỏe nghiêm trọng như suy gan, chảy máu dạ dày hay suy thận sơ sinh. Lợi ích ở đây phần lớn là "tránh được một lần tai nạn nặng"; các nghiên cứu không cho con số "làm theo thì giảm được mấy phần", nên mức lợi ích được phán đoán theo độ nặng nhẹ của hậu quả, và ghi chú của từng mục đều nêu rõ căn cứ.
+Mọi mục trong phần này đều tính theo quy mô tử vong. Phần lớn nhìn vào những hậu quả nặng như suy gan, xuất huyết dạ dày, suy thận ở trẻ sơ sinh, cũng có mấy mục nhìn vào đau đầu và phản ứng khi lái xe. Lợi ích phần lớn là «tránh được một lần tai nạn nặng», nghiên cứu không đưa ra được con số «làm theo thì giảm mấy phần». Vì vậy mức lợi ích được phán đoán theo độ nặng của hậu quả, ghi chú của từng mục có ghi rõ căn cứ.
 
-Những nội dung đã viết ở phần khác, ở đây chỉ dẫn đường. Nếu lỡ uống nhầm thuốc hay chất tẩy rửa thì việc đầu tiên nên làm gì, bạn xem phần 13, mục 20 (uống nhầm). Thuốc bệnh mạn tính cần uống đủ theo chỉ định ra sao, xem phần 16, mục 1 (thuốc theo chỉ định uống đủ). Mua thuốc kê đơn trên mạng phải qua xét duyệt đơn trước, xem phần 28, mục 6 (thuốc giảm cân tới bệnh viện lấy đơn).
+Những nội dung đã viết ở chỗ khác thì ở đây chỉ nhắc để bạn biết xem ở đâu. Lỡ uống nhầm thuốc hoặc chất tẩy rửa thì trước hết làm gì, xem phần 13, mục 20 (uống nhầm). Thuốc bệnh mạn tính uống đủ theo chỉ định, xem phần 16, mục 1 (uống thuốc đủ theo chỉ định). Mua thuốc kê đơn trên mạng phải qua duyệt đơn trước, xem phần 28, mục 6 (thuốc giảm cân thì đến viện lấy đơn).
 
-Người hưởng lợi từ các mục trong phần này là chính bạn và người nhà, thuộc hai bậc cao nhất trong thang tính của sách.
-
+Người hưởng lợi của các mục trong phần này là chính bạn và người nhà, thuộc hai bậc cao nhất.
 ### 1. Trước khi uống cùng lúc hai loại thuốc cảm hay thuốc giảm đau, nhìn bảng thành phần, paracetamol chỉ được chiếm một loại
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn đồng nào. Bạn chỉ cần liếc qua bảng thành phần trên mỗi hộp thuốc, mất chừng một hai phút.

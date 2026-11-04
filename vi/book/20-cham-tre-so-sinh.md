@@ -2,8 +2,7 @@
 
 # 20. Chăm trẻ sơ sinh thế nào
 
-Phần này đo bằng tỷ lệ tử vong trẻ sơ sinh và tiền. Sách chỉ nhận những việc liên quan tới chuyện con có sống được hay không, hoặc bạn phải tốn bao nhiêu tiền, và chỉ nhận khi chênh đủ lớn, lại có chứng cứ cứng. Những chi tiết nuôi dạy như cách dỗ, cách chăm thì sách này không viết. Việc phải làm trước khi sinh và ngày xuất viện, bạn xem phần 27.
-
+Thước đo của phần này là tỷ lệ tử vong trẻ sơ sinh và tiền. Phần này chỉ nhận những việc liên quan đến chuyện đứa trẻ có sống được hay không, hoặc bạn phải bỏ ra bao nhiêu tiền. Ngoài ra chỉ nhận khi mức chênh đủ lớn và có chứng cứ cứng. Những chi tiết nuôi con như dỗ thế nào, chăm thế nào thì sách này không viết. Việc phải làm trước khi sinh và trong ngày ra viện thì xem phần 27.
 ### 1. Cho bé ngủ ngửa, ngủ trên mặt phẳng cứng, cùng phòng khác giường, trên giường không để đồ mềm nào
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=nhieu loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Bạn phải đổi nệm sang loại cứng, hết vài trăm nhân dân tệ. Phần khó là phải chịu được lời các cụ, rồi cứ làm theo kiểu này.

@@ -17,6 +17,7 @@ Các mục trong chương chia theo chủ đề thành mấy khối dưới đâ
 **Quan hệ với người khác và mạng xã hội**: học cách từ chối những lời nhờ mình không muốn nhận (mục 16), coi cảnh sát, bác sĩ là người đi làm theo quy định (mục 19), đặt giới hạn cho ứng dụng cho mình lướt động thái của người cùng trang lứa (mục 20).
 
 **Cơn đau trên cơ thể**: đau bụng kinh thì uống thuốc giảm đau như ibuprofen (mục 25).
+
 ### 1. Tắt thông báo không cần thiết, lúc làm việc để điện thoại ra ngoài tầm mắt
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=thoi-gian -->
 - Chi phí: Không tốn tiền. Bạn bỏ ra vài phút chỉnh lại cài đặt, gần như không cần ý chí.

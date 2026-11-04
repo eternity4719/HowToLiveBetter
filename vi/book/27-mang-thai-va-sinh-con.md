@@ -2,10 +2,23 @@
 
 # 27. Mang thai và sinh con: từ phát hiện có thai đến xuất viện làm giấy
 
-Nửa đầu phần này tính nguy cơ chết của mẹ bầu và thai nhi. Nửa sau tính tiền và thời gian chạy việc. Hai cách tính này không quy đổi sang nhau. Phần này chỉ nói lúc nào làm gì. Chuyện ăn uống trong thai kỳ và thai giáo thì không viết, vì chưa có chứng cứ cứng hoặc tác dụng rất nhỏ. Trợ cấp sinh con, nghỉ thai sản và tiền nuôi con xem phần 18 (nuôi con có đáng không). Con sinh ra chăm thế nào xem phần 20 (chăm trẻ sơ sinh). Bệnh cấp xem phần 13 (tình huống khẩn cấp).
+Nửa đầu phần này tính nguy cơ tử vong của người mang thai và thai nhi. Nửa sau tính tiền và thời gian chạy đi làm thủ tục. Hai cách tính này không quy đổi sang nhau. Nội dung phần này chỉ nói lúc nào thì làm việc gì. Chuyện dinh dưỡng trong thai kỳ và chuyện thai giáo, tức những việc chưa có chứng cứ cứng hoặc tác dụng rất nhỏ, phần này không viết. Trợ cấp sinh con, nghỉ thai sản và khoản tiền nuôi con xem phần 18. Con sinh ra rồi chăm thế nào xem phần 20. Trường hợp cấp cứu xem phần 13.
 
-Số của Tổ chức Y tế Thế giới: năm 2023, toàn cầu có khoảng 260.000 phụ nữ chết vì mang thai và sinh con. Trong số đó, khoảng 75% chết vì năm nhóm nguyên nhân sau: băng huyết sau sinh, nhiễm trùng, bệnh tăng huyết áp thai kỳ, biến chứng lúc sinh và phá thai không an toàn. Bệnh tăng huyết áp thai kỳ là bệnh huyết áp tăng sau khi có thai, gồm tiền sản giật và sản giật. Tổ chức này cũng nói: "phần lớn ca chết của sản phụ có thể phòng được, vì các biện pháp y khoa để phòng và xử lý biến chứng đều đã biết". Mấy mục có tác dụng lớn nhất trong phần này là để chặn các nhóm vấn đề đó từ sớm.
+Tổ chức Y tế Thế giới đưa ra con số: năm 2023, toàn cầu có khoảng 260.000 phụ nữ tử vong vì mang thai và sinh con. Khoảng 75% trong số đó tử vong vì năm nhóm nguyên nhân sau: băng huyết sau sinh, nhiễm trùng, bệnh tăng huyết áp thai kỳ (nhóm bệnh làm huyết áp tăng lên sau khi có thai, gồm tiền sản giật và sản giật), biến chứng khi sinh, và phá thai không an toàn. Tổ chức Y tế Thế giới cũng nói: «Phần lớn ca tử vong của sản phụ có thể phòng được, vì các biện pháp y khoa để phòng và xử lý biến chứng đều đã được biết». Những mục có tác dụng lớn nhất trong phần này chính là để chặn sớm mấy nhóm vấn đề đó.
 
+Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+
+**Tự làm được trước khi có thai và trong thai kỳ**: chuẩn bị có thai thì bổ sung axit folic (mục 1), không một điếu thuốc và không một ngụm rượu (mục 4), không cần đem mèo đi gửi (mục 17), vaccine cúm bất hoạt (mục 18), sau tuần thứ 28 thì nằm nghiêng khi ngủ (mục 19).
+
+**Khám thai và sàng lọc**: lập Sổ theo dõi sức khỏe mẹ và bé (mục 2), xét nghiệm ba bệnh HIV, giang mai, viêm gan B (mục 3), aspirin liều thấp (mục 5), sàng lọc đái tháo đường thai kỳ (mục 6).
+
+**Có chuyện thì đến bệnh viện ngay**: danh sách «đến bệnh viện ngay» (mục 7), vỡ ối thì nằm ngay tại chỗ (mục 8).
+
+**Lúc sinh con**: muốn giảm đau khi sinh thì nói thẳng (mục 9), đừng tự đề nghị mổ lấy thai (mục 10).
+
+**Sau khi sinh**: lần khám lại vào ngày thứ 42 sau sinh (mục 16), cho con bú không thay được biện pháp tránh thai (mục 20).
+
+**Tiền và giấy tờ**: xác nhận bảo hiểm sinh sản (mục 11), Giấy chứng nhận y học về sinh (mục 12), sàng lọc máu gót chân và sàng lọc thính lực (mục 13), làm bảo hiểm y tế cư dân cho con (mục 14), khai đăng ký khai sinh (mục 15).
 ### 1. Chuẩn bị mang thai đã bắt đầu mỗi ngày bổ 0,4 mg acid folic, uống tới khi đầu thai kỳ đủ 3 tháng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Vài chục tệ một lọ. Phụ nữ nông thôn TQ không phải trả tiền, vì dự án tăng bổ acid folic miễn phí của nhà nước sẽ phát. Mỗi ngày uống một viên, khó ở chỗ ngày nào cũng nhớ

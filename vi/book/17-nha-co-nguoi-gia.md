@@ -2,8 +2,7 @@
 
 # 17. Nhà có người già
 
-Phần này đo bằng tiền và tự do thân thể. Khi nhà có người già, phần lớn phiền phức không đến từ thiếu tiền, mà từ việc chưa nói rõ từ trước, chưa ký giấy tờ. Loét do nằm lâu của người nằm liệt lâu dài (mục 8) và phẫu thuật đục thủy tinh thể (mục 9) đều đo bằng tử vong, không so với các mục khác trong phần.
-
+Phần này đo bằng tiền và tự do thân thể. Nhà có người già thì phần lớn rắc rối không phải vì thiếu tiền, mà vì chưa nói rõ với nhau từ trước và chưa ký giấy tờ đầy đủ. Bốn mục này tính theo tỷ lệ tử vong và không đem so với các mục khác trong phần: loét do nằm lâu ở người nằm liệt giường, phẫu thuật đục thủy tinh thể, người già dắt chó đi dạo bị ngã gãy xương, và trí nhớ kém đi thì đi viện kiểm tra.
 ### 1. Trong lúc người già còn tỉnh táo, chỉ định người giám hộ tương lai bằng văn bản
 <!-- nhan-chi-phi: tien=it thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tien -->
 - Chi phí: Đến văn phòng công chứng làm một bản, tốn vài trăm nhân dân tệ. Nói chuyện một lần với người già là định được. Phần khó là mở lời: bạn phải nói tới cái ngày người già không tự lo được cho mình nữa

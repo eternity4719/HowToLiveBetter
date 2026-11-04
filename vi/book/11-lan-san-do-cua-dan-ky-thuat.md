@@ -17,6 +17,7 @@ Các mục trong phần này chia theo chủ đề thành mấy khối dưới �
 **Nghỉ việc và quyền sở hữu**: nghỉ việc thì bàn giao hết tài khoản và quyền truy cập (mục 6), nghỉ việc thì không mang mã nguồn đi (mục 7), đã ký thỏa thuận hạn chế cạnh tranh (mục 12), code viết bằng nguồn lực của công ty thì thuộc về công ty (mục 13), mã nguồn mở như GPL (mục 14).
 
 **Làm sản phẩm và đưa lên mạng**: chỉ thu thập thông tin cá nhân thật sự cần cho nghiệp vụ (mục 15), trước khi đưa lên mạng thì đăng ký ICP (mục 16), đánh giá an toàn cho AI tạo sinh và đăng ký thuật toán (mục 17).
+
 ### 1. Trước khi ra tay, hỏi một câu: hãng, nền tảng hay công ty có đi báo án không; bị truy cứu thì tìm ngay luật sư hình sự
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Không tốn tiền. Trước khi ra tay, bạn đổi câu hỏi «về kỹ thuật có làm được không» thành một câu khác: hãng, nền tảng hay công ty có đi báo án không. Cái khó là nén lại ý nghĩ «chuyện nhỏ thế này chẳng ai quản», vì log máy chủ, ghi chép thanh toán và lịch sử chat nhóm, cơ quan xử lý vụ án đều có quyền thu thập.

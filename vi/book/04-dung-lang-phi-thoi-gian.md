@@ -3,6 +3,7 @@
 # 4. Đừng lãng phí thời gian
 
 Chương này chỉ tính sổ thời gian. Bạn nhìn xem mỗi ngày, mỗi tuần, mỗi năm tiết kiệm lại được bao nhiêu giờ, hoặc tỷ lệ làm xong đúng hạn của một việc tăng lên được bao nhiêu. Ở đây không quy thời gian ra tuổi thọ, cũng không quy ra tiền. Chỗ nào liên quan tới tiền thì chỉ cho cách tính, không cho kết luận. Chứng cứ của phần lớn mục trong chương là một nghiên cứu đơn lẻ, hoặc là thống kê tổng hợp từ các cuộc điều tra sử dụng thời gian, nên mức chủ yếu là B và C.
+
 ### 1. Viết «định làm» thành «mấy giờ, ở đâu, gặp gì thì làm gì»
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=thoi-gian -->
 - Chi phí: Không tốn tiền. Mỗi việc mất 1 đến 2 phút để viết một câu «nếu… thì…». Ví dụ: «sáng thứ ba 8 giờ, ngồi vào bàn là viết phần mở đầu trước».

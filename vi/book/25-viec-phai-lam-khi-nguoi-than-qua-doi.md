@@ -2,10 +2,9 @@
 
 # 25. Người thân qua đời rồi phải làm những việc gì
 
-Phần này đo bằng tiền. Nó chỉ nói thủ tục làm thế nào và tiền lấy ra sao: người vừa mất thì trước hết phải làm gì, và những khoản phí nào có danh mục để đối chiếu. Nó cũng nói tiền nằm trong những tài khoản nào thì rút về được, và việc gì thân nhân gần có quyền đứng ra làm. Mục 1 tới 5 xếp theo thứ tự việc xảy ra, lần lượt là hiện trường, giấy chứng tử, thi thể và hỏa táng, khi có bất đồng về nguyên nhân chết thì sao, và xóa hộ khẩu. Mục 6 tới 10 xếp theo mức đáng giá. Người già lúc còn sống nên sắp xếp những gì, ví dụ giám hộ ý định, di chúc, tài khoản, bạn xem phần 17. Ba khoản chế độ khi chết vì lao động xem phần 19.
+Phần này tính bằng tiền. Phần này chỉ nói thủ tục phải làm thế nào và tiền lấy về ra sao, gồm cả việc phải làm ngay khi người vừa mất và những khoản phí nào có danh mục để đối chiếu. Phần này cũng nói tiền trong những tài khoản nào thì rút về được, và việc gì thì người thân gần có quyền đứng ra làm. Năm mục đầu xếp theo thứ tự việc xảy ra, lần lượt là hiện trường, giấy chứng tử, thi thể và hỏa táng, có ý kiến khác về nguyên nhân chết thì làm gì, và xóa hộ khẩu. Những gì người già nên sắp xếp lúc còn sống, ví dụ giám hộ theo ý định, di chúc, tài khoản, xem phần 17. Ba khoản chế độ khi chết vì công việc xem phần 19.
 
-Phần tang lễ ở đây dựa theo "Điều lệ Quản lý tang lễ" bản mới, có hiệu lực từ ngày 30/3/2026. Trợ cấp mai táng và trợ cấp người thân còn lại của bảo hiểm dưỡng lão được cho bao nhiêu, do cơ quan nhân lực và bảo hiểm xã hội quy định riêng. Lần này tác giả không lấy được nguyên văn để đối chiếu từng chữ, nên phần chính không viết số tiền cụ thể.
-
+Phần tang lễ ở đây dựa theo Điều lệ Quản lý tang lễ bản mới, có hiệu lực từ ngày 30 tháng 3 năm 2026. Trợ cấp mai táng và trợ cấp cho người thân còn sống của bảo hiểm hưu trí được tính thế nào, xem mục 9 (số dư quỹ dự trữ nhà ở, chế độ bảo hiểm xã hội).
 ### 1. Người mất ở nhà hay ngoài đường, trước phân rõ chết bình thường hay không bình thường: ngoài ý muốn, chết không rõ nguyên nhân, sống một mình lâu mới phát hiện, báo cảnh sát ngay, thi thể và hiện trường đừng động
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=tu-do -->
 - Chi phí: Không tốn tiền, chỉ tốn một cuộc điện thoại.

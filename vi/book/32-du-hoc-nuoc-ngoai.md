@@ -1,13 +1,12 @@
 [← Mục lục](../README.md)
 
-# 32. Du học nước ngoài: thân phận, làm thêm, bảo hiểm và chứng nhận hồi quốc
+# 32. Du học nước ngoài: tư cách lưu trú, làm thêm, bảo hiểm và công nhận bằng khi về nước
 
-Phần này tính hai bài toán gồm tiền bạc và tự do thân thể, không bàn chuyện có nên ra nước ngoài hay không, cũng không so sánh trường tốt trường xấu. Bốn việc dưới đây nếu không nắm rõ bạn sẽ chịu thiệt: làm sao để tư cách visa không bị đứt đoạn, trần giờ làm thêm ở đâu, những khoản bảo hiểm và lệ phí nào bắt buộc phải nộp, và tấm bằng mang về nước có được công nhận hay không.
+Phần này tính hai khoản là tiền và tự do thân thể, không bàn nên ra nước ngoài hay không, cũng không so trường tốt xấu. Bốn việc dưới đây không biết thì sẽ chịu thiệt. Tư cách visa thế nào mới tính là không bị đứt, trần giờ làm thêm nằm ở đâu, những khoản bảo hiểm và lệ phí nào bắt buộc phải nộp, về nước rồi tấm bằng này có được công nhận không.
 
-Phần này gom số liệu của bốn nước gồm Mỹ, Canada, Anh và Úc, liệt kê riêng từng nước. Nguồn lấy từ trang chính thức của cơ quan di trú mỗi nước và Bộ Giáo dục Trung Quốc. **Chính sách du học của mỗi nước thay đổi thường xuyên, còn đổi thường xuyên hơn các quy định của Trung Quốc. Ngày chốt của mọi con số trong phần này là tháng 9/2026. Trước khi lên đường và trước mỗi lần gia hạn, bạn hãy theo đường link ở cột nguồn để tự tra cứu lại một lần.**
+Phần này gồm bốn nước Mỹ, Canada, Anh và Úc, số liệu liệt kê riêng từng nước. Nguồn là trang chính thức của cơ quan di trú các nước và Bộ Giáo dục Trung Quốc. **Chính sách du học của các nước đổi rất thường xuyên, còn thường xuyên hơn cả quy định pháp luật của Trung Quốc. Mọi con số trong phần này chốt đến tháng 9 năm 2026. Trước khi lên đường và trước mỗi lần gia hạn visa, bạn hãy theo đường link ở cột nguồn tự tra lại một lần.**
 
-Khi ở nước ngoài, nếu gặp chuyện thì liên hệ đại sứ quán hay lãnh sự quán thế nào, đường dây nóng 12308 hỗ trợ được những gì, mua bảo hiểm y tế và cứu hộ chuyển viện ra sao, bạn xem phần 21. Bài toán nên đi học hay đi làm, xem phần 23. Tài khoản bị đánh cắp xem phần 14, còn lừa đảo viễn thông xem phần 8. Những nội dung đó sẽ không nhắc lại ở đây.
-
+Khi ở nước ngoài gặp chuyện thì tìm đại sứ quán, lãnh sự quán thế nào, 12308 xử lý được việc gì, bảo hiểm y tế và cứu hộ chuyển viện ở nước ngoài mua ra sao, xem phần 21. Bài toán nên đi học hay đi làm, xem phần 23. Tài khoản bị đánh cắp xem phần 14, lừa đảo qua điện thoại xem phần 8. Những nội dung đó không viết lại.
 ### 1. Trước khi đóng học phí, trước tra trường có trong danh sách trường được chứng nhận của Trung tâm Dịch vụ Lưu học không
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn đồng nào. Bạn vào mục "tra cứu cơ sở đào tạo được công nhận" của Trung tâm Dịch vụ Lưu học rồi gõ tên trường, chỉ vài phút là xong.

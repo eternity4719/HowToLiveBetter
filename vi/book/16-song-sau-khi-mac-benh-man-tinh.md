@@ -2,8 +2,7 @@
 
 # 16. Sống sau khi mắc bệnh mạn tính
 
-Phần này đo bằng tỷ lệ tử vong và tiền. Sau khi bạn phát hiện bệnh mạn tính, thường vẫn còn mấy chục năm phải sống. Phần này tính xem bạn sống và quản lý mấy chục năm đó thế nào.
-
+Phần này đo bằng tỷ lệ tử vong mọi nguyên nhân và tiền. Sau khi phát hiện bệnh mạn tính, bạn thường còn mấy chục năm để sống, nên phần này tính xem quản mấy chục năm đó thế nào.
 ### 1. Uống thuốc đủ theo chỉ định bác sĩ, đừng thấy đỡ là ngừng
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=nhieu loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền, mà còn tiết kiệm được tiền trị biến chứng về sau. Mỗi ngày bạn uống thuốc không mất tới vài phút. Phần khó là bạn phải uống không sót ngày nào.

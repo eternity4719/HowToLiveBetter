@@ -19,6 +19,7 @@ Các mục trong chương chia theo chủ đề thành mấy khối dưới đâ
 **Bảo hiểm**: ưu tiên mua bảo hiểm dạng tiêu dùng (mục 25), mua đủ bảo hiểm trách nhiệm bên thứ ba (mục 26), chỉ mua bảo hiểm cho những tổn thất mình không gánh nổi (mục 39), mua bảo hiểm nhân thọ định kỳ cho người kiếm tiền trước (mục 40), hủy trong thời gian cân nhắc (mục 41), ở quầy ngân hàng thì phân biệt tiền gửi và bảo hiểm (mục 42), đừng tìm dịch vụ hủy bảo hiểm (mục 43), ghi người thụ hưởng là người cụ thể (mục 44).
 
 **Mua xe**: nhận xe thì kiểm tra ngay tại chỗ (mục 47), xe cũ thì ghi rõ không phải xe bị tai nạn (mục 48), đừng trả phí dịch vụ tài chính cho đại lý 4S (mục 49).
+
 ### 1. Tắt hết mọi khoản gia hạn tự động, đến hạn thì tự gia hạn bằng tay
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=tien -->
 - Chi phí: Không tốn tiền. Bạn lật một lượt danh sách «trừ tiền tự động» của Alipay, WeChat, Apple và Android, mỗi lần mất 10 đến 20 phút. Về sau, mỗi lần gia hạn bạn phải tự bấm thêm một lần.

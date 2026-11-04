@@ -1,9 +1,16 @@
 [← Mục lục](../README.md)
 
-# 19. Đang làm, nghỉ việc và tai nạn lao động
+# 19. Đang làm việc, nghỉ việc và tai nạn lao động
 
-Phần này tính sổ tiền: tiền tính ra sao, chữ ký ký ra sao, thời hạn tính ra sao. Phần đầu nói những khoản tiền bạn đáng được lĩnh về tay ngay khi còn đi làm, phần giữa nói nghỉ việc, phần tiếp theo nói bệnh nghề nghiệp và tai nạn lao động. Tiền tai nạn lao động lớn hơn tiền bị sa thải cỡ một cấp độ, thời hạn của nó cũng cứng hơn. Còn tổn thương do bệnh nghề nghiệp gây ra thì không lấy lại được. Phần này còn bốn mục, từ mục 16 đến mục 19. Chúng nói về cách xử lý khi bị bắt nạt ở nơi làm việc, cách đòi giấy chứng nhận nghỉ việc, cách tính thuế của khoản bồi thường nghỉ việc và cách chuyển quan hệ bảo hiểm xã hội khi đổi thành phố làm việc.
+Phần này tính sổ bằng tiền: tiền tính thế nào, giấy tờ ký thế nào, thời hạn tính thế nào. Ba mục đầu nói những khoản tiền bạn phải nhận được ngay khi còn đang làm. Năm mục giữa nói chuyện nghỉ việc. Bảy mục tiếp theo nói bệnh nghề nghiệp và tai nạn lao động. Tiền tai nạn lao động lớn hơn tiền bị sa thải cả một bậc, thời hạn cũng cứng hơn. Còn tổn thương do bệnh nghề nghiệp gây ra thì không cách nào lấy lại được. Cuối phần còn chín mục. Bốn mục đầu trong số đó nói về chuyện bị bắt nạt ở cơ quan, chuyện đòi giấy xác nhận nghỉ việc, chuyện tính thuế của khoản bồi thường nghỉ việc, và chuyện chuyển quan hệ bảo hiểm xã hội sang nơi khác khi đổi thành phố làm việc. Ba mục giữa nói lương gấp đôi khi không ký hợp đồng, chuyện đơn vị không đóng bảo hiểm xã hội, và chuyện bị đòi tiền vi phạm hợp đồng lúc nghỉ việc. Hai mục cuối nói nên nói thế nào khi đơn vị muốn chuyển vị trí và giảm lương, và lương cùng tiền bồi thường của lao động phái cử thì đòi ai.
 
+Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+
+**Hợp đồng và tiền khi còn đang làm**: tiền làm thêm giờ (mục 1), nghỉ phép năm (mục 2), thời gian thử việc (mục 3), lương gấp đôi khi không ký hợp đồng lao động bằng văn bản (mục 20), không đóng hoặc đóng thiếu bảo hiểm xã hội (mục 21), không đồng ý chuyển vị trí hay giảm lương thì nêu ra bằng văn bản (mục 23), làm việc phái cử thì cùng việc cùng lương (mục 24), bị bắt nạt lâu dài ở cơ quan (mục 16).
+
+**Nghỉ việc và bị sa thải**: bị sa thải thì tính rõ N trước (mục 4), không báo trước 30 ngày (mục 5), tiền bồi thường khi chấm dứt hợp đồng trái luật (mục 6), đừng ký giấy «tự nguyện xin nghỉ vì lý do cá nhân» (mục 7), giữ chứng cứ trước khi nghỉ việc (mục 8), giấy xác nhận nghỉ việc (mục 17), thuế thu nhập của khoản bồi thường nghỉ việc (mục 18), bị đòi tiền vi phạm hợp đồng khi nghỉ việc (mục 22), chuyển quan hệ bảo hiểm xã hội sang nơi đóng mới (mục 19).
+
+**Bệnh nghề nghiệp và tai nạn lao động**: ba lần khám sức khỏe nghề nghiệp (mục 9), đơn vị bắt buộc phải cấp đồ bảo hộ (mục 10), làm giám định tai nạn lao động (mục 11), thấy khó chịu đột ngột thì gọi 120 trước (mục 12), không đóng bảo hiểm tai nạn lao động (mục 13), giám định khả năng lao động (mục 14), ba khoản tiền khi chết vì tai nạn lao động (mục 15).
 ### 1. Tiền tăng ca tính theo ba bậc 1,5 lần, 2 lần, 3 lần, không trả thì tố cáo thanh tra lao động, quá hạn không trả còn phải cộng thêm 50% đến 100%
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn đồng nào. Hàng ngày bạn tiện tay lưu một bản hồ sơ chấm công, bảng xếp ca, đơn duyệt tăng ca; tin nhắn giao việc của lãnh đạo trong nhóm thì chụp màn hình giữ lại. Khó ở chỗ tháng nào bạn cũng phải nhớ lưu.

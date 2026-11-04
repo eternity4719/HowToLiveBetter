@@ -2,30 +2,29 @@
 
 # 33. Sống thế nào sau khi khuyết tật
 
-Phần này viết về những ngày sau khi khuyết tật đã xảy ra. Cách ngăn không cho tàn tật đã viết ở phần 1 và phần 13, ở đây không nhắc lại.
+Phần này viết về những ngày sau khi khuyết tật đã xảy ra. Cách phòng để không bị tàn tật nằm ở phần 1 và phần 13, ở đây không nhắc lại.
 
-Bốn quy mô tính riêng, không quy đổi sang nhau. Mấy mục về bệnh cấp và biến chứng tính theo tử vong. Mấy mục về trợ cấp, đãi ngộ, đánh kiện tính theo tiền. Mấy mục về đi học, làm thủ tục tính theo thời gian. Mấy mục về nhập viện chướng ngại tinh thần, năng lực hành vi và giám hộ tính theo tự do thân người.
+Bốn cách tính tách riêng, không quy đổi sang nhau. Mấy mục về bệnh cấp tính và biến chứng tính theo tỷ lệ tử vong. Mấy mục về trợ cấp, đãi ngộ, kiện tụng tính theo tiền. Mấy mục về đi học, làm thủ tục tính theo thời gian. Mấy mục về nằm viện vì rối loạn tâm thần, năng lực hành vi và giám hộ tính theo tự do thân thể.
 
-Sách hướng dẫn của Tổ chức Y tế Thế giới đưa ra ba con số. Trên toàn thế giới có khoảng 1,3 tỷ người có chướng ngại chức năng rõ rệt, chiếm 16% dân số, nghĩa là khoảng sáu người có một. Một phần người khuyết tật chết sớm hơn người không tàn tật nhiều nhất 20 năm. Người khuyết tật có nguy cơ bị trầm cảm, hen, tiểu đường, đột quỵ, béo phì hay sức khỏe răng miệng kém gấp hai lần. Trong mấy khoảng chênh này, phần lớn không phải do chính tàn tật tạo ra, mà do không khám được bệnh, không đi học được, không tìm được việc, không ra được cửa. Vì vậy các mục trong phần này một nửa nói về thân thể, một nửa nói về thủ tục và quyền lợi.
+Tổ chức Y tế Thế giới công bố bản thuyết minh «Khuyết tật» tháng 3 năm 2023, trong đó đưa ra ba con số. Trên toàn cầu có khoảng 1,3 tỷ người bị suy giảm chức năng rõ rệt, chiếm 16% dân số thế giới, tức khoảng sáu người có một người. Một bộ phận người khuyết tật chết sớm hơn người không khuyết tật tới 20 năm. Người khuyết tật có nguy cơ trầm cảm, hen suyễn, tiểu đường, đột quỵ, béo phì hoặc sức khỏe răng miệng kém cao gấp đôi. Bản thuyết minh ghi rõ những bất bình đẳng về sức khỏe này đến từ hoàn cảnh bất công mà người khuyết tật phải đối mặt: bị phân biệt đối xử, nghèo, không được đi học, không tìm được việc, cùng những rào cản của chính hệ thống y tế. Vì vậy các mục trong phần này một nửa nói về thân thể, một nửa nói về thủ tục và quyền lợi.
 
-Năm việc đã viết ở chỗ khác, ở đây chỉ dẫn đường tới chỗ đó, không viết lại. Làm thẻ khuyết tật thế nào, bảy loại và cấp một tới cấp bốn đánh giá ra sao, bạn xem phần 24, mục 10 (thẻ khuyết tật). Giám định thương tật phải đợi tới lúc nào mới làm, xem phần 24, mục 9 (giám định thương tật). Lĩnh hai khoản trợ cấp người khuyết tật thế nào, xem phần 7, mục 8 (hai khoản trợ cấp). Giám định năng lực lao động sau tai nạn lao động và cấp thương tật quy ra bao nhiêu tiền, xem phần 19, mục 14 (giám định năng lực lao động). Xin bảo hiểm chăm sóc dài hạn cho người mất năng lực mức nặng thế nào, xem phần 17, mục 7 (bảo hiểm chăm sóc dài hạn). Mục đó nằm trong phần "trong nhà có người già", nhưng đãi ngộ này không có ngưỡng tuổi, người trẻ cũng lĩnh được.
+Năm việc đã viết ở chỗ khác thì ở đây chỉ nhắc để bạn biết xem ở đâu, không viết lại. Làm thẻ khuyết tật thế nào, bảy loại và cấp một đến cấp bốn đánh giá ra sao, xem phần 24, mục 10 (thẻ khuyết tật). Giám định thương tật phải đợi đến lúc nào mới làm, xem phần 24, mục 9 (giám định thương tật). Lĩnh hai khoản trợ cấp cho người khuyết tật thế nào, xem phần 7, mục 8 (hai khoản trợ cấp). Giám định năng lực lao động sau tai nạn lao động và cấp thương tật quy ra bao nhiêu tiền, xem phần 19, mục 14 (giám định năng lực lao động). Xin bảo hiểm chăm sóc dài hạn cho người mất năng lực ở mức nặng thế nào, xem phần 17, mục 7 (bảo hiểm chăm sóc dài hạn). Mục đó nằm trong phần «nhà có người già», nhưng khoản đãi ngộ này không có ngưỡng tuổi, người trẻ cũng lĩnh được.
 
-Người hưởng lợi của đa số mục trong phần này là chính bạn và người nhà, thuộc hai bậc cao nhất. Chỗ nào dính tới người khác thì viết riêng trong ghi chú.
+Người hưởng lợi của phần lớn mục trong phần này là chính bạn và người nhà, thuộc hai bậc cao nhất. Chỗ nào liên quan đến người khác thì viết riêng trong ghi chú.
 
-Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, trong ngoặc là số mục.
 
-**Thân thể và phục hồi**: sau tổn thương tủy sống đột nhiên đau đầu dữ dội, ra mồ hôi, trước hết dìu ngồi thẳng, nới quần áo, đồng thời gọi cấp cứu (mục 1). Người ngồi xe lăn dài hạn, đệm ngồi đổi loại giảm áp (mục 5); đừng mua liệu pháp và khí cụ "chữa được liệt, mù, điếc" (mục 6). Phục hồi làm tại cơ cấu chính quy có khoa y học phục hồi (mục 16); thính lực xuống thì đi phối máy trợ thính (mục 17).
+**Thân thể và phục hồi**: sau tổn thương tủy sống bỗng đau đầu dữ dội (mục 1), đệm ngồi xe lăn đổi sang loại giảm áp (mục 5), đừng mua liệu pháp chữa khỏi liệt (mục 6), phục hồi chức năng ở cơ sở chính quy (mục 16), thính lực giảm thì lắp máy trợ thính (mục 17), sau tổn thương tủy sống đừng đặt ống thông tiểu lâu dài (mục 21).
 
-**Đãi ngộ và trợ cấp**: thẻ khuyết tật làm xong rồi, đến liên hiệp hội khuyết tật cấp huyện hỏi trọn một lần mấy thứ xin được (mục 7). Con dưới 7 tuổi lại có khuyết tật hay cô độc chứng, đến liên hiệp hội khuyết tật cấp huyện xin cứu trợ phục hồi chức năng (mục 8). Cải tạo ramp, tay vịn và phòng tắm trong nhà, có thể xin trợ cấp lên chính phủ cấp huyện trở lên (mục 9). Thuế thu nhập cá nhân của người khuyết tật có thể giảm thu, giảm bao nhiêu gọi điện hỏi cục thuế tỉnh (mục 11).
+**Đãi ngộ và trợ cấp**: đến liên hiệp hội người khuyết tật hỏi một lần cho đủ các khoản đãi ngộ (mục 7), trẻ khuyết tật xin cứu trợ phục hồi chức năng (mục 8), cải tạo dốc, tay vịn, phòng tắm thì xin trợ cấp (mục 9), giảm thuế thu nhập cá nhân (mục 11).
 
-**Tìm việc và bảo vệ quyền lợi**: lúc tìm việc chủ động nói rõ mình có thẻ (mục 10). Vì khuyết tật bị từ chối chiêu, không cho chuyển chính thức, phát tiền ít, có thể kiện, nhưng trước tính rõ phí dụng quá trình (mục 20).
+**Tìm việc và bảo vệ quyền lợi**: khi tìm việc chủ động nói rõ mình có thẻ (mục 10), vì khuyết tật bị từ chối tuyển thì có thể kiện (mục 20).
 
-**Đi học và đi lại**: chó dẫn đường đem vào trường sở công cộng và giao thông công cộng được (mục 12); người khuyết tật thi đại học có thể xin tiện nghi hợp lý (mục 13). Con khuyết tật xin nhập học, trường không được từ chối nhận (mục 14); mất chi dưới phải hay cả hai chi dưới cũng thi được bằng lái (mục 15).
+**Đi học và đi lại**: dắt chó dẫn đường vào nơi công cộng (mục 12), thi đại học xin sắp xếp hợp lý (mục 13), nhà trường không được từ chối nhận trẻ khuyết tật (mục 14), mất cả hai chi dưới vẫn thi được bằng lái (mục 15).
 
-**Tâm lý và người chăm sóc**: mười năm đầu sau khi tàn tật là kỳ nguy cơ cao tự sát, đừng coi là chuyện "nghĩ thoáng chút" là xong (mục 2). Người dài hạn chăm sóc người khuyết tật trong nhà, thân thể mình phải có người dõi (mục 4).
+**Tâm lý và người chăm sóc**: nguy cơ tự tử trong mười năm đầu sau khi bị khuyết tật (mục 2), người chăm sóc phải giữ sức khỏe của chính mình (mục 4).
 
-**Chướng ngại tinh thần và giám hộ**: nhập viện chướng ngại tinh thần lấy tự nguyện làm nguyên tắc, chỉ hai tình huống được không qua đồng ý của bản thân (mục 3). Nói một người lớn "quản không nổi việc mình", phải xin tòa án nhận định, người nhà nói không tính (mục 18). Người giám hộ của người lớn định theo thứ tự định pháp (mục 19).
-
+**Rối loạn tâm thần và giám hộ**: nằm viện vì rối loạn tâm thần lấy tự nguyện làm nguyên tắc (mục 3), muốn xác định năng lực hành vi thì phải xin tòa án (mục 18), người giám hộ xác định theo thứ tự pháp định (mục 19).
 ### 1. Sau tổn thương tủy sống đột nhiên đau đầu dữ dội, ra mồ hôi, trước hết dìu ngồi thẳng, nới quần áo, đồng thời gọi cấp cứu (TQ: 120)
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn tiền. Chỉ có ba động tác, vài chục giây là xong.

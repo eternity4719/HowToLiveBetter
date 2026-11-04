@@ -2,8 +2,7 @@
 
 # 21. Đi nước ngoài, du lịch và an toàn ở nước ngoài
 
-Phần này tính sổ theo tiền bạc và tự do thân thể, có mấy mục còn liên quan đến an toàn tính mạng. Khi ra nước ngoài, luật điều chỉnh bạn là luật của nước sở tại, không phải luật Trung Quốc. Sứ quán và lãnh sự quán Trung Quốc giúp được bạn tới đâu đều có ranh giới rõ ràng. Toàn bộ phần này nói về thủ tục của Trung Quốc, nên bạn đọc để tham khảo.
-
+Phần này tính sổ bằng tiền và tự do thân thể, và có mấy mục còn động đến an toàn bản thân. Khi ra nước ngoài, thứ điều chỉnh bạn là luật của nước sở tại, không phải luật Trung Quốc. Đại sứ quán và lãnh sự quán Trung Quốc giúp được bạn đến đâu thì có ranh giới rõ ràng.
 ### 1. Trước khi đi tra một lần nhắc nhở an toàn của Bộ Ngoại giao, chỗ gắn nhãn "tạm thời đừng đến" thì đừng đi
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=lon quy-mo=tu-vong -->
 - Chi phí: Không tốn đồng nào. Bạn chỉ cần mở trang Dịch vụ Lãnh sự Trung Quốc xem qua một lượt, mất chừng vài phút là xong.
