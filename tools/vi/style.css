@@ -17,6 +17,7 @@ body {
   widows: 2;
   orphans: 2;
   -webkit-hyphens: auto;
+  -epub-hyphens: auto;
   hyphens: auto;
   -webkit-text-size-adjust: 100%;
 }
@@ -115,8 +116,8 @@ li p { text-indent: 0; }
 blockquote { margin: 1.2em 0; padding: 0.2em 0 0.2em 1em; border-left: 2px solid #c9b07a; color: #3d485a; font-style: italic; }
 blockquote p { text-indent: 0; text-align: left; hyphens: none; -webkit-hyphens: none; }
 hr { border: 0; border-top: 1px solid #d8cfbb; margin: 2em 0; }
-table { border-collapse: collapse; width: 100%; margin: 1.1em 0; font-size: 0.86em; line-height: 1.45; }
-th, td { border: 1px solid #d8cfbb; padding: 0.35em 0.5em; vertical-align: top; text-align: left; }
+table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 1.1em 0; font-size: 0.86em; line-height: 1.45; }
+th, td { border: 1px solid #d8cfbb; padding: 0.35em 0.5em; vertical-align: top; text-align: left; overflow-wrap: break-word; }
 th { background: #f4eedf; font-family: "Be Vietnam Pro", Arial, sans-serif; font-weight: 600; }
 code, pre { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.86em; }
 pre { white-space: pre-wrap; word-break: break-word; border: 1px solid #d8cfbb; padding: 0.6em; background: #f8f4e9; }

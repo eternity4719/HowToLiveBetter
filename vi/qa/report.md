@@ -1,10 +1,10 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T01:01:12.247Z
+- Thời điểm: 2026-11-04T01:04:01.003Z
 - Nguồn: `e2605d3`
 - Chương đủ mục: 5/34
 - Mục đã dịch lại và gộp: 112/767 (14.6%); hiện có 682 mục trong sách
-- Mục thiếu số: 174; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
+- Mục thiếu số: 158; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
 - Kết quả: đạt các bước đã chạy
 
 ## audit: đạt
