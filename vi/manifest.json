@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:19:27.115Z",
+ "generatedAt": "2026-11-04T02:24:36.627Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 24,
+  "chaptersComplete": 26,
   "entriesSource": 767,
-  "entriesPresent": 748,
-  "entriesVerified": 614,
-  "coverage": 0.8005
+  "entriesPresent": 752,
+  "entriesVerified": 639,
+  "coverage": 0.8331
  },
  "chapters": [
   {
@@ -335,32 +335,26 @@
    "zh": "25-人走了以后要办什么.md",
    "vi": "25-viec-phai-lam-khi-nguoi-than-qua-doi.md",
    "entriesSource": 12,
-   "entriesTranslated": 10,
-   "missingEntries": [
-    11,
-    12
-   ],
-   "missingNumbers": 1,
+   "entriesTranslated": 12,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 26,
    "zh": "26-做一个网站或平台.md",
    "vi": "26-lam-mot-website-hoac-nen-tang.md",
    "entriesSource": 13,
-   "entriesTranslated": 11,
-   "missingEntries": [
-    12,
-    13
-   ],
-   "missingNumbers": 1,
+   "entriesTranslated": 13,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 27,

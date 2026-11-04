@@ -27,6 +27,10 @@ tools/vi/
   check-out.mjs         kiểm tra một lô: số mục, trường, số, link, chữ Hán
   merge.mjs             gộp bản dịch vào vi/book, ép lại Nguồn và cost tag
   normalize-units.mjs   đổi «vạn / 亿» sang cách viết Việt Nam
+  normalize-terms.mjs   thống nhất «phần/mục», KTC, tên cơ quan
+  postmerge.mjs         gộp + chuẩn hóa + audit + manifest đúng thứ tự
+  merge-docs.mjs        gộp 9 bài dài đã kiểm tra
+  make-review-tasks.mjs sinh đề bài soát độc lập từng chương
   audit.mjs             đối chiếu toàn bộ với nguyên tác
   manifest.mjs          sinh vi/manifest.json
   make-cover.mjs        dựng bìa 1600×2400
