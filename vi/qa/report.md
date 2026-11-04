@@ -1,6 +1,6 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T03:36:09.654Z
+- Thời điểm: 2026-11-04T03:38:01.008Z
 - Nguồn: `e2605d3`
 - Chương đủ mục: 34/34
 - Mục đã dịch lại và gộp: 767/767 (100.0%); hiện có 767 mục trong sách
