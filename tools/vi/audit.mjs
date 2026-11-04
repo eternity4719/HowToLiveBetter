@@ -56,13 +56,14 @@ const parseNum = t => {
   }
   if (t.includes('.')) {
     const [a, b] = t.split('.');
-    if (b.length === 3 && a.length > 1) return Number(a + b);
+    if (b.length === 3) return Number(a + b);
     return Number(t);
   }
   return Number(t);
 };
 const numbers = s => {
   const expanded = num(s)
+    .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*斤/g, (m, n) => String(Math.round(parseNum(n) * 0.5)))
     .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*万亿/g, (m, n) => String(Math.round(parseNum(n) * 1e12)))
     .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*千\s*(?:余)?\s*(?:元|块)/g, (m, n) => String(Math.round(parseNum(n) * 1e3)))
     .replace(/(\d+(?:[.,]\d+)*)\s*(?:余|多)?\s*(万|亿)/g, (m, n, u) => String(Math.round(parseNum(n) * (u === '万' ? 1e4 : 1e8))))
