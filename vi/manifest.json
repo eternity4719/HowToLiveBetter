@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T01:28:22.676Z",
+ "generatedAt": "2026-11-04T01:55:11.761Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 10,
+  "chaptersComplete": 14,
   "entriesSource": 767,
-  "entriesPresent": 700,
-  "entriesVerified": 266,
-  "coverage": 0.3468
+  "entriesPresent": 709,
+  "entriesVerified": 415,
+  "coverage": 0.5411
  },
  "chapters": [
   {
@@ -75,19 +75,13 @@
    "zh": "05-不要浪费钱.md",
    "vi": "05-dung-lang-phi-tien.md",
    "entriesSource": 51,
-   "entriesTranslated": 46,
-   "missingEntries": [
-    47,
-    48,
-    49,
-    50,
-    51
-   ],
-   "missingNumbers": 12,
+   "entriesTranslated": 51,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 6,
@@ -107,15 +101,13 @@
    "zh": "07-没钱的时候怎么活.md",
    "vi": "07-song-khi-khong-co-tien.md",
    "entriesSource": 23,
-   "entriesTranslated": 22,
-   "missingEntries": [
-    23
-   ],
-   "missingNumbers": 6,
+   "entriesTranslated": 23,
+   "missingEntries": [],
+   "missingNumbers": 1,
    "sourceMismatch": 0,
-   "lowRatio": 1,
+   "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 8,
@@ -124,28 +116,24 @@
    "entriesSource": 46,
    "entriesTranslated": 46,
    "missingEntries": [],
-   "missingNumbers": 7,
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 9,
    "zh": "09-普通人容易踩的法律红线.md",
    "vi": "09-lan-san-do-phap-luat-de-vi-pham.md",
    "entriesSource": 29,
-   "entriesTranslated": 26,
-   "missingEntries": [
-    27,
-    28,
-    29
-   ],
-   "missingNumbers": 7,
+   "entriesTranslated": 29,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 10,

@@ -2,8 +2,21 @@
 
 # 11. Làn ranh đỏ dân lập trình và dân kỹ thuật dễ vi phạm
 
-Phần này tính hai khoản: tự do thân thể và tiền của bạn. Điều bạn đổi lại là không bị giam và không phải đền tiền. Người viết code, làm kỹ thuật thường coi những việc dưới đây là "chuyện kỹ thuật thôi". Nhưng những việc này ứng với một tội danh cụ thể trong Bộ luật Hình sự, hoặc một khoản tiền cụ thể phải đền theo dân sự. Mỗi mục nêu con số trong điều luật, kèm vụ án công bố trên site chính thức của Viện Kiểm sát Nhân dân Tối cao và Tòa án Nhân dân Tối cao. Bộ luật Hình sự trích theo văn bản hợp nhất "đã sửa theo Tu chính án hình sự (XI)" do Sở Công an giao thông Bắc Kinh đăng lại. Các mục xếp theo hai tiêu chí nhân với nhau: dân kỹ thuật dễ tưởng việc đó không sao đến mức nào, và hậu quả nặng đến đâu. Điểm cao xếp trước, điểm thấp xếp sau. Mục 1 là mục dùng chung: nó nói cách phán đoán trước khi làm, và việc cần làm trước tiên khi đã có chuyện. Toàn bộ phần này nói về pháp luật và chế độ của Trung Quốc. Người ở Việt Nam chỉ nên đọc để tham khảo, vì các số và điều kiện chi tiết không áp dụng.
+Phần này tính theo hai thước đo là tự do thân thể và tiền, thứ bạn đổi lại là "không bị giam" và "không phải đền tiền". Người viết code và làm kỹ thuật hay coi những việc dưới đây là "chuyện kỹ thuật thôi". Nhưng chúng ứng với một tội danh cụ thể trong Bộ luật Hình sự, hoặc một khoản tiền cụ thể phải đền theo dân sự. Mỗi mục đều nêu con số trong điều luật, kèm những vụ án đăng trên trang chính thức của Viện Kiểm sát nhân dân tối cao và Tòa án nhân dân tối cao. Bộ luật Hình sự trích theo văn bản hợp nhất "đã sửa theo Tu chính án hình sự (XI)" do Sở Cảnh sát giao thông Bắc Kinh đăng lại. Mục 1 là mục chung, nói cách phán đoán trước khi làm và việc cần làm trước tiên khi đã có chuyện.
 
+Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+
+**Trước khi ra tay**: trước khi làm thì hỏi một câu, đối phương có đi báo án không (mục 1).
+
+**Phần mềm gian lận, script và bản bẻ khóa**: hack và tool hỗ trợ game (mục 2), script săn vé, chạy đơn ảo, bào khuyến mãi (mục 3), trình thu thập dữ liệu chỉ lấy những trang công khai không cần đăng nhập (mục 4), công cụ tự động bỏ qua hoặc chặn quảng cáo của app khác (mục 18), bản vá bẻ khóa và chương trình tạo mã đăng ký (mục 20).
+
+**Đụng vào hệ thống của người khác**: không chạy chương trình của mình trên máy tính của người khác (mục 8), không có giấy ủy quyền bằng văn bản thì không kiểm thử hệ thống của người khác (mục 9), phát hiện lỗ hổng thì báo cáo theo đúng quy định (mục 10), tấn công bằng lưu lượng DDoS (mục 21).
+
+**Nhận đơn và nghề tay trái**: đơn phát triển app cờ bạc, lừa đảo, khiêu dâm (mục 5), công cụ vượt tường lửa và tài khoản VPN (mục 11), trạm trung chuyển AI (mục 19).
+
+**Nghỉ việc và quyền sở hữu**: nghỉ việc thì bàn giao hết tài khoản và quyền truy cập (mục 6), nghỉ việc thì không mang mã nguồn đi (mục 7), đã ký thỏa thuận hạn chế cạnh tranh (mục 12), code viết bằng nguồn lực của công ty thì thuộc về công ty (mục 13), mã nguồn mở như GPL (mục 14).
+
+**Làm sản phẩm và đưa lên mạng**: chỉ thu thập thông tin cá nhân thật sự cần cho nghiệp vụ (mục 15), trước khi đưa lên mạng thì đăng ký ICP (mục 16), đánh giá an toàn cho AI tạo sinh và đăng ký thuật toán (mục 17).
 ### 1. Trước khi ra tay, hỏi một câu: hãng, nền tảng hay công ty có đi báo án không; bị truy cứu thì tìm ngay luật sư hình sự
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tu-do -->
 - Chi phí: Không tốn tiền. Trước khi ra tay, bạn đổi câu hỏi «về kỹ thuật có làm được không» thành một câu khác: hãng, nền tảng hay công ty có đi báo án không. Cái khó là nén lại ý nghĩ «chuyện nhỏ thế này chẳng ai quản», vì log máy chủ, ghi chép thanh toán và lịch sử chat nhóm, cơ quan xử lý vụ án đều có quyền thu thập.

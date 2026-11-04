@@ -2,20 +2,21 @@
 
 # 6. Danh sách nên tránh
 
-Phần này gom những thứ "trông rẻ mà có hiệu quả". Khi lật nghiên cứu gốc ra, lợi ích của chúng gần bằng không, bằng không, và có thứ còn âm. Thứ tự xếp dựa vào hai điều: mọi người tiêu bao nhiêu tiền vào thứ đó, và chứng cứ ủng hộ nó chắc đến đâu. Mục nào xếp càng trước thì càng đáng ngừng sớm.
+Chương này gom những thứ «trông rẻ mà lại hiệu quả». Lật nghiên cứu gốc ra thì lợi ích của chúng gần bằng không, bằng không, có thứ còn âm.
 
-Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+Các mục trong chương chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
 
-**Thực phẩm bảo vệ sức khỏe và chất bổ sung**: uống vitamin tổng hợp để sống lâu (mục 1), uống dầu cá thường để phòng bệnh tim mạch (mục 2), bổ sung vitamin D cho người không thiếu (mục 3). Uống viên chống oxy hóa để phòng ung thư (mục 4), chondroitin chữa viêm khớp gối (mục 5), vitamin C phòng cảm (mục 6), tiêu nhiều tiền mua thực phẩm bảo vệ sức khỏe (mục 10). Uống men vi sinh dài hạn (mục 11), mua các sản phẩm giải độc (mục 13), gãy xương rồi bổ sung thật nhiều canxi (mục 30).
+**Thực phẩm bổ sung và chất bổ**: vitamin tổng hợp (mục 1), dầu cá thông thường (mục 2), bổ sung vitamin D (mục 3), chất chống oxy hóa để phòng ung thư (mục 4), chondroitin chữa viêm khớp gối (mục 5), vitamin C phòng cảm (mục 6), bỏ nhiều tiền mua thực phẩm bổ sung (mục 10), uống men vi sinh lâu dài (mục 11), mua sản phẩm thải độc, làm sạch ruột (mục 13), gãy xương rồi bổ sung canxi ồ ạt (mục 30), dùng melatonin để chữa khỏi mất ngủ lâu dài (mục 34).
 
-**Khám sức khỏe và những vấn đề nhỏ khám ra**: PET-CT toàn thân và gói dấu ấn ung thư (mục 7), gói khám sức khỏe tổng quát (mục 18). Acid uric cao nhưng chưa từng đau mà bắt đầu uống thuốc hạ acid uric (mục 19), sỏi túi mật nhưng chưa từng đau mà đi cắt túi mật dự phòng (mục 20). Đừng kiêng canxi để phòng sỏi thận (mục 21).
+**Khám sức khỏe và mấy bệnh nhỏ tình cờ phát hiện**: gói PET-CT toàn thân và dấu ấn ung thư (mục 7), gói khám sức khỏe tổng quát (mục 18), acid uric cao mà chưa từng đau thì đừng uống thuốc (mục 19), sỏi túi mật mà chưa từng đau thì đừng cắt (mục 20), phòng sỏi thận thì đừng kiêng canxi (mục 21), khớp gối thoái hóa đau thì đừng làm nội soi làm sạch khớp (mục 33).
 
-**Những cách nói về dưỡng sinh**: vòng đeo tay/đồng hồ định lượng vận động giúp giảm cân (mục 8), trả thêm tiền mua thực phẩm hữu cơ (mục 9), ép mình tắm nước lạnh để "tăng miễn dịch" (mục 12). Đừng ép mình uống nước để đủ "8 cốc mỗi ngày" (mục 14), mua kính chống ánh sáng xanh (mục 16), coi hiến máu như bảo vệ sức khỏe (mục 17). Ăn sáng hay nhịn ăn kiểu 16:8 giúp kiểm soát cân nặng (mục 26), học "tư thế bê vác đúng" hay đi học lớp bê vác là phòng được đau thắt lưng (mục 29).
+**Mấy cách nói dưỡng sinh**: dựa vào vòng đeo tay để giảm cân (mục 8), mua thực phẩm hữu cơ (mục 9), tắm nước lạnh để tăng miễn dịch (mục 12), không ép mình uống nước (mục 14), kính chống ánh sáng xanh (mục 16), coi hiến máu là cách giữ sức khỏe (mục 17), ăn sáng hoặc nhịn ăn ngắt quãng để kiểm soát cân nặng (mục 26), dựa vào tư thế bê vác đúng để phòng đau lưng (mục 29), cảm sốt là đòi truyền dịch (mục 35).
 
-**Bỏ tiền mua vận may và tâm trạng**: tiêu tiền xem bói (mục 15); mua pha lê, chuỗi hạt, tỳ hưu (mục 22); mua sắm cải thiện tâm trạng (mục 23); "nhích lên một bậc trong đám người quanh" mà tiêu thêm tiền đổi nhà, đổi xe (mục 24).
+**Bỏ tiền mua vận may và tâm trạng**: bỏ tiền xem bói, xem cung hoàng đạo (mục 15), mua mấy món như pha lê, tỳ hưu (mục 22), mua đồ để cải thiện tâm trạng (mục 23), bỏ thêm tiền để nhích lên một bậc so với người xung quanh (mục 24), nghĩ rằng người ta có thể chết bất cứ lúc nào nên không để dành tiền (mục 32).
 
-**Ý chí và tình dục**: ý chí như cơ bắp (mục 25), thủ dâm hại thân (mục 27), chỉnh chuyển xu hướng tính dục (mục 28).
+**Ý chí và tình dục**: ý chí giống như cơ bắp (mục 25), thủ dâm làm hại sức khỏe (mục 27), chỉnh đổi xu hướng tính dục (mục 28).
 
+**Câu trả lời do AI đưa ra**: dựa vào chatbot AI để tự đoán bệnh (mục 31).
 ### 1. Đừng uống vitamin tổng hợp để sống lâu hay phòng bệnh tim mạch
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=tien -->
 - Chi phí: Mỗi ngày khoảng 0,5 đến 2 tệ, một năm 200 đến 700 tệ. Uống không tốn thời gian, chỉ một viên là xong. Uống lâu dễ sinh tâm lý phụ thuộc, hôm nào không uống lại thấy như thiếu một việc gì.

@@ -2,22 +2,21 @@
 
 # 3. Đừng lãng phí sức lực
 
-Phần này chỉ tính sổ sức lực và thời gian. Bạn nhìn vào bốn thứ: lượng chú ý bạn dùng được mỗi ngày, phản ứng nhanh hay chậm, lỗi nhiều hay ít, và sau khi bị ngắt thì mất bao lâu mới quay lại được. Mọi con số đều đo trực tiếp, đến từ thí nghiệm, hoặc từ ghi chép theo dõi một nhóm người (nghiên cứu đoàn hệ). Các số này không quy ra tuổi thọ, cũng không quy ra tử vong. Đa số mục của phần này có mức chứng cứ B. Lĩnh vực này vốn vậy, không có nghĩa lời khuyên này không đúng. Riêng mục 19 nói về kỳ vọng bạn nên có khi làm việc với cảnh sát, bác sĩ, nhân viên quầy. Mục đó trích quy định chứ không phải thí nghiệm, nên ghi mức C. Trong đó mục 15 (coi ý nghĩ bi quan như triệu chứng) và mục 22 (coi "người khác đòi tôi phải hoàn hảo" như triệu chứng) trích số liệu tử vong và nguy cơ tự sát. Quy mô của hai mục đó khác các mục còn lại của phần, nên không đem so chung.
+Chương này chỉ tính sổ sức lực và thời gian. Bạn nhìn vào bốn thứ: lượng chú ý dùng được mỗi ngày, phản ứng nhanh hay chậm, mắc lỗi nhiều hay ít, và bị ngắt quãng rồi thì mất bao lâu mới quay lại được. Phần lớn con số được đo trực tiếp, đến từ thí nghiệm, hoặc đến từ ghi chép theo dõi một nhóm người (nghiên cứu đoàn hệ). Những con số này không quy ra tuổi thọ, cũng không quy ra tỷ lệ tử vong. Phần lớn mục trong chương có mức chứng cứ B. Lĩnh vực này vốn như vậy, không có nghĩa là lời khuyên không đứng vững. Mục 19 nói về kỳ vọng nên có khi làm việc với cảnh sát, bác sĩ, nhân viên quầy; mục đó dẫn quy định pháp luật chứ không dẫn thí nghiệm, nên ghi mức C. Mục 15 (coi ý nghĩ bi quan như triệu chứng) và mục 22 (coi «người khác bắt tôi phải hoàn hảo» như triệu chứng) dẫn số liệu về tỷ lệ tử vong và nguy cơ tự sát. Quy mô của hai mục này khác các mục còn lại trong chương, nên không đem ra so chung.
 
-Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
+Các mục trong chương chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
 
-**Chú ý khi làm việc**: tắt thông báo không cần thiết (mục 1), đổi email và tin nhắn sang xử lý theo đợt (mục 5), chặn cả những ngắt vài giây bên ngoài (mục 6). Mỗi lúc chỉ làm một việc (mục 7), ở văn phòng mở thì dùng nút tai (mục 12), đừng chỉ biết tăng giờ làm việc mỗi tuần (mục 13).
+**Sự chú ý khi làm việc**: tắt những thông báo không cần thiết (mục 1), xử lý tin nhắn theo đợt mỗi ngày (mục 5), chặn cả những lần ngắt quãng vài giây (mục 6), mỗi lúc chỉ làm một việc (mục 7), văn phòng mở thì dùng nút tai (mục 12), đừng chỉ biết tăng giờ làm mỗi tuần (mục 13).
 
-**Ngủ và thức khuya**: cố định giờ thức dậy (mục 2), ngủ đủ 7 đến 8 tiếng mỗi đêm (mục 3), sau hai giờ chiều không động vào caffeine (mục 4). Một tiếng trước khi ngủ không nhìn màn hình phát sáng (mục 8), đến giờ thì ngủ (mục 9), đêm khuya không quyết định việc lớn (mục 10), chiều buồn ngủ thì chợp 10 phút (mục 11). Mất ngủ kéo dài thì làm trị liệu nhận thức – hành vi trước (mục 26); ngáy, ngưng thở khi ngủ hoặc ban ngày buồn ngủ thì đi kiểm tra chứng ngưng thở khi ngủ (mục 27).
+**Giấc ngủ và thức khuya**: cố định giờ thức dậy (mục 2), mỗi đêm ngủ đủ 7 đến 8 tiếng (mục 3), sau hai giờ chiều không đụng vào caffeine (mục 4), một tiếng trước khi ngủ không nhìn màn hình (mục 8), đến giờ thì đi ngủ (mục 9), đêm khuya không quyết định việc lớn (mục 10), buổi chiều buồn ngủ thì chợp mắt 10 phút (mục 11), mất ngủ lâu dài thì làm liệu pháp nhận thức hành vi trước (mục 26), ngáy và ngưng thở, ban ngày buồn ngủ thì đi khám chứng ngưng thở khi ngủ (mục 27).
 
-**Ý nghĩ trong đầu**: nghĩ đi nghĩ lại cùng một việc tồi tệ thì đổi sang việc phải động tay (mục 14), coi những ý nghĩ kiểu "mọi việc chắc chắn sẽ tệ hơn" như triệu chứng (mục 15). Lúc thấy "mọi người đều nhìn thấy mình mất mặt", đem ước tính đó chia hai (mục 21), coi "người khác đòi tôi phải hoàn hảo" như triệu chứng (mục 22).
+**Những ý nghĩ trong đầu**: cứ nghĩ đi nghĩ lại thì đổi sang việc phải dùng tay (mục 14), coi ý nghĩ bi quan như triệu chứng (mục 15), lúc thấy mình bị bêu xấu thì chia đôi con số mình ước lượng (mục 21), coi chuyện «người khác bắt tôi phải hoàn hảo» như triệu chứng (mục 22).
 
-**Giận dữ và tinh thần suy sụp**: lúc tức giận rời khỏi chỗ đó trước (mục 17), lúc tinh thần suy sụp làm trước mấy việc đáng giá nhất (mục 18). Đừng dựa vào đập đồ, đấm bao cát, chạy một vòng để xả (mục 23), có thể mấy ngày liền viết ra suy nghĩ và cảm giác (mục 24).
+**Giận dữ và tâm trạng xuống thấp**: đang giận thì rời khỏi chỗ đó trước (mục 17), khi tâm trạng xuống thấp thì làm mấy việc này trước (mục 18), đừng xả giận bằng cách đấm bao cát (mục 23), viết ra mấy ngày liền những gì đang nặng trong lòng (mục 24).
 
-**Quan hệ và mạng xã hội**: học cách từ chối yêu cầu không muốn nhận (mục 16), coi cảnh sát, bác sĩ, nhân viên quầy là người đi làm theo quy định (mục 19), đặt giới hạn hoặc tắt hẳn app lướt động thái của người cùng tuổi (mục 20).
+**Quan hệ với người khác và mạng xã hội**: học cách từ chối những lời nhờ mình không muốn nhận (mục 16), coi cảnh sát, bác sĩ là người đi làm theo quy định (mục 19), đặt giới hạn cho ứng dụng cho mình lướt động thái của người cùng trang lứa (mục 20).
 
-**Cơn đau trong người**: đau bụng kinh thì uống thuốc giảm đau như ibuprofen (mục 25).
-
+**Cơn đau trên cơ thể**: đau bụng kinh thì uống thuốc giảm đau như ibuprofen (mục 25).
 ### 1. Tắt thông báo không cần thiết, lúc làm việc để điện thoại ra ngoài tầm mắt
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=khong loi-ich=vua quy-mo=thoi-gian -->
 - Chi phí: Không tốn tiền. Bạn bỏ ra vài phút chỉnh lại cài đặt, gần như không cần ý chí.

@@ -2,24 +2,23 @@
 
 # 12. Khởi nghiệp và làm ăn: đừng đem gia sản đổ vào
 
-Phần này chỉ tính tiền và trách nhiệm pháp lý, không quy ra tuổi thọ. Bạn mở một cửa hàng hay lập một công ty, bước nào sẽ kéo tiền của bạn, tiền nhà và tiền của vợ hoặc chồng chìm theo? Luật quy định thế nào, và bạn có ngăn trước được không? Mục nào dễ làm mất sạch gia sản nhất, mà lại tránh được với ít công nhất, thì đứng ở trước. Vì vậy các mục liên quan tới việc ký giấy xếp trước, còn cách nào bạn phải tự tay làm thì xếp sau. Mục nào chỉ viết theo kinh nghiệm, không có tài liệu chống lưng, thì ghi mức C. Toàn bộ phần này nói về pháp luật và chế độ của Trung Quốc; người ở Việt Nam chỉ nên đọc tham khảo, các số và điều kiện chi tiết không áp dụng.
+Phần này chỉ tính tiền và trách nhiệm pháp lý, không quy đổi ra tuổi thọ. Khi bạn mở một cửa hàng hay lập một công ty, bước nào sẽ kéo tiền của bạn, tiền của gia đình và tiền của vợ hoặc chồng cùng chìm theo? Pháp luật quy định thế nào, và bạn có thể ngăn cách trước được không? Mục nào chỉ viết theo kinh nghiệm, không có tài liệu chống lưng, thì ghi mức C.
 
 Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
 
-**Trước khi khai trương, đừng đem gia sản đặt cược**: chỉ lấy số tiền lỗ được mà khởi nghiệp (mục 1); không ký bảo lãnh cá nhân cho khoản vay của công ty (mục 2); trước khi khai trương chọn đúng chủ thể (mục 3). Không làm cổ đông đứng tên hộ (mục 4); trước khi nhận nhượng quyền, tra hồ sơ lưu trữ của Bộ Thương mại (mục 5). Trước khi bỏ tiền thuê người vận hành hộ cửa hàng online, đăng ký lớp đào tạo mở cửa hàng hoặc làm "không có nguồn hàng", hỏi rõ về sau còn phải đóng thêm tiền không và doanh số từ đâu ra (mục 24).
+**Trước khi khai trương, đừng đem gia sản ra đặt cược**: khởi nghiệp chỉ bằng số tiền mình lỗ được (mục 1), không ký bảo lãnh cá nhân cho khoản vay của công ty (mục 2), trước khi khai trương thì chọn đúng loại chủ thể (mục 3), không làm cổ đông đứng tên hộ (mục 4), trước khi nhận nhượng quyền thì tra hồ sơ đăng ký (mục 5), trước khi bỏ tiền thuê người vận hành hộ cửa hàng trên mạng thì hỏi cho rõ (mục 24), góp tiền làm ăn chung thì chỉ rủ người thân, bạn bè và nhân viên (mục 26), hùn mở cửa hàng thì viết thành thỏa thuận trên giấy (mục 28).
 
-**Đăng ký và giấy phép**: trước khi đăng ký chốt tên gọi, địa điểm kinh doanh, ngành nghề và vốn điều lệ (mục 6); nghề cần giấy phép thì giấy chưa cấp không khai trương (mục 7).
+**Đăng ký và giấy phép**: trước khi đăng ký thì chốt tên gọi và ngành nghề kinh doanh (mục 6), giấy phép chưa có thì chưa khai trương (mục 7), thuê mặt bằng thì trước hết xem căn nhà đó có mở được loại cửa hàng của bạn không (mục 27).
 
-**Làm thực phẩm**: làm thực phẩm trước hết xem mình rơi vào nhóm nào (mục 8); cho vào bao bán là thực phẩm đóng gói sẵn: trên nhãn, ngày sản xuất, hạn dùng, bảng thành phần thiếu một thứ cũng không được (mục 9). Thực phẩm thường không được nói là chữa được bệnh (mục 10); nghề thực phẩm có vạch hình sự: bán thịt chết bệnh, hàng vượt chuẩn đã đủ tội (mục 11).
+**Làm thực phẩm**: làm thực phẩm thì trước hết xem mình rơi vào nhóm nào (mục 8), nhãn của thực phẩm đóng gói sẵn (mục 9), thực phẩm thường thì không được nói là chữa được bệnh (mục 10), vạch hình sự của nghề thực phẩm (mục 11).
 
-**Khai thuế và hóa đơn**: lĩnh giấy phép là bắt đầu có nghĩa vụ khai thuế, không có thu nhập cũng phải đúng kỳ khai một tờ toàn số không (mục 12). Hóa đơn chỉ xuất theo giao dịch thật (mục 13); ai tự xưng cục thuế giục bạn nộp tiền, khai thuế đều là lừa đảo (mục 14).
+**Khai thuế, báo cáo năm và hóa đơn**: không có thu nhập cũng phải khai đúng kỳ và khai thật (mục 12), hóa đơn chỉ xuất theo giao dịch thật (mục 13), người tự xưng là cơ quan thuế giục bạn nộp tiền là kẻ lừa đảo (mục 14), nửa đầu mỗi năm thì lên mạng nộp báo cáo năm của năm trước (mục 25).
 
-**Hợp đồng và dùng người**: thu tiền viết "định kim" chứ không viết "đính kim" (mục 15); người vào làm trong tháng đầu phải ký hợp đồng giấy, trong 30 ngày đăng ký bảo hiểm xã hội (mục 16). Lương trả theo hợp đồng và luật (mục 17); ở vị trí của mình làm theo quy trình (mục 22).
+**Hợp đồng và thuê người**: nhận tiền đặt cọc thì ghi "định kim" chứ không ghi "đính kim" (mục 15), thuê người thì phải ký hợp đồng trong tháng đầu (mục 16), trả lương theo hợp đồng và theo luật (mục 17), ở vị trí của mình thì làm theo quy trình (mục 22).
 
-**Sản phẩm và nhập hàng**: bán trước làm sau: dùng đặt trước và đơn nhỏ kiểm xem có người mua không rồi mới bỏ tiền sản xuất (mục 18). Mẫu làm xong trước hết qua một vòng danh mục sản xuất hàng loạt rồi mới bàn mở xưởng (mục 19); nhập mẻ nào giữ chứng từ và thông tin nhà cung cấp của mẻ đó (mục 20). Hình trên hàng, bao bì, nhãn treo và ảnh quảng bá hoặc tự làm hoặc mua quyền dùng (mục 21).
+**Sản phẩm và nhập hàng**: bán trước rồi mới sản xuất (mục 18), mẫu thử phải qua danh mục sản xuất hàng loạt trước (mục 19), nhập hàng thì giữ hóa đơn và thông tin nhà cung cấp (mục 20), hình in thì hoặc tự làm, hoặc mua quyền sử dụng (mục 21).
 
-**Rút lui**: lỗ thì rút lui theo đúng thủ tục (mục 23).
-
+**Rút lui**: lỗ thì rút lui theo đúng trình tự (mục 23).
 ### 1. Chỉ khởi nghiệp bằng số tiền lỗ được, không đụng vào gia sản, không vay để khai trương
 <!-- nhan-chi-phi: tien=0 thoi-gian=it y-chi=chut loi-ich=lon quy-mo=tien -->
 - Chi phí: Không tốn tiền. Trước khi bắt tay, bạn tự đặt ra một con số: số tiền này có lỗ sạch cũng không ảnh hưởng đến việc trả nợ mua nhà, nuôi con, chữa bệnh của bạn. Vượt quá con số đó thì bạn không đầu tư nữa. Tiền của người trong nhà và tiền đi vay không tính vào con số này. Phần khó là lúc việc làm ăn trông có khởi sắc, bạn phải nén lại, không rót thêm vào.

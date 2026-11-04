@@ -2,22 +2,21 @@
 
 # 10. Yêu và cưới có đáng không
 
-Phần này tách câu "cưới có đáng không" ra thành mấy khoản: tiền, thời gian, sức khỏe, rủi ro pháp lý và chất lượng quan hệ, rồi tính riêng từng khoản một. Mỗi khoản chỉ dùng con số tra được nguồn, và nguồn chỉ gồm thống kê chính thức hoặc phân tích tổng hợp (gộp số liệu của nhiều nghiên cứu rồi tính lại một lần). Phần này không phán xét đạo đức, cũng không kết luận thay bạn. Mấy khoản sức khỏe tính theo nguy cơ tử vong, mấy khoản thời gian tính theo số phút mỗi ngày, mấy khoản pháp lý tính theo điều luật viết thế nào. Ba cách tính này không quy đổi sang nhau. Cách tách khoản, checklist điền vào chỗ trống và các hiểu lầm thường gặp bạn xem ở [docs/cuoi-co-dang-khong.md](../docs/cuoi-co-dang-khong.md). Còn một điều cần nói trước: nhiều mục trong phần này dựa trên luật và số liệu của Trung Quốc, nên người ở Việt Nam chỉ nên đọc tham khảo, các số và điều kiện chi tiết không áp dụng.
+Phần này tách câu hỏi "cưới có đáng không" thành mấy khoản riêng: tiền, thời gian, sức khỏe, rủi ro pháp lý và chất lượng quan hệ, rồi tính từng khoản một. Mỗi khoản chỉ dùng những con số tra được nguồn, và nguồn chỉ gồm thống kê chính thức hoặc phân tích gộp (gộp số liệu của nhiều nghiên cứu rồi tính lại một lần). Phần này không phán xét đạo đức và cũng không kết luận thay bạn. Mấy khoản sức khỏe tính theo nguy cơ tử vong, mấy khoản thời gian tính theo số phút mỗi ngày, mấy khoản pháp lý tính theo điều luật viết thế nào. Ba cách tính này không quy đổi sang nhau. Cách tách khoản, danh sách câu hỏi để bạn tự điền và các hiểu lầm thường gặp, bạn xem ở [docs/cuoi-co-dang-khong.md](../docs/cuoi-co-dang-khong.md).
 
 Các mục trong phần này chia theo chủ đề thành mấy khối dưới đây, số trong ngoặc là số mục.
 
-**Tìm người yêu và yêu đương**: quen nhiều người hơn thay vì bám cứng một người (mục 1); sau khi đối phương từ chối rõ ràng thì dừng lại (mục 2); muốn biết đối phương có hứng thú không thì xem hành vi đừng xem "tín hiệu" (mục 3). Muốn gần nhau hơn thì thay phiên trả lời một bộ câu hỏi đi từ nông đến sâu (mục 5); yêu xa không kém yêu cùng thành phố (mục 6).
+**Tìm người yêu và yêu đương**: quen nhiều người hơn (mục 1), đối phương từ chối thì dừng lại (mục 2), nhìn hành vi để đoán có hứng thú hay không (mục 3), thay phiên trả lời bộ câu hỏi đi từ nông đến sâu (mục 5), yêu xa không kém yêu cùng một thành phố (mục 6).
 
-**Quan hệ đang tốt hay xấu**: quan hệ tốt hay không chủ yếu xem cảm giác của chính bạn trong quan hệ này (mục 4); cãi nhau đối việc không đối người, đừng chửi, đừng mỉa mai (mục 17). Quan hệ kẹt trong cãi nhau lặp lại và chiến tranh lạnh thì hai người cùng đi trị liệu cặp đôi (mục 20).
+**Quan hệ tốt hay xấu**: xem cảm giác của chính bạn trong quan hệ (mục 4), cãi nhau thì nhắm vào việc chứ không nhắm vào người (mục 17), cả hai cùng đi trị liệu cặp đôi (mục 20).
 
-**Mấy khoản tính sổ xem cưới có đáng không**: xem số liệu đăng ký trước rồi hãy nghe bậc trên (mục 7); tính cả lợi ích sức khỏe vào, nhưng phải đánh giảm vì đó là số liệu quan sát (mục 8). Khoản thời gian tính theo "việc không được trả công", bàn rõ phân chia rồi hãy đi đăng ký (mục 9); tính chi phí rút lui (mục 15); ghi riêng một khoản cho "cưới vì bậc trên", đừng trộn với khoản của mình (mục 16).
+**Mấy khoản tính xem cưới có đáng không**: xem số liệu đăng ký kết hôn trước (mục 7), lợi ích sức khỏe thì chiết giảm vì đó là số liệu quan sát (mục 8), khoản thời gian tính theo lao động không được trả công (mục 9), tính chi phí rút lui (mục 15), cưới vì người lớn trong nhà thì ghi một khoản riêng (mục 16), khi ly hôn ghi rõ tiền cấp dưỡng nuôi con và việc thăm nom (mục 23).
 
-**Đăng ký kết hôn và khám tiền hôn nhân**: đăng ký kết hôn chỉ cần căn cước cộng một tờ khai có chữ ký (mục 13). Trước khi cưới đi khám tiền hôn nhân một lần, có bệnh nặng phải khai thật cho đối phương trước khi đăng ký (mục 14).
+**Đăng ký kết hôn và khám sức khỏe trước hôn nhân**: đi đăng ký chỉ cần căn cước công dân (mục 13), trước khi cưới thì đi khám sức khỏe tiền hôn nhân một lần (mục 14), đã mời cỗ rồi vẫn phải đi đăng ký kết hôn (mục 21).
 
-**Tiền và nợ**: khoản tiền trước hết xem quy tắc mặc định của pháp luật, rồi mới quyết có cần thỏa thuận bằng văn bản không (mục 10); bố mẹ góp tiền mua nhà, ngay lúc chuyển khoản đã phải ghi rõ là cho hay là vay (mục 11). Khoản tiền lớn vợ hoặc chồng một mình đi vay, bạn không ký cũng không công nhận sau, không tự động thành nợ của bạn (mục 12).
+**Tiền và nợ**: khoản tiền trước hết xem quy tắc mặc định của pháp luật (mục 10), bố mẹ góp tiền mua nhà thì ghi rõ là cho hay là cho vay (mục 11), khoản tiền lớn mà một bên vợ hoặc chồng đứng ra vay (mục 12), vợ hoặc chồng lấy tiền chung để thưởng cho người phát trực tiếp hay chuyển cho người ngoài hôn nhân (mục 22).
 
-**Người yêu đồng giới và khuynh hướng tình dục**: người yêu đồng giới nhân lúc hai người còn tỉnh táo, làm xong ủy quyền, giám hộ tự định và di chúc (mục 18). Đừng cưới bằng cách giấu khuynh hướng tình dục, cũng đừng coi hôn nhân hình thức là cách nhẹ nhàng (mục 19).
-
+**Bạn đời đồng giới và khuynh hướng tình dục**: bạn đời đồng giới nên làm xong giấy ủy quyền, giám hộ tự định và di chúc (mục 18), đừng cưới bằng cách giấu khuynh hướng tình dục (mục 19).
 ### 1. Quen nhiều người hơn thay vì bám riết lấy một người: hai người có hợp nhau hay không, trước khi gặp mặt không đoán ra được
 <!-- nhan-chi-phi: tien=0 thoi-gian=vua y-chi=chut loi-ich=vua quy-mo=thoi-gian -->
 - Chi phí: Không tốn tiền. Thời gian thì dành cho việc quen thêm vài người, đừng nghĩ đi nghĩ lại về cùng một người. Cái khó là nhịn được, không bám riết lấy một người.

@@ -1,10 +1,10 @@
 # Báo cáo kiểm tra bản tiếng Việt
 
-- Thời điểm: 2026-11-04T01:25:11.746Z
+- Thời điểm: 2026-11-04T01:55:15.013Z
 - Nguồn: `e2605d3`
-- Chương đủ mục: 9/34
-- Mục đã dịch lại và gộp: 219/767 (28.5%); hiện có 696 mục trong sách
-- Mục thiếu số: 127; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
+- Chương đủ mục: 14/34
+- Mục đã dịch lại và gộp: 415/767 (54.1%); hiện có 709 mục trong sách
+- Mục thiếu số: 80; nguồn lệch: 0; chữ Hán ngoài Nguồn: 0; tiêu đề còn chữ Hán: 0
 - Kết quả: đạt các bước đã chạy
 
 ## audit: đạt
@@ -21,25 +21,25 @@
 ## manifest: đạt
 
 ```
-Manifest: 9/34 chương đủ, 219/767 mục đã dịch lại và gộp (28.6%); hiện có 696 mục trong sách
+Manifest: 14/34 chương đủ, 415/767 mục đã dịch lại và gộp (54.1%); hiện có 709 mục trong sách
 ```
 
 ## build: đạt
 
 ```
-Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 696 mục (A 456 · B 182 · C 58), 9 phụ lục, 5416 KB chưa nén
+Đã dựng /Users/havi/VibeCoding/HowToLiveBetter/dist/HowToLiveBetter-vi.epub: 34 chương, 709 mục (A 463 · B 189 · C 57), 9 phụ lục, 5629 KB chưa nén
 ```
 
 ## content: đạt
 
 ```
-34 chương, 696 mục, 9 phụ lục; 0 vấn đề
+34 chương, 709 mục, 9 phụ lục; 0 vấn đề
 ```
 
 ## links: đạt
 
 ```
-1551 liên kết nội bộ, 0 hỏng; 2209 liên kết ngoài (không kiểm tra mạng)
+1621 liên kết nội bộ, 0 hỏng; 2299 liên kết ngoài (không kiểm tra mạng)
 ```
 
 ## epubcheck: đạt
