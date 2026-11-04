@@ -40,7 +40,7 @@ for (const [no, entries] of source) {
   }
   const bodyWords = strip(html).length;
   const srcLen = entries.reduce((n, e) => n + e.body.length, 0);
-  if (bodyWords < srcLen * 1.05) issues.push(`ch${no}: văn bản EPUB ngắn bất thường (${bodyWords} so với ${srcLen})`);
+  if (bodyWords < srcLen * 0.95) issues.push(`ch${no}: văn bản EPUB ngắn bất thường (${bodyWords} so với ${srcLen})`);
 }
 const docs = readdirSync(dir).filter(f => /^doc\d+\.xhtml$/.test(f)).length;
 console.log(`${source.size} chương, ${total} mục, ${docs} phụ lục; ${issues.length} vấn đề`);

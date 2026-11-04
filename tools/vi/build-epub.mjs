@@ -187,7 +187,7 @@ function entryHtml(e, chNo) {
   let note = f['Ghi chú'] ? renderValue(f['Ghi chú'], chNo) : '';
   note = note.replace(/^<p>(Chỉ áp dụng ở Trung Quốc:|Chỉ tham khảo TQ:|Chỉ đúng ở Trung Quốc:)/, '<p><strong class="juris">$1</strong>');
   note = note.replace(/^<p>(Còn tranh cãi|Tranh cãi)([:：.])/, '<p><strong class="disputed">$1$2</strong>');
-  return `<section class="entry" id="${id}" epub:type="bridgehead">
+  return `<section class="entry" id="${id}">
 <h2 class="entry-title"><span class="entry-no">${e.no}</span>${esc(e.title)}</h2>
 <p class="entry-meta"><span class="grade ${evidenceClass(grade)}">Mức chứng cứ ${GRADE_LABEL[grade] ?? grade}</span><span class="cost">${esc(costLine(e.tag))}</span></p>
 ${f['Chi phí'] ? `<div class="field field-cost"><p class="label">Chi phí</p>${renderValue(f['Chi phí'], chNo)}</div>` : ''}
@@ -235,7 +235,7 @@ pages.push({ file: 'titlepage.xhtml', title: 'Trang tiêu đề', cls: 'titlepag
 // lời giới thiệu + bối cảnh
 for (const [file, id, cls, type] of [
   ['translator-note.md', 'note.xhtml', 'frontmatter', 'preface'],
-  ['context.md', 'context.xhtml', 'frontmatter', 'preface'],
+  ['context.md', 'context.xhtml', 'frontmatter', 'frontmatter'],
   ['glossary.md', 'glossary.xhtml', 'frontmatter', 'glossary'],
 ]) {
   const md = readFileSync(resolve(VI, 'front', file), 'utf8');
