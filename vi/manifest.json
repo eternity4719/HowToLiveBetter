@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T02:14:39.866Z",
+ "generatedAt": "2026-11-04T02:19:27.115Z",
  "source": {
   "originalTitle": "高性价比人生指南",
   "originalAuthor": "eternity4719",
@@ -11,11 +11,11 @@
  },
  "totals": {
   "chapters": 34,
-  "chaptersComplete": 21,
+  "chaptersComplete": 24,
   "entriesSource": 767,
-  "entriesPresent": 741,
-  "entriesVerified": 561,
-  "coverage": 0.7314
+  "entriesPresent": 748,
+  "entriesVerified": 614,
+  "coverage": 0.8005
  },
  "chapters": [
   {
@@ -272,7 +272,7 @@
    "entriesSource": 17,
    "entriesTranslated": 17,
    "missingEntries": [],
-   "missingNumbers": 0,
+   "missingNumbers": 1,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
@@ -283,16 +283,13 @@
    "zh": "21-出国旅行与境外安全.md",
    "vi": "21-du-lich-va-an-toan-nuoc-ngoai.md",
    "entriesSource": 13,
-   "entriesTranslated": 11,
-   "missingEntries": [
-    12,
-    13
-   ],
-   "missingNumbers": 2,
+   "entriesTranslated": 13,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 22,
@@ -312,33 +309,26 @@
    "zh": "23-学什么技能划算.md",
    "vi": "23-hoc-ky-nang-gi-dang.md",
    "entriesSource": 25,
-   "entriesTranslated": 23,
-   "missingEntries": [
-    24,
-    25
-   ],
-   "missingNumbers": 2,
+   "entriesTranslated": 25,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 24,
    "zh": "24-看病.md",
    "vi": "24-di-kham-benh.md",
    "entriesSource": 15,
-   "entriesTranslated": 12,
-   "missingEntries": [
-    13,
-    14,
-    15
-   ],
-   "missingNumbers": 1,
+   "entriesTranslated": 15,
+   "missingEntries": [],
+   "missingNumbers": 0,
    "sourceMismatch": 0,
    "lowRatio": 0,
    "cjkOutsideSource": 0,
-   "status": "partial"
+   "status": "complete"
   },
   {
    "chapter": 25,
