@@ -1,6 +1,9 @@
 # Phát hành EPUB tiếng Việt: dựng từ main, chạy EPUBCheck, tạo GitHub Release kèm tệp EPUB.
-# Hai cách chạy: đẩy một tag dạng vi-v* lên (git tag vi-v1.0.3 && git push origin vi-v1.0.3),
-# hoặc Actions → «Phát hành EPUB tiếng Việt» → Run workflow, nhập tag.
+# Ba cách chạy:
+#   1. Thêm vi/release-notes/<tag>.md rồi merge vào main: mọi tệp ghi chú chưa có release
+#      tương ứng sẽ được phát hành (các bản v1.0.0–v1.0.2 làm tay, không có tệp ghi chú).
+#   2. Đẩy một tag dạng vi-v* lên.
+#   3. Actions → «Phát hành EPUB tiếng Việt» → Run workflow, nhập tag.
 # Ghi chú phát hành lấy từ vi/release-notes/<tag>.md, dòng «# …» đầu tiên làm tên release
 # (khi chạy tay có thể nhập tên khác); workflow tự thêm SHA-256 vào cuối.
 name: Phát hành EPUB tiếng Việt
@@ -8,6 +11,10 @@ name: Phát hành EPUB tiếng Việt
 on:
   push:
     tags: ['vi-v*']
+    branches: [main]
+    paths:
+      - vi/release-notes/*.md
+      - .github/workflows/vi-release.yml
   workflow_dispatch:
     inputs:
       tag:
@@ -55,16 +62,30 @@ jobs:
       - name: Tạo release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ inputs.tag || github.ref_name }}
-          TITLE: ${{ inputs.title }}
+          TAG_INPUT: ${{ inputs.tag || (github.ref_type == 'tag' && github.ref_name) || '' }}
+          TITLE_INPUT: ${{ inputs.title }}
         run: |
-          notes="vi/release-notes/${TAG}.md"
-          test -f "$notes" || { echo "Thiếu $notes"; exit 1; }
-          [ -n "$TITLE" ] || TITLE=$(sed -n 's/^# //p' "$notes" | head -1)
-          sha=$(sha256sum dist/HowToLiveBetter-vi.epub | cut -d' ' -f1)
-          { cat "$notes"; printf '\n## SHA-256\n\n```\n%s  HowToLiveBetter-vi.epub\n```\n\nDựng từ commit `%s`.\n' "$sha" "${GITHUB_SHA::7}"; } > /tmp/notes.md
-          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
-            gh release create "$TAG" dist/HowToLiveBetter-vi.epub --verify-tag --title "$TITLE" --notes-file /tmp/notes.md
+          if [ -n "$TAG_INPUT" ]; then
+            tags="$TAG_INPUT"
           else
-            gh release create "$TAG" dist/HowToLiveBetter-vi.epub --target "$GITHUB_SHA" --title "$TITLE" --notes-file /tmp/notes.md
+            # Đẩy lên main: phát hành mọi tệp ghi chú chưa có release.
+            tags=""
+            for f in vi/release-notes/*.md; do
+              t=$(basename "$f" .md)
+              gh release view "$t" >/dev/null 2>&1 || tags="$tags $t"
+            done
           fi
+          [ -n "${tags// /}" ] || { echo "Không có bản nào cần phát hành."; exit 0; }
+          sha=$(sha256sum dist/HowToLiveBetter-vi.epub | cut -d' ' -f1)
+          for TAG in $tags; do
+            notes="vi/release-notes/${TAG}.md"
+            test -f "$notes" || { echo "Thiếu $notes"; exit 1; }
+            TITLE="$TITLE_INPUT"
+            [ -n "$TITLE" ] || TITLE=$(sed -n 's/^# //p' "$notes" | head -1)
+            { cat "$notes"; printf '\n## SHA-256\n\n```\n%s  HowToLiveBetter-vi.epub\n```\n\nDựng từ commit `%s`.\n' "$sha" "${GITHUB_SHA::7}"; } > /tmp/notes.md
+            if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
+              gh release create "$TAG" dist/HowToLiveBetter-vi.epub --verify-tag --title "$TITLE" --notes-file /tmp/notes.md
+            else
+              gh release create "$TAG" dist/HowToLiveBetter-vi.epub --target "$GITHUB_SHA" --title "$TITLE" --notes-file /tmp/notes.md
+            fi
+          done
