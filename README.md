@@ -52,7 +52,7 @@ AI 助手 skill 支持 Claude Code 和 Codex。装上后直接问「替朋友担
 </td></tr>
 <tr><td align="right"><b>其他语言</b></td><td align="left">
 
-[English](其他语言.md) · [Русский](其他语言.md) · [Español](其他语言.md) · [Português](其他语言.md) · [العربية](其他语言.md) · [Bahasa Indonesia](其他语言.md) · [Tiếng Việt](其他语言.md)
+[English](其他语言.md) · [Русский](其他语言.md) · [Español](其他语言.md) · [Português](其他语言.md) · [العربية](其他语言.md) · [Bahasa Indonesia](其他语言.md) · [Tiếng Việt](其他语言.md) · [繁體中文（台灣）](其他语言.md)
 
 读者翻译的版本，各版本的网站和维护者见[其他语言](其他语言.md)
 
