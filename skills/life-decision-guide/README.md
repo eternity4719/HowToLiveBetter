@@ -42,6 +42,18 @@ git clone --depth 1 https://github.com/eternity4719/HowToLiveBetter.git "${TMPDI
 
 整本 1.3 MB，浅克隆一次几秒。取不到网络就如实说取不到，不替代正文。
 
+## 打成离线包
+
+要把 skill 上传到别处，或者发给连不上 GitHub 的人，在仓库根目录跑：
+
+```bash
+node tools/skill/build.mjs
+```
+
+产物是 `dist/life-decision-guide.zip`，约 1 MB。里面除了 SKILL.md，还带着全书正文和一份条目索引 `references/index.tsv`，装上以后不用联网。压缩包里套着一层 `life-decision-guide/` 目录。上传的地方要求 SKILL.md 在压缩包根上的，加 `--flat`。
+
+包里的正文停在打包那一刻。正文改了要重新打一次。
+
 ## 改动须知
 
-SKILL.md 里不留任何会跟着正文漂的清单和数值：节的清单去读 README 的「这本书想回答的问题」表，性价比档的算法去读 `index.html` 里的 `COST_W` 和 `e.ratio` 两行。所以增删节、改档位规则都不用动这个目录。
+SKILL.md 里不留任何会跟着正文漂的清单和数值：节的清单去读 README 的「这本书想回答的问题」表，性价比档的算法去读 `index.html` 里的 `COST_W` 和 `e.ratio` 两行，离线包里的索引是打包时现算的。所以增删节、改档位规则都不用动这个目录。
